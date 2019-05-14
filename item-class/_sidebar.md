@@ -1,5 +1,5 @@
 * Introduction
-  * [Architecture](home.md)
+  * [Architecture](home.md#architecture)
   * [ElementItem class](item-class/item-class.md#elementitem-classes)
     * [Logical diagram](item-class/item-class.md#logical-diagram)
     * Method list

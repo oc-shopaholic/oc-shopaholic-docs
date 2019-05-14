@@ -1,5 +1,5 @@
 * Introduction
-  * [Architecture](home.md)
+  * [Architecture](home.md#architecture)
   * [ElementItem class](item-class/item-class.md#elementitem-classes)
   * [ElementCollection class](collection-class/collection-class.md#elementcollection-class)
     * [Logical diagram](collection-class/collection-class.md#logical-diagram)

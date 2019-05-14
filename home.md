@@ -63,3 +63,37 @@ classes for caching of model data and output cached data in templates.
 
 > **Attention!** Caching is very important information for faster development with using Shopaholic plugins.
 We recommend that you definitely study [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) sections.
+
+## Components
+
+> **Attention!** Components don't have templates. Components allow you to get objects of [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) classes.
+
+Components don't have templates, because each project has its own unique design and html structure.
+Logic of blocks may be similar, but with a few differences.
+Therefore, so that developers don't have to freeze plugins, fitting logic to project, we provide flexible classes for rendering data in template.
+
+Most components belong to one of 4 types: element list, element data, element page, submit form.
+
+### Component type: element list
+
+Components of this type can make objects of [ElementCollection](collection-class/collection-class.md) class and allow to render blocks with lists of elements.
+Developers can easily render blocks:
+  * Full list with all active elements
+  * List with active elements + pagination
+  * List with random elements with filters applied (For example: random products with filter by category)
+  * List with first elements from list (For example: 5 most popular products)
+  * List with nearest elements (For example: list of nearest articles by publication date)
+  * etc.
+
+### Component type: element page
+
+Component of this type allows developers to quickly create page elements. For example: product page, brand page, etc.
+
+### Component type: element data
+
+Component of this type allows developers to quickly get objects by ID. For example: popup with detailed product information in catalog.
+
+### Component type: submit form
+
+Component of this type is used to submit forms and to get as answer object with error text or redirect on success page.
+For example: order creation, user registration, etc.
