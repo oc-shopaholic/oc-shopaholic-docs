@@ -1,0 +1,11 @@
+* [Introduction](home.md#architecture)
+* [Designing of catalog structure](catalog-structure/catalog-structure.md)
+* Elements
+  * [Product](product/home.md)
+    * [Item](product/item/item.md)
+    * [Collection](product/collection/collection.md)
+    * [Components](product/component/product-list/product-list.md)
+    * [Events](product/event/event.md)
+    * [Examples](product/examples/examples.md)
+    * [Extending](product/extending/extending.md)
+* [Plugins](plugins/home.md)

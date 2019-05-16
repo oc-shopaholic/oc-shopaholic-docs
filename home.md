@@ -61,12 +61,12 @@ You can be found detailed information about models in OctoberCMS [documentation]
 We use [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md), [Store](store-class/store-class.md)
 classes for caching of model data and output cached data in templates.
 
-> **Attention!** Caching is very important information for faster development with using Shopaholic plugins.
+!> **Attention!**  Caching is very important information for faster development with using Shopaholic plugins.
 We recommend that you definitely study [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) sections.
 
 ## Components
 
-> **Attention!** Components don't have templates. Components allow you to get objects of [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) classes.
+!> **Attention!**  Components don't have templates. Components allow you to get objects of [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) classes.
 
 Components don't have templates, because each project has its own unique design and html structure.
 Logic of blocks may be similar, but with a few differences.

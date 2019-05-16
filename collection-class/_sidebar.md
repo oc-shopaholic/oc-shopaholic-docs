@@ -38,3 +38,6 @@
       * [unshift](collection-class/collection-class.md#unshiftielementid)
     * [Extending](collection-class/collection-class.md#extending)
   * [Store class](store-class/store-class.md)
+* [Designing of catalog structure](catalog-structure/catalog-structure.md)
+* [Elements](product/home.md)
+* [Plugins](plugins/home.md)

@@ -6,7 +6,7 @@ ElementCollection class
 and [Collection](https://octobercms.com/docs/services/collections) class from laravel framework have some methods,
 but the logic that they perform within them is different.
 
-> **Attention!** The opinion that ElementCollection class
+!> **Attention!**  The opinion that ElementCollection class
 and [Collection](https://octobercms.com/docs/services/collections) class
 from laravel framework are the same is wrong.
 
