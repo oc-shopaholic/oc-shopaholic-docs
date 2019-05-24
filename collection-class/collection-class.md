@@ -88,12 +88,12 @@ $obList = ElementCollection::make([1, 2, 10, 15]);
 $obList->clear();
 ```
 
-### clone()
+### copy()
 
-Method clones the collection.
+Method clones the collection object and returns new collection object.
 ```php
 $obList = ElementCollection::make([1, 2, 10, 15]);
-$obNewList = $obList->clone();
+$obNewList = $obList->copy();
 ```
 
 ### count()
