@@ -5,7 +5,7 @@ It is very important at this stage to determine what will be product and what wi
 what will be category and what will be tag in your catalog,
 what will be product property and what will be offer property in your catalog.
 
-> Site design greatly affects the catalog structure.
+> Site design greatly affects catalog structure.
 
 ## Step 1: Products and offers
 

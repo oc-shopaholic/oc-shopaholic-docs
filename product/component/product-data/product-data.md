@@ -10,7 +10,7 @@ Usage example:
 {% set obProduct = ProductData.get(10) %}
 {% if obProduct.isNotEmpty() %}
     <div data-id="{{ obProduct.id }}">
-        <h1>{{ obProduct.name }}</h1>
+        <h2>{{ obProduct.name }}</h2>
         {% if obProduct.preview_image is not empty %}
             <img src="{{ obProduct.preview_image.path }}" title="{{ obProduct.preview_image.title }}" alt="{{ obProduct.preview_image.description }}">
         {% endif %}

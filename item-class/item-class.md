@@ -1,6 +1,6 @@
 # ElementItem classes {docsify-ignore-all}
 
-Task we want to solve is caching the model data.
+Task we want to solve is caching  model data.
 If we get model object and try to save it in cache, we get **"Serialization of 'Closure' is not allowed"** error.
 
 You can check this by running next code:
@@ -9,8 +9,8 @@ $obProduct = \Lovata\Shopaholic\Models\Product::first();
 \Cache::set('product_first', $obProduct, 600);
 ```
 
-To solve this task, we created ElementItem classes, that **store the model data as an array**.
-The object of ElementItem class allows you to get cached values from array in the same way you would when getting data from a model object.
+To solve this task, we created ElementItem classes, that **store  model data as array**.
+The object of ElementItem class allows you to get cached values from array in  same way you would when getting data from model object.
 
 For example:
 ```php
@@ -35,7 +35,7 @@ start
 if (Does cache is exist?) then (yes)
 else (no)
     :Get Product model with ID = 1 from database;
-    :Preparing an array to save to cache;
+    :Preparing array to save to cache;
     :Getting list of fields to be saved to cache\nfrom **$cached** property of Product model;
     note left
     You can easily add fields
@@ -71,7 +71,7 @@ stop
 * iElementID - model element ID
 * obElement - model object, optional parameter
 
-Static method used to create a new object of the ElementItem class. The element's data array will be filled from cache.
+Static method used to create new object of  ElementItem class. The element's data array will be filled from cache.
 ```php
 $obItem = ElementItem::make(1);
 ```
@@ -80,8 +80,8 @@ $obItem = ElementItem::make(1);
   * iElementID - model element ID
   * obElement - model object, optional parameter
 
-Static method used to create a new object of the ElementItem class.
-Element's data array will be filled from the model's object without using cache.
+Static method used to create new object of  ElementItem class.
+Element's data array will be filled from  model's object without using cache.
 ```php
 $obItem = ElementItem::makeNoCache(1);
 ``` 
@@ -89,14 +89,14 @@ $obItem = ElementItem::makeNoCache(1);
 ### clearCache($iElementID)
   * iElementID - model element ID
 
-Static method for clearing an element's cache.
+Static method for clearing element's cache.
 ```php
 ElementItem::clearCache(1);
 ```
 
 ### getObject()
 
-Method returns the model's object.
+Method returns  model's object.
 ```php
 $obItem = ElementItem::make(10);
 $obModel = $obItem->getObject();
@@ -104,7 +104,7 @@ $obModel = $obItem->getObject();
 
 ### isEmpty()
 
-Method returns true, if  filling element's data from an object or cache was **failed**.
+Method returns true, if  filling element's data from object or cache was **failed**.
 ```php
 $obItem = ElementItem::make(10);
 if($obItem->isEmpty()) {
@@ -114,7 +114,7 @@ if($obItem->isEmpty()) {
 
 ### isNotEmpty()
 
-Method returns true, if  filling element's data from an object or cache was **successfully completed**.
+Method returns true, if  filling element's data from object or cache was **successfully completed**.
 ```php
 $obItem = ElementItem::make(10);
 if($obItem->isNotEmpty()) {
@@ -124,7 +124,7 @@ if($obItem->isNotEmpty()) {
 
 ### toArray()
 
-Method returns an array of the elements data.
+Method returns array of  elements data.
 ```php
 $obItem = ElementItem::make(10);
 return $obItem->toArray();
@@ -132,7 +132,7 @@ return $obItem->toArray();
 
 ### toJSON()
 
-Method returns a JSON string of the elements data array.
+Method returns JSON string of  elements data array.
 ```php
 $obItem = ElementItem::make(10);
 return $obItem->toJSON();
@@ -177,11 +177,11 @@ echo $obItem->my_property;
 
 ## Integration with [Translate](http://octobercms.com/plugin/rainlab-translate) plugin
 
-You can work with translatable fields without addition methods. The field value will then contain the active language value.
+You can work with translatable fields without addition methods. The field value will then contain  active language value.
 ```php
 echo $obElementItem->name;
 ```
-You can use the **getLangAttribute** method to get field values for a non-active language.
+You can use  **getLangAttribute** method to get field values for non-active language.
 ```php
 echo $obElementItem->getLangAttribute( 'name', 'ru');
 ```

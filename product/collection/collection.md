@@ -5,7 +5,7 @@
 
 ### active()
 
-Method applies a filter to the field "active" = true  for the elements of a collection.
+Method applies filter to field "active" = true  for elements of collection.
 
 ### brand($iBrandID)
   * $iBrandID - product brand ID
@@ -27,7 +27,7 @@ $obList = ProductCollection::make()->campaign(2);
   * $iCategoryID - product category ID or array with ID of categories
   * $bWithChildren - flag, if == true, then method returns list of products for category with ID == $iCategoryID + products of children categories 
 
-Method applies a filter by the category ID.
+Method applies filter by category ID.
 ```php
 $obList = ProductCollection::make()->category(2);
 
@@ -75,7 +75,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByDiscount();
 
 ### filterByPrice($fStartPrice, $fStopPrice, _[$iPriceTypeID = null]_)
 
-Method applies a filter by range of offer price from $fStartPrice to $fStopPrice. Method available with [Filter for Shopaholic](plugins/home.md#filter-for-shopaholic) plugin.
+Method applies filter by range of offer price from $fStartPrice to $fStopPrice. Method available with [Filter for Shopaholic](plugins/home.md#filter-for-shopaholic) plugin.
 
 If $fStartPrice has empty value, then method applies filter by range of offer price from 0 to $fStopPrice.
 If $fStopPrice has empty value, then method applies filter by range of offer price from $fStartPrice.
@@ -87,7 +87,7 @@ If $fStopPrice and $fStartPrice has empty value, then method isn't  apply filter
 
 ### filterByProperty($arFilterList, $obPropertyList, _[$obOfferList = null]_)
   * $arFilterList - array with filter values
-  * $obPropertyList - object [FilterPropertyCollection](property/collection/filter-collection.md)
+  * $obPropertyList - object [FilterPropertyCollection](property/collection/collection.md#filterpropertycollection)
   * $obOfferList - object [OfferCollection](offer/collection/collection.md) - filtered offer collection. Only these offers will be involved in filtering of products.
 
 Method applies filter by product or offer properties.
@@ -145,7 +145,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, 
 
 ### filterByQuantity()
 
-Method applies filter and returns product list with offers that have a quantity value > 0. Method available with [Filter for Shopaholic](plugins/home.md#filter-for-shopaholic) plugin.
+Method applies filter and returns product list with offers that have quantity value > 0. Method available with [Filter for Shopaholic](plugins/home.md#filter-for-shopaholic) plugin.
 ```php
 $obList = ProductCollection::make([1,2,10,15])->filterByQuantity();
 ```
@@ -181,7 +181,7 @@ $obList = ProductCollection::make()->label(2);
 ### promo($iPromoBlockID)
   * $iPromoBlockID - promo block ID
 
-Method applies filter by promo block ID. The method uses **[shopaholic.promo_block.get.product.list](product/event/event.md#shopaholicpromo_blockgetproductlist)** event to extend the list of products.
+Method applies filter by promo block ID. Method uses **[shopaholic.promo_block.get.product.list](product/event/event.md#shopaholicpromo_blockgetproductlist)** event to extend list of products.
 ```php
 $obList = ProductCollection::make()->promo(2);
 ```
@@ -198,14 +198,14 @@ $obList = ProductCollection::make()->promoBlock(2);
   * $sSearchString - search string
 
 Method search elements by name, code, preview_text, description, search_synonym, search_content fields.
-Method available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins  .
+Method available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins.
 ```php
 $obList = ProductCollection::make()->search('test search');
 ```
 
 ### sort($sSorting)
 
-Method sorts the elements of collection by $sSorting value.
+Method sorts elements of collection by $sSorting value.
 Available sorting value:
   * 'no' - default value
   * 'price|asc'
@@ -248,7 +248,7 @@ $obList = ProductCollection::make()->tag(2);
 
 ### viewed()
 
-Method returns the list of viewed products. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method returns list of viewed products. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
 ```php
 $obList = ProductCollection::make()->viewed()->active();
 ```

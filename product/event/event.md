@@ -2,7 +2,7 @@
 
 ## **shopaholic.promo_block.get.product.list**
 
-The event allows you to extend the list of products for promo block
+The event allows you to extend list of products for promo block
 
 For example:
 ```php

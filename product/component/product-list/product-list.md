@@ -52,7 +52,7 @@ Method returns new object of [ProductCollection](product/collection/collection.m
     {# Render pagination buttons #}
     {% if arPaginationList is not empty %}
         {% for arPagination in arPaginationList %}
-            <a href="#{{ arPagination.value }}" class="{{ arPagination.class }}">{{ arPagination.name }}</a>
+            <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-page="{{ arPagination.value }}">{{ arPagination.name }}</a>
         {% endfor %}
     {% endif %}
 {% endif %}
