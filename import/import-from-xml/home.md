@@ -108,7 +108,8 @@ php artisan shopaholic:import_from_xml --import=brand,category,property,product,
 
 ## Using queues
 
-For big catalog, you can use queues to reduce server load during import. You can enable queues in **"Application settings"**.
+For big catalog, you can use queues to reduce server load during import.
+You can enable queues in **"Application settings"**.
 
 Go to **Backend -> Settings -> Application settings -> "Import" tab**
 ![](./../../assets/images/import-from-xml-settings-8.png)

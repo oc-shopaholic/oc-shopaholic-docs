@@ -1,5 +1,7 @@
 # Plugins end extensions
 
+## Accessories for Shopaholic
+
 ## Campaign for Shopaholic
 
 ## Compare for Shopaholic

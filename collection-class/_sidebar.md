@@ -39,7 +39,7 @@
       * [unshift](collection-class/collection-class.md#unshiftielementid)
   * [Store class](store-class/store-class.md)
 * [Designing of catalog structure](catalog-structure/catalog-structure.md)
-* [Modules](product/home.md)
+* [Modules](modules/home.md)
 * [Events](event/home.md)
 * [Payment gateways](payment-gateways/home.md)
 * [Shipping](shipping/home.md)

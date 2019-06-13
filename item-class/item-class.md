@@ -10,9 +10,7 @@ $obProduct = \Lovata\Shopaholic\Models\Product::first();
 ```
 
 To solve this task, we created ElementItem classes, that **store  model data as array**.
-The object of ElementItem class allows you to get cached values from array in  same way you would when getting data from model object.
-
-For example:
+Object of ElementItem class allows you to get cached values from array in  same way you would when getting data from model object.
 ```php
 //Get product name from model object
 $obProduct = Product::find(1);
@@ -68,26 +66,27 @@ stop
 
 ## Method List
 ### make($iElementID, _[$obElement = null]_)
-* iElementID - model element ID
+* iElementID - element ID
 * obElement - model object, optional parameter
 
-Static method used to create new object of  ElementItem class. The element's data array will be filled from cache.
+Static method used to create new object of ElementItem class.
+Element's data array will be filled from cache.
 ```php
 $obItem = ElementItem::make(1);
 ```
 
 ### makeNoCache($iElementID, _[$obElement = null]_)
-  * iElementID - model element ID
+  * iElementID - element ID
   * obElement - model object, optional parameter
 
-Static method used to create new object of  ElementItem class.
+Static method used to create new object of ElementItem class.
 Element's data array will be filled from  model's object without using cache.
 ```php
 $obItem = ElementItem::makeNoCache(1);
 ``` 
 
 ### clearCache($iElementID)
-  * iElementID - model element ID
+  * iElementID - element ID
 
 Static method for clearing element's cache.
 ```php
@@ -118,7 +117,7 @@ Method returns true, if  filling element's data from object or cache was **succe
 ```php
 $obItem = ElementItem::make(10);
 if($obItem->isNotEmpty()) {
-    //...
+    //to do something
 }
 ```
 
@@ -177,7 +176,8 @@ echo $obItem->my_property;
 
 ## Integration with [Translate](http://octobercms.com/plugin/rainlab-translate) plugin
 
-You can work with translatable fields without addition methods. The field value will then contain  active language value.
+You can work with translatable fields without addition methods.
+Field value will then contain active language value.
 ```php
 echo $obElementItem->name;
 ```
