@@ -1,6 +1,6 @@
 # ElementCollection class {docsify-ignore-all}
 
-The class allow you flexible tool for working with cached lists of elements.
+Class allow you flexible tool for working with cached lists of elements.
 
 ElementCollection class
 and [Collection](https://octobercms.com/docs/services/collections) class from laravel framework have some methods,
@@ -11,7 +11,7 @@ and [Collection](https://octobercms.com/docs/services/collections) class
 from laravel framework are same is wrong.
 
 Object of ElementCollection class processes arrays of element IDs without getting full data of elements.
-Object receive ElementItem objects only in methods of getting lists of items
+Object creates [ElementItem](item-class/item-class.md#elementitem-classes) objects only in methods of getting lists of items
 (For example: [take](collection-class/collection-class.md#takeicount-0), [page](collection-class/collection-class.md#pageipage-ielementonpage-10), [random](collection-class/collection-class.md#randomicount), [first](collection-class/collection-class.md#first) and etc.).
 
 Methods of ElementCollection class uses [Store classes](store-class/store-class.md) to get cached lists in element IDs.
@@ -54,6 +54,7 @@ stop
 ## Extending
 
 You can add dynamic methods and properties in collection class with using [extending constructors](http://octobercms.com/docs/services/behaviors#constructor-extension).
+It is default function of OctoberCMS.
 
 **Example**
 ```php
@@ -66,7 +67,7 @@ ElementCollection::extend(function($obCollection) {
 
 ## Method List:
 ### make(_[$arElementIDList = []]_)
-  * arElementIDList - array of element ID
+  * arElementIDList - array with element IDs
 
 Static method. Used to create new object of  ElementCollection class.
 ```php
@@ -75,11 +76,7 @@ $obList = ElementCollection::make([1, 2, 10, 15]);
 
 ### all()
 
-Method returns array of objects ElementItem with all  elements of collection.
-```php
-$obList = ElementCollection::make([1, 2, 10, 15]);
-return $obList->all();
-```
+Method returns array of objects [ElementItem](item-class/item-class.md#elementitem-classes) with all elements of collection.
 
 ### applySorting($arElementIDList)
  * $arElementIDList - list of element IDs for intersection
@@ -96,10 +93,6 @@ $obList->applySorting($arElementIDList);
 ### clear()
 
 Method clears  collection.
-```php
-$obList = ElementCollection::make([1, 2, 10, 15]);
-$obList->clear();
-```
 
 ### copy()
 
@@ -112,10 +105,6 @@ $obNewList = $obList->copy();
 ### count()
 
 Method returns count of elements in collection.
-```php
-$obList = ElementCollection::make([1, 2, 10, 15]);
-return $obList->count();
-```
 
 ### debug()
 
@@ -220,7 +209,7 @@ Method returns true, if collection contains element with ID = $iElementID.
 ```php
 $obList = ElementCollection::make([1, 2, 10, 15]);
 if($obList->has(10)) {
-    //...
+    //to do something
 }
 ```
 
@@ -260,7 +249,7 @@ Method returns true, if element list **isn't empty**.
 ```php
 $obList = ElementCollection::make([1, 2, 10, 15]);
 if($obList->isNotEmpty()) {
-    //...
+    //to do something
 }
 ```
 
@@ -289,7 +278,7 @@ $obList->merge($arElementIDList);
   * $iPage - current page number
   * $iElementOnPage - count of elements on page
 
-Method returns array of ElementItem objects for $iPage page.
+Method returns array of ElementItem objects for page with number = $iPage.
 ```php
 $obList = ElementCollection::make([1, 2, 10, 15]);
 return $obList->page(2, 10);
