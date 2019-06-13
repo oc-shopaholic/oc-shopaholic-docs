@@ -9,7 +9,8 @@ what will be product property and what will be offer property in your catalog.
 
 ## Step 1: Products and offers
 
-You need to determine what your project will be зкщвгсеы and what will be offers. This is very important decision. Product can not be bought or put in basket.
+You need to determine what your project will be products and what will be offers.
+This is very important decision. Product can not be bought or put in basket.
 
 Product page design should be contain block with offer list. If product page is no offer choice in your project, then you need to create only one offer for each product.
 

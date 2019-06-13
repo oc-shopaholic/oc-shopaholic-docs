@@ -18,7 +18,7 @@ extend of [AbstractPaymentGateway](https://github.com/lovata/oc-shopaholic-plugi
 or implement of [PaymentGatewayInterface](https://github.com/lovata/oc-shopaholic-plugin/wiki/PaymentGatewayInterface) interface.
 * Extend PaymentMethod model. Add payment gateway class.
 ```php
-    PaymentGateway:extend(function ($obElement) {
+    PaymentMethod:extend(function ($obElement) {
         /** @var PaymentMethod $obElement */
         
         $obElement->addGatewayClass('my_custom_payment', PaymentGateway::class);
