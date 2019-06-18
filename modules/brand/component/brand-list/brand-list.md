@@ -1,9 +1,11 @@
 # BrandList component {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
-### make($arElementIDList = null)
+### make(_[$arElementIDList = null]_)
 
 Method returns new object of [BrandCollection](modules/brand/collection/collection.md) class.
 
@@ -33,7 +35,6 @@ Method returns new object of [BrandCollection](modules/brand/collection/collecti
 {% set arBrandList = obBrandList.page(iPage, Pagination.getCountPerPage()) %}
 
 {% if arBrandList is not empty %}
-
     {# Render brand list #}
     <ul>
         {% for obBrand in obBrandList %}
@@ -53,3 +54,5 @@ Method returns new object of [BrandCollection](modules/brand/collection/collecti
 ### onAjaxRequest()
 
 Empty method for ajax requests.
+
+[Back to modules](modules/home.md)

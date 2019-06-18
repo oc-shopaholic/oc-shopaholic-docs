@@ -1,5 +1,7 @@
 # BrandItem {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
@@ -59,3 +61,5 @@ echo $obBrandItem->my_property;
 
 Method returns URL of brand page.
 Method gets list of [BrandPage](modules/brand/component/brand-page/brand-page.md) component attached on page and compiles parameter :slug to generate page URL.
+
+[Back to modules](modules/home.md)

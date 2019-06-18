@@ -3,12 +3,13 @@
 * [Modules](modules/home.md)
   * [Brand](modules/brand/home.md)
     * [Item](modules/brand/item/item.md#branditem)
-      * [Field list](modules/brand/item/item.md#field-list)
-      * [Extending](modules/brand/item/item.md#extending)
-      * Method List
-        * [getPageUrl](modules/brand/item/item.md#getpageurlspagecode-39brand39)
     * [Collection](modules/brand/collection/collection.md)
-    * [Components](modules/brand/component/brand-list/brand-list.md)
+    * Components
+      * [BrandList](modules/brand/component/brand-list/brand-list.md#brandlist-component)
+        * [make](modules/brand/component/brand-list/brand-list.md#makearelementidlist-null)
+        * [onAjaxRequest](modules/brand/component/brand-list/brand-list.md#onajaxrequest)
+      * [BrandPage](modules/brand/component/brand-page/brand-page.md)
+      * [BrandData](modules/brand/component/brand-data/brand-data.md)
     * [Events](modules/brand/event/event.md)
     * [Examples](modules/brand/examples/examples.md)
     * [Extending](modules/brand/extending/extending.md)

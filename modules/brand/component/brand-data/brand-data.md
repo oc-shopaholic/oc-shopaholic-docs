@@ -1,11 +1,14 @@
 # BrandData component {docsify-ignore-all}
-     
+
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
-Usage example:
-```twig
+# get($iElementID)
 
+Method returns [BrandItem](modules/brand/item/item.md#branditem) object with ID = $iElementID.
+```twig
 {# Get brand item with ID = 10 #}
 {% set obBrand = BrandData.get(10) %}
 {% if obBrand.isNotEmpty() %}
@@ -18,3 +21,5 @@ Usage example:
     </div>
 {% endif %}
 ```
+
+[Back to modules](modules/home.md)
