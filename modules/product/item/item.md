@@ -9,11 +9,11 @@
 |id|int|
 |accessory|[ProductCollection](modules/product/collection/collection.md)|Available with ["Accessory for Shopaholic"](plugins/home.md#accessory-for-shopaholic) plugin|
 |active|bool|
-|additional_category|[CategoryCollection](category/collection/collection.md)|collection of additional categories|
+|additional_category|[CategoryCollection](modules/category/collection/collection.md)|collection of additional categories|
 |additional_category_id|array|
 |brand|[BrandItem](modules/brand/item/item.md)|
 |brand_id|int|
-|category|[CategoryItem](category/item/item.md)|
+|category|[CategoryItem](modules/category/item/item.md)|
 |category_id|int|
 |code|string|
 |description|string|
@@ -88,7 +88,7 @@ Method returns true, if product is active and not deleted (not trashed).
 
 Method returns URL of product page.
 Method gets list of [ProductPage](modules/product/component/product-page/product-page.md), [BrandPage](modules/brand/component/brand-page/brand-page.md),
-[CategoryPage](category/component/category-page/category-page.md) components attached on page and compiles list of parameters :slug to generate page URL.
+[CategoryPage](modules/category/component/category-page/category-page.md) components attached on page and compiles list of parameters :slug to generate page URL.
 
 > CategoryPage components must be attached on page so that child categories are higher than parent categories.
 

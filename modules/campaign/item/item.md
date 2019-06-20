@@ -1,5 +1,7 @@
 # CampaignItem {docsify-ignore-all}
-              
+
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
@@ -15,7 +17,7 @@
 |name|string|
 |preview_text|string|
 |product|[ProductCollection](modules/product/collection/collection.md)|
-|promo_block|[PromoBlockItem](promo-block/item/item.md)|
+|promo_block|[PromoBlockItem](modules/promo-block/item/item.md)|
 |promo_block_id|int|
 
 ## Extending
@@ -54,3 +56,5 @@ CampaignItem::extend(function($obItem) {
 $obCampaignItem = CampaignItem::make(1);
 echo $obCampaignItem->my_property;
 ```
+
+[Back to modules](modules/home.md)

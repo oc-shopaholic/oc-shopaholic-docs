@@ -7,7 +7,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|category|[CategoryItem](category/item/item.md)|
+|category|[CategoryItem](modules/category/item/item.md)|
 |category_id|int|
 |description|string|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|

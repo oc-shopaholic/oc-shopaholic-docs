@@ -1,5 +1,7 @@
 # CategoryCollection {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
@@ -19,3 +21,5 @@ Method available with [Search for Shopaholic](plugins/home.md#search-for-shopaho
 ### tree()
 
 Method returns category list of top level. Method returns only active categories.
+
+[Back to modules](modules/home.md)

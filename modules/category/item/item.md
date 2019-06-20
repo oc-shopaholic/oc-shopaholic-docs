@@ -1,5 +1,7 @@
 # CategoryItem {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
@@ -7,7 +9,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|children|[CategoryCollection](category/collection/collection.md)|Collection with **active** children category|
+|children|[CategoryCollection](modules/category/collection/collection.md)|Collection with **active** children category|
 |code|string|
 |description|string|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
@@ -65,11 +67,11 @@ echo $obCategoryItem->my_property;
   * $sPageCode - page file name
 
 Method returns URL of category page.
-Method gets list of [CategoryPage](category/component/category-page/category-page.md) components attached on page and compiles list of parameters :slug to generate page URL.
-[CategoryPage](category/component/category-page/category-page.md) components must be attached on page so that child categories are higher than parent categories.
+Method gets list of [CategoryPage](modules/category/component/category-page/category-page.md) components attached on page and compiles list of parameters :slug to generate page URL.
+[CategoryPage](modules/category/component/category-page/category-page.md) components must be attached on page so that child categories are higher than parent categories.
 
 ```twig
-title = "Product list"
+title = "Catalog"
 url = "/catalog/:parent_category/:category"
 layout = "default"
 is_hidden = 0
@@ -84,6 +86,8 @@ slug = "{{ :parent_category }}"
 slug_required = 1
 smart_url_check = 0
 ```
+
+[Back to modules](modules/home.md)
 
 
 
