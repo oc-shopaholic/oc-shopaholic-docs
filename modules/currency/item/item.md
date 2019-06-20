@@ -1,5 +1,7 @@
 # CurrencyItem {docsify-ignore-all}
-              
+
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
@@ -55,3 +57,5 @@ echo $obCurrencyItem->my_property;
 ### isActive()
 
 Method returns true, if currency is active
+
+[Back to modules](modules/home.md)

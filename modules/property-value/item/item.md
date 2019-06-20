@@ -50,7 +50,7 @@ echo $obPropertyValueItem->my_property;
 ## Method list
 
 ### isDisabled($obProductList, $obOfferList = null)
-  *  ([ProductCollection](https://github.com/lovata/oc-shopaholic-plugin/wiki/ProductCollection)) $obProductList - filtered product collection
-  *  ([OfferCollection](https://github.com/lovata/oc-shopaholic-plugin/wiki/OfferCollection)) $obOfferList - filtered offer collection
+  *  ([ProductCollection](modules/product/collection/collection.md)) $obProductList - filtered product collection
+  *  ([OfferCollection](modules/offer/collection/collection.md)) $obOfferList - filtered offer collection
 
 Method returns true, if you apply filter with value == $this->slug, then filtered product collection will not be empty.

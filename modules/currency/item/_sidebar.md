@@ -2,7 +2,11 @@
 * [Designing of catalog structure](catalog-structure/catalog-structure.md)
 * [Modules](modules/home.md)
   * [Currency](modules/currency/home.md)
-    * [Item](modules/currency/item/item.md)
+    * [Item](modules/currency/item/item.md#currencyitem)
+      * [Field list](modules/currency/item/item.md#field-list)
+      * [Extending](modules/currency/item/item.md#extending)
+      * Method List
+        * [isActive](modules/currency/item/item.md#isactive)
     * [Collection](modules/currency/collection/collection.md)
     * [Components](modules/currency/component/currency-list/currency-list.md)
     * [Examples](modules/currency/examples/examples.md)

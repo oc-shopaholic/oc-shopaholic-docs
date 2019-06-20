@@ -17,7 +17,7 @@ Event::listen(\Lovata\Shopaholic\Classes\Helper\CurrencyHelper::EVENT_GET_ACTIVE
 
 ### **shopaholic.sorting.get.list**
 
-Event allows you to quickly add custom sorting for list of products ([ProductCollection](https://github.com/lovata/oc-shopaholic-plugin/wiki/ProductCollection) class, sort() method)
+Event allows you to quickly add custom sorting for list of products ([ProductCollection](modules/product/collection/collection.md) class, sort() method)
 
 For example:
 ```php
@@ -42,7 +42,7 @@ Event::listen('shopaholic.sorting.get.list', function($sSorting) {
 
 ### **shopaholic.sorting.offer.get.list**
 
-Event allows you to quickly add custom sorting for list of offers ([OfferCollection](https://github.com/lovata/oc-shopaholic-plugin/wiki/OfferCollection) class, sort() method)
+Event allows you to quickly add custom sorting for list of offers ([OfferCollection](modules/offer/collection/collection.md) class, sort() method)
 
 For example:
 ```php
@@ -209,7 +209,7 @@ Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_PRODUCT_LIST, func
 
 ### **shopaholic.promo_block.sorting.get.list**
 
-Event allows you to quickly add custom sorting for list of promo blocks ([PromoBlockCollection](https://github.com/lovata/oc-shopaholic-plugin/wiki/PromoBlockCollection) class, sort() method)
+Event allows you to quickly add custom sorting for list of promo blocks ([PromoBlockCollection](modules/promo-block/collection/collection.md) class, sort() method)
 
 For example:
 ```php

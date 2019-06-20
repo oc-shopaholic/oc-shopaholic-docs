@@ -4,7 +4,12 @@
   * [Currency](modules/currency/home.md)
     * [Item](modules/currency/item/item.md)
     * [Collection](modules/currency/collection/collection.md)
-    * [Components](modules/currency/component/currency-list/currency-list.md)
+    * Components
+      * [CurrencyList](modules/currency/component/currency-list/currency-list.md#currencylist-component)
+        * [make](modules/currency/component/currency-list/currency-list.md#makearelementidlist-null)
+        * [onAjaxRequest](modules/currency/component/currency-list/currency-list.md#onajaxrequest)
+        * [onSwitch](modules/currency/component/currency-list/currency-list.md#onswitch)
+        * [switch](modules/currency/component/currency-list/currency-list.md#switchscurrencycode-null)
     * [Examples](modules/currency/examples/examples.md)
     * [Extending](modules/currency/extending/extending.md)
     * [Advanced usage](modules/currency/advanced-usage/home.md)

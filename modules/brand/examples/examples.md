@@ -91,12 +91,15 @@ Create simple block with random 5 brand list on index page.
 note left
     For example: **pages/index.htm**
 end note
+:Attach BrandList component to page;
 :Create partial "random-brand-list";
 note left
     For example:
     **partials/brand/brand-list**
     **/random-brand-list.htm**
 end note
+:Get BrandCollection object from
+BrandList component;
 :Apply filter by "active" field
 to BrandCollection object;
 :Get array with 5 random
@@ -125,7 +128,7 @@ File: **partials/brand/brand-list/random-brand-list.htm**
 ```twig
 {# Get brand collection #}
 {% set obBrandList = BrandList.make().active() %}
-
+{# Get array with random brands #}
 {% set arBrandList = obBrandList.random(5) %}
 
 {% if arBrandList is not empty %}
@@ -135,13 +138,6 @@ File: **partials/brand/brand-list/random-brand-list.htm**
             <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
         {% endfor %}
     </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-page="{{ arPagination.value }}">{{ arPagination.name }}</a>
-        {% endfor %}
-    {% endif %}
 {% endif %}
 ```
 
@@ -160,12 +156,15 @@ Brand list must have pagination block.
 note left
     For example: **pages/brand-list.htm**
 end note
+:Attach BrandList component to page;
 :Create wrapper for block with list of brands;
 :Create partial "brand-list";
 note left
     For example:
     **partials/brand/brand-list/brand-list.htm**
 end note
+:Get BrandCollection object from
+BrandList component;
 :Apply filter by "active" field
 to BrandCollection object;
 :Apply sorting to BrandCollection object;

@@ -11,7 +11,7 @@ Available properties:
 |---|---|---|
 |slug|{{ :slug }}|URL parameter from page settings|
 |slug_required|0 or 1|If value is 1, component will generate 404 page, if "slug" parameter is empty|
-|smart_url_check|0 or 1|If the value is 1, then component will make additional check for full URL of page|
+|smart_url_check|0 or 1|If value is 1, then component will make additional check for full URL of page|
 
 ### get()
 

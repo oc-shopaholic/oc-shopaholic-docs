@@ -1,5 +1,10 @@
 # Advanced usage {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
+!> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
+[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
 ## CurrencyHelper class
 
 Class allows you to get/set active currencies.
@@ -45,3 +50,5 @@ Method allow you to switch active currency.
 ```php
 CurrencyHelper::instance()->switchActive('usd');
 ```
+
+[Back to modules](modules/home.md)

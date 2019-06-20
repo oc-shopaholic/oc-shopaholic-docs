@@ -1,5 +1,7 @@
 # OfferItem {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
@@ -25,7 +27,7 @@
 |property|[PropertyCollection](modules/property/collection/collection.md)|Object with sorted active offer properties. Available with ["Properties for Shopaholic"](plugins/home.md#properties-for-shopaholic) plugin|
 |quantity|int|
 |slug|string|
-|tax_list|[TaxCollection]()|
+|tax_list|[TaxCollection](modules/tax/collection/collection.md)|
 |tax_percent|float|
 |trashed|bool|
 
@@ -132,3 +134,5 @@ Method set active price type by ID
 ```php
 echo $obOfferItem->setActivePriceType(1)->price;
 ```
+
+[Back to modules](modules/home.md)

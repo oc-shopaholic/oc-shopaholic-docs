@@ -1,5 +1,7 @@
 # OfferCollection{docsify-ignore-all}
-      
+
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
@@ -27,7 +29,7 @@ If **$fStopPrice and $fStartPrice has empty values**, then method isn't  apply f
 
 ### filterByProperty($arFilterList, $obPropertyList)
   * $arFilterList - array with filter values
-  * $obPropertyList - object [FilterPropertyCollection](https://github.com/lovata/oc-shopaholic-plugin/wiki/FilterPropertyCollection)
+  * $obPropertyList - object [FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)
 
 Method applies filter by offer properties.
 Method available with [Filter for Shopaholic](plugins/home.md#filter-for-shopaholic) and [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugins.
@@ -72,3 +74,5 @@ Available sorting value:
 ```php
     $obList = OfferCollection::make([1,2,10,15])->sort('price|desc');
 ```
+
+[Back to modules](modules/home.md)
