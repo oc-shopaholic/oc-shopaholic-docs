@@ -1,5 +1,7 @@
 # Prices {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
@@ -18,3 +20,5 @@ You can create and edit price types by going to **Backend -> Settings -> Price t
 After creating price type you can fill prices in offers
 
 ![](./../../assets/images/backend-price-type-2.png)
+
+[Back to modules](modules/home.md)

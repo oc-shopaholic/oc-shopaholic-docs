@@ -1,5 +1,7 @@
 # ProductItem {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
@@ -20,7 +22,7 @@
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
 |label|[LabelCollection](modules/label/collection/collection.md)|Available with ["Labels for Shopaholic"](plugins/home.md#labels-for-shopaholic) plugin|
 |name|string|
-|offer|[OfferCollection](offer/collection/collection.md)|Collection with **active** offers|
+|offer|[OfferCollection](modules/offer/collection/collection.md)|Collection with **active** offers|
 |offer_id_list|array|**active** offer ID list|
 |preview_image|\System\Models\File|
 |preview_text|string|
@@ -133,3 +135,5 @@ For example: if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, th
 Method returns total count of reviews with rating. Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin.
 
 For example:  if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, then code ```$obProduct->getRatingTotalCount()``` returns 4.
+
+[Back to modules](modules/home.md)

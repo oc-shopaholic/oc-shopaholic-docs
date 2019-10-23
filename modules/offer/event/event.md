@@ -1,5 +1,10 @@
 # Event list: Offer
 
+[Back to modules](modules/home.md)
+
+!> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
+[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
 ## **shopaholic.sorting.offer.get.list**
 
 Event allows you to quickly add custom sorting for list of offers ([OfferCollection](modules/offer/collection/collection.md) class, sort() method)
@@ -22,3 +27,5 @@ Event::listen('shopaholic.sorting.offer.get.list', function($sSorting) {
 ```php
 \Lovata\Shopaholic\Classes\Store\OfferListStore->sorting->clear('my_custom_sorting');
 ```
+
+[Back to modules](modules/home.md)

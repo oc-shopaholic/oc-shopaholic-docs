@@ -1,5 +1,10 @@
 # Event list: Product
 
+[Back to modules](modules/home.md)
+
+!> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
+[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
 ## **shopaholic.promo_block.get.product.list**
 
 The event allows you to extend list of products for promo block
@@ -35,3 +40,5 @@ Event::listen('shopaholic.sorting.get.list', function($sSorting) {
 ```php
 \Lovata\Shopaholic\Classes\Store\ProductListStore->sorting->clear('my_custom_sorting');
 ```
+
+[Back to modules](modules/home.md)

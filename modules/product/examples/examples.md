@@ -1,5 +1,7 @@
 # Examples: Product
 
+[Back to modules](modules/home.md)
+
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
@@ -494,3 +496,5 @@ slug_required = 1
 {% endif %}
 ```
 <!-- tabs:end -->
+
+[Back to modules](modules/home.md)

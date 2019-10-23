@@ -1,5 +1,7 @@
 # Advanced usage {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 ## PriceTypeHelper class
 
 Class allows you to get/set active price type.
@@ -32,3 +34,5 @@ Method allow you to switch active price type.
 ```php
 PriceTypeHelper::instance()->switchActive('b2b');
 ```
+
+[Back to modules](modules/home.md)

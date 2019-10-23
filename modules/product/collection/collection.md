@@ -1,5 +1,7 @@
 # ProductCollection {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
@@ -259,3 +261,5 @@ Method returns list of products from user wish list. Method available with [Wish
 ```php
 $obList = ProductCollection::make()->wishList()->active();
 ```
+
+[Back to modules](modules/home.md)

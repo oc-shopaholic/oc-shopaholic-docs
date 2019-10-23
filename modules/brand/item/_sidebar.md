@@ -2,6 +2,7 @@
 * [Designing of catalog structure](catalog-structure/catalog-structure.md)
 * [Modules](modules/home.md)
   * [Brand](modules/brand/home.md)
+    * [Model](modules/brand/model/model.md)
     * [Item](modules/brand/item/item.md#branditem)
       * [Field list](modules/brand/item/item.md#field-list)
       * [Extending](modules/brand/item/item.md#extending)
