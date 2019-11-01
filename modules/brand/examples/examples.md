@@ -1,17 +1,34 @@
 # Examples: Brand
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ Examples
+/ [Extending](modules/brand/extending/extending.md)
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+* [Example 1: Brand page](#example-1-brand-page)
+* [Example 2: Brand card](#example-2-brand-card)
+* [Example 3: Random brand list](#example-3-random-brand-list)
+* [Example 4: Brand list with pagination](#example-4-brand-list-with-pagination)
+
 ## Example 1: Brand page
 
-### Task
+### 1.1 Task
 
 Create simple brand page and render brand name.
 
-### How can i do it?
+### 1.2 How can i do it?
+
+> Example uses [BrandPage](modules/brand/component/brand-page/brand-page.md) component.
+Component method returns [BrandItem](modules/brand/item/item.md#branditem) class object.
+All available fields and methods of **BrandItem** class you can find in [section](modules/brand/item/item.md#branditem)
 
 ```plantuml
 @startuml
@@ -26,7 +43,7 @@ from BrandPage component;
 @enduml
 ```
 
-### Source code
+### 1.3 Source code
 
 File: **pages/brand.htm**
 ```twig
@@ -51,12 +68,14 @@ smart_url_check = 1
 
 ## Example 2: Brand card
 
-### Task
+### 2.1 Task
 
 Create simple brand card and render brand name, preview_image, preview_text fields.
 Render link on brand page.
 
-### Source code
+> **"obBrand"** is object of [BrandItem](modules/brand/item/item.md#branditem) class.
+
+### 2.2 Source code
 
 Simple example of brand card.
 
@@ -79,11 +98,15 @@ File: **partials/brand/brand-card/brand-card.htm**
 
 ## Example 3: Random brand list
 
-### Task
+### 3.1 Task
 
 Create simple block with random 5 brand list on index page.
 
-### How can i do it?
+### 3.2 How can i do it?
+
+> Example uses [BrandList](modules/brand/component/brand-list/brand-list.md) component.
+Component method returns [BrandCollection](modules/brand/collection/collection.md#brandcollection) class object.
+All available methods of **BrandCollection** class you can find in [section](modules/brand/collection/collection.md#brandcollection)
 
 ```plantuml
 @startuml
@@ -108,7 +131,7 @@ BrandItem objects;
 @enduml
 ```
 
-### Source code
+### 3.3 Source code
 
 File: **pages/index.htm**
 ```twig
@@ -143,12 +166,18 @@ File: **partials/brand/brand-list/random-brand-list.htm**
 
 ## Example 4: Brand list with pagination
 
-### Task
+### 4.1 Task
 
 Create simple page with brand list.
 Brand list must have pagination block.
 
-### How can i do it?
+### 4.2 How can i do it?
+
+> Example uses [BrandList](modules/brand/component/brand-list/brand-list.md) component.
+Component method returns [BrandCollection](modules/brand/collection/collection.md#brandcollection) class object.
+All available methods of **BrandCollection** class you can find in [section](modules/brand/collection/collection.md#brandcollection)
+
+> You can find more information about **Pagination** component [here](modules/pagination/home.md)
 
 ```plantuml
 @startuml
@@ -186,7 +215,7 @@ and update HTML code inside wrapper block;
 @enduml
 ```
 
-### Source code
+### 4.3 Source code
 
 File: **pages/brand-list.htm**
 ```twig
@@ -260,3 +289,11 @@ File: **partials/brand/brand-list/brand-list.htm**
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ Examples
+/ [Extending](modules/brand/extending/extending.md)

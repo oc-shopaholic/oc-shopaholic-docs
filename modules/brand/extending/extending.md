@@ -1,9 +1,33 @@
 # Extending: Brand
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ Extending
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+* [Add custom field](#add-custom-field)
+  * [Step 1: Create custom plugin](#step-1-create-custom-plugin)
+  * [Step 2: Create field in database](#step-2-create-field-in-database)
+  * [Step 3: Add field in backend](#step-3-add-field-in-backend)
+  * [Step 4: Add field to cache](#step-4-add-field-to-cache)
+  * [Step 5: Render field in template](#step-5-render-field-in-template)
+* [Add custom filter](#add-custom-filter)
+  * [Step 1: Add custom method to collection](#step-1-add-custom-method-to-collection)
+  * [Step 2: Render list with custom filter](#step-2-render-list-with-custom-filter)
+* [Add custom filter with caching](#add-custom-filter-with-caching)
+  * [Step 1: Create custom store](#step-1-create-custom-store)
+  * [Step 2: Adding cache flush](#step-2-adding-cache-flush)
+  * [Step 3: Add custom method to collection](#step-3-add-custom-method-to-collection)
+  * [Step 4: Render list with custom filter](#step-4-render-list-with-custom-filter)
+  
 
 ## Add custom field
 
@@ -523,3 +547,11 @@ public function boot()
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ Extending

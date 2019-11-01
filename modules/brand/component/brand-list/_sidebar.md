@@ -8,7 +8,6 @@
     * Components
       * [BrandList](modules/brand/component/brand-list/brand-list.md#brandlist-component)
         * [make](modules/brand/component/brand-list/brand-list.md#makearelementidlist-null)
-        * [onAjaxRequest](modules/brand/component/brand-list/brand-list.md#onajaxrequest)
       * [BrandPage](modules/brand/component/brand-page/brand-page.md)
       * [BrandData](modules/brand/component/brand-data/brand-data.md)
     * [Events](modules/brand/event/event.md)

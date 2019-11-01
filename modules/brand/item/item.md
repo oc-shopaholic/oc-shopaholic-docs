@@ -1,8 +1,17 @@
 # BrandItem {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ Item
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)
 
-!> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
+!> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
+[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
 
@@ -56,10 +65,18 @@ echo $obBrandItem->my_property;
 
 ## Method List:
 
-### getPageUrl($sPageCode = 'brand')
+### getPageUrl(_[$sPageCode = 'brand']_)
   * $sPageCode - page file name
 
 Method returns URL of brand page.
-Method gets list of [BrandPage](modules/brand/component/brand-page/brand-page.md) component attached on page and compiles parameter :slug to generate page URL.
+Method gets properties of [BrandPage](modules/brand/component/brand-page/brand-page.md) component attached on page and compiles parameter :slug to generate page URL.
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ Item
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)

@@ -1,13 +1,24 @@
 # BrandCollection {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ Collection
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+!> **Attention!** **BrandCollection** extends [ElementCollection class](collection-class/collection-class.md).
+All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
+
 ### active()
 
-Method applies filter to field "active" = true for elements of collection.
+Method applies filter to field "active" == true for elements of collection.
 
 ### category($iCategoryID)
   * $iCategoryID - product category ID
@@ -30,6 +41,16 @@ Method available with [Search for Shopaholic](plugins/home.md#search-for-shopaho
 
 ### sort()
 
-Method sorts elements of collection by "sort_order" field.
+Method sorts elements of collection by "sort_order" field. You can change sorting of brands by going to **Backend -> Catalog -> Brands -> Reorder records**
+
+![](./../../../assets/images/backend-brand-5.png)
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ Collection
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)

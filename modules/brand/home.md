@@ -1,6 +1,14 @@
 # Brand {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -24,3 +32,11 @@ You can import brands from XML and CSV files.
 ![](./../../assets/images/backend-brand-3.png)
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)

@@ -1,6 +1,14 @@
 # BrandData component {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ Components
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -23,3 +31,11 @@ Method returns [BrandItem](modules/brand/item/item.md#branditem) object with ID 
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ [Model](modules/brand/model/model.md)
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ Components
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)

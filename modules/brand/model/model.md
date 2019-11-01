@@ -1,8 +1,17 @@
 # Brand model {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ Model
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)
 
-!> **Attention!**  We recommend that you read [Architecture](home.md#architecture) and [ElementItem class](item-class/item-class.md) sections for complete understanding of  project architecture.
+!> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
+[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 ## Field list
 
@@ -51,3 +60,11 @@ You can add dynamic methods and properties in model class with using [extending 
 It is default function of OctoberCMS.
 
 [Back to modules](modules/home.md)
+/ [Home](modules/brand/home.md)
+/ Model
+/ [Item](modules/brand/item/item.md)
+/ [Collection](modules/brand/collection/collection.md)
+/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Events](modules/brand/event/event.md)
+/ [Examples](modules/brand/examples/examples.md)
+/ [Extending](modules/brand/extending/extending.md)
