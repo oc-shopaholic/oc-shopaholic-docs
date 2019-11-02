@@ -1,6 +1,13 @@
 # OfferItem {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/offer/home.md)
+/ [Model](modules/offer/model/model.md)
+/ Item
+/ [Collection](modules/offer/collection/collection.md)
+/ [Events](modules/offer/event/event.md)
+/ [Examples](modules/offer/examples/examples.md)
+/ [Extending](modules/offer/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -11,23 +18,30 @@
 |-------|------|--------|
 |id|int|
 |active|bool|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |currency|string|Active currency symbol. For example: $|
 |currency_code|string|Active currency code. For example: USD|
 |description|string|
+|digital_product_period|[DigitalProductPeriodItem](modules/digitalproductperiod/item/item.md)|Available with [Digital products for Shopaholic](plugins/home.md#digital-products-for-shopaholic) plugin|
+|digital_product_period_id|int|Available with [Digital products for Shopaholic](plugins/home.md#digital-products-for-shopaholic) plugin|
 |discount|[DiscountItem](modules/discount/item/item.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |discount_id|int|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |discount_type|string|Available values: fixed, percent. Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |discount_value|float|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
+|images_facebook|\October\Rain\Database\Collection, \System\Models\File[]|Available with [Facebook for Shopaholic](plugins/home#facebook-for-shopaholic) plugin|
+|images_vkontakte|\October\Rain\Database\Collection, \System\Models\File[]|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
+|images_yandex|\October\Rain\Database\Collection, \System\Models\File[]|Available with [Yandex Market for Shopaholic](plugins/home#yandex-market-for-shopaholic) plugin|
 |name|string|
 |preview_image|\System\Models\File|
+|preview_image_facebook|\System\Models\File|Available with [Facebook for Shopaholic](plugins/home#facebook-for-shopaholic) plugin|
+|preview_image_vkontakte|\System\Models\File|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
+|preview_image_yandex|\System\Models\File|Available with [Yandex Market for Shopaholic](plugins/home#yandex-market-for-shopaholic) plugin|
 |preview_text|string|
 |product|[ProductItem](modules/product/item/item.md)|
 |product_id|int|
-|property|[PropertyCollection](modules/property/collection/collection.md)|Object with sorted active offer properties. Available with ["Properties for Shopaholic"](plugins/home.md#properties-for-shopaholic) plugin|
+|property|[PropertyCollection](modules/property/collection/collection.md)|Object with sorted active offer properties. Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugin|
 |quantity|int|
-|slug|string|
 |tax_list|[TaxCollection](modules/tax/collection/collection.md)|
 |tax_percent|float|
 |trashed|bool|
@@ -137,3 +151,10 @@ echo $obOfferItem->setActivePriceType(1)->price;
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/offer/home.md)
+/ [Model](modules/offer/model/model.md)
+/ Item
+/ [Collection](modules/offer/collection/collection.md)
+/ [Events](modules/offer/event/event.md)
+/ [Examples](modules/offer/examples/examples.md)
+/ [Extending](modules/offer/extending/extending.md)

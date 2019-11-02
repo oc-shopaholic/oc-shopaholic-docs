@@ -27,7 +27,7 @@
 |offer_id_list|array|**active** offer ID list|
 |preview_image|\System\Models\File|
 |preview_text|string|
-|property|[PropertyCollection](modules/property/collection/collection.md)|Object with sorted active product properties. Available with ["Properties for Shopaholic"](plugins/home.md#properties-for-shopaholic) plugin|
+|property|[PropertyCollection](modules/property/collection/collection.md)|Object with sorted active product properties. Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugin|
 |rating|float|Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin|
 |rating_data|array|For example: [1 => 0, 2 => 4, 3 => 7, 4 => 21, 5 => 48]<br><br>Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin|
 |related|[ProductCollection](modules/product/collection/collection.md)|Available with ["Related products for Shopaholic"](plugins/home.md#related-products-for-shopaholic) plugin|

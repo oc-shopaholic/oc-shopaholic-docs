@@ -39,12 +39,12 @@ Attach one: **preview_image**, attach many: **images**.
 
 ## Relations
 
-|Type|Name|Description|
-|-----|-----|-----|
-|BelongsToMany|campaign|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
-||coupon_group|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
-||discount|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
-|HasMany|product|
+|Type|Name|Model|Description|
+|-----|-----|-----|-----|
+|BelongsToMany|campaign|[Campaign](modules/campaign/model/model.md)|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
+||coupon_group|[CouponGroup](modules/coupongroup/model/model.md)|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
+||discount|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|HasMany|product|[Product](modules/product/model/model.md)|
 
 
 ## Search fields

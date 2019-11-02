@@ -10,6 +10,10 @@
 
 ## Discounts for Shopaholic
 
+## Digital products for Shopaholic
+
+## Facebook for Shopaholic
+
 ## Filter for Shopaholic
 
 ## Labels for Shopaholic
@@ -33,3 +37,5 @@
 ## VK Goods for Shopaholic
 
 ## Wish list for Shopaholic
+
+## Yandex Market for Shopaholic

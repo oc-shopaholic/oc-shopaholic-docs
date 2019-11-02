@@ -18,7 +18,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |description|string|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
 |name|string|

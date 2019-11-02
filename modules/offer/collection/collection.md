@@ -1,9 +1,27 @@
 # OfferCollection{docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/offer/home.md)
+/ [Model](modules/offer/model/model.md)
+/ [Item](modules/offer/item/item.md)
+/ Collection
+/ [Events](modules/offer/event/event.md)
+/ [Examples](modules/offer/examples/examples.md)
+/ [Extending](modules/offer/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+!> **Attention!** **BrandCollection** extends [ElementCollection class](collection-class/collection-class.md).
+All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
+
+* [active](#active)
+* [filterByDiscount](#filterbydiscount)
+* [filterByPrice($fStartPrice, $fStopPrice, _[$iPriceTypeID = null]_)](#filterbypricefstartprice-fstopprice-ipricetypeid-null)
+* [filterByProperty($arFilterList, $obPropertyList)](#filterbypropertyarfilterlist-obpropertylist)
+* [filterByQuantity()](#filterbyquantity)
+* [getTotalQuantity()](#gettotalquantity)
+* [sort($sSorting)](#sortssorting)
 
 ### active()
 
@@ -75,4 +93,13 @@ Available sorting value:
     $obList = OfferCollection::make([1,2,10,15])->sort('price|desc');
 ```
 
+> You can use [**shopaholic.sorting.offer.get.list**](modules/offer/event/event.md#shopaholicsortingoffergetlist) event and add custom sorting for list of offers
+
 [Back to modules](modules/home.md)
+/ [Home](modules/offer/home.md)
+/ [Model](modules/offer/model/model.md)
+/ [Item](modules/offer/item/item.md)
+/ Collection
+/ [Events](modules/offer/event/event.md)
+/ [Examples](modules/offer/examples/examples.md)
+/ [Extending](modules/offer/extending/extending.md)

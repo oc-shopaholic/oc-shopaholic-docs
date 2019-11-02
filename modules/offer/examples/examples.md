@@ -1,17 +1,27 @@
 # Examples: Offer
 
 [Back to modules](modules/home.md)
+/ [Home](modules/offer/home.md)
+/ [Model](modules/offer/model/model.md)
+/ [Item](modules/offer/item/item.md)
+/ [Collection](modules/offer/collection/collection.md)
+/ [Events](modules/offer/event/event.md)
+/ Examples
+/ [Extending](modules/offer/extending/extending.md)
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+* [Example 1: Product page](#example-1-product-page)
+* [Example 2: Product card](#example-2-product-card)
+
 ## Example 1: Product page
 
-### Task
+### 1.1 Task
 
 Create simple product page and render select with offers. Render block with offer price and currency.
 
-### How can i do it?
+### 1.2 How can i do it?
 
 ```plantuml
 @startuml
@@ -41,7 +51,7 @@ from ProductItem object;
 @enduml
 ```
 
-### Source code
+### 1.3 Source code
 <!-- tabs:start -->
 #### ** Variant 1 **
 
@@ -80,7 +90,7 @@ slug_required = 1
     </div>
 {% endif %}
 {# Get offer list #}
-{% set obOfferList = obProduct.offer.myCustomMethod() %}
+{% set obOfferList = obProduct.offer %}
 {# Render select with offers #}
 {% if obOfferList.isNotEmpty() %}
     <select>
@@ -138,7 +148,7 @@ slug_required = 1
     </div>
 {% endif %}
 {# Get offer list #}
-{% set obOfferList = obProduct.offer.myCustomMethod() %}
+{% set obOfferList = obProduct.offer %}
 {# Render select with offers #}
 {% if obOfferList.isNotEmpty() %}
     <select>
@@ -201,7 +211,7 @@ slug_required = 1
     </div>
 {% endif %}
 {# Get offer list #}
-{% set obOfferList = obProduct.offer.myCustomMethod() %}
+{% set obOfferList = obProduct.offer %}
 {# Render select with offers #}
 {% if obOfferList.isNotEmpty() %}
     <select>
@@ -215,12 +225,14 @@ slug_required = 1
 
 ## Example 2: Product card
 
-
-### Task
+### 2.1 Task
 Create simple product card and render product name, preview_image, preview_text fields.
 Render link on product page. Render block with offer price and currency.
 
-### Source code
+> **"obProduct"** is object of [ProductItem](modules/product/item/item.md#productitem) class.
+
+### 2.2 Source code
+
 Simple example of product card.
 
 File: **partials/product/product-card/product-card.htm**
@@ -255,3 +267,10 @@ File: **partials/product/product-card/product-card.htm**
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/offer/home.md)
+/ [Model](modules/offer/model/model.md)
+/ [Item](modules/offer/item/item.md)
+/ [Collection](modules/offer/collection/collection.md)
+/ [Events](modules/offer/event/event.md)
+/ Examples
+/ [Extending](modules/offer/extending/extending.md)

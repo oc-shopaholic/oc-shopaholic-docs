@@ -1,6 +1,13 @@
 # Offer {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/offer/model/model.md)
+/ [Item](modules/offer/item/item.md)
+/ [Collection](modules/offer/collection/collection.md)
+/ [Events](modules/offer/event/event.md)
+/ [Examples](modules/offer/examples/examples.md)
+/ [Extending](modules/offer/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -131,3 +138,10 @@ You can import offers from XML and CSV files.
 ![](./../../assets/images/backend-offer-2.png)
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/offer/model/model.md)
+/ [Item](modules/offer/item/item.md)
+/ [Collection](modules/offer/collection/collection.md)
+/ [Events](modules/offer/event/event.md)
+/ [Examples](modules/offer/examples/examples.md)
+/ [Extending](modules/offer/extending/extending.md)

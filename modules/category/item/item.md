@@ -20,18 +20,18 @@
 |id|int|
 |children|[CategoryCollection](modules/category/collection/collection.md)|Collection with **active** children category|
 |category_vk_id|int|Field available with [VK Goods for Shopaholic](/plugins/home.md#vk-goods-for-shopaholic)|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |description|string|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
 |name|string|
 |nest_depth|int|
-|offer_filter_property|[FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)|Available with ["Properties for Shopaholic"](plugins/home.md#properties-for-shopaholic) and ["Filter for Shopaholic"](plugins/home.md#filter-for-shopaholic) plugins|
+|offer_filter_property|[FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)|Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) and ["Filter for Shopaholic"](plugins/home.md#filter-for-shopaholic) plugins|
 |parent|CategoryItem|Object of parent category|
 |parent_id|int|
 |preview_image|\System\Models\File|
 |preview_text|string|
 |product_count|int|
-|product_filter_property|[FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)|Available with ["Properties for Shopaholic"](plugins/home.md#properties-for-shopaholic) and ["Filter for Shopaholic"](plugins/home.md#filter-for-shopaholic) plugins|
+|product_filter_property|[FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)|Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) and ["Filter for Shopaholic"](plugins/home.md#filter-for-shopaholic) plugins|
 |slug|string|
 |updated_at|\October\Rain\Argon\Argon|
 

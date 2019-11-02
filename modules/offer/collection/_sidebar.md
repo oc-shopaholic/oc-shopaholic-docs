@@ -2,6 +2,7 @@
 * [Designing of catalog structure](catalog-structure/catalog-structure.md)
 * [Modules](modules/home.md)
   * [Offer](modules/offer/home.md)
+    * [Model](modules/offer/model/model.md)
     * [Item](modules/offer/item/item.md)
     * [Collection](modules/offer/collection/collection.md#offercollection)
       * [active](modules/offer/collection/collection.md#active)
