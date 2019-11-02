@@ -45,7 +45,7 @@ Method returns new object of [BrandCollection](modules/brand/collection/collecti
 {% if arBrandList is not empty %}
     {# Render brand list #}
     <ul>
-        {% for obBrand in obBrandList %}
+        {% for obBrand in arBrandList %}
             <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
         {% endfor %}
     </ul>

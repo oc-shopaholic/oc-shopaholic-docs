@@ -17,6 +17,7 @@
 * [Example 2: Brand card](#example-2-brand-card)
 * [Example 3: Random brand list](#example-3-random-brand-list)
 * [Example 4: Brand list with pagination](#example-4-brand-list-with-pagination)
+* [Example 5: Filter panel with brands](example-5-filter-panel-with-brands)
 
 ## Example 1: Brand page
 
@@ -157,7 +158,7 @@ File: **partials/brand/brand-list/random-brand-list.htm**
 {% if arBrandList is not empty %}
     {# Render brand list #}
     <ul>
-        {% for obBrand in obBrandList %}
+        {% for obBrand in arBrandList %}
             <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
         {% endfor %}
     </ul>
@@ -270,7 +271,7 @@ File: **partials/brand/brand-list/brand-list.htm**
 {% if arBrandList is not empty %}
     {# Render brand list #}
     <ul>
-        {% for obBrand in obBrandList %}
+        {% for obBrand in arBrandList %}
             <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
         {% endfor %}
     </ul>
@@ -285,6 +286,91 @@ File: **partials/brand/brand-list/brand-list.htm**
     <div>
         Brands not found
     </div>
+{% endif %}
+```
+
+## Example 5: Filter panel with brands
+
+### 5.1 Task
+
+Create simple catalog page with filter panel by brands.
+Apply filter by category ID to brand list.  
+
+### 5.2 How can i do it?
+
+> Example uses [BrandList](modules/brand/component/brand-list/brand-list.md) component.
+Component method returns [BrandCollection](modules/brand/collection/collection.md#brandcollection) class object.
+All available methods of **BrandCollection** class you can find in [section](modules/brand/collection/collection.md#brandcollection)
+
+```plantuml
+@startuml
+:Create catalog page file;
+note left
+    For example: **pages/catalog.htm**
+end note
+:Attach BrandList component to page;
+:Attach CategoryPage component to page;
+:Create partial "filter-brand-list";
+note left
+    For example:
+    **partials/brand/brand-list**
+    **/filter-brand-list.htm**
+end note
+:Get CategoryItem object from
+CategoryPage component;
+:Get BrandCollection object from
+BrandList component;
+:Apply filter by "active" field
+to BrandCollection object;
+:Apply filter by "category" field
+to BrandCollection object;
+:Get array with BrandItem objects;
+:Render brand list;
+@enduml
+```
+
+### 5.3 Source code
+
+File: **pages/catalog.htm**
+```twig
+title = "Catalog"
+url = "/catalog/:category"
+layout = "main"
+is_hidden = 0
+
+[CategoryPage]
+slug = "{{ :category }}"
+slug_required = 1
+smart_url_check = 1
+
+[ProductList]
+sorting = "popularity|desc"
+
+[BrandList]
+==
+<div class="filter-brand-wrapper">
+    {% partial 'brand/brand-list/filter-brand-list' %}
+</div>
+```
+
+File: **partials/brand/brand-list/filter-brand-list.htm**
+```twig
+{# Get CategoryItem object #}
+{% set obCategory = CategoryPage.get() %}
+
+{# Get brand collection #}
+{% set obBrandList = BrandList.make().active().sort().category(obCategory.id) %}
+
+{% if obBrandList.isNotEmpty() %}
+    {# Render brand list #}
+    <ul>
+        {% for obBrand in obBrandList %}
+            <li>
+                <input type="checkbox" name="filter-brand" value="{{ obBrand.slug }}" id="brand-{{ obBrand.id }}">
+                <label for="brand-{{ obBrand.id }}">{{ obBrand.name }}</label>
+            </li>
+        {% endfor %}
+    </ul>
 {% endif %}
 ```
 

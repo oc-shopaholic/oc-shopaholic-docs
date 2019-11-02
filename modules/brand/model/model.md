@@ -59,6 +59,15 @@ Search fields available with [Search for Shopaholic](plugins/home.md#search-for-
 You can add dynamic methods and properties in model class with using [extending constructors](http://octobercms.com/docs/services/behaviors#constructor-extension).
 It is default function of OctoberCMS.
 
+```php
+Brand::extend(function ($obBrand) {
+    /** @var Brand $obBrand */
+    $obBrand->fillable[] = 'my_field';
+    
+    $obBrand->addCachedField(['my_field']);
+});
+```
+
 [Back to modules](modules/home.md)
 / [Home](modules/brand/home.md)
 / Model

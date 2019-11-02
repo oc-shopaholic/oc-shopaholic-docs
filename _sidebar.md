@@ -1,5 +1,10 @@
 * Introduction
   * [Architecture](home.md#architecture)
+      * [Directory structure](home.md#directory-structure)
+      * [Migration and seeder files](home.md#migration-and-seeder-files)
+      * [Model classes](home.md#model-classes)
+      * [Caching](home.md#caching)
+      * [Components](home.md#components)
   * [ElementItem class](item-class/item-class.md)
   * [ElementCollection class](collection-class/collection-class.md)
   * [Store class](store-class/store-class.md)
