@@ -27,7 +27,6 @@
   * [Step 2: Adding cache flush](#step-2-adding-cache-flush)
   * [Step 3: Add custom method to collection](#step-3-add-custom-method-to-collection)
   * [Step 4: Render list with custom filter](#step-4-render-list-with-custom-filter)
-  
 
 ## Add custom field
 
@@ -327,6 +326,9 @@ public function boot()
 ### Step 2: Render list with custom filter
 
 ```twig
+[CategoryList]
+==
+
 {% set obCategoryList = CategoryList.make().active().myCustomMethod() %}
 {% if obCategoryList.isNotEmpty() %}
     <ul>
@@ -536,6 +538,9 @@ public function boot()
 ### Step 4: Render list with custom filter
 
 ```twig
+[CategoryList]
+==
+
 {% set obCategoryList = CategoryList.make().active().myCustomMethod() %}
 {% if obCategoryList.isNotEmpty() %}
     <ul>

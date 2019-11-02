@@ -8,7 +8,7 @@
     * [Components](modules/brand/component/component.md)
     * [Events](modules/brand/event/event.md)
     * [Examples](modules/brand/examples/examples.md)
-    * [Extending](modules/brand/extending/extending.md)
+    * [Extending](modules/brand/extending/extending.md#extending-brand)
 * [Payment gateways](payment-gateways/home.md)
 * [Shipping](shipping/home.md)
 * [Artisan commands](artisan-commands/home.md)

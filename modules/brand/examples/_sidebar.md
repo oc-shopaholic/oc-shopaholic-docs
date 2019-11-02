@@ -7,7 +7,7 @@
     * [Collection](modules/brand/collection/collection.md)
     * [Components](modules/brand/component/component.md)
     * [Events](modules/brand/event/event.md)
-    * [Examples](modules/brand/examples/examples.md)
+    * [Examples](modules/brand/examples/examples.md#examples-brand)
     * [Extending](modules/brand/extending/extending.md)
 * [Payment gateways](payment-gateways/home.md)
 * [Shipping](shipping/home.md)

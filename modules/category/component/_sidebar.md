@@ -5,7 +5,7 @@
     * [Model](modules/category/model/model.md)
     * [Item](modules/category/item/item.md)
     * [Collection](modules/category/collection/collection.md)
-    * Components
+    * [Components](modules/category/component/component.md#components)
       * [CategoryList](modules/category/component/component.md#categorylist)
       * [CategoryPage](modules/category/component/component.md#categorypage)
       * [CategoryData](modules/category/component/component.md#categorydata)

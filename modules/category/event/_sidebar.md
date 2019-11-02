@@ -6,7 +6,7 @@
     * [Item](modules/category/item/item.md)
     * [Collection](modules/category/collection/collection.md)
     * [Components](modules/category/component/component.md)
-    * [Events](modules/category/event/event.md)
+    * [Events](modules/category/event/event.md#event-list-category)
     * [Examples](modules/category/examples/examples.md)
     * [Extending](modules/category/extending/extending.md)
 * [Payment gateways](payment-gateways/home.md)

@@ -1,6 +1,13 @@
 # CurrencyItem {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/currency/home.md)
+/ [Model](modules/currency/model/model.md)
+/ Item
+/ [Collection](modules/currency/collection/collection.md)
+/ [Components](modules/currency/component/component.md)
+/ [Examples](modules/currency/examples/examples.md)
+/ [Extending](modules/currency/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -10,11 +17,11 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|code|string|
-|is_default|bool|
+|code|string|For example: USD|
+|is_default|bool|You can set one of currencies as default currency|
 |name|string|
-|rate|float|
-|symbol|string|
+|rate|float|Currency conversion rate|
+|symbol|string|For example: $|
 
 ## Extending
 
@@ -60,3 +67,10 @@ echo $obCurrencyItem->my_property;
 Method returns true, if currency is active
 
 [Back to modules](modules/home.md)
+/ [Home](modules/currency/home.md)
+/ [Model](modules/currency/model/model.md)
+/ Item
+/ [Collection](modules/currency/collection/collection.md)
+/ [Components](modules/currency/component/component.md)
+/ [Examples](modules/currency/examples/examples.md)
+/ [Extending](modules/currency/extending/extending.md)

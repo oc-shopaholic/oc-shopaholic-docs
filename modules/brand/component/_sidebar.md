@@ -5,7 +5,7 @@
     * [Model](modules/brand/model/model.md)
     * [Item](modules/brand/item/item.md#branditem)
     * [Collection](modules/brand/collection/collection.md)
-    * Components
+    * [Components](modules/brand/component/component.md#components)
       * [BrandList](modules/brand/component/component.md#brandlist)
       * [BrandPage](modules/brand/component/component.md#brandpage)
       * [BrandData](modules/brand/component/component.md#branddata)
