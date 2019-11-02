@@ -30,4 +30,6 @@
 
 ## Viewed products for Shopaholic
 
+## VK Goods for Shopaholic
+
 ## Wish list for Shopaholic

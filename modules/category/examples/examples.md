@@ -1,17 +1,33 @@
 # Examples: Category
 
 [Back to modules](modules/home.md)
+/ [Home](modules/category/home.md)
+/ [Model](modules/category/model/model.md)
+/ [Item](modules/category/item/item.md)
+/ [Collection](modules/category/collection/collection.md)
+/ [Components](modules/category/component/component.md)
+/ [Events](modules/category/event/event.md)
+/ Examples
+/ [Extending](modules/category/extending/extending.md)
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+* [Example 1: Category page](#example-1-category-page)
+* [Example 2: Category tree](#example-2-category-tree)
+* [Example 3: Category card](#example-3-category-card)
+
 ## Example 1: Category page
 
-### Task
+### 1.1 Task
 
 Create simple category page and render category name.
 
-### How can i do it?
+### 1.2 How can i do it?
+
+> Example uses [CategoryPage](modules/category/component/component.md#categorypage) component.
+Component method returns [CategoryItem](modules/category/item/item.md#categoryitem) class object.
+All available fields and methods of **CategoryItem** class you can find in [section](modules/category/item/item.md#categoryitem)
 
 ```plantuml
 @startuml
@@ -26,7 +42,7 @@ from CategoryPage component;
 @enduml
 ```
 
-### Source code
+### 1.3 Source code
 <!-- tabs:start -->
 
 #### ** Variant 1 **
@@ -86,12 +102,16 @@ smart_url_check = 0
 
 ## Example 2: Category tree
 
-### Task
+### 2.1 Task
 
 Create simple category tree (two levels).
 Render block with category menu.
 
-### How can i do it?
+### 2.2 How can i do it?
+
+> Example uses [CategoryList](modules/category/component/component.md#categorylist) component.
+Component method returns [CategoryCollection](modules/category/collection/collection.md#categorycollection) class object.
+All available methods of **CategoryCollection** class you can find in [section](modules/category/collection/collection.md#categorycollection)
 
 ```plantuml
 @startuml
@@ -106,7 +126,7 @@ from CategoryList component;
 @enduml
 ```
 
-### Source code
+### 2.3 Source code
 
 File: **partials/category/category-tree/category-tree.htm**
 ```twig
@@ -131,12 +151,14 @@ File: **partials/category/category-tree/category-tree.htm**
 
 ## Example 3: Category card
 
-### Task
+### 3.1 Task
 
 Create simple category card and render category name, preview_image, preview_text fields.
 Render link on category page.
 
-### Source code
+> **"obCategory"** is object of [CategoryItem](modules/category/item/item.md#categoryitem) class.
+
+### 3.2 Source code
 
 Simple example of category card.
 
@@ -158,3 +180,11 @@ File: **partials/category/category-card/category-card.htm**
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/category/home.md)
+/ [Model](modules/category/model/model.md)
+/ [Item](modules/category/item/item.md)
+/ [Collection](modules/category/collection/collection.md)
+/ [Components](modules/category/component/component.md)
+/ [Events](modules/category/event/event.md)
+/ Examples
+/ [Extending](modules/category/extending/extending.md)

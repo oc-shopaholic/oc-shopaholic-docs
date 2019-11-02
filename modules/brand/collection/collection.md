@@ -5,7 +5,7 @@
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / Collection
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)
@@ -15,6 +15,11 @@
 
 !> **Attention!** **BrandCollection** extends [ElementCollection class](collection-class/collection-class.md).
 All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
+
+* [active](#active)
+* [category](#categoryicategoryid)
+* [search](#searchssearchstring)
+* [sort](#sort)
 
 ### active()
 
@@ -50,7 +55,7 @@ Method sorts elements of collection by "sort_order" field. You can change sortin
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / Collection
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)

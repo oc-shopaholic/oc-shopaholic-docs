@@ -5,7 +5,7 @@
 / [Model](modules/brand/model/model.md)
 / Item
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)
@@ -69,14 +69,14 @@ echo $obBrandItem->my_property;
   * $sPageCode - page file name
 
 Method returns URL of brand page.
-Method gets properties of [BrandPage](modules/brand/component/brand-page/brand-page.md) component attached on page and compiles parameter :slug to generate page URL.
+Method gets properties of [BrandPage](modules/brand/component/component.md#brandpage) component attached on page and compiles parameter :slug to generate page URL.
 
 [Back to modules](modules/home.md)
 / [Home](modules/brand/home.md)
 / [Model](modules/brand/model/model.md)
 / Item
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)

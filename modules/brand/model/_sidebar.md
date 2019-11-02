@@ -10,7 +10,7 @@
       * [Extending](modules/brand/model/model.md#extending)
     * [Item](modules/brand/item/item.md#branditem)
     * [Collection](modules/brand/collection/collection.md)
-    * [Components](modules/brand/component/brand-list/brand-list.md)
+    * [Components](modules/brand/component/component.md)
     * [Events](modules/brand/event/event.md)
     * [Examples](modules/brand/examples/examples.md)
     * [Extending](modules/brand/extending/extending.md)

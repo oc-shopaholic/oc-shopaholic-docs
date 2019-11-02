@@ -5,7 +5,7 @@
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / Extending
@@ -114,7 +114,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 ```yaml
 1.0.0:
     - 'Initialize plugin.'
-    - cupdate_table_brands_1.php
+    - update_table_brands_1.php
 ```
 
 3. Run ```php artisan october:up``` command.
@@ -551,7 +551,7 @@ public function boot()
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / Extending

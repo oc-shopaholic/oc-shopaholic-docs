@@ -5,7 +5,7 @@
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)
@@ -18,6 +18,10 @@
 You can create and edit brands by going to **Backend -> Catalog -> Brands**
 
 ![](./../../assets/images/backend-brand-1.png)
+
+You can change sorting of brands by going to **Backend -> Catalog -> Brands -> Reorder records**
+
+![](./../../assets/images/backend-brand-5.png)
 
 You can attach one brand to product
 
@@ -36,7 +40,7 @@ You can import brands from XML and CSV files.
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)

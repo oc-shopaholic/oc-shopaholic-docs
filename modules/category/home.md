@@ -1,6 +1,14 @@
 # Category {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/category/model/model.md)
+/ [Item](modules/category/item/item.md)
+/ [Collection](modules/category/collection/collection.md)
+/ [Components](modules/category/component/component.md)
+/ [Events](modules/category/event/event.md)
+/ [Examples](modules/category/examples/examples.md)
+/ [Extending](modules/category/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -10,6 +18,10 @@
 You can create and edit categories by going to **Backend -> Catalog -> Categories**
 
 ![](./../../assets/images/backend-category-1.png)
+
+You can change tree of categories by going to **Backend -> Catalog -> Categories -> Reorder records**
+
+![](./../../assets/images/backend-category-5.png)
 
 You can attach one main category to product
 
@@ -31,3 +43,11 @@ You can import categories from XML and CSV files.
 ![](./../../assets/images/backend-category-4.png)
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/category/model/model.md)
+/ [Item](modules/category/item/item.md)
+/ [Collection](modules/category/collection/collection.md)
+/ [Components](modules/category/component/component.md)
+/ [Events](modules/category/event/event.md)
+/ [Examples](modules/category/examples/examples.md)
+/ [Extending](modules/category/extending/extending.md)

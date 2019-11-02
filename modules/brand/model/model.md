@@ -5,7 +5,7 @@
 / Model
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)
@@ -27,6 +27,7 @@
 |preview_text|string|
 |search_content|string|Available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins|
 |search_synonym|string|Available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins|
+|sort_order|int|Field required for [Sortable](https://octobercms.com/docs/database/traits#sortable) trait|
 |slug|string|
 |updated_at|\October\Rain\Argon\Argon|
 
@@ -42,7 +43,7 @@ Attach one: **preview_image**, attach many: **images**.
 |-----|-----|-----|
 |BelongsToMany|campaign|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
 ||coupon_group|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
-||discount|Available with ["Discounts for Shopaholic"](plugins/home.md#discounts-for-shopaholic) plugin|
+||discount|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |HasMany|product|
 
 
@@ -73,7 +74,7 @@ Brand::extend(function ($obBrand) {
 / Model
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)

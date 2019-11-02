@@ -1,4 +1,4 @@
-# BrandPage component {docsify-ignore-all}
+# Components {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
 / [Home](modules/brand/home.md)
@@ -12,6 +12,38 @@
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+* [BrandList](#brandlist)
+  * [make(_[$arElementIDList = null]_)](#makearelementidlist-null)
+* [BrandPage](#brandpage)
+  * [get()](#get)
+* [BrandData](#branddata)
+  * [get($iElementID)](#getielementid)
+
+## BrandList
+
+Component allows you to render blocks with brands. For example: all brands, brand list with pagination,
+random brands, filter panel with brands, etc.
+
+### make(_[$arElementIDList = null]_)
+
+Method returns new object of [BrandCollection](modules/brand/collection/collection.md) class.
+
+**Example 1:** Get collection of brands, apply sorting + filter by flag "active"
+```twig
+{% set obBrandList = BrandList.make().sort().active() %}
+{% if obBrandList.isNotEmpty() %}
+    <ul>
+        {% for obBrand in obBrandList %}
+            <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+```
+
+## BrandPage
+
+Component allows you to render brand page.
 
 Available properties:
 
@@ -41,6 +73,27 @@ smart_url_check = 1
     {% endif %}
     <div>{{ obBrand.description|raw }}</div>
 </div>
+```
+
+## BrandData
+
+Component allows you to render blocks with brand. You can get brand object by ID.
+
+### get($iElementID)
+
+Method returns [BrandItem](modules/brand/item/item.md#branditem) object with ID = $iElementID.
+```twig
+{# Get brand item with ID = 10 #}
+{% set obBrand = BrandData.get(10) %}
+{% if obBrand.isNotEmpty() %}
+    <div data-id="{{ obBrand.id }}">
+        <h2>{{ obBrand.name }}</h2>
+        {% if obBrand.preview_image is not empty %}
+            <img src="{{ obBrand.preview_image.path }}" title="{{ obBrand.preview_image.title }}" alt="{{ obBrand.preview_image.description }}">
+        {% endif %}
+        <div>{{ obBrand.preview_text }}</div>
+    </div>
+{% endif %}
 ```
 
 [Back to modules](modules/home.md)

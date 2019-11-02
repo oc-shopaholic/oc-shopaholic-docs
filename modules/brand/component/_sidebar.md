@@ -6,9 +6,9 @@
     * [Item](modules/brand/item/item.md#branditem)
     * [Collection](modules/brand/collection/collection.md)
     * Components
-      * [BrandList](modules/brand/component/brand-list/brand-list.md)
-      * [BrandPage](modules/brand/component/brand-page/brand-page.md)
-      * [BrandData](modules/brand/component/brand-data/brand-data.md)
+      * [BrandList](modules/brand/component/component.md#brandlist)
+      * [BrandPage](modules/brand/component/component.md#brandpage)
+      * [BrandData](modules/brand/component/component.md#branddata)
     * [Events](modules/brand/event/event.md)
     * [Examples](modules/brand/examples/examples.md)
     * [Extending](modules/brand/extending/extending.md)

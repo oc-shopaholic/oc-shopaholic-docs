@@ -9,7 +9,7 @@
         * [category](modules/brand/collection/collection.md#categoryicategoryid)
         * [search](modules/brand/collection/collection.md#searchssearchstring)
         * [sort](modules/brand/collection/collection.md#sort)
-    * [Components](modules/brand/component/brand-list/brand-list.md)
+    * [Components](modules/brand/component/component.md)
     * [Events](modules/brand/event/event.md)
     * [Examples](modules/brand/examples/examples.md)
     * [Extending](modules/brand/extending/extending.md)

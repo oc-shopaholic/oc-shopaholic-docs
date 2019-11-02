@@ -15,10 +15,10 @@
 |currency|string|Active currency symbol. For example: $|
 |currency_code|string|Active currency code. For example: USD|
 |description|string|
-|discount|[DiscountItem](modules/discount/item/item.md)|Available with ["Discounts for Shopaholic"](plugins/home.md#discounts-for-shopaholic) plugin|
-|discount_id|int|Available with ["Discounts for Shopaholic"](plugins/home.md#discounts-for-shopaholic) plugin|
-|discount_type|string|Available values: fixed, percent. Available with ["Discounts for Shopaholic"](plugins/home.md#discounts-for-shopaholic) plugin|
-|discount_value|float|Available with ["Discounts for Shopaholic"](plugins/home.md#discounts-for-shopaholic) plugin|
+|discount|[DiscountItem](modules/discount/item/item.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|discount_id|int|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|discount_type|string|Available values: fixed, percent. Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|discount_value|float|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
 |name|string|
 |preview_image|\System\Models\File|

@@ -5,7 +5,7 @@
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / Events
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)
@@ -28,7 +28,7 @@ Event::listen('shopaholic.brand.open', function($obBrand) {
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / Events
 / [Examples](modules/brand/examples/examples.md)
 / [Extending](modules/brand/extending/extending.md)

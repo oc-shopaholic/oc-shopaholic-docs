@@ -5,7 +5,7 @@
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / Examples
 / [Extending](modules/brand/extending/extending.md)
@@ -27,7 +27,7 @@ Create simple brand page and render brand name.
 
 ### 1.2 How can i do it?
 
-> Example uses [BrandPage](modules/brand/component/brand-page/brand-page.md) component.
+> Example uses [BrandPage](modules/brand/component/component.md#brandpage) component.
 Component method returns [BrandItem](modules/brand/item/item.md#branditem) class object.
 All available fields and methods of **BrandItem** class you can find in [section](modules/brand/item/item.md#branditem)
 
@@ -105,7 +105,7 @@ Create simple block with random 5 brand list on index page.
 
 ### 3.2 How can i do it?
 
-> Example uses [BrandList](modules/brand/component/brand-list/brand-list.md) component.
+> Example uses [BrandList](modules/brand/component/component.md#brandlist) component.
 Component method returns [BrandCollection](modules/brand/collection/collection.md#brandcollection) class object.
 All available methods of **BrandCollection** class you can find in [section](modules/brand/collection/collection.md#brandcollection)
 
@@ -174,7 +174,7 @@ Brand list must have pagination block.
 
 ### 4.2 How can i do it?
 
-> Example uses [BrandList](modules/brand/component/brand-list/brand-list.md) component.
+> Example uses [BrandList](modules/brand/component/component.md#brandlist) component.
 Component method returns [BrandCollection](modules/brand/collection/collection.md#brandcollection) class object.
 All available methods of **BrandCollection** class you can find in [section](modules/brand/collection/collection.md#brandcollection)
 
@@ -298,7 +298,7 @@ Apply filter by category ID to brand list.
 
 ### 5.2 How can i do it?
 
-> Example uses [BrandList](modules/brand/component/brand-list/brand-list.md) component.
+> Example uses [BrandList](modules/brand/component/component.md#brandlist) component.
 Component method returns [BrandCollection](modules/brand/collection/collection.md#brandcollection) class object.
 All available methods of **BrandCollection** class you can find in [section](modules/brand/collection/collection.md#brandcollection)
 
@@ -379,7 +379,7 @@ File: **partials/brand/brand-list/filter-brand-list.htm**
 / [Model](modules/brand/model/model.md)
 / [Item](modules/brand/item/item.md)
 / [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/brand-list/brand-list.md)
+/ [Components](modules/brand/component/component.md)
 / [Events](modules/brand/event/event.md)
 / Examples
 / [Extending](modules/brand/extending/extending.md)

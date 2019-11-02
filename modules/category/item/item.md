@@ -1,6 +1,14 @@
 # CategoryItem {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/category/home.md)
+/ [Model](modules/category/model/model.md)
+/ Item
+/ [Collection](modules/category/collection/collection.md)
+/ [Components](modules/category/component/component.md)
+/ [Events](modules/category/event/event.md)
+/ [Examples](modules/category/examples/examples.md)
+/ [Extending](modules/category/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -11,6 +19,7 @@
 |-------|------|--------|
 |id|int|
 |children|[CategoryCollection](modules/category/collection/collection.md)|Collection with **active** children category|
+|category_vk_id|int|Field available with [VK Goods for Shopaholic](/plugins/home.md#vk-goods-for-shopaholic)|
 |code|string|
 |description|string|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
@@ -24,6 +33,7 @@
 |product_count|int|
 |product_filter_property|[FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)|Available with ["Properties for Shopaholic"](plugins/home.md#properties-for-shopaholic) and ["Filter for Shopaholic"](plugins/home.md#filter-for-shopaholic) plugins|
 |slug|string|
+|updated_at|\October\Rain\Argon\Argon|
 
 ## Extending
 
@@ -68,8 +78,8 @@ echo $obCategoryItem->my_property;
   * $sPageCode - page file name
 
 Method returns URL of category page.
-Method gets list of [CategoryPage](modules/category/component/category-page/category-page.md) components attached on page and compiles list of parameters :slug to generate page URL.
-[CategoryPage](modules/category/component/category-page/category-page.md) components must be attached on page so that child categories are higher than parent categories.
+Method gets list of [CategoryPage](modules/category/component/component.md#categorypage) components attached on page and compiles list of parameters :slug to generate page URL.
+[CategoryPage](modules/category/component/component.md#categorypage) components must be attached on page so that child categories are higher than parent categories.
 
 ```twig
 title = "Catalog"
@@ -89,16 +99,11 @@ smart_url_check = 0
 ```
 
 [Back to modules](modules/home.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
+/ [Home](modules/category/home.md)
+/ [Model](modules/category/model/model.md)
+/ Item
+/ [Collection](modules/category/collection/collection.md)
+/ [Components](modules/category/component/component.md)
+/ [Events](modules/category/event/event.md)
+/ [Examples](modules/category/examples/examples.md)
+/ [Extending](modules/category/extending/extending.md)
