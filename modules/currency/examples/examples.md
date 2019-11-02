@@ -8,6 +8,7 @@
 / [Components](modules/currency/component/component.md)
 / Examples
 / [Extending](modules/currency/extending/extending.md)
+/ [Advanced usage](modules/currency/advanced-usage/home.md)
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -95,6 +96,10 @@ You need to send AJAX requests after user switches active currency on frontend.
 
 ### 2.3 Source code
 
+<!-- tabs:start -->
+
+#### ** javascript **
+
 ```javascript
 function swirchCurrency(sCurrencyCode) {
     $.request('CurrencyList::onSwitch', {
@@ -102,6 +107,16 @@ function swirchCurrency(sCurrencyCode) {
     }); 
 }
 ```
+
+#### ** php **
+
+You can find more information about CurrencyHelper class [here](modules/currency/advanced-usage/home.md) 
+
+```php
+CurrencyHelper::instance()->switchActive('usd');
+```
+
+<!-- tabs:end -->
 
 [Back to modules](modules/home.md)
 / [Home](modules/currency/home.md)
@@ -111,3 +126,4 @@ function swirchCurrency(sCurrencyCode) {
 / [Components](modules/currency/component/component.md)
 / Examples
 / [Extending](modules/currency/extending/extending.md)
+/ [Advanced usage](modules/currency/advanced-usage/home.md)

@@ -8,6 +8,7 @@
 / [Components](modules/currency/component/component.md)
 / [Examples](modules/currency/examples/examples.md)
 / [Extending](modules/currency/extending/extending.md)
+/ [Advanced usage](modules/currency/advanced-usage/home.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -51,3 +52,4 @@ Currency::extend(function ($obCurrency) {
 / [Components](modules/currency/component/component.md)
 / [Examples](modules/currency/examples/examples.md)
 / [Extending](modules/currency/extending/extending.md)
+/ [Advanced usage](modules/currency/advanced-usage/home.md)

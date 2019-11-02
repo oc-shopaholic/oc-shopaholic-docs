@@ -8,7 +8,7 @@
     * [Components](modules/currency/component/component.md)
     * [Examples](modules/currency/examples/examples.md)
     * [Extending](modules/currency/extending/extending.md)
-    * [Advanced usage](modules/currency/advanced-usage/home.md)
+    * [Advanced usage](modules/currency/advanced-usage/home.md#advanced-usage)
 * [Payment gateways](payment-gateways/home.md)
 * [Shipping](shipping/home.md)
 * [Artisan commands](artisan-commands/home.md)
