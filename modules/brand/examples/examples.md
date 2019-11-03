@@ -211,7 +211,7 @@ endif
 :Call partial "brand-list" inside wrapper block;
 :Add ajax handler on pagination buttons;
 :Send ajax request, after user clicks pagination buttons;
-:AJAX request must request "brand-kist" partial
+:AJAX request must request "brand-list" partial
 and update HTML code inside wrapper block;
 @enduml
 ```

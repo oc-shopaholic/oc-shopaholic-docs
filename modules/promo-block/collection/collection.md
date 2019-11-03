@@ -1,7 +1,25 @@
 # PromoBlockCollection {docsify-ignore-all}
-          
+
+[Back to modules](modules/home.md)
+/ [Home](modules/promo-block/home.md)
+/ [Model](modules/promo-block/model/model.md)
+/ [Item](modules/promo-block/item/item.md)
+/ Collection
+/ [Components](modules/promo-block/component/component.md)
+/ [Events](modules/promo-block/event/event.md)
+/ [Examples](modules/promo-block/examples/examples.md)
+/ [Extending](modules/promo-block/extending/extending.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+!> **Attention!** **BrandCollection** extends [ElementCollection class](collection-class/collection-class.md).
+All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
+
+* [active](#active)
+* [hidden](#hidden)
+* [notHidden](#nothidden)
+* [sort](#sortssorting)
 
 ### active()
 
@@ -27,3 +45,17 @@ Available sorting value:
 ```php
     $obList = PromoBlockCollection::make([1,2,10,15])->sort('date_begin|desc');
 ```
+
+You can change sorting of promo blocks by going to **Backend -> Promotions -> Promo blocks -> Reorder records**
+
+![](./../../../assets/images/backend-promo-block-2.png)
+
+[Back to modules](modules/home.md)
+/ [Home](modules/promo-block/home.md)
+/ [Model](modules/promo-block/model/model.md)
+/ [Item](modules/promo-block/item/item.md)
+/ Collection
+/ [Components](modules/promo-block/component/component.md)
+/ [Events](modules/promo-block/event/event.md)
+/ [Examples](modules/promo-block/examples/examples.md)
+/ [Extending](modules/promo-block/extending/extending.md)

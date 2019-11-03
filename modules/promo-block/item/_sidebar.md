@@ -3,7 +3,11 @@
 * [Modules](modules/home.md)
   * [Promo block](modules/promo-block/home.md)
     * [Model](modules/promo-block/model/model.md)
-    * [Item](modules/promo-block/item/item.md)
+    * [Item](modules/promo-block/item/item.md#promoblockitem)
+      * [Field list](modules/promo-block/item/item.md#field-list)
+      * [Extending](modules/promo-block/item/item.md#extending)
+      * Method List
+        * [getPageUrl](modules/promo-block/item/item.md#getpageurlspagecode-39promo-block3939)
     * [Collection](modules/promo-block/collection/collection.md)
     * [Components](modules/promo-block/component/component.md)
     * [Events](modules/promo-block/event/event.md)

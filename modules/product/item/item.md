@@ -106,7 +106,7 @@ Method returns true, if product is active and not deleted (not trashed).
   * $sPageCode - page file name
 
 Method returns URL of product page.
-Method gets list of [ProductPage](modules/product/component/product-page/product-page.md), [BrandPage](modules/brand/component/component.md#brandpage),
+Method gets list of [ProductPage](modules/product/component/component.md#productpage), [BrandPage](modules/brand/component/component.md#brandpage),
 [CategoryPage](modules/category/component/component.md#categorypage) components attached on page and compiles list of parameters :slug to generate page URL.
 
 > CategoryPage components must be attached on page so that child categories are higher than parent categories.

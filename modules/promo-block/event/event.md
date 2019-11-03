@@ -1,36 +1,39 @@
-# Promo block {docsify-ignore-all}
+# Event list: Promo block
 
 [Back to modules](modules/home.md)
-/ Home
+/ [Home](modules/promo-block/home.md)
 / [Model](modules/promo-block/model/model.md)
 / [Item](modules/promo-block/item/item.md)
 / [Collection](modules/promo-block/collection/collection.md)
 / [Components](modules/promo-block/component/component.md)
-/ [Events](modules/promo-block/event/event.md)
+/ Events
 / [Examples](modules/promo-block/examples/examples.md)
 / [Extending](modules/promo-block/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
-Using promo blocks, you can make separate promo pages on your site, with description of promotions, discounts, or separate group of products.
-You can show blocks with list of products that are attached to promo block. For example: block "on sale now".
+## **shopaholic.promo_block.get.promo-block.list**
 
-You can attach [discounts](modules/discount/home.md), [campaigns](modules/campaign/home.md) or [coupon groups](modules/coupon-group/home.md) to promo block.
-This will allow you to render products attached to [discounts](modules/discount/home.md), [campaigns](modules/campaign/home.md) or [coupon groups](modules/coupon-group/home.md) on promo block page. 
+The event allows you to extend list of products for promo block
 
-## Backend
-
-You can create and edit promo blocks by going to **Backend -> Promotions -> Promo blocks**
-
-![](./../../assets/images/backend-promo-block-1.png)
+For example:
+```php
+Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_PRODUCT_LIST, function($obPromoBlock) {
+    /** @var \Lovata\Shopaholic\Models\PromoBlock $obPromoBlock */
+    //to get produt ID list with using $obPromoBlock object
+    $arProductIDList = ...
+    
+    return $arProductIDList;
+});
+```
 
 [Back to modules](modules/home.md)
-/ Home
+/ [Home](modules/promo-block/home.md)
 / [Model](modules/promo-block/model/model.md)
 / [Item](modules/promo-block/item/item.md)
 / [Collection](modules/promo-block/collection/collection.md)
 / [Components](modules/promo-block/component/component.md)
-/ [Events](modules/promo-block/event/event.md)
+/ Events
 / [Examples](modules/promo-block/examples/examples.md)
 / [Extending](modules/promo-block/extending/extending.md)

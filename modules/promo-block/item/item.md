@@ -1,5 +1,15 @@
 # PromoBlockItem {docsify-ignore-all}
 
+[Back to modules](modules/home.md)
+/ [Home](modules/promo-block/home.md)
+/ [Model](modules/promo-block/model/model.md)
+/ Item
+/ [Collection](modules/promo-block/collection/collection.md)
+/ [Components](modules/promo-block/component/component.md)
+/ [Events](modules/promo-block/event/event.md)
+/ [Examples](modules/promo-block/examples/examples.md)
+/ [Extending](modules/promo-block/extending/extending.md)
+
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
@@ -8,7 +18,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |date_begin|\October\Rain\Argon\Argon|
 |date_end|\October\Rain\Argon\Argon|
 |description|string|
@@ -64,3 +74,13 @@ echo $obPromoBlockItem->my_property;
 
 Method returns URL of promo block page.
 Method gets PromoBlockPage component attached on page and compiles parameter :slug to generate page URL.
+
+[Back to modules](modules/home.md)
+/ [Home](modules/promo-block/home.md)
+/ [Model](modules/promo-block/model/model.md)
+/ Item
+/ [Collection](modules/promo-block/collection/collection.md)
+/ [Components](modules/promo-block/component/component.md)
+/ [Events](modules/promo-block/event/event.md)
+/ [Examples](modules/promo-block/examples/examples.md)
+/ [Extending](modules/promo-block/extending/extending.md)
