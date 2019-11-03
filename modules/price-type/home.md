@@ -1,13 +1,14 @@
-# Prices {docsify-ignore-all}
+# Price type {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/price-type/model/model.md)
+/ [Advanced usage](modules/price-type/advanced-usage/home.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 ## Backend
-
-!> **Attention!** All offer prices must be set in default currency.
 
 !> **Attention!** You can set **price format** in Backend -> Settings -> Application settings -> "Price format" tab
 
@@ -22,3 +23,6 @@ After creating price type you can fill prices in offers
 ![](./../../assets/images/backend-price-type-2.png)
 
 [Back to modules](modules/home.md)
+/ Home
+/ [Model](modules/price-type/model/model.md)
+/ [Advanced usage](modules/price-type/advanced-usage/home.md)

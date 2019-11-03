@@ -8,7 +8,8 @@
 ||[Category](modules/category/home.md)||
 ||[Currency](modules/currency/home.md)||
 |**O**|[Offer](modules/offer/home.md)||
-|**P**|[Prices](modules/prices/home.md)||
+|**P**|[Price](modules/price/home.md)||
+||[Price type](modules/price-type/home.md)||
 ||[Product](modules/product/home.md)||
 ||[Promo block](modules/promo-block/home.md)||
 |**S**|[Settings](modules/settings/home.md)||
