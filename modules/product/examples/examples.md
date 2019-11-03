@@ -1,16 +1,33 @@
 # Examples: Product
 
 [Back to modules](modules/home.md)
+/ [Home](modules/product/home.md)
+/ [Model](modules/product/model/model.md)
+/ [Item](modules/product/item/item.md)
+/ [Collection](modules/product/collection/collection.md)
+/ [Components](modules/product/component/component.md)
+/ [Events](modules/product/event/event.md)
+/ Examples
+/ [Extending](modules/product/extending/extending.md)
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+* [Example 1: Product page](#example-1-product-page)
+* [Example 2: Product card](#example-2-product-card)
+* [Example 3: Catalog page](#example-3-catalog-page)
+* [Example 4: Accessories on product page](#example-4-accessories-on-product-page)
+
 ## Example 1: Product page
 
-### Task
+### 1.1 Task
 Create simple product page and render product name.
 
-### How can i do it?
+### 1.2 How can i do it?
+
+> Example uses [ProductPage](modules/product/component/component.md#productpage) component.
+Component method returns [ProductItem](modules/product/item/item.md#productitem) class object.
+All available fields and methods of **ProductItem** class you can find in [section](modules/product/item/item.md#productitem)
 
 ```plantuml
 @startuml
@@ -37,7 +54,7 @@ from ProductPage component;
 @enduml
 ```
 
-### Source code
+### 1.3 Source code
 <!-- tabs:start -->
 #### ** Variant 1 **
 
@@ -139,12 +156,14 @@ slug_required = 1
 
 ## Example 2: Product card
 
-
-### Task
+### 2.1 Task
 Create simple product card and render product name, preview_image, preview_text fields.
 Render link on product page.
 
-### Source code
+> **"obProduct"** is object of [ProductItem](modules/product/item/item.md#productitem) class.
+
+### 2.2 Source code
+
 Simple example of product card.
 
 File: **partials/product/product-card/product-card.htm**
@@ -166,12 +185,16 @@ File: **partials/product/product-card/product-card.htm**
 
 ## Example 3: Catalog page
 
-### Task
+### 3.1 Task
 Create simple catalog page and render product list.
 Product list must be sorted and filtered by category.
 Product list must have pagination block.
 
-### How can i do it?
+### 3.2 How can i do it?
+
+> Example uses [ProductList](modules/product/component/component.md#productlist) component.
+Component method returns [ProductCollection](modules/product/collection/collection.md#productcollection) class object.
+All available methods of **ProductCollection** class you can find in [section](modules/product/collection/collection.md#productcollection)
 
 ```plantuml
 @startuml
@@ -220,7 +243,7 @@ and update HTML code inside wrapper block;
 @enduml
 ```
 
-### Source code
+### 3.3 Source code
 <!-- tabs:start -->
 
 #### ** Variant 1 **
@@ -313,35 +336,24 @@ File: **partials/product/catalog/catalog.htm**
 
 ## Example 4: Accessories on product page
 
-### Task
+### 4.1 Task
 
 Create simple product page and render block with 5 random accessories.
-
+ 
 > Block with accessories can look like any block with product list.
 Block can be simple (for example: slider with 5 random accessories).
 Block can be complicated (contain searching, filtering, sorting, pagination).
 
-### How can i do it?
+### 4.2 How can i do it?
+
+!> Accessories available with [Accessories for Shopaholic](plugins/home.md#accessories-for-shopaholic) plugin
 
 ```plantuml
 @startuml
-:Create page file;
+:Create simple product page;
 note left
-    For example: **pages/product.htm**
+    See "Example 1: Product page"
 end note
-:Attach **ProductPage** component;
-if (URL page contains brand slug?) then (yes)
-    :Attach **BrandPage** component;
-else (no)
-endif
-if (URL page contains categories slug?) then (yes)
-    :Attach **CategoryPage** component;
-    note left
-        You must attach components
-        for each level of category tree.
-    end note
-else (no)
-endif
 :Get ProductItem object
 from ProductPage component;
 :Get ProductCollection object
@@ -355,11 +367,9 @@ from ProductCollection object;
 @enduml
 ```
 
-### Source code
-<!-- tabs:start -->
-#### ** Variant 1 **
+### 4.3 Source code
 
-Simple example of product page. Page URL does not contain category slug.
+Simple example of product page.
 
 File: **pages/product.htm**
 ```twig
@@ -385,6 +395,7 @@ slug_required = 1
 {% set arProductList = obProductList.random(5) %}
 {% if arProductList is not empty %}
 <div>
+    <span>Accessories</span>
     {# Render product list #}
     <ul>
         {% for obProduct in arProductList %}
@@ -394,107 +405,13 @@ slug_required = 1
 </div>
 {% endif %}
 ```
-#### ** Variant 2 **
-
-Simple example of product page. Page URL contains category slug.
-
-> This example is suitable for **2-level** catalog.
-
-File: **pages/product.htm**
-```twig
-title = "Product page"
-url = "/catalog/:main_category/:category/:slug"
-layout = "main"
-is_hidden = 0
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-
-[CategoryPage ParentCategoryPage]
-slug = "{{ :main_category }}"
-slug_required = 1
-==
-
-{# Get product item #}
-{% set obProduct = ProductPage.get() %}
-
-<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
-    <h1 itemprop="name">{{ obProduct.name }}</h1>
-</div>
-
-{# Get accessories + apply filder by "active" field #}
-{% set obProductList = obProduct.accessory.active() %}
-{% set arProductList = obProductList.random(5) %}
-{% if arProductList is not empty %}
-<div>
-    {# Render product list #}
-    <ul>
-        {% for obProduct in arProductList %}
-            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-```
-
-#### ** Variant 3 **
-
-Simple example of product page. Page URL contains category and brand slug.
-
-> This example is suitable for **2-level** catalog.
-
-File: **pages/product.htm**
-```twig
-title = "Product page"
-url = "/catalog/:main_category/:category/:brand/:slug"
-layout = "main"
-is_hidden = 0
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-
-[BrandPage]
-slug = "{{ :brand }}"
-slug_required = 1
-
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-
-[CategoryPage ParentCategoryPage]
-slug = "{{ :main_category }}"
-slug_required = 1
-==
-
-{# Get product item #}
-{% set obProduct = ProductPage.get() %}
-
-<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
-    <h1 itemprop="name">{{ obProduct.name }}</h1>
-</div>
-
-{# Get accessories + apply filder by "active" field #}
-{% set obProductList = obProduct.accessory.active() %}
-{% set arProductList = obProductList.random(5) %}
-{% if arProductList is not empty %}
-<div>
-    {# Render product list #}
-    <ul>
-        {% for obProduct in arProductList %}
-            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-```
-<!-- tabs:end -->
 
 [Back to modules](modules/home.md)
+/ [Home](modules/product/home.md)
+/ [Model](modules/product/model/model.md)
+/ [Item](modules/product/item/item.md)
+/ [Collection](modules/product/collection/collection.md)
+/ [Components](modules/product/component/component.md)
+/ [Events](modules/product/event/event.md)
+/ Examples
+/ [Extending](modules/product/extending/extending.md)

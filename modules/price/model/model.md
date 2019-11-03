@@ -26,9 +26,9 @@
 
 ## Relations
 
-|Type|Name|Model|Description|
+|Name|Type|Model|Description|
 |-----|-----|-----|-----|
-|BelongsTo|price_type|[PriceType](modules/price-type/model/model.md)|
+|price_type|BelongsTo|[PriceType](modules/price-type/model/model.md)|
 
 ## Extending
 

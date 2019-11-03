@@ -14,11 +14,11 @@
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [CategoryList](#categorylist)
-  * [make(_[$arElementIDList = null]_)](#makearelementidlist-null)
+  * [make](#makearelementidlist-null)
 * [CategoryPage](#categorypage)
-  * [get()](#get)
+  * [get](#get)
 * [CategoryData](#categorydata)
-  * [get($iElementID)](#getielementid)
+  * [get](#getielementid)
 
 ## CategoryList
 

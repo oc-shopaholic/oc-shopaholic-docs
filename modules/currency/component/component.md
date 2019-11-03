@@ -14,9 +14,9 @@
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [CurrencyList](#currencylist)
-  * [make(_[$arElementIDList = null]_)](#makearelementidlist-null)
-  * [onSwitch()](#onswitch)
-  * [switch(_[$sCurrencyCode = null]_)](#switchscurrencycode-null)
+  * [make](#makearelementidlist-null)
+  * [onSwitch](#onswitch)
+  * [switch](#switchscurrencycode-null)
 
 ## CurrencyList
 

@@ -58,17 +58,17 @@ Attach one:
 
 ## Relations
 
-|Type|Name|Model|Description|
+|Name|Type|Model|Description|
 |-----|-----|-----|-----|
-|BelongsTo|active_discount|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
-||digital_product_period|[DigitalProductPeriod](modules/digitalproductperiod/model/model.md)|
-||product|[Product](modules/product/model/model.md)|
-|BelongsToMany|campaign|[Campaign](modules/campaign/model/model.md)|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
-||coupon_group|[CouponGroup](modules/coupongroup/model/model.md)|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
-||discount|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
-|MorphMany|price_link|[Price](modules/price/model/model.md)|
-||property_value|[PropertyValueLink](modules/propertyvaluelink/model/model.md)|[Properties for Shopaholic](plugins/home.md#properties-for-shopaholic)|
-|MorphOne|main_price|[Price](modules/price/model/model.md)|
+|active_discount|BelongsTo|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|campaign|BelongsToMany|[Campaign](modules/campaign/model/model.md)|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
+|coupon_group|BelongsToMany|[CouponGroup](modules/coupongroup/model/model.md)|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
+|digital_product_period|BelongsTo|[DigitalProductPeriod](modules/digitalproductperiod/model/model.md)|
+|discount|BelongsToMany|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|main_price|MorphOne|[Price](modules/price/model/model.md)|
+|price_link|MorphMany|[Price](modules/price/model/model.md)|
+|product|BelongsTo|[Product](modules/product/model/model.md)|
+|property_value|MorphMany|[PropertyValueLink](modules/propertyvaluelink/model/model.md)|[Properties for Shopaholic](plugins/home.md#properties-for-shopaholic)|
 
 ## Extending
 

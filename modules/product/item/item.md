@@ -1,6 +1,14 @@
 # ProductItem {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/product/home.md)
+/ [Model](modules/product/model/model.md)
+/ Item
+/ [Collection](modules/product/collection/collection.md)
+/ [Components](modules/product/component/component.md)
+/ [Events](modules/product/event/event.md)
+/ [Examples](modules/product/examples/examples.md)
+/ [Extending](modules/product/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -12,20 +20,28 @@
 |id|int|
 |accessory|[ProductCollection](modules/product/collection/collection.md)|Available with ["Accessory for Shopaholic"](plugins/home.md#accessory-for-shopaholic) plugin|
 |active|bool|
+|active_vk|bool|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
 |additional_category|[CategoryCollection](modules/category/collection/collection.md)|collection of additional categories|
 |additional_category_id|array|
 |brand|[BrandItem](modules/brand/item/item.md)|
 |brand_id|int|
 |category|[CategoryItem](modules/category/item/item.md)|
 |category_id|int|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |description|string|
+|external_vk_id|int|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
 |images|\October\Rain\Database\Collection, \System\Models\File[]|
+|images_facebook|\October\Rain\Database\Collection, \System\Models\File[]|Available with [Facebook for Shopaholic](plugins/home#facebook-for-shopaholic) plugin|
+|images_vkontakte|\October\Rain\Database\Collection, \System\Models\File[]|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
+|images_yandex|\October\Rain\Database\Collection, \System\Models\File[]|Available with [Yandex Market for Shopaholic](plugins/home#yandex-market-for-shopaholic) plugin|
 |label|[LabelCollection](modules/label/collection/collection.md)|Available with ["Labels for Shopaholic"](plugins/home.md#labels-for-shopaholic) plugin|
 |name|string|
 |offer|[OfferCollection](modules/offer/collection/collection.md)|Collection with **active** offers|
 |offer_id_list|array|**active** offer ID list|
 |preview_image|\System\Models\File|
+|preview_image_facebook|\System\Models\File|Available with [Facebook for Shopaholic](plugins/home#facebook-for-shopaholic) plugin|
+|preview_image_vkontakte|\System\Models\File|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
+|preview_image_yandex|\System\Models\File|Available with [Yandex Market for Shopaholic](plugins/home#yandex-market-for-shopaholic) plugin|
 |preview_text|string|
 |property|[PropertyCollection](modules/property/collection/collection.md)|Object with sorted active product properties. Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugin|
 |rating|float|Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin|
@@ -138,3 +154,11 @@ Method returns total count of reviews with rating. Available with ["Reviews for 
 For example:  if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, then code ```$obProduct->getRatingTotalCount()``` returns 4.
 
 [Back to modules](modules/home.md)
+/ [Home](modules/product/home.md)
+/ [Model](modules/product/model/model.md)
+/ Item
+/ [Collection](modules/product/collection/collection.md)
+/ [Components](modules/product/component/component.md)
+/ [Events](modules/product/event/event.md)
+/ [Examples](modules/product/examples/examples.md)
+/ [Extending](modules/product/extending/extending.md)

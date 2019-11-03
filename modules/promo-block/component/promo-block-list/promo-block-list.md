@@ -44,7 +44,7 @@ Get active sorting key value.
 
     {# Render promo block list #}
     <ul>
-        {% for obPromoBlock in obPromoBlockList %}
+        {% for obPromoBlock in arPromoBlockList %}
             <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
         {% endfor %}
     </ul>
@@ -57,7 +57,3 @@ Get active sorting key value.
     {% endif %}
 {% endif %}
 ```
-
-### onAjaxRequest()
-
-Empty method for ajax request.

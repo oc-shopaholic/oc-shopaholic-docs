@@ -1,9 +1,43 @@
 # ProductCollection {docsify-ignore-all}
 
 [Back to modules](modules/home.md)
+/ [Home](modules/product/home.md)
+/ [Model](modules/product/model/model.md)
+/ [Item](modules/product/item/item.md)
+/ Collection
+/ [Components](modules/product/component/component.md)
+/ [Events](modules/product/event/event.md)
+/ [Examples](modules/product/examples/examples.md)
+/ [Extending](modules/product/extending/extending.md)
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+!> **Attention!** **BrandCollection** extends [ElementCollection class](collection-class/collection-class.md).
+All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
+
+* [active](#active)
+* [brand](#brandibrandid)
+* [campaign](#campaignicampaignid)
+* [category](#categoryicategoryid-bwithchildren-false)
+* [compare](#compare)
+* [couponGroup](#coupongroupicoupongroupid)
+* [discount](#discountidiscountid)
+* [filterByBrandList](#filterbybrandlistarbrandidlist)
+* [filterByDiscount](#filterbydiscount)
+* [filterByPrice](#filterbypricefstartprice-fstopprice-ipricetypeid-null)
+* [filterByProperty](#filterbypropertyarfilterlist-obpropertylist-obofferlist-null)
+* [filterByQuantity](#filterbyquantity)
+* [getOfferMaxPrice](#getoffermaxpricespricetypecode-null)
+* [getOfferMinPrice](#getofferminpricespricetypecode-null)
+* [label](#labelilabelid)
+* [promo](#promoipromoblockid)
+* [promoBlock](#promoblockipromoblockid)
+* [search](#searchssearchstring)
+* [sort](#sortssorting)
+* [tag](#tagitagid)
+* [viewed](#viewed)
+* [wishList](#wishlist)
 
 ### active()
 
@@ -219,26 +253,7 @@ Available sorting value:
 
 > You can apply sorting by price with using price type code. For example: 'price|desc|b2b', where b2b is code of price type.
 
-You can add custom sorting for list of products with using **[shopaholic.sorting.get.list](modules/product/event/event.md#shopaholicsortinggetlist)** event.
-
-For example:
-```php
-Event::listen('shopaholic.sorting.get.list', function($sSorting) {
-    if ($sSorting != 'my_custom_sorting') {
-        return null;
-    }
-    
-    //Get array with product ID list for your custom sorting
-    $arElementIDList = ...;
-    
-    return $arElementIDList;
-});
-```
-
-> **You need to add cache clearing for your custom sorting**
-```php
-\Lovata\Shopaholic\Classes\Store\ProductListStore->sorting->clear('my_custom_sorting');
-```
+> You can use [**shopaholic.sorting.get.list**](modules/product/event/event.md#shopaholicsortinggetlist) event and add custom sorting for list of products
 
 ### tag($iTagID)
   * $iTagID - tag ID
@@ -263,3 +278,11 @@ $obList = ProductCollection::make()->wishList()->active();
 ```
 
 [Back to modules](modules/home.md)
+/ [Home](modules/product/home.md)
+/ [Model](modules/product/model/model.md)
+/ [Item](modules/product/item/item.md)
+/ Collection
+/ [Components](modules/product/component/component.md)
+/ [Events](modules/product/event/event.md)
+/ [Examples](modules/product/examples/examples.md)
+/ [Extending](modules/product/extending/extending.md)

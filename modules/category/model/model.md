@@ -44,16 +44,16 @@ Attach one: **preview_image**, attach many: **images**.
 
 ## Relations
 
-|Type|Name|Model|Description|
+|Name|Type|Model|Description|
 |-----|-----|-----|-----|
-|BelongsTo|parent|[Category](modules/category/model/model.md)|
-|BelongsToMany|campaign|[Campaign](modules/campaign/model/model.md)|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
-||coupon_group|[CouponGroup](modules/coupongroup/model/model.md)|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
-||discount|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
-||product_link|[Product](modules/product/model/model.md)|
-||property_set|[PropertySet](modules/propertyset/model/model.md)|Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugin|
-|HasMany|children|[Category](modules/category/model/model.md)|
-||product|[Product](modules/product/model/model.md)|
+|campaign|BelongsToMany|[Campaign](modules/campaign/model/model.md)|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
+|children|HasMany|[Category](modules/category/model/model.md)|
+|coupon_group|BelongsToMany|[CouponGroup](modules/coupongroup/model/model.md)|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
+|discount|BelongsToMany|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
+|parent|BelongsTo|[Category](modules/category/model/model.md)|
+|product|HasMany|[Product](modules/product/model/model.md)|
+|product_link|BelongsToMany|[Product](modules/product/model/model.md)|Uses for "additional_category" relation in [Product](modules/product/model/model.md) model|
+|property_set|BelongsToMany|[PropertySet](modules/propertyset/model/model.md)|Available with [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugin|
 
 ## Search fields
 

@@ -14,15 +14,15 @@
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [CurrencyHelper class](#currencyhelper-class)
-  * [convert($fPrice, [$sCurrencyTo = null])](#convertfprice-scurrencyto-null)
-  * [getActive()](#getactive)
-  * [getActiveCurrencyCode()](#getactivecurrencycode)
-  * [getActiveCurrencySymbol()](#getactivecurrencysymbol)
-  * [getCurrencyCode($sCurrencyCode)](#getcurrencycodescurrencycode)
-  * [getCurrencySymbol($sCurrencyCode)](#getcurrencysymbolscurrencycode)
-  * [getDefault()](#getdefault)
-  * [resetActive()](#resetactive)
-  * [switchActive($sCurrencyCode)](#switchactivescurrencycode)
+  * [convert](#convertfprice-scurrencyto-null)
+  * [getActive](#getactive)
+  * [getActiveCurrencyCode](#getactivecurrencycode)
+  * [getActiveCurrencySymbol](#getactivecurrencysymbol)
+  * [getCurrencyCode](#getcurrencycodescurrencycode)
+  * [getCurrencySymbol](#getcurrencysymbolscurrencycode)
+  * [getDefault](#getdefault)
+  * [resetActive](#resetactive)
+  * [switchActive](#switchactivescurrencycode)
 
 ## CurrencyHelper class
 

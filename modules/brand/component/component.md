@@ -14,11 +14,11 @@
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [BrandList](#brandlist)
-  * [make(_[$arElementIDList = null]_)](#makearelementidlist-null)
+  * [make](#makearelementidlist-null)
 * [BrandPage](#brandpage)
-  * [get()](#get)
+  * [get](#get)
 * [BrandData](#branddata)
-  * [get($iElementID)](#getielementid)
+  * [get](#getielementid)
 
 ## BrandList
 

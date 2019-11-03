@@ -25,9 +25,9 @@
 
 ## Relations
 
-|Type|Name|Model|Description|
+|Name|Type|Model|Description|
 |-----|-----|-----|-----|
-|BelongsTo|currency|[Currency](modules/currency/model/model.md)|
+|currency|BelongsTo|[Currency](modules/currency/model/model.md)|
 
 ## Extending
 

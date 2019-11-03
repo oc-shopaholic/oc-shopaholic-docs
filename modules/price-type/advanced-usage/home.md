@@ -9,10 +9,10 @@
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [PriceTypeHelper class](#pricetypehelper-class)
-  * [findByCode($sPriceTypeCode)](#findbycodespricetypecode)
-  * [getActive()](#getactive)
-  * [getActivePriceTypeCode()](#getactivepricetypecode)
-  * [switchActive($sPriceTypeCode)](#switchactivespricetypecode)
+  * [findByCode](#findbycodespricetypecode)
+  * [getActive](#getactive)
+  * [getActivePriceTypeCode](#getactivepricetypecode)
+  * [switchActive](#switchactivespricetypecode)
 
 ## PriceTypeHelper class
 

@@ -17,11 +17,11 @@ All available methods of ElementCollection class you can find in [section](colle
 
 * [active](#active)
 * [filterByDiscount](#filterbydiscount)
-* [filterByPrice($fStartPrice, $fStopPrice, _[$iPriceTypeID = null]_)](#filterbypricefstartprice-fstopprice-ipricetypeid-null)
-* [filterByProperty($arFilterList, $obPropertyList)](#filterbypropertyarfilterlist-obpropertylist)
-* [filterByQuantity()](#filterbyquantity)
-* [getTotalQuantity()](#gettotalquantity)
-* [sort($sSorting)](#sortssorting)
+* [filterByPrice](#filterbypricefstartprice-fstopprice-ipricetypeid-null)
+* [filterByProperty](#filterbypropertyarfilterlist-obpropertylist)
+* [filterByQuantity](#filterbyquantity)
+* [getTotalQuantity](#gettotalquantity)
+* [sort](#sortssorting)
 
 ### active()
 
