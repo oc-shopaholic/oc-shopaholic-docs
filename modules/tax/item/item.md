@@ -1,3 +1,13 @@
+[Back to modules](modules/home.md)
+
+[Home](modules/tax/home.md)
+• [Model](modules/tax/model/model.md)
+• Item
+• [Collection](modules/tax/collection/collection.md)
+• [Examples](modules/tax/examples/examples.md)
+• [Extending](modules/tax/extending/extending.md)
+• [Advanced usage](modules/tax/advanced-usage/home.md)
+
 # TaxItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
@@ -8,7 +18,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|applied_to_shipping_price|bool|
+|applied_to_shipping_price|bool|Available with [Orders for Shopaholic](plugins/home.md#orders-for-shopaholic)|
 |category_id_list|array|
 |country_id_list|array|
 |description|string|
@@ -54,3 +64,13 @@ TagItem.md
 $obTaxItem = TaxItem::make(1);
 echo $obTaxItem->my_property;
 ```
+
+[Home](modules/tax/home.md)
+• [Model](modules/tax/model/model.md)
+• Item
+• [Collection](modules/tax/collection/collection.md)
+• [Examples](modules/tax/examples/examples.md)
+• [Extending](modules/tax/extending/extending.md)
+• [Advanced usage](modules/tax/advanced-usage/home.md)
+
+[Back to modules](modules/home.md)

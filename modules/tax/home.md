@@ -1,3 +1,13 @@
+[Back to modules](modules/home.md)
+
+Home
+• [Model](modules/tax/model/model.md)
+• [Item](modules/tax/item/item.md)
+• [Collection](modules/tax/collection/collection.md)
+• [Examples](modules/tax/examples/examples.md)
+• [Extending](modules/tax/extending/extending.md)
+• [Advanced usage](modules/tax/advanced-usage/home.md)
+
 # Tax {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
@@ -40,3 +50,13 @@ Example of calculation of discount after applying **coupon -7%**:
 |Discount is deducted from backend price (default)|**39.99**|39.99 - 7% = 37.19|37.19|7.44|44.63|
 |Discount is deducted from price without taxes|**39.99**|39.99 - 7% = 37.19|37.19|7.44|44.63|
 |Discount is deducted from price with taxes|**39.99**|47.99 - 7% = 44.63|37.19|7.44|44.63|
+
+Home
+• [Model](modules/tax/model/model.md)
+• [Item](modules/tax/item/item.md)
+• [Collection](modules/tax/collection/collection.md)
+• [Examples](modules/tax/examples/examples.md)
+• [Extending](modules/tax/extending/extending.md)
+• [Advanced usage](modules/tax/advanced-usage/home.md)
+
+[Back to modules](modules/home.md)
