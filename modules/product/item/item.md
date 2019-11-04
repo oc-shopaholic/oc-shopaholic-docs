@@ -1,14 +1,15 @@
-# ProductItem {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ Item
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)
+
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• Item
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
+# ProductItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -153,12 +154,13 @@ Method returns total count of reviews with rating. Available with ["Reviews for 
 
 For example:  if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, then code ```$obProduct->getRatingTotalCount()``` returns 4.
 
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• Item
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ Item
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)

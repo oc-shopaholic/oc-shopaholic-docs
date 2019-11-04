@@ -1,9 +1,10 @@
-# PriceType model {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/price-type/home.md)
-/ Model
-/ [Advanced usage](modules/price-type/advanced-usage/home.md)
+
+[Home](modules/price-type/home.md)
+• Model
+• [Advanced usage](modules/price-type/advanced-usage/home.md)
+
+# PriceType model {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -41,7 +42,8 @@ PriceType::extend(function ($obPriceType) {
 });
 ```
 
+[Home](modules/price-type/home.md)
+• Model
+• [Advanced usage](modules/price-type/advanced-usage/home.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/price-type/home.md)
-/ Model
-/ [Advanced usage](modules/price-type/advanced-usage/home.md)

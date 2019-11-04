@@ -1,14 +1,15 @@
-# Components {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ Components
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)
+
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• Components
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
+# Components {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -399,12 +400,13 @@ $.request('ProductData::onRemoveFromWishList', {
 });
 ```
 
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• Components
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ Components
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)

@@ -1,8 +1,9 @@
-# Price {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ Home
-/ [Model](modules/price/model/model.md)
+
+Home
+• [Model](modules/price/model/model.md)
+
+# Price {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -23,6 +24,7 @@ After creating price type you can fill prices in offers
 
 ![](./../../assets/images/backend-price-type-2.png)
 
+Home
+• [Model](modules/price/model/model.md)
+
 [Back to modules](modules/home.md)
-/ Home
-/ [Model](modules/price/model/model.md)

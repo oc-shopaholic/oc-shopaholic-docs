@@ -1,14 +1,15 @@
-# ProductCollection {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ Collection
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)
+
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• Collection
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
+# ProductCollection {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -277,12 +278,13 @@ Method returns list of products from user wish list. Method available with [Wish
 $obList = ProductCollection::make()->wishList()->active();
 ```
 
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• Collection
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ Collection
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)

@@ -1,14 +1,15 @@
-# BrandItem {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ [Model](modules/brand/model/model.md)
-/ Item
-/ [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/component.md)
-/ [Events](modules/brand/event/event.md)
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)
+
+[Home](modules/brand/home.md)
+• [Model](modules/brand/model/model.md)
+• Item
+• [Collection](modules/brand/collection/collection.md)
+• [Components](modules/brand/component/component.md)
+• [Events](modules/brand/event/event.md)
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
+# BrandItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -71,12 +72,13 @@ echo $obBrandItem->my_property;
 Method returns URL of brand page.
 Method gets properties of [BrandPage](modules/brand/component/component.md#brandpage) component attached on page and compiles parameter :slug to generate page URL.
 
+[Home](modules/brand/home.md)
+• [Model](modules/brand/model/model.md)
+• Item
+• [Collection](modules/brand/collection/collection.md)
+• [Components](modules/brand/component/component.md)
+• [Events](modules/brand/event/event.md)
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ [Model](modules/brand/model/model.md)
-/ Item
-/ [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/component.md)
-/ [Events](modules/brand/event/event.md)
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)

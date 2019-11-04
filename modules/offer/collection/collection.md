@@ -1,13 +1,14 @@
-# OfferCollection{docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/offer/home.md)
-/ [Model](modules/offer/model/model.md)
-/ [Item](modules/offer/item/item.md)
-/ Collection
-/ [Events](modules/offer/event/event.md)
-/ [Examples](modules/offer/examples/examples.md)
-/ [Extending](modules/offer/extending/extending.md)
+
+[Home](modules/offer/home.md)
+• [Model](modules/offer/model/model.md)
+• [Item](modules/offer/item/item.md)
+• Collection
+• [Events](modules/offer/event/event.md)
+• [Examples](modules/offer/examples/examples.md)
+• [Extending](modules/offer/extending/extending.md)
+
+# OfferCollection{docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -95,11 +96,12 @@ Available sorting value:
 
 > You can use [**shopaholic.sorting.offer.get.list**](modules/offer/event/event.md#shopaholicsortingoffergetlist) event and add custom sorting for list of offers
 
+[Home](modules/offer/home.md)
+• [Model](modules/offer/model/model.md)
+• [Item](modules/offer/item/item.md)
+• Collection
+• [Events](modules/offer/event/event.md)
+• [Examples](modules/offer/examples/examples.md)
+• [Extending](modules/offer/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/offer/home.md)
-/ [Model](modules/offer/model/model.md)
-/ [Item](modules/offer/item/item.md)
-/ Collection
-/ [Events](modules/offer/event/event.md)
-/ [Examples](modules/offer/examples/examples.md)
-/ [Extending](modules/offer/extending/extending.md)

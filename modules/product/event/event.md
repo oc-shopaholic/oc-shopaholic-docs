@@ -1,14 +1,15 @@
-# Event list: Product
-
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ Events
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)
+
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• Events
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
+# Event list: Product
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -52,12 +53,13 @@ Event::listen('shopaholic.sorting.get.list', function($sSorting) {
 \Lovata\Shopaholic\Classes\Store\ProductListStore->sorting->clear('my_custom_sorting');
 ```
 
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• Events
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ Events
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)

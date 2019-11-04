@@ -1,14 +1,15 @@
-# Advanced usage {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/currency/home.md)
-/ [Model](modules/currency/model/model.md)
-/ [Item](modules/currency/item/item.md)
-/ [Collection](modules/currency/collection/collection.md)
-/ [Components](modules/currency/component/component.md)
-/ [Examples](modules/currency/examples/examples.md)
-/ [Extending](modules/currency/extending/extending.md)
-/ Advanced usage
+
+[Home](modules/currency/home.md)
+• [Model](modules/currency/model/model.md)
+• [Item](modules/currency/item/item.md)
+• [Collection](modules/currency/collection/collection.md)
+• [Components](modules/currency/component/component.md)
+• [Examples](modules/currency/examples/examples.md)
+• [Extending](modules/currency/extending/extending.md)
+• Advanced usage
+
+# Advanced usage {docsify-ignore-all}
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -75,12 +76,13 @@ Method allow you to switch active currency.
 CurrencyHelper::instance()->switchActive('usd');
 ```
 
+[Home](modules/currency/home.md)
+• [Model](modules/currency/model/model.md)
+• [Item](modules/currency/item/item.md)
+• [Collection](modules/currency/collection/collection.md)
+• [Components](modules/currency/component/component.md)
+• [Examples](modules/currency/examples/examples.md)
+• [Extending](modules/currency/extending/extending.md)
+• Advanced usage
+
 [Back to modules](modules/home.md)
-/ [Home](modules/currency/home.md)
-/ [Model](modules/currency/model/model.md)
-/ [Item](modules/currency/item/item.md)
-/ [Collection](modules/currency/collection/collection.md)
-/ [Components](modules/currency/component/component.md)
-/ [Examples](modules/currency/examples/examples.md)
-/ [Extending](modules/currency/extending/extending.md)
-/ Advanced usage

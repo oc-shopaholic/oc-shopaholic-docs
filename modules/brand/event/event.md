@@ -1,14 +1,15 @@
-# Event list: Brand
-
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ [Model](modules/brand/model/model.md)
-/ [Item](modules/brand/item/item.md)
-/ [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/component.md)
-/ Events
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)
+
+[Home](modules/brand/home.md)
+• [Model](modules/brand/model/model.md)
+• [Item](modules/brand/item/item.md)
+• [Collection](modules/brand/collection/collection.md)
+• [Components](modules/brand/component/component.md)
+• Events
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
+# Event list: Brand
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -23,12 +24,13 @@ Event::listen('shopaholic.brand.open', function($obBrand) {
 });
 ```
 
+[Home](modules/brand/home.md)
+• [Model](modules/brand/model/model.md)
+• [Item](modules/brand/item/item.md)
+• [Collection](modules/brand/collection/collection.md)
+• [Components](modules/brand/component/component.md)
+• Events
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ [Model](modules/brand/model/model.md)
-/ [Item](modules/brand/item/item.md)
-/ [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/component.md)
-/ Events
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)

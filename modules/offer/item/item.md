@@ -1,13 +1,14 @@
-# OfferItem {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/offer/home.md)
-/ [Model](modules/offer/model/model.md)
-/ Item
-/ [Collection](modules/offer/collection/collection.md)
-/ [Events](modules/offer/event/event.md)
-/ [Examples](modules/offer/examples/examples.md)
-/ [Extending](modules/offer/extending/extending.md)
+
+[Home](modules/offer/home.md)
+• [Model](modules/offer/model/model.md)
+• Item
+• [Collection](modules/offer/collection/collection.md)
+• [Events](modules/offer/event/event.md)
+• [Examples](modules/offer/examples/examples.md)
+• [Extending](modules/offer/extending/extending.md)
+
+# OfferItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -150,11 +151,12 @@ Method set active price type by ID
 echo $obOfferItem->setActivePriceType(1)->price;
 ```
 
+[Home](modules/offer/home.md)
+• [Model](modules/offer/model/model.md)
+• Item
+• [Collection](modules/offer/collection/collection.md)
+• [Events](modules/offer/event/event.md)
+• [Examples](modules/offer/examples/examples.md)
+• [Extending](modules/offer/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/offer/home.md)
-/ [Model](modules/offer/model/model.md)
-/ Item
-/ [Collection](modules/offer/collection/collection.md)
-/ [Events](modules/offer/event/event.md)
-/ [Examples](modules/offer/examples/examples.md)
-/ [Extending](modules/offer/extending/extending.md)

@@ -1,14 +1,15 @@
-# Product model {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ Model
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)
+
+[Home](modules/product/home.md)
+• Model
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
+# Product model {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -94,12 +95,13 @@ Product::extend(function ($obProduct) {
 });
 ```
 
+[Home](modules/product/home.md)
+• Model
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• [Extending](modules/product/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ Model
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ [Extending](modules/product/extending/extending.md)

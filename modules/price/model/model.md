@@ -1,8 +1,9 @@
-# Price model {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/price/home.md)
-/ Model
+
+[Home](modules/price/home.md)
+• Model
+
+# Price model {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -42,6 +43,7 @@ Price::extend(function ($obPrice) {
 });
 ```
 
+[Home](modules/price/home.md)
+• Model
+
 [Back to modules](modules/home.md)
-/ [Home](modules/price/home.md)
-/ Model

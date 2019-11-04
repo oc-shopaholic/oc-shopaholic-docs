@@ -1,3 +1,5 @@
+[Back to modules](modules/home.md)
+
 # Settings
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
@@ -151,3 +153,5 @@ You can set limit of products that will be stored in viewed products list.
 
 Go to **Backend -> Settings -> Basic Settings**
 ![](./../../assets/images/backend-settings-5.png)
+
+[Back to modules](modules/home.md)

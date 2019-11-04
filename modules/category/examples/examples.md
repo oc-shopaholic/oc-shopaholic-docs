@@ -1,14 +1,15 @@
-# Examples: Category
-
 [Back to modules](modules/home.md)
-/ [Home](modules/category/home.md)
-/ [Model](modules/category/model/model.md)
-/ [Item](modules/category/item/item.md)
-/ [Collection](modules/category/collection/collection.md)
-/ [Components](modules/category/component/component.md)
-/ [Events](modules/category/event/event.md)
-/ Examples
-/ [Extending](modules/category/extending/extending.md)
+
+[Home](modules/category/home.md)
+• [Model](modules/category/model/model.md)
+• [Item](modules/category/item/item.md)
+• [Collection](modules/category/collection/collection.md)
+• [Components](modules/category/component/component.md)
+• [Events](modules/category/event/event.md)
+• Examples
+• [Extending](modules/category/extending/extending.md)
+
+# Examples: Category
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -179,12 +180,13 @@ File: **partials/category/category-card/category-card.htm**
 </a>
 ```
 
+[Home](modules/category/home.md)
+• [Model](modules/category/model/model.md)
+• [Item](modules/category/item/item.md)
+• [Collection](modules/category/collection/collection.md)
+• [Components](modules/category/component/component.md)
+• [Events](modules/category/event/event.md)
+• Examples
+• [Extending](modules/category/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/category/home.md)
-/ [Model](modules/category/model/model.md)
-/ [Item](modules/category/item/item.md)
-/ [Collection](modules/category/collection/collection.md)
-/ [Components](modules/category/component/component.md)
-/ [Events](modules/category/event/event.md)
-/ Examples
-/ [Extending](modules/category/extending/extending.md)

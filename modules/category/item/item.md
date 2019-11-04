@@ -1,14 +1,15 @@
-# CategoryItem {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/category/home.md)
-/ [Model](modules/category/model/model.md)
-/ Item
-/ [Collection](modules/category/collection/collection.md)
-/ [Components](modules/category/component/component.md)
-/ [Events](modules/category/event/event.md)
-/ [Examples](modules/category/examples/examples.md)
-/ [Extending](modules/category/extending/extending.md)
+
+[Home](modules/category/home.md)
+• [Model](modules/category/model/model.md)
+• Item
+• [Collection](modules/category/collection/collection.md)
+• [Components](modules/category/component/component.md)
+• [Events](modules/category/event/event.md)
+• [Examples](modules/category/examples/examples.md)
+• [Extending](modules/category/extending/extending.md)
+
+# CategoryItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -98,12 +99,13 @@ slug_required = 1
 smart_url_check = 0
 ```
 
+[Home](modules/category/home.md)
+• [Model](modules/category/model/model.md)
+• Item
+• [Collection](modules/category/collection/collection.md)
+• [Components](modules/category/component/component.md)
+• [Events](modules/category/event/event.md)
+• [Examples](modules/category/examples/examples.md)
+• [Extending](modules/category/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/category/home.md)
-/ [Model](modules/category/model/model.md)
-/ Item
-/ [Collection](modules/category/collection/collection.md)
-/ [Components](modules/category/component/component.md)
-/ [Events](modules/category/event/event.md)
-/ [Examples](modules/category/examples/examples.md)
-/ [Extending](modules/category/extending/extending.md)

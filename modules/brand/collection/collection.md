@@ -1,14 +1,15 @@
-# BrandCollection {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ [Model](modules/brand/model/model.md)
-/ [Item](modules/brand/item/item.md)
-/ Collection
-/ [Components](modules/brand/component/component.md)
-/ [Events](modules/brand/event/event.md)
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)
+
+[Home](modules/brand/home.md)
+• [Model](modules/brand/model/model.md)
+• [Item](modules/brand/item/item.md)
+• Collection
+• [Components](modules/brand/component/component.md)
+• [Events](modules/brand/event/event.md)
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
+# BrandCollection {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -50,12 +51,13 @@ Method sorts elements of collection by "sort_order" field. You can change sortin
 
 ![](./../../../assets/images/backend-brand-5.png)
 
+[Home](modules/brand/home.md)
+• [Model](modules/brand/model/model.md)
+• [Item](modules/brand/item/item.md)
+• Collection
+• [Components](modules/brand/component/component.md)
+• [Events](modules/brand/event/event.md)
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ [Model](modules/brand/model/model.md)
-/ [Item](modules/brand/item/item.md)
-/ Collection
-/ [Components](modules/brand/component/component.md)
-/ [Events](modules/brand/event/event.md)
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)

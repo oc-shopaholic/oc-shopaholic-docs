@@ -1,14 +1,15 @@
-# Category {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ Home
-/ [Model](modules/category/model/model.md)
-/ [Item](modules/category/item/item.md)
-/ [Collection](modules/category/collection/collection.md)
-/ [Components](modules/category/component/component.md)
-/ [Events](modules/category/event/event.md)
-/ [Examples](modules/category/examples/examples.md)
-/ [Extending](modules/category/extending/extending.md)
+
+Home
+• [Model](modules/category/model/model.md)
+• [Item](modules/category/item/item.md)
+• [Collection](modules/category/collection/collection.md)
+• [Components](modules/category/component/component.md)
+• [Events](modules/category/event/event.md)
+• [Examples](modules/category/examples/examples.md)
+• [Extending](modules/category/extending/extending.md)
+
+# Category {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -42,12 +43,13 @@ You can import categories from XML and CSV files.
 
 ![](./../../assets/images/backend-category-4.png)
 
+Home
+• [Model](modules/category/model/model.md)
+• [Item](modules/category/item/item.md)
+• [Collection](modules/category/collection/collection.md)
+• [Components](modules/category/component/component.md)
+• [Events](modules/category/event/event.md)
+• [Examples](modules/category/examples/examples.md)
+• [Extending](modules/category/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ Home
-/ [Model](modules/category/model/model.md)
-/ [Item](modules/category/item/item.md)
-/ [Collection](modules/category/collection/collection.md)
-/ [Components](modules/category/component/component.md)
-/ [Events](modules/category/event/event.md)
-/ [Examples](modules/category/examples/examples.md)
-/ [Extending](modules/category/extending/extending.md)

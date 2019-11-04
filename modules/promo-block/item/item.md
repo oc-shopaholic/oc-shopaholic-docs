@@ -1,14 +1,15 @@
-# PromoBlockItem {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/promo-block/home.md)
-/ [Model](modules/promo-block/model/model.md)
-/ Item
-/ [Collection](modules/promo-block/collection/collection.md)
-/ [Components](modules/promo-block/component/component.md)
-/ [Events](modules/promo-block/event/event.md)
-/ [Examples](modules/promo-block/examples/examples.md)
-/ [Extending](modules/promo-block/extending/extending.md)
+
+[Home](modules/promo-block/home.md)
+• [Model](modules/promo-block/model/model.md)
+• Item
+• [Collection](modules/promo-block/collection/collection.md)
+• [Components](modules/promo-block/component/component.md)
+• [Events](modules/promo-block/event/event.md)
+• [Examples](modules/promo-block/examples/examples.md)
+• [Extending](modules/promo-block/extending/extending.md)
+
+# PromoBlockItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -75,12 +76,13 @@ echo $obPromoBlockItem->my_property;
 Method returns URL of promo block page.
 Method gets PromoBlockPage component attached on page and compiles parameter :slug to generate page URL.
 
+[Home](modules/promo-block/home.md)
+• [Model](modules/promo-block/model/model.md)
+• Item
+• [Collection](modules/promo-block/collection/collection.md)
+• [Components](modules/promo-block/component/component.md)
+• [Events](modules/promo-block/event/event.md)
+• [Examples](modules/promo-block/examples/examples.md)
+• [Extending](modules/promo-block/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/promo-block/home.md)
-/ [Model](modules/promo-block/model/model.md)
-/ Item
-/ [Collection](modules/promo-block/collection/collection.md)
-/ [Components](modules/promo-block/component/component.md)
-/ [Events](modules/promo-block/event/event.md)
-/ [Examples](modules/promo-block/examples/examples.md)
-/ [Extending](modules/promo-block/extending/extending.md)

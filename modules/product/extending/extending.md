@@ -1,14 +1,15 @@
-# Extending: Product
-
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ Extending
+
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• Extending
+
+# Extending: Product
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -551,12 +552,13 @@ public function boot()
 {% endif %}
 ```
 
+[Home](modules/product/home.md)
+• [Model](modules/product/model/model.md)
+• [Item](modules/product/item/item.md)
+• [Collection](modules/product/collection/collection.md)
+• [Components](modules/product/component/component.md)
+• [Events](modules/product/event/event.md)
+• [Examples](modules/product/examples/examples.md)
+• Extending
+
 [Back to modules](modules/home.md)
-/ [Home](modules/product/home.md)
-/ [Model](modules/product/model/model.md)
-/ [Item](modules/product/item/item.md)
-/ [Collection](modules/product/collection/collection.md)
-/ [Components](modules/product/component/component.md)
-/ [Events](modules/product/event/event.md)
-/ [Examples](modules/product/examples/examples.md)
-/ Extending

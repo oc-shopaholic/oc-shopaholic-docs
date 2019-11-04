@@ -1,14 +1,15 @@
-# Currency model {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/currency/home.md)
-/ Model
-/ [Item](modules/currency/item/item.md)
-/ [Collection](modules/currency/collection/collection.md)
-/ [Components](modules/currency/component/component.md)
-/ [Examples](modules/currency/examples/examples.md)
-/ [Extending](modules/currency/extending/extending.md)
-/ [Advanced usage](modules/currency/advanced-usage/home.md)
+
+[Home](modules/currency/home.md)
+• Model
+• [Item](modules/currency/item/item.md)
+• [Collection](modules/currency/collection/collection.md)
+• [Components](modules/currency/component/component.md)
+• [Examples](modules/currency/examples/examples.md)
+• [Extending](modules/currency/extending/extending.md)
+• [Advanced usage](modules/currency/advanced-usage/home.md)
+
+# Currency model {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -44,12 +45,13 @@ Currency::extend(function ($obCurrency) {
 });
 ```
 
+[Home](modules/currency/home.md)
+• Model
+• [Item](modules/currency/item/item.md)
+• [Collection](modules/currency/collection/collection.md)
+• [Components](modules/currency/component/component.md)
+• [Examples](modules/currency/examples/examples.md)
+• [Extending](modules/currency/extending/extending.md)
+• [Advanced usage](modules/currency/advanced-usage/home.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/currency/home.md)
-/ Model
-/ [Item](modules/currency/item/item.md)
-/ [Collection](modules/currency/collection/collection.md)
-/ [Components](modules/currency/component/component.md)
-/ [Examples](modules/currency/examples/examples.md)
-/ [Extending](modules/currency/extending/extending.md)
-/ [Advanced usage](modules/currency/advanced-usage/home.md)

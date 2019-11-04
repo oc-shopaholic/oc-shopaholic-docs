@@ -1,9 +1,10 @@
-# Advanced usage {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/price-type/home.md)
-/ [Model](modules/price-type/model/model.md)
-/ Advanced usage
+
+[Home](modules/price-type/home.md)
+• [Model](modules/price-type/model/model.md)
+• Advanced usage
+
+# Advanced usage {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -47,7 +48,8 @@ Method allow you to switch active price type.
 PriceTypeHelper::instance()->switchActive('b2b');
 ```
 
+[Home](modules/price-type/home.md)
+• [Model](modules/price-type/model/model.md)
+• Advanced usage
+
 [Back to modules](modules/home.md)
-/ [Home](modules/price-type/home.md)
-/ [Model](modules/price-type/model/model.md)
-/ Advanced usage

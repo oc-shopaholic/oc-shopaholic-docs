@@ -1,14 +1,15 @@
-# Brand model {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ Model
-/ [Item](modules/brand/item/item.md)
-/ [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/component.md)
-/ [Events](modules/brand/event/event.md)
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)
+
+[Home](modules/brand/home.md)
+• Model
+• [Item](modules/brand/item/item.md)
+• [Collection](modules/brand/collection/collection.md)
+• [Components](modules/brand/component/component.md)
+• [Events](modules/brand/event/event.md)
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
+# Brand model {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -69,12 +70,13 @@ Brand::extend(function ($obBrand) {
 });
 ```
 
+[Home](modules/brand/home.md)
+• Model
+• [Item](modules/brand/item/item.md)
+• [Collection](modules/brand/collection/collection.md)
+• [Components](modules/brand/component/component.md)
+• [Events](modules/brand/event/event.md)
+• [Examples](modules/brand/examples/examples.md)
+• [Extending](modules/brand/extending/extending.md)
+
 [Back to modules](modules/home.md)
-/ [Home](modules/brand/home.md)
-/ Model
-/ [Item](modules/brand/item/item.md)
-/ [Collection](modules/brand/collection/collection.md)
-/ [Components](modules/brand/component/component.md)
-/ [Events](modules/brand/event/event.md)
-/ [Examples](modules/brand/examples/examples.md)
-/ [Extending](modules/brand/extending/extending.md)
