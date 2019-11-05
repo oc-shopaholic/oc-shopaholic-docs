@@ -4,7 +4,6 @@
 • [Model](modules/tax/model/model.md)
 • [Item](modules/tax/item/item.md)
 • Collection
-• [Examples](modules/tax/examples/examples.md)
 • [Extending](modules/tax/extending/extending.md)
 • [Advanced usage](modules/tax/advanced-usage/home.md)
 
@@ -31,7 +30,6 @@ Method sorts elements of collection by "sort_order" field.
 • [Model](modules/tax/model/model.md)
 • [Item](modules/tax/item/item.md)
 • Collection
-• [Examples](modules/tax/examples/examples.md)
 • [Extending](modules/tax/extending/extending.md)
 • [Advanced usage](modules/tax/advanced-usage/home.md)
 

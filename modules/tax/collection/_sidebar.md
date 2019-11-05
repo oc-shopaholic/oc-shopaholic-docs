@@ -7,7 +7,6 @@
     * [Collection](modules/tax/collection/collection.md#taxcollection)
       * [active](modules/tax/collection/collection.md#active)
       * [sort](modules/tax/collection/collection.md#sort)
-    * [Examples](modules/tax/examples/examples.md)
     * [Extending](modules/tax/extending/extending.md)
     * [Advanced usage](modules/tax/advanced-usage/home.md)
 * [Payment gateways](payment-gateways/home.md)

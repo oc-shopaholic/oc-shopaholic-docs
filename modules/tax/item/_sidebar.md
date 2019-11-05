@@ -7,7 +7,6 @@
       * [Field list](modules/tax/item/item.md#field-list)
       * [Extending](modules/tax/item/item.md#extending)
     * [Collection](modules/tax/collection/collection.md)
-    * [Examples](modules/tax/examples/examples.md)
     * [Extending](modules/tax/extending/extending.md)
     * [Advanced usage](modules/tax/advanced-usage/home.md)
 * [Payment gateways](payment-gateways/home.md)

@@ -5,7 +5,6 @@
     * [Model](modules/tax/model/model.md#tax-model)
     * [Item](modules/tax/item/item.md)
     * [Collection](modules/tax/collection/collection.md)
-    * [Examples](modules/tax/examples/examples.md)
     * [Extending](modules/tax/extending/extending.md#extending-tax)
     * [Advanced usage](modules/tax/advanced-usage/home.md)
 * [Payment gateways](payment-gateways/home.md)

@@ -4,8 +4,6 @@
 • Model
 • [Item](modules/tax/item/item.md)
 • [Collection](modules/tax/collection/collection.md)
-• [Components](modules/tax/component/component.md)
-• [Examples](modules/tax/examples/examples.md)
 • [Extending](modules/tax/extending/extending.md)
 • [Advanced usage](modules/tax/advanced-usage/home.md)
 
@@ -58,8 +56,6 @@ Tax::extend(function ($obTax) {
 • Model
 • [Item](modules/tax/item/item.md)
 • [Collection](modules/tax/collection/collection.md)
-• [Components](modules/tax/component/component.md)
-• [Examples](modules/tax/examples/examples.md)
 • [Extending](modules/tax/extending/extending.md)
 • [Advanced usage](modules/tax/advanced-usage/home.md)
 
