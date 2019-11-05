@@ -124,7 +124,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/offer/ExtendOfferFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/offer/ExtendOfferFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Offer;
 
@@ -200,7 +200,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/offer/ExtendOfferModel.php**
+File: **plugins/lovata/basecode/classes/event/offer/ExtendOfferModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Offer;
 
@@ -270,7 +270,7 @@ In [section](modules/offer/extending/extending.md#add-custom-field) you can find
 
 1. Create event class to extend OfferCollection class.
 
-File: **plugins/lovata/basecode/classes/events/offer/ExtendOfferCollection.php**
+File: **plugins/lovata/basecode/classes/event/offer/ExtendOfferCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Offer;
 
@@ -411,7 +411,7 @@ class OfferListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/offer/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/offer/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/offer/ExtendOfferModel.php**
+File: **plugins/lovata/basecode/classes/event/offer/ExtendOfferModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Offer;
 
@@ -487,7 +487,7 @@ class ExtendOfferModel extends ModelHandler
 
 1. Create event class to extend OfferCollection class.
 
-File: **plugins/lovata/basecode/classes/events/offer/ExtendOfferCollection.php**
+File: **plugins/lovata/basecode/classes/event/offer/ExtendOfferCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Offer;
 

@@ -125,7 +125,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/promoblock/ExtendPromoBlockFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/promoblock/ExtendPromoBlockFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\PromoBlock;
 
@@ -201,7 +201,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/promoblock/ExtendPromoBlockModel.php**
+File: **plugins/lovata/basecode/classes/event/promoblock/ExtendPromoBlockModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\PromoBlock;
 
@@ -269,7 +269,7 @@ In [section](modules/promo-block/extending/extending.md#add-custom-field) you ca
 
 1. Create event class to extend PromoBlockCollection class.
 
-File: **plugins/lovata/basecode/classes/events/promoblock/ExtendPromoBlockCollection.php**
+File: **plugins/lovata/basecode/classes/event/promoblock/ExtendPromoBlockCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\PromoBlock;
 
@@ -405,7 +405,7 @@ class PromoBlockListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/promo-block/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/promo-block/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/promoblock/ExtendPromoBlockModel.php**
+File: **plugins/lovata/basecode/classes/event/promoblock/ExtendPromoBlockModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\PromoBlock;
 
@@ -481,7 +481,7 @@ class ExtendPromoBlockModel extends ModelHandler
 
 1. Create event class to extend PromoBlockCollection class.
 
-File: **plugins/lovata/basecode/classes/events/promoblock/ExtendPromoBlockCollection.php**
+File: **plugins/lovata/basecode/classes/event/promoblock/ExtendPromoBlockCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\PromoBlock;
 

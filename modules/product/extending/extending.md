@@ -125,7 +125,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/product/ExtendProductFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/product/ExtendProductFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Product;
 
@@ -201,7 +201,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/product/ExtendProductModel.php**
+File: **plugins/lovata/basecode/classes/event/product/ExtendProductModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Product;
 
@@ -269,7 +269,7 @@ In [section](modules/product/extending/extending.md#add-custom-field) you can fi
 
 1. Create event class to extend ProductCollection class.
 
-File: **plugins/lovata/basecode/classes/events/product/ExtendProductCollection.php**
+File: **plugins/lovata/basecode/classes/event/product/ExtendProductCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Product;
 
@@ -405,7 +405,7 @@ class ProductListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/product/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/product/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/product/ExtendProductModel.php**
+File: **plugins/lovata/basecode/classes/event/product/ExtendProductModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Product;
 
@@ -481,7 +481,7 @@ class ExtendProductModel extends ModelHandler
 
 1. Create event class to extend ProductCollection class.
 
-File: **plugins/lovata/basecode/classes/events/product/ExtendProductCollection.php**
+File: **plugins/lovata/basecode/classes/event/product/ExtendProductCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Product;
 

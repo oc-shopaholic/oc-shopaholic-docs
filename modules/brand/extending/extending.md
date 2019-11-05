@@ -124,7 +124,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/brand/ExtendBrandFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/brand/ExtendBrandFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Brand;
 
@@ -200,7 +200,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/brand/ExtendBrandModel.php**
+File: **plugins/lovata/basecode/classes/event/brand/ExtendBrandModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Brand;
 
@@ -268,7 +268,7 @@ In [section](modules/brand/extending/extending.md#add-custom-field) you can find
 
 1. Create event class to extend BrandCollection class.
 
-File: **plugins/lovata/basecode/classes/events/brand/ExtendBrandCollection.php**
+File: **plugins/lovata/basecode/classes/event/brand/ExtendBrandCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Brand;
 
@@ -404,7 +404,7 @@ class BrandListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/brand/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/brand/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/brand/ExtendBrandModel.php**
+File: **plugins/lovata/basecode/classes/event/brand/ExtendBrandModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Brand;
 
@@ -480,7 +480,7 @@ class ExtendBrandModel extends ModelHandler
 
 1. Create event class to extend BrandCollection class.
 
-File: **plugins/lovata/basecode/classes/events/brand/ExtendBrandCollection.php**
+File: **plugins/lovata/basecode/classes/event/brand/ExtendBrandCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Brand;
 

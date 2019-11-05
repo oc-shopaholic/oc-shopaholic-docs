@@ -125,7 +125,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/currency/ExtendCurrencyFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/currency/ExtendCurrencyFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Currency;
 
@@ -201,7 +201,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/currency/ExtendCurrencyModel.php**
+File: **plugins/lovata/basecode/classes/event/currency/ExtendCurrencyModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Currency;
 
@@ -267,7 +267,7 @@ In [section](modules/currency/extending/extending.md#add-custom-field) you can f
 
 1. Create event class to extend CurrencyCollection class.
 
-File: **plugins/lovata/basecode/classes/events/currency/ExtendCurrencyCollection.php**
+File: **plugins/lovata/basecode/classes/event/currency/ExtendCurrencyCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Currency;
 
@@ -403,7 +403,7 @@ class CurrencyListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/currency/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/currency/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/currency/ExtendCurrencyModel.php**
+File: **plugins/lovata/basecode/classes/event/currency/ExtendCurrencyModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Currency;
 
@@ -479,7 +479,7 @@ class ExtendCurrencyModel extends ModelHandler
 
 1. Create event class to extend CurrencyCollection class.
 
-File: **plugins/lovata/basecode/classes/events/currency/ExtendCurrencyCollection.php**
+File: **plugins/lovata/basecode/classes/event/currency/ExtendCurrencyCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Currency;
 

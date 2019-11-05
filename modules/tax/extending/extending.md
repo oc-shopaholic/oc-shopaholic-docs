@@ -124,7 +124,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/tax/ExtendTaxFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/tax/ExtendTaxFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Tax;
 
@@ -200,7 +200,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/tax/ExtendTaxModel.php**
+File: **plugins/lovata/basecode/classes/event/tax/ExtendTaxModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Tax;
 
@@ -266,7 +266,7 @@ In [section](modules/tax/extending/extending.md#add-custom-field) you can find i
 
 1. Create event class to extend TaxCollection class.
 
-File: **plugins/lovata/basecode/classes/events/tax/ExtendTaxCollection.php**
+File: **plugins/lovata/basecode/classes/event/tax/ExtendTaxCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Tax;
 
@@ -402,7 +402,7 @@ class TaxListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/tax/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/tax/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/tax/ExtendTaxModel.php**
+File: **plugins/lovata/basecode/classes/event/tax/ExtendTaxModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Tax;
 
@@ -478,7 +478,7 @@ class ExtendTaxModel extends ModelHandler
 
 1. Create event class to extend TaxCollection class.
 
-File: **plugins/lovata/basecode/classes/events/tax/ExtendTaxCollection.php**
+File: **plugins/lovata/basecode/classes/event/tax/ExtendTaxCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Tax;
 

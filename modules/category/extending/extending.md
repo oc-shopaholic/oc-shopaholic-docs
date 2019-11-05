@@ -125,7 +125,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/category/ExtendCategoryFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/category/ExtendCategoryFieldsHandler.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Category;
 
@@ -201,7 +201,7 @@ public function boot()
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/events/category/ExtendCategoryModel.php**
+File: **plugins/lovata/basecode/classes/event/category/ExtendCategoryModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Category;
 
@@ -269,7 +269,7 @@ In [section](modules/category/extending/extending.md#add-custom-field) you can f
 
 1. Create event class to extend CategoryCollection class.
 
-File: **plugins/lovata/basecode/classes/events/category/ExtendCategoryCollection.php**
+File: **plugins/lovata/basecode/classes/event/category/ExtendCategoryCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Category;
 
@@ -405,7 +405,7 @@ class CategoryListStore extends AbstractListStore
 
 1. Modify event that we added in ["Add custom field"](modules/category/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/category/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/events/category/ExtendCategoryModel.php**
+File: **plugins/lovata/basecode/classes/event/category/ExtendCategoryModel.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Category;
 
@@ -481,7 +481,7 @@ class ExtendCategoryModel extends ModelHandler
 
 1. Create event class to extend CategoryCollection class.
 
-File: **plugins/lovata/basecode/classes/events/category/ExtendCategoryCollection.php**
+File: **plugins/lovata/basecode/classes/event/category/ExtendCategoryCollection.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Event\Category;
 
