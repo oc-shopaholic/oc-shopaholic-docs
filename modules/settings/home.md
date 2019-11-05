@@ -5,6 +5,25 @@
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+> You can find more information about plugin settings in OctoberCMS [docs](https://octobercms.com/docs/plugin/settings)
+
+* [Active products](#active-products)
+* [Cart](#cart)
+* [Discounts](#discounts)
+* [Import from CSV](#import-from-csv)
+* [Import from XML](#import-from-xml)
+* [Orders](#orders)
+* [Popularity](#popularity)
+* [Price format](#price-format)
+* [Properties](#properties)
+* [Property sets](#property-sets)
+* [Reviews](#reviews)
+* [Search](#search)
+* [Sending emails with queues](#sending-emails-with-queues)
+* [Taxes](#taxes)
+* [Translatable URL](#translatable-url)
+* [Viewed products](#viewed-products)
+
 ## Active products
 
 Often projects require you to hide products that do not have active offers.
