@@ -85,7 +85,7 @@ class UpdateTableBrands1 extends Migration
             return;
         }
 
-        Schema::create(self::TABLE_NAME, function (Blueprint $obTable)
+        Schema::table(self::TABLE_NAME, function (Blueprint $obTable)
         {
             $obTable->boolean('my_field')->default(0);
         });
@@ -97,7 +97,7 @@ class UpdateTableBrands1 extends Migration
             return;
         }
 
-        Schema::create(self::TABLE_NAME, function (Blueprint $obTable)
+        Schema::table(self::TABLE_NAME, function (Blueprint $obTable)
         {
             $obTable->dropColumn(['my_field']);
         });
