@@ -29,6 +29,26 @@ Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_PRODUCT_LIST, func
 });
 ```
 
+## **shopaholic.promo_block.get.type.list**
+
+The event allow you to extend list with available types of promo blocks.
+You can set type of promo block in backend and use it in your templates.
+
+![](./../../../assets/images/backend-promo-block-3.png)
+
+For example:
+```php
+Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_TYPE_LIST, function() {
+    $arResult = [
+        'my_type_1' => 'My custom type 1',
+        'my_type_2' => 'My custom type 2',
+    ];
+    
+    return $arResult;
+});
+```
+
+
 [Home](modules/promo-block/home.md)
 • [Model](modules/promo-block/model/model.md)
 • [Item](modules/promo-block/item/item.md)
