@@ -1,0 +1,544 @@
+{
+  "architecture": {
+    "title": "Architecture",
+    "slug": "architecture",
+    "anchor": "architecture",
+    "directory-structure" : {"title": "Directory structure", "anchor": "directory-structure"},
+    "migration-and-seeder-files" : {"title": "Migration and seeder files", "anchor": "migration-and-seeder-files"},
+    "model-classes" : {"title": "Model classes", "anchor": "model-classes"},
+    "caching" : {"title": "Caching", "anchor": "caching"},
+    "components" : {"title": "Components", "anchor": "components"},
+    "item-class" : {
+      "title": "**ElementItem class**",
+      "slug": "item-class",
+      "anchor": "elementitem-classes",
+      "logical-diagram" : {"title": "Logical diagram", "anchor": "logical-diagram"},
+      "method-list" : {"title": "Method List", "anchor": "method-list"},
+      "extending" : {"title": "Extending", "anchor": "extending"},
+      "integration-with-translate-plugin" : {"title": "Integration with Translate plugin", "anchor": "integration-with-translate-plugin"}
+    },
+    "collection-class" : {
+      "title": "**ElementCollection class**",
+      "slug": "collection-class",
+      "anchor": "elementcollection-class",
+      "logical-diagram" : {"title": "Logical diagram", "anchor": "logical-diagram"},
+      "extending" : {"title": "Extending", "anchor": "extending"},
+      "method-list" : {"title": "Method List", "anchor": "method-list"}
+    },
+    "store-class": {
+      "title": "Store class",
+      "slug": "store-class",
+      "anchor": "store-class",
+      "logical-diagram" : {"title": "Logical diagram", "anchor": "logical-diagram"},
+      "abstractstorewithoutparam" : {"title": "AbstractStoreWithoutParam", "anchor": "abstractstorewithoutparam"},
+      "abstractstorewithparam" : {"title": "AbstractStoreWithParam", "anchor": "abstractstorewithparam"},
+      "abstractstorewithtwoparam" : {"title": "AbstractStoreWithTwoParam", "anchor": "abstractstorewithtwoparam"}
+    }
+  },
+  "catalog-structure": {
+    "title": "Designing of catalog structure",
+    "slug": "catalog-structure",
+    "anchor": "designing-of-catalog-structure",
+    "step-1-products-and-offers" : {"title": "Step 1: Products and offers", "anchor": "step-1-products-and-offers"},
+    "step-2-related-products" : {"title": "Step 2: Related products", "anchor": "step-2-related-products"},
+    "step-3-category-and-tags" : {"title": "Step 3: Category and tags", "anchor": "step-3-category-and-tags"},
+    "step-4-product-and-offer-properties" : {"title": "Step 4: Product and offer properties", "anchor": "step-4-product-and-offer-properties"}
+  },
+  "modules": {
+    "title": "<span style=\"color: red\">**Modules**</span>",
+    "slug": "home",
+    "brand": {
+      "title": "Brand",
+      "slug": "home",
+      "anchor": "brand",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "brand-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "images": {"title": "Images", "anchor": "images"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "search-fields": {"title": "Search fields", "anchor": "search-fields"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "branditem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "brandcollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "brandlist": {"title": "BrandList", "anchor": "brandlist"},
+        "brandpage": {"title": "BrandPage", "anchor": "brandpage"},
+        "branddata": {"title": "BrandData", "anchor": "branddata"}
+      },
+      "event": {
+        "title": "Events",
+        "slug": "event",
+        "anchor": "event-list-brand",
+        "shopaholicbrandopen": {"title": "shopaholic.brand.open", "anchor": "shopaholicbrandopen"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-brand",
+        "example-1-brand-page": {"title": "Example 1: Brand page", "anchor": "example-1-brand-page"},
+        "example-2-brand-card": {"title": "Example 2: Brand card", "anchor": "example-2-brand-card"},
+        "example-3-random-brand-list": {"title": "Example 3: Random brand list", "anchor": "example-3-random-brand-list"},
+        "example-4-brand-list-with-pagination": {"title": "Example 4: Brand list with pagination", "anchor": "example-4-brand-list-with-pagination"},
+        "example-5-filter-panel-with-brands": {"title": "Example 5: Filter panel with brands", "anchor": "example-5-filter-panel-with-brands"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-brand",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "category": {
+      "title": "Category",
+      "slug": "home",
+      "anchor": "category",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "category-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "images": {"title": "Images", "anchor": "images"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "search-fields": {"title": "Search fields", "anchor": "search-fields"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "categoryitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "categorycollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "categorylist": {"title": "CategoryList", "anchor": "categorylist"},
+        "categorypage": {"title": "CategoryPage", "anchor": "categorypage"},
+        "categorydata": {"title": "CategoryData", "anchor": "categorydata"}
+      },
+      "event": {
+        "title": "Events",
+        "slug": "event",
+        "anchor": "event-list-category",
+        "shopaholiccategoryopen": {"title": "shopaholic.category.open", "anchor": "shopaholiccategoryopen"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-category",
+        "example-1-category-page": {"title": "Example 1: Category page", "anchor": "example-1-category-page"},
+        "example-2-category-tree": {"title": "Example 2: Category tree", "anchor": "example-2-category-tree"},
+        "example-3-category-card": {"title": "Example 3: Category card", "anchor": "example-3-category-card"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-category",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "currency": {
+      "title": "Currency",
+      "slug": "home",
+      "anchor": "currency",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "currency-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "currencyitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "currencycollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "currencylist": {"title": "CurrencyList", "anchor": "currencylist"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-currency",
+        "example-1-currency-list": {"title": "Example 1: Currency list", "anchor": "example-1-currency-list"},
+        "example-2-switching-active-currency": {"title": "Example 2: Switching active currency", "anchor": "example-2-switching-active-currency"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-currency",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      },
+      "advanced-usage": {
+        "title": "Advanced usage",
+        "slug": "home",
+        "anchor": "advanced-usage",
+        "currencyhelper-class": {"title": "CurrencyHelper class", "anchor": "currencyhelper-class"}
+      }
+    },
+    "offer": {
+      "title": "Offer",
+      "slug": "home",
+      "anchor": "offer",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "offer-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "images": {"title": "Images", "anchor": "images"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "offeritem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "offercollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "event": {
+        "title": "Events",
+        "slug": "event",
+        "anchor": "event-list-offer",
+        "shopaholicsortingoffergetlist": {"title": "shopaholic.sorting.offer.get.list", "anchor": "shopaholicsortingoffergetlist"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-offer",
+        "example-1-product-page": {"title": "Example 1: Product page", "anchor": "example-1-product-page"},
+        "example-2-product-card": {"title": "Example 2: Product card", "anchor": "example-2-product-card"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-offer",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "price": {
+      "title": "Price",
+      "slug": "home",
+      "anchor": "price",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "price-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      }
+    },
+    "price-type": {
+      "title": "Price type",
+      "slug": "home",
+      "anchor": "price-type",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "pricetype-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "advanced-usage": {
+        "title": "Advanced usage",
+        "slug": "home",
+        "anchor": "advanced-usage",
+        "pricetypehelper-class": {"title": "PriceTypeHelper class", "anchor": "pricetypehelper-class"}
+      }
+    },
+    "product": {
+      "title": "Product",
+      "slug": "home",
+      "anchor": "product",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "product-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "images": {"title": "Images", "anchor": "images"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "search-fields": {"title": "Search fields", "anchor": "search-fields"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "productitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "productcollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "productlist": {"title": "ProductList", "anchor": "productlist"},
+        "productpage": {"title": "ProductPage", "anchor": "productpage"},
+        "productdata": {"title": "ProductData", "anchor": "productdata"}
+      },
+      "event": {
+        "title": "Events",
+        "slug": "event",
+        "anchor": "event-list-product",
+        "shopaholicpromo_blockgetproductlist": {"title": "shopaholic.promo_block.get.product.list", "anchor": "shopaholicpromo_blockgetproductlist"},
+        "shopaholicsortinggetlist": {"title": "shopaholic.sorting.get.list", "anchor": "shopaholicsortinggetlist"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-product",
+        "example-1-product-page": {"title": "Example 1: Product page", "anchor": "example-1-product-page"},
+        "example-2-product-card": {"title": "Example 2: Product card", "anchor": "example-2-product-card"},
+        "example-3-catalog-page": {"title": "Example 3: Catalog page", "anchor": "example-3-catalog-page"},
+        "example-4-accessories-on-product-page": {"title": "Example 4: Accessories on product page", "anchor": "example-4-accessories-on-product-page"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-product",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "promo-block": {
+      "title": "Promo block",
+      "slug": "home",
+      "anchor": "promo-block",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "promoblock-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "images": {"title": "Images", "anchor": "images"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "promoblockitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "promoblockcollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "promoblocklist": {"title": "PromoBlockList", "anchor": "promoblocklist"},
+        "promoblockpage": {"title": "PromoBlockPage", "anchor": "promoblockpage"},
+        "promoblockdata": {"title": "PromoBlockData", "anchor": "promoblockdata"}
+      },
+      "event": {
+        "title": "Events",
+        "slug": "event",
+        "anchor": "event-list-promo-block",
+        "shopaholicpromo_blockgetpromo-blocklist": {"title": "shopaholic.promo_block.get.promo-block.list", "anchor": "shopaholicpromo_blockgetpromo-blocklist"},
+        "shopaholicpromo_blockgettypelist": {"title": "shopaholic.promo_block.get.type.list", "anchor": "shopaholicpromo_blockgettypelist"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-promo-block",
+        "example-1-promo-block-page": {"title": "Example 1: Promo block page", "anchor": "example-1-promo-block-page"},
+        "example-2-promo-block-card": {"title": "Example 2: Promo block card", "anchor": "example-2-promo-block-card"},
+        "example-3-random-promo-block-list": {"title": "Example 3: Random promo block list", "anchor": "example-3-random-promo-block-list"},
+        "example-4-promo-block-list-with-pagination": {"title": "Example 4: Promo block list with pagination", "anchor": "example-4-promo-block-list-with-pagination"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-promo-block",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "slug": "home",
+      "anchor": "settings",
+      "active-products": {"title":  "Active products", "anchor": "active-products"},
+      "cart": {"title":  "Cart", "anchor": "cart"},
+      "discounts": {"title":  "Discounts", "anchor": "discounts"},
+      "import-from-csv": {"title":  "Import from CSV", "anchor": "import-from-csv"},
+      "import-from-xml": {"title":  "Import from XML", "anchor": "import-from-xml"},
+      "orders": {"title":  "Orders", "anchor": "orders"},
+      "popularity": {"title":  "Popularity", "anchor": "popularity"},
+      "price-format": {"title":  "Price format", "anchor": "price-format"},
+      "properties": {"title":  "Properties", "anchor": "properties"},
+      "property-sets": {"title":  "Property sets", "anchor": "property-sets"},
+      "reviews": {"title":  "Reviews", "anchor": "reviews"},
+      "search": {"title":  "Search", "anchor": "search"},
+      "sending-emails-with-queues": {"title":  "Sending emails with queues", "anchor": "sending-emails-with-queues"},
+      "taxes": {"title":  "Taxes", "anchor": "taxes"},
+      "translatable-url": {"title":  "Translatable URL", "anchor": "translatable-url"},
+      "viewed-products": {"title":  "Viewed products", "anchor": "viewed-products"}
+    },
+    "tax": {
+      "title": "Tax",
+      "slug": "home",
+      "anchor": "tax",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "tax-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "taxitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "taxcollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "taxlist": {"title": "TaxList", "anchor": "taxlist"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-tax",
+        "example-1-tax-list": {"title": "Example 1: Tax list", "anchor": "example-1-tax-list"},
+        "example-2-switching-active-tax": {"title": "Example 2: Switching active tax", "anchor": "example-2-switching-active-tax"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-tax",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      },
+      "advanced-usage": {
+        "title": "Advanced usage",
+        "slug": "home",
+        "anchor": "advanced-usage",
+        "taxhelper-class": {"title": "TaxHelper class", "anchor": "taxhelper-class"}
+      }
+    }
+  },
+  "event": {
+    "title": "Events",
+    "slug": "home"
+  },
+  "payment-gateways": {
+    "title": "Payment gateways",
+    "slug": "home"
+  },
+  "shipping": {
+    "title": "Shipping",
+    "slug": "home"
+  },
+  "artisan-commands": {
+    "title": "Artisan commands",
+    "slug": "home",
+    "anchor": "artisan-commands",
+    "database-integrity": {"title":  "Database integrity", "anchor":  "database-integrity"},
+    "discounts": {"title":  "Discounts", "anchor":  "discounts"},
+    "import-from-xml": {"title":  "Import from XML", "anchor":  "import-from-xml"},
+    "tasks": {"title":  "Tasks", "anchor":  "tasks"}
+  },
+  "import": {
+    "title": "Import",
+    "slug": "import-from-xml/home",
+    "anchor": "import-from-xml",
+    "import-from-xml": {
+      "title": "Import from XML",
+      "slug": "home",
+      "anchor": "import-from-xml"
+    },
+    "import-from-csv": {
+      "title": "Import from CSV",
+      "slug": "home",
+      "anchor": "import-from-csv"
+    }
+  },
+  "plugins": {
+    "title": "Plugins",
+    "slug": "home"
+  },
+  "changelog": {
+    "title": "Changelog",
+    "slug": "changelog"
+  }
+}

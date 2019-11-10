@@ -2,4 +2,4 @@
 
 > Shopaholic`s team **welcomes** you!
 
-[Get Started](home.md#architecture)
+[Get Started](/#introduction)

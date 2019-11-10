@@ -1,4 +1,4 @@
-# Designing of catalog structure
+# Designing of catalog structure {docsify-ignore-all}
 
 Designing catalog structure is **very important stage before development** of our project.
 It is very important at this stage to determine what will be product and what will be offer in your catalog,

@@ -17,6 +17,8 @@
 !> **Attention!** **BrandCollection** extends [ElementCollection class](collection-class/collection-class.md).
 All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
 
+## Method list
+
 * [active](#active)
 * [brand](#brandibrandid)
 * [campaign](#campaignicampaignid)

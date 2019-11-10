@@ -66,6 +66,40 @@ ElementCollection::extend(function($obCollection) {
 ```
 
 ## Method List:
+
+* [make](#makearelementidlist-)
+* [all](#all)
+* [applySorting](#applysortingarelementidlist)
+* [clear](#clear)
+* [copy](#copy)
+* [count](#count)
+* [debug](#debug)
+* [diff](#diffarelementidlist)
+* [exclude](#excludeielementid)
+* [find](#findielementid)
+* [first](#first)
+* [getIDList](#getidlist)
+* [getNearestNext](#getnearestnextielementid-icount-1-bcyclic-false)
+* [getNearestPrev](#getnearestprevielementid-icount-1-bcyclic-false)
+* [has](#hasielementid)
+* [implode](#implodesfieldname-sdelimiter-39-39)
+* [intersect](#intersectarelementidlist)
+* [isEmpty](#isempty)
+* [isNotEmpty](#isnotempty)
+* [last](#last)
+* [merge](#mergearelementidlist)
+* [page](#pageipage-ielementonpage-10)
+* [pluck](#plucksfieldname)
+* [pop](#pop)
+* [push](#pushielementid)
+* [random](#randomicount)
+* [save/saved](#saveskeysavedskey)
+* [set](#setarelementidlist)
+* [skip](#skipicount)
+* [take](#takeicount-0)
+* [shift](#shift)
+* [unshift](#unshiftielementid)
+
 ### make(_[$arElementIDList = []]_)
   * arElementIDList - array with element IDs
 

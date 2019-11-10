@@ -65,6 +65,16 @@ stop
 ```
 
 ## Method List
+
+* [make](#makeielementid-obelement-null)
+* [makeNoCache](#makenocacheielementid-obelement-null)
+* [clearCache](#clearcacheielementid)
+* [getObject](#getobject)
+* [isEmpty](#isempty)
+* [isNotEmpty](#isnotempty)
+* [toArray](#toarray)
+* [toJSON](#tojson)
+
 ### make($iElementID, _[$obElement = null]_)
 * iElementID - element ID
 * obElement - model object, optional parameter

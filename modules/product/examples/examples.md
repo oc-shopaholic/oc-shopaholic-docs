@@ -9,7 +9,7 @@
 • Examples
 • [Extending](modules/product/extending/extending.md)
 
-# Examples: Product
+# Examples: Product {docsify-ignore-all}
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.

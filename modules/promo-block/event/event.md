@@ -9,7 +9,7 @@
 • [Examples](modules/promo-block/examples/examples.md)
 • [Extending](modules/promo-block/extending/extending.md)
 
-# Event list: Promo block
+# Event list: Promo block {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.

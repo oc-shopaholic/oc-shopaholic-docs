@@ -1,4 +1,4 @@
-# Artisan commands
+# Artisan commands {docsify-ignore-all}
 
 ## Database integrity
 

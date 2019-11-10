@@ -9,7 +9,7 @@
 • [Examples](modules/category/examples/examples.md)
 • [Extending](modules/category/extending/extending.md)
 
-# Event list: Category
+# Event list: Category {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
