@@ -152,6 +152,10 @@
         "title": "Events",
         "slug": "event",
         "anchor": "event-list-category",
+        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
+        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
+        "shopaholiccategoryextend_xml_import_data": {"title": "shopaholic.category.extend_xml_import_data", "anchor": "shopaholiccategoryextend_xml_import_data"},
+        "shopaholiccategoryextend_xml_import_fields": {"title": "shopaholic.category.extend_xml_import_fields", "anchor": "shopaholiccategoryextend_xml_import_fields"},
         "shopaholiccategoryopen": {"title": "shopaholic.category.open", "anchor": "shopaholiccategoryopen"}
       },
       "examples": {

@@ -38,6 +38,7 @@ you can get all products in which category is attached as main or additional
 ## Import
 
 You can import categories from XML and CSV files.
+You can use [events](modules/category/event/event#event-list-category), that allows you to extend import data.
  
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
