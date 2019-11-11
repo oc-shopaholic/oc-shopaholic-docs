@@ -87,6 +87,10 @@
         "title": "Events",
         "slug": "event",
         "anchor": "event-list-brand",
+        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
+        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
+        "shopaholicbrandextend_xml_import_data": {"title": "shopaholic.brand.extend_xml_import_data", "anchor": "shopaholicbrandextend_xml_import_data"},
+        "shopaholicbrandextend_xml_import_fields": {"title": "shopaholic.brand.extend_xml_import_fields", "anchor": "shopaholicbrandextend_xml_import_fields"},
         "shopaholicbrandopen": {"title": "shopaholic.brand.open", "anchor": "shopaholicbrandopen"}
       },
       "examples": {
