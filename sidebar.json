@@ -259,6 +259,12 @@
         "title": "Events",
         "slug": "event",
         "anchor": "event-list-offer",
+        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
+        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
+        "shopaholicofferextend_xml_import_data": {"title": "shopaholic.offer.extend_xml_import_data", "anchor": "shopaholicofferextend_xml_import_data"},
+        "shopaholicofferextend_xml_import_fields": {"title": "shopaholic.offer.extend_xml_import_fields", "anchor": "shopaholicofferextend_xml_import_fields"},
+        "shopaholicpriceextend_xml_import_data": {"title": "shopaholic.price.extend_xml_import_data", "anchor": "shopaholicpriceextend_xml_import_data"},
+        "shopaholicpriceextend_xml_import_fields": {"title": "shopaholic.price.extend_xml_import_fields", "anchor": "shopaholicpriceextend_xml_import_fields"},
         "shopaholicsortingoffergetlist": {"title": "shopaholic.sorting.offer.get.list", "anchor": "shopaholicsortingoffergetlist"}
       },
       "examples": {

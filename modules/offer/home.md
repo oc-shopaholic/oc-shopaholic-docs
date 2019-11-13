@@ -133,6 +133,7 @@ You can create and edit offers by going to **Backend -> Catalog -> Products -> E
 ## Import
 
 You can import offers from XML and CSV files.
+You can use [events](modules/offer/event/event#event-list-offer), that allows you to extend import data.
  
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
