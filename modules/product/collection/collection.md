@@ -46,6 +46,13 @@ All available methods of ElementCollection class you can find in [section](colle
 
 Method applies filter to field "active" = true  for elements of collection.
 
+Often projects require you to hide products that do not have active offers.
+You can enable additional check when you get list of active products.
+If this setting is enabled, list of active products will contain only those products that have active offers.
+
+Go to **Backend -> Settings -> Basic Settings**
+![](./../../../assets/images/backend-settings-4.png)
+
 ### brand($iBrandID)
   * $iBrandID - product brand ID
 

@@ -18,6 +18,14 @@ You can create and edit taxes by going to **Backend -> Settings -> Taxes**
 
 ![](./../../assets/images/backend-tax-1.png)
 
+You can attach categories and products to tax that will be applied
+
+![](./../../assets/images/backend-tax-2.png)
+
+You can attach countries and states to tax that will be applied. Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.
+
+![](./../../assets/images/backend-tax-3.png)
+
 ## Settings
 
 You can flexibly configure taxes in your project.
