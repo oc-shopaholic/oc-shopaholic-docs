@@ -355,6 +355,10 @@
         "title": "Events",
         "slug": "event",
         "anchor": "event-list-product",
+        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
+        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
+        "shopaholicproductextend_xml_import_data": {"title": "shopaholic.product.extend_xml_import_data", "anchor": "shopaholicproductextend_xml_import_data"},
+        "shopaholicproductextend_xml_import_fields": {"title": "shopaholic.product.extend_xml_import_fields", "anchor": "shopaholicproductextend_xml_import_fields"},
         "shopaholicpromo_blockgetproductlist": {"title": "shopaholic.promo_block.get.product.list", "anchor": "shopaholicpromo_blockgetproductlist"},
         "shopaholicsortinggetlist": {"title": "shopaholic.sorting.get.list", "anchor": "shopaholicsortinggetlist"}
       },

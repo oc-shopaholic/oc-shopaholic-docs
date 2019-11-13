@@ -128,6 +128,7 @@ You can create and edit products by going to **Backend -> Catalog -> Products**
 ## Import
 
 You can import products from XML and CSV files.
+You can use [events](modules/product/event/event#event-list-product), that allows you to extend import data.
  
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
