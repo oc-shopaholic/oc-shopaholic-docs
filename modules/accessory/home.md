@@ -1,9 +1,14 @@
-# Accessory {docsify-ignore-all}
-
 [Back to modules](modules/home.md)
+
+Home
+• [Examples](modules/accessory/examples/examples.md)
+
+# Accessory {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+> Module available with [Accessories for Shopaholic](plugins/home#accessories-for-shopaholic) plugin.
 
 ## Introduction
 
@@ -55,5 +60,8 @@ end note
 You can attach products as accessories by going to **Backend -> Catalog -> Products -> Edit product -> "Accessories" tab**
 
 ![](./../../assets/images/backend-accessory-1.png)
+
+Home
+• [Examples](modules/accessory/examples/examples.md)
 
 [Back to modules](modules/home.md)

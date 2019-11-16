@@ -47,6 +47,17 @@
   "modules": {
     "title": "<span style=\"color: red\">**Modules**</span>",
     "slug": "home",
+    "accessory": {
+      "title": "Accessory",
+      "slug": "home",
+      "anchor": "accessory",
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-accessory",
+        "example-1-accessories-on-product-page": {"title": "Example 1: Accessories on product page", "anchor": "example-1-accessories-on-product-page"}
+      }
+    },
     "brand": {
       "title": "Brand",
       "slug": "home",
@@ -514,18 +525,6 @@
         "taxhelper-class": {"title": "TaxHelper class", "anchor": "taxhelper-class"}
       }
     }
-  },
-  "event": {
-    "title": "Events",
-    "slug": "home"
-  },
-  "payment-gateways": {
-    "title": "Payment gateways",
-    "slug": "home"
-  },
-  "shipping": {
-    "title": "Shipping",
-    "slug": "home"
   },
   "artisan-commands": {
     "title": "Artisan commands",

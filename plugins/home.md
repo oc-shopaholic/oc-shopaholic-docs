@@ -2,6 +2,15 @@
 
 ## Accessories for Shopaholic
 
+Accessories plugin allows to bind products and assign them as an accessory to another product (for instance a mobile phone and headphones).
+See more information about accessory module in [section](modules/accessory/home). 
+
+![](./../assets/images/backend-accessory-1.png)
+
+Plugin adds:
+* "accessory" relation to [Product](modules/product/model/model) model
+* "accessory" attribute to [ProductItem](modules/product/item/item) item class
+
 ## Campaign for Shopaholic
 
 ## Compare for Shopaholic
