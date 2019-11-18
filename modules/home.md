@@ -12,5 +12,6 @@
 ||[Price type](modules/price-type/home.md)||
 ||[Product](modules/product/home.md)||
 ||[Promo block](modules/promo-block/home.md)||
+|**R**|[Related products](modules/related-products/home.md)||
 |**S**|[Settings](modules/settings/home.md)||
 |**T**|[Tax](modules/tax/home.md)||

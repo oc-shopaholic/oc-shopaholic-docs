@@ -35,6 +35,15 @@ Plugin adds:
 
 ## Related products for Shopaholic
 
+Related products plugin allows to bind products and assign them as an related to another product (for instance a mobile phone iPhone X and iPhone X MAX).
+See more information about related products module in [section](modules/related-products/home). 
+
+![](./../assets/images/backend-related-products-1.png)
+
+Plugin adds:
+* "related" relation to [Product](modules/product/model/model) model
+* "related" attribute to [ProductItem](modules/product/item/item) item class
+
 ## Reviews for Shopaholic
 
 ## Search for Shopaholic

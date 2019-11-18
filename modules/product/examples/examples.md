@@ -18,6 +18,7 @@
 * [Example 2: Product card](#example-2-product-card)
 * [Example 3: Catalog page](#example-3-catalog-page)
 * [Example 4: Accessories on product page](#example-4-accessories-on-product-page)
+* [Example 5: Related products on product page](#example-5-related-products-on-product-page)
 
 ## Example 1: Product page
 
@@ -352,9 +353,6 @@ Block can be complicated (contain searching, filtering, sorting, pagination).
 ```plantuml
 @startuml
 :Create simple product page;
-note left
-    See "Example 1: Product page"
-end note
 :Get ProductItem object
 from ProductPage component;
 :Get ProductCollection object
@@ -397,6 +395,75 @@ slug_required = 1
 {% if arProductList is not empty %}
 <div>
     <span>Accessories</span>
+    {# Render product list #}
+    <ul>
+        {% for obProduct in arProductList %}
+            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+```
+
+## Example 5: Related products on product page
+
+### 5.1 Task
+
+Create simple product page and render block with 5 random related products.
+
+> Block with related products can look like any block with product list.
+Block can be simple (for example: slider with 5 random related products).
+Block can be complicated (contain searching, filtering, sorting, pagination).
+
+### 5.2 How can i do it?
+
+!> Related products available with [Related products for Shopaholic](plugins/home.md#related-products-for-shopaholic) plugin
+
+```plantuml
+@startuml
+:Create simple product page;
+:Get ProductItem object
+from ProductPage component;
+:Get ProductCollection object
+with related products from
+ProductItem object;
+:Apply filter by "active" field
+to ProductCollection object;
+:Get array with 5 random products
+from ProductCollection object;
+:Render block with related products;
+@enduml
+```
+
+### 5.3 Source code
+
+Simple example of product page.
+
+File: **pages/product.htm**
+```twig
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 1
+==
+
+{# Get product item #}
+{% set obProduct = ProductPage.get() %}
+
+<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
+    <h1 itemprop="name">{{ obProduct.name }}</h1>
+</div>
+
+{# Get related products + apply filder by "active" field #}
+{% set obProductList = obProduct.related.active() %}
+{% set arProductList = obProductList.random(5) %}
+{% if arProductList is not empty %}
+<div>
+    <span>Related products</span>
     {# Render product list #}
     <ul>
         {% for obProduct in arProductList %}
