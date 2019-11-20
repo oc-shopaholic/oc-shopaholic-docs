@@ -47,7 +47,6 @@ Attach one: **preview_image**, attach many: **images**.
 |discount|BelongsToMany|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |product|HasMany|[Product](modules/product/model/model.md)|
 
-
 ## Search fields
 
 Search fields available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins.

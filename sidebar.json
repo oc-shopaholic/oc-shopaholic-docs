@@ -381,7 +381,9 @@
         "example-2-product-card": {"title": "Example 2: Product card", "anchor": "example-2-product-card"},
         "example-3-catalog-page": {"title": "Example 3: Catalog page", "anchor": "example-3-catalog-page"},
         "example-4-accessories-on-product-page": {"title": "Example 4: Accessories on product page", "anchor": "example-4-accessories-on-product-page"},
-        "example-5-related-products-on-product-page": {"title": "Example 5: Related products on product page", "anchor": "example-5-related-products-on-product-page"}
+        "example-5-related-products-on-product-page": {"title": "Example 5: Related products on product page", "anchor": "example-5-related-products-on-product-page"},
+        "example-6-simple-search-results": {"title": "Example 6: Simple search results", "anchor": "example-6-simple-search-results"},
+        "example-7-search-page": {"title": "Example 7: Search page", "anchor": "example-7-search-page"}
       },
       "extending": {
         "title": "Extending",
@@ -461,6 +463,18 @@
         "slug": "examples",
         "anchor": "examples-related-products",
         "example-1-related-products-on-product-page": {"title": "Example 1: Related products on product page", "anchor": "example-1-related-products-on-product-page"}
+      }
+    },
+    "search": {
+      "title": "Search",
+      "slug": "home",
+      "anchor": "search",
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-search",
+        "example-1-simple-search-results": {"title": "Example 1: Simple search results", "anchor": "example-1-simple-search-results"},
+        "example-2-search-page": {"title": "Example 2: Search page", "anchor": "example-2-search-page"}
       }
     },
     "settings": {
