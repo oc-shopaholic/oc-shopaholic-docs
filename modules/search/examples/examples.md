@@ -2,6 +2,7 @@
 
 [Home](modules/search/home.md)
 • Examples
+• [Sphinx](modules/search/sphinx/sphinx.md)
 
 # Examples: Search {docsify-ignore-all}
 
@@ -217,5 +218,6 @@ File: **partials/product/search/search-result.htm**
 
 [Home](modules/search/home.md)
 • Examples
+• [Sphinx](modules/search/sphinx/sphinx.md)
 
 [Back to modules](modules/home.md)

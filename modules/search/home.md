@@ -2,6 +2,7 @@
 
 Home
 • [Examples](modules/search/examples/examples.md)
+• [Sphinx](modules/search/sphinx/sphinx.md)
 
 # Search {docsify-ignore-all}
 
@@ -31,5 +32,6 @@ Go to **Backend -> Application settings -> "Search" tab**
 
 Home
 • [Examples](modules/search/examples/examples.md)
+• [Sphinx](modules/search/sphinx/sphinx.md)
 
 [Back to modules](modules/home.md)

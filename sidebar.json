@@ -475,6 +475,11 @@
         "anchor": "examples-search",
         "example-1-simple-search-results": {"title": "Example 1: Simple search results", "anchor": "example-1-simple-search-results"},
         "example-2-search-page": {"title": "Example 2: Search page", "anchor": "example-2-search-page"}
+      },
+      "sphinx": {
+        "title": "Sphinx",
+        "slug": "sphinx",
+        "anchor": "sphinx-search"
       }
     },
     "settings": {
