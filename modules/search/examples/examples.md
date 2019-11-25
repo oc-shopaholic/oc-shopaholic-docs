@@ -20,7 +20,10 @@ Create simple block with serch results and render 5 first products.
 
 ### 1.2 How can i do it?
 
-!> Search method available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) plugin
+!> Search method available with
+[Search for Shopaholic](plugins/home.md#search-for-shopaholic) and
+[Sphinx for Shopaholic](plugins/home.md#sphinx-for-shopaholic)
+plugins
 
 > Example uses [ProductList](modules/product/component/component.md#productlist) component.
 Component method returns [ProductCollection](modules/product/collection/collection.md#productcollection) class object.
@@ -93,7 +96,10 @@ Product list must have pagination block.
 
 ### 2.2 How can i do it?
 
-!> Search method available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) plugin
+!> Search method available with
+[Search for Shopaholic](plugins/home.md#search-for-shopaholic) and
+[Sphinx for Shopaholic](plugins/home.md#sphinx-for-shopaholic)
+plugins
 
 > Example uses [ProductList](modules/product/component/component.md#productlist) component.
 Component method returns [ProductCollection](modules/product/collection/collection.md#productcollection) class object.
