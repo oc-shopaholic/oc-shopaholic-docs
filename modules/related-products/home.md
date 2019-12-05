@@ -12,6 +12,7 @@ Home
 
 ## Introduction
 
+Module plugin allows to bind products and assign them as an related to another product (for instance a mobile phone iPhone X and iPhone X MAX).
 Related products block usually looks like list of products on main product page.
 
 > Related products do not depend on product categories.

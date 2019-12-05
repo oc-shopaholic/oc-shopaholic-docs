@@ -12,6 +12,7 @@ Home
 
 ## Introduction
 
+Module allows to bind products and assign them as an accessory to another product (for instance a mobile phone and headphones).
 Accessory block usually looks like list of products on main product page.
 
 > Accessories do not depend on product categories.

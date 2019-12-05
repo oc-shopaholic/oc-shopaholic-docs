@@ -1,5 +1,34 @@
 # Plugins end extensions
 
+## Main plugin
+
+Main plugin allows you to create simple catalog.
+You can easily render product catalog page, product page, blocks with list of brands, content brand page,
+blocks with list of promo blocks, promotions or sales, marketing pages with list of discounted products.
+
+If your site only needs to display products, without making an order, then main plugin is perfect for solving this task.
+
+Main plugin allows you to create/edit [brands](modules/brand/home.md), [categories](modules/category/home.md),
+[products](modules/product/home.md), [offers](modules/offer/home.md), 
+[promo blocks](modules/promo-block/home.md), [price types](modules/price-type/home.md),
+[currencies](modules/currency/home.md), [taxes](modules/tax/home.md).
+
+![](./../assets/images/backend-brand-1.png)
+
+![](./../assets/images/backend-category-1.png)
+
+![](./../assets/images/backend-product-1.png)
+
+![](./../assets/images/backend-offer-1.png)
+
+![](./../assets/images/backend-promo-block-1.png)
+
+![](./../assets/images/backend-price-type-1.png)
+
+![](./../assets/images/backend-currency-1.png)
+
+![](./../assets/images/backend-tax-1.png)
+
 ## Accessories for Shopaholic
 
 Accessories plugin allows to bind products and assign them as an accessory to another product (for instance a mobile phone and headphones).
@@ -11,7 +40,7 @@ Plugin adds:
 * "accessory" relation to [Product](modules/product/model/model) model
 * "accessory" attribute to [ProductItem](modules/product/item/item) item class
 
-## Campaign for Shopaholic
+## Campaigns for Shopaholic
 
 ## Compare for Shopaholic
 
@@ -28,6 +57,14 @@ Plugin adds:
 ## Labels for Shopaholic
 
 ## Orders for Shopaholic
+
+Using [cart](modules/cart/home) module you will be able to allow users to add product offers to cart,
+display cart positions (for example: mini-cart),
+change quantity and remove positions from cart.
+
+![](./../assets/images/fronend-cart-1.png)
+
+![](./../assets/images/fronend-cart-2.png)
 
 ## Popularity for Shopaholic
 

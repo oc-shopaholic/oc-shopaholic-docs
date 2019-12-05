@@ -58,6 +58,25 @@
         "example-1-accessories-on-product-page": {"title": "Example 1: Accessories on product page", "anchor": "example-1-accessories-on-product-page"}
       }
     },
+    "cart": {
+      "title": "Cart",
+      "slug": "home",
+      "anchor": "cart",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "cart-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "cart": {"title": "Cart", "anchor": "cart"}
+      }
+    },
     "brand": {
       "title": "Brand",
       "slug": "home",
