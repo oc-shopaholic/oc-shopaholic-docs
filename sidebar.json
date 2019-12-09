@@ -58,25 +58,6 @@
         "example-1-accessories-on-product-page": {"title": "Example 1: Accessories on product page", "anchor": "example-1-accessories-on-product-page"}
       }
     },
-    "cart": {
-      "title": "Cart",
-      "slug": "home",
-      "anchor": "cart",
-      "model": {
-        "title": "Model",
-        "slug": "model",
-        "anchor": "cart-model",
-        "field-list": {"title": "Field list", "anchor": "field-list"},
-        "relations": {"title": "Relations", "anchor": "relations"},
-        "extending": {"title": "Extending", "anchor": "extending"}
-      },
-      "component": {
-        "title": "Components",
-        "slug": "component",
-        "anchor": "components",
-        "cart": {"title": "Cart", "anchor": "cart"}
-      }
-    },
     "brand": {
       "title": "Brand",
       "slug": "home",
@@ -137,6 +118,66 @@
         "title": "Extending",
         "slug": "extending",
         "anchor": "extending-brand",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "cart": {
+      "title": "Cart",
+      "slug": "home",
+      "anchor": "cart",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "cart-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "cart": {"title": "Cart", "anchor": "cart"}
+      }
+    },
+    "cart-position": {
+      "title": "CartPosition",
+      "slug": "home",
+      "anchor": "cartposition",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "cartposition-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "cartpositionitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "cartpositioncollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-cartposition",
+        "example-1-mini-cart": {"title": "Example 1: Render block with mini-cart", "anchor": "example-1-render-block-with-mini-cart"},
+        "example-2-checkout-page": {"title": "Example 2: Render block with cart positions on checkout page", "anchor": "example-2-render-block-with-cart-positions-on-checkout-page"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-cartposition",
         "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
         "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
         "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}

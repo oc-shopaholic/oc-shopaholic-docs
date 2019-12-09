@@ -5,6 +5,7 @@
 |**A**|[Accessory](modules/accessory/home.md)|Available with [Accessories for Shopaholic](plugins/home.md#accessories-for-shopaholic) plugin|
 |**B**|[Brand](modules/brand/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 |**C**|[Cart](modules/cart/home.md)|Available with [Orders for Shopaholic](plugins/home.md#orders-for-shopaholic) plugin|
+||[CartPosition](modules/cart-position/home.md)|Available with [Orders for Shopaholic](plugins/home.md#orders-for-shopaholic) plugin|
 ||[Category](modules/category/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 ||[Currency](modules/currency/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 |**O**|[Offer](modules/offer/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|

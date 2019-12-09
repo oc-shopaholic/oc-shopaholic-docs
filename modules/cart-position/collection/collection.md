@@ -1,7 +1,19 @@
+[Back to modules](modules/home.md)
+
+[Home](modules/cart-position/home.md)
+• [Model](modules/cart-position/model/model.md)
+• [Item](modules/cart-position/item/item.md)
+• Collection
+• [Examples](modules/cart-position/examples/examples.md)
+• [Extending](modules/cart-position/extending/extending.md)
+
 # CartPositionCollection {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+!> **Attention!** **CartPositionCollection** extends [ElementCollection class](collection-class/collection-class.md).
+All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
 
 ### getCurrency()
 
@@ -38,6 +50,8 @@ Method returns float discount price value (**200**)
 ### getTotalPriceData()
 
 Method returns [TotalPriceContainer](modules/price-container/home.md#totalpricecontainer) class object.
+Object contains all fields of total price. For example: price, old_price, tax_price, discount_price, etc.
+
 ```php
     $obList = CartPositionCollection::make([1,2,10,15]);
     $obPriceContainer = $obList->getTotalPriceData();
@@ -67,3 +81,12 @@ Method returns true, if collection has product with ID = $iProductID
         //to do something
     }
 ```
+
+[Home](modules/cart-position/home.md)
+• [Model](modules/cart-position/model/model.md)
+• [Item](modules/cart-position/item/item.md)
+• Collection
+• [Examples](modules/cart-position/examples/examples.md)
+• [Extending](modules/cart-position/extending/extending.md)
+
+[Back to modules](modules/home.md)
