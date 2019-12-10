@@ -42,6 +42,8 @@ Plugin adds:
 
 ## Campaigns for Shopaholic
 
+## CDEK for Shopaholic
+
 ## Compare for Shopaholic
 
 ## Coupons for Shopaholic

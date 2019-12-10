@@ -15,6 +15,21 @@
 !> **Attention!** **CartPositionCollection** extends [ElementCollection class](collection-class/collection-class.md).
 All available methods of ElementCollection class you can find in [section](collection-class/collection-class.md#method-list) 
 
+## Method list
+
+* [getCurrency](#getcurrency)
+* [getCurrencyCode](#getcurrencycode)
+* [getTotalPrice](#gettotalprice)
+* [getTotalPriceValue](#gettotalpricevalue)
+* [getOldTotalPrice](#getoldtotalprice)
+* [getOldTotalPriceValue](#getoldtotalpricevalue)
+* [getDiscountTotalPrice](#getdiscounttotalprice)
+* [getDiscountTotalPriceValue](#getdiscounttotalpricevalue)
+* [getTotalPriceData](#gettotalpricedata)
+* [getTotalQuantity](#gettotalquantity)
+* [hasOffer](#hasofferiofferid)
+* [hasProduct](#hasproductiproductid)
+
 ### getCurrency()
 
 Method returns active currency symbol. For example: $
