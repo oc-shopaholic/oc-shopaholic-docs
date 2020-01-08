@@ -97,12 +97,7 @@
       "event": {
         "title": "Events",
         "slug": "event",
-        "anchor": "event-list-brand",
-        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
-        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
-        "shopaholicbrandextend_xml_import_data": {"title": "shopaholic.brand.extend_xml_import_data", "anchor": "shopaholicbrandextend_xml_import_data"},
-        "shopaholicbrandextend_xml_import_fields": {"title": "shopaholic.brand.extend_xml_import_fields", "anchor": "shopaholicbrandextend_xml_import_fields"},
-        "shopaholicbrandopen": {"title": "shopaholic.brand.open", "anchor": "shopaholicbrandopen"}
+        "anchor": "event-list-brand"
       },
       "examples": {
         "title": "Examples",
@@ -222,12 +217,7 @@
       "event": {
         "title": "Events",
         "slug": "event",
-        "anchor": "event-list-category",
-        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
-        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
-        "shopaholiccategoryextend_xml_import_data": {"title": "shopaholic.category.extend_xml_import_data", "anchor": "shopaholiccategoryextend_xml_import_data"},
-        "shopaholiccategoryextend_xml_import_fields": {"title": "shopaholic.category.extend_xml_import_fields", "anchor": "shopaholiccategoryextend_xml_import_fields"},
-        "shopaholiccategoryopen": {"title": "shopaholic.category.open", "anchor": "shopaholiccategoryopen"}
+        "anchor": "event-list-category"
       },
       "examples": {
         "title": "Examples",
@@ -329,14 +319,7 @@
       "event": {
         "title": "Events",
         "slug": "event",
-        "anchor": "event-list-offer",
-        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
-        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
-        "shopaholicofferextend_xml_import_data": {"title": "shopaholic.offer.extend_xml_import_data", "anchor": "shopaholicofferextend_xml_import_data"},
-        "shopaholicofferextend_xml_import_fields": {"title": "shopaholic.offer.extend_xml_import_fields", "anchor": "shopaholicofferextend_xml_import_fields"},
-        "shopaholicpriceextend_xml_import_data": {"title": "shopaholic.price.extend_xml_import_data", "anchor": "shopaholicpriceextend_xml_import_data"},
-        "shopaholicpriceextend_xml_import_fields": {"title": "shopaholic.price.extend_xml_import_fields", "anchor": "shopaholicpriceextend_xml_import_fields"},
-        "shopaholicsortingoffergetlist": {"title": "shopaholic.sorting.offer.get.list", "anchor": "shopaholicsortingoffergetlist"}
+        "anchor": "event-list-offer"
       },
       "examples": {
         "title": "Examples",
@@ -349,6 +332,52 @@
         "title": "Extending",
         "slug": "extending",
         "anchor": "extending-offer",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "order": {
+      "title": "Order",
+      "slug": "home",
+      "anchor": "order",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "order-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "orderitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "ordercollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "component": {
+        "title": "Components",
+        "slug": "component",
+        "anchor": "components",
+        "brandlist": {"title": "MakeOrder", "anchor": "makeorder"},
+        "brandpage": {"title": "OrderPage", "anchor": "orderpage"}
+      },
+      "event": {
+        "title": "Events",
+        "slug": "event",
+        "anchor": "event-list-order"
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-order",
         "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
         "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
         "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
@@ -425,13 +454,7 @@
       "event": {
         "title": "Events",
         "slug": "event",
-        "anchor": "event-list-product",
-        "modelafterimport": {"title": "model.afterImport", "anchor": "modelafterimport"},
-        "modelbeforeimport": {"title": "model.beforeImport", "anchor": "modelbeforeimport"},
-        "shopaholicproductextend_xml_import_data": {"title": "shopaholic.product.extend_xml_import_data", "anchor": "shopaholicproductextend_xml_import_data"},
-        "shopaholicproductextend_xml_import_fields": {"title": "shopaholic.product.extend_xml_import_fields", "anchor": "shopaholicproductextend_xml_import_fields"},
-        "shopaholicpromo_blockgetproductlist": {"title": "shopaholic.promo_block.get.product.list", "anchor": "shopaholicpromo_blockgetproductlist"},
-        "shopaholicsortinggetlist": {"title": "shopaholic.sorting.get.list", "anchor": "shopaholicsortinggetlist"}
+        "anchor": "event-list-product"
       },
       "examples": {
         "title": "Examples",
@@ -492,9 +515,7 @@
       "event": {
         "title": "Events",
         "slug": "event",
-        "anchor": "event-list-promo-block",
-        "shopaholicpromo_blockgetpromo-blocklist": {"title": "shopaholic.promo_block.get.promo-block.list", "anchor": "shopaholicpromo_blockgetpromo-blocklist"},
-        "shopaholicpromo_blockgettypelist": {"title": "shopaholic.promo_block.get.type.list", "anchor": "shopaholicpromo_blockgettypelist"}
+        "anchor": "event-list-promo-block"
       },
       "examples": {
         "title": "Examples",

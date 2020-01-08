@@ -6,15 +6,26 @@
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • Events
+• [Extending](modules/order/extending/extending.md)
 <!--
 • [Examples](modules/order/examples/examples.md)
-• [Extending](modules/order/extending/extending.md)
 -->
 
 # Event list: Order {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+
+* [shopaholic.order.after_create](#shopaholicorderafter_create)
+* [shopaholic.order.before_create](#shopaholicorderbefore_create)
+* [shopaholic.order.created](#shopaholicordercreated)
+* [shopaholic.order.created.manager.template.data](#shopaholicordercreatedmanagertemplatedata)
+* [shopaholic.order.created.user.template.data](#shopaholicordercreatedusertemplatedata)
+* [shopaholic.order.find_user_before_create](#shopaholicorderfind_user_before_create)
+* [shopaholic.order.get_shipping_price](#shopaholicorderget_shipping_price)
+* [shopaholic.order.get_redirect_url](#shopaholicorderget_redirect_url)
+* [shopaholic.order.update_data](#shopaholicorderupdate_data)
+* [shopaholic.order.user_created](#shopaholicorderuser_created)
 
 ### **shopaholic.order.after_create**
 
@@ -157,9 +168,9 @@ Event::listen(\Lovata\OrdersShopaholic\Classes\Processor\OrderProcessor::EVENT_O
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • Events
+• [Extending](modules/order/extending/extending.md)
 <!--
 • [Examples](modules/order/examples/examples.md)
-• [Extending](modules/order/extending/extending.md)
 -->
 
 [Back to modules](modules/home.md)
