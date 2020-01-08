@@ -126,14 +126,23 @@ smart_url_check = 1
 [BrandPage]
 slug = "{{ :brand }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 
 [CategoryPage]
 slug = "{{ :category }}"
 slug_required = 1
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
 
 [CategoryPage ParentCategoryPage]
 slug = "{{ :main_category }}"
 slug_required = 1
+smart_url_check = 0
+has_wildcard = 0
+skip_error = 0
+
 ```
 
 ### getRatingCount($iRating)

@@ -74,6 +74,8 @@ is_hidden = 0
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 ==
 
 {# Get product item #}
@@ -100,14 +102,21 @@ is_hidden = 0
 slug = "{{ :slug }}"
 slug_required = 1
 smart_url_check = 1
+skip_error = 0
 
 [CategoryPage]
 slug = "{{ :category }}"
 slug_required = 1
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
 
 [CategoryPage ParentCategoryPage]
 slug = "{{ :main_category }}"
 slug_required = 1
+smart_url_check = 0
+has_wildcard = 0
+skip_error = 0
 ==
 
 {# Get product item #}
@@ -135,18 +144,27 @@ is_hidden = 0
 slug = "{{ :slug }}"
 slug_required = 1
 smart_url_check = 1
+skip_error = 0
 
 [BrandPage]
 slug = "{{ :brand }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 
 [CategoryPage]
 slug = "{{ :category }}"
 slug_required = 1
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
 
 [CategoryPage ParentCategoryPage]
 slug = "{{ :main_category }}"
 slug_required = 1
+smart_url_check = 0
+has_wildcard = 0
+skip_error = 0
 ==
 
 {# Get product item #}
@@ -249,6 +267,16 @@ and update HTML code inside wrapper block;
 
 ### 3.3 Source code
 
+<!-- tabs:start -->
+
+#### ** One level **
+
+Simple example of catalog page (one level).
+
+#### ** Two levels **
+
+Simple example of catalog page (two levels).
+
 File: **pages/catalog.htm**
 ```twig
 title = "Catalog"
@@ -296,6 +324,12 @@ last_button_number = 1
     {% partial 'product/catalog/catalog' %}
 </div>
 ```
+
+#### ** Wildcard **
+
+Catalog page with wildcard URL parameter.
+
+<!-- tabs:end -->
 
 File: **partials/product/catalog/catalog.htm**
 ```twig
@@ -378,6 +412,8 @@ is_hidden = 0
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 ==
 
 {# Get product item #}
@@ -447,6 +483,8 @@ is_hidden = 0
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 ==
 
 {# Get product item #}

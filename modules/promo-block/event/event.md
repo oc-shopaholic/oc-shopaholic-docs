@@ -14,6 +14,9 @@
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+* [shopaholic.promo_block.get.promo-block.list](#shopaholicpromo_blockgetpromo-blocklist)
+* [shopaholic.promo_block.get.type.list](#shopaholicpromo_blockgettypelist)
+
 ## **shopaholic.promo_block.get.promo-block.list**
 
 The event allows you to extend list of products for promo block

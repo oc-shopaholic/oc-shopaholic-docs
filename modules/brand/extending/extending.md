@@ -253,6 +253,8 @@ public function boot()
 [BrandPage]
 slug = "{{ :slug }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 ==
 
 {# Get brand item #}

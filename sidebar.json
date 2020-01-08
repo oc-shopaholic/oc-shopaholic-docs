@@ -563,6 +563,97 @@
       "translatable-url": {"title":  "Translatable URL", "anchor": "translatable-url"},
       "viewed-products": {"title":  "Viewed products", "anchor": "viewed-products"}
     },
+    "subscription": {
+      "title": "Subscription",
+      "slug": "home",
+      "anchor": "subscription",
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-search",
+        "example-1-create-subscription": {"title": "Example 1: Create subscription", "anchor": "example-1-create-subscription"}
+      }
+    },
+    "subscription-access": {
+      "title": "Subscription access",
+      "slug": "home",
+      "anchor": "subscription-access",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "subscriptionaccess-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "relations": {"title": "Relations", "anchor": "relations"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "subscriptionaccessitem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"},
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "subscriptionaccesscollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-subscription",
+        "example-1-check-access-to-subscription": {"title": "Example 1: Check access to subscription", "anchor": "example-1-check-access-to-subscription"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-subscriptionaccess",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
+    "subscription-period": {
+      "title": "Subscription period",
+      "slug": "home",
+      "anchor": "subscription-period",
+      "model": {
+        "title": "Model",
+        "slug": "model",
+        "anchor": "subscriptionperiod-model",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "item": {
+        "title": "Item",
+        "slug": "item",
+        "anchor": "subscriptionperioditem",
+        "field-list": {"title": "Field list", "anchor": "field-list"},
+        "extending": {"title": "Extending", "anchor": "extending"}
+      },
+      "collection": {
+        "title": "Collection",
+        "slug": "collection",
+        "anchor": "subscriptionperiodcollection",
+        "method-list" : {"title": "Method List", "anchor": "method-list"}
+      },
+      "examples": {
+        "title": "Examples",
+        "slug": "examples",
+        "anchor": "examples-subscription",
+        "example-1-render-subscription-product": {"title": "Example 1: Render subscription product", "anchor": "example-1-render-subscription-product"}
+      },
+      "extending": {
+        "title": "Extending",
+        "slug": "extending",
+        "anchor": "extending-subscriptionperiod",
+        "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+        "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+        "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+      }
+    },
     "tax": {
       "title": "Tax",
       "slug": "home",

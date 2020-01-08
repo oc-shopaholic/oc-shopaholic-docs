@@ -29,7 +29,7 @@
 |description|string|
 |external_id|string|Unique ID of element in external system. Used to link an element in import scripts|
 |external_vk_id|int|Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin|
-|is_digital_product|bool|Available with [Digital products for Shopaholic](plugins/home.md#digital-products-for-shopaholic) plugin|
+|is_subscription|bool|Available with [Subscriptions for Shopaholic](plugins/home.md#subscriptions-for-shopaholic) plugin|
 |name|string|
 |preview_text|string|
 |popularity|int|Product popularity counter. Available with [Popularity for Shopaholic](plugins/home.md#popularity-for-shopaholic) plugin|

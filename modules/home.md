@@ -17,4 +17,7 @@
 |**R**|[Related products](modules/related-products/home.md)|Available with [Related products for Shopaholic](plugins/home.md#related-products-for-shopaholic) plugin|
 |**S**|[Search](modules/search/home.md)|Available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) plugin|
 ||[Settings](modules/settings/home.md)||
+||[Subscription](modules/subscription/home.md)|Available with [Subscriptions for Shopaholic](plugins/home#subscriptions-for-shopaholic) plugin|
+||[Subscription access](modules/subscription-access/home.md)|Available with [Subscriptions for Shopaholic](plugins/home#subscriptions-for-shopaholic) plugin|
+||[Subscription period](modules/subscription-period/home.md)|Available with [Subscriptions for Shopaholic](plugins/home#subscriptions-for-shopaholic) plugin|
 |**T**|[Tax](modules/tax/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|

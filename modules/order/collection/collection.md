@@ -5,8 +5,8 @@
 • [Item](modules/order/item/item.md)
 • Collection
 • [Components](modules/order/component/component.md)
-<!--
 • [Events](modules/order/event/event.md)
+<!--
 • [Examples](modules/order/examples/examples.md)
 • [Extending](modules/order/extending/extending.md)
 -->
@@ -54,8 +54,8 @@ Method applies filter by user ID.
 • [Item](modules/order/item/item.md)
 • Collection
 • [Components](modules/order/component/component.md)
-<!--
 • [Events](modules/order/event/event.md)
+<!--
 • [Examples](modules/order/examples/examples.md)
 • [Extending](modules/order/extending/extending.md)
 -->

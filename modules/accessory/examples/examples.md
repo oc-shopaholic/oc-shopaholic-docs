@@ -52,6 +52,8 @@ is_hidden = 0
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
+smart_url_check = 1
+skip_error = 0
 ==
 
 {# Get product item #}

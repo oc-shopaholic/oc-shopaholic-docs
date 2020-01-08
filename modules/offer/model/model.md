@@ -23,7 +23,7 @@
 |created_at|\October\Rain\Argon\Argon|
 |deleted_at|\October\Rain\Argon\Argon|Field required for [SoftDelete](https://octobercms.com/docs/database/traits#soft-deleting) trait|
 |description|string|
-|digital_product_period_id|int|Relation with [DigitalProductPeriod](modules/digitalproductperiod/model/model.md) model. Available with [Digital products for Shopaholic](plugins/home.md#digital-products-for-shopaholic) plugin|
+|subscription_period_id|int|Relation with [SubscriptionPeriod](modules/subscriptionperiod/model/model.md) model. Available with [Subscriptions for Shopaholic](plugins/home.md#subscriptions-for-shopaholic) plugin|
 |discount_id|int|Relation with [Discount](modules/discount/model/model.md) model. Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |discount_price|string|Discount price with applying number format. Discount price = old price - price. For example: "49,00"|
 |discount_price_value|string|Float discount price value. Discount price = old price - price. For example: 49|
@@ -64,7 +64,7 @@ Attach one:
 |active_discount|BelongsTo|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |campaign|BelongsToMany|[Campaign](modules/campaign/model/model.md)|Available with [Campaigns for Shopaholic](plugins/home.md#campaigns-for-shopaholic) plugin|
 |coupon_group|BelongsToMany|[CouponGroup](modules/coupongroup/model/model.md)|Available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin|
-|digital_product_period|BelongsTo|[DigitalProductPeriod](modules/digitalproductperiod/model/model.md)|
+|subscription_period|BelongsTo|[SubscriptionPeriod](modules/subscriptionperiod/model/model.md)|Available with [Subscriptions for Shopaholic](plugins/home#subscriptions-for-shopaholic) plugin|
 |discount|BelongsToMany|[Discount](modules/discount/model/model.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |main_price|MorphOne|[Price](modules/price/model/model.md)|
 |price_link|MorphMany|[Price](modules/price/model/model.md)|

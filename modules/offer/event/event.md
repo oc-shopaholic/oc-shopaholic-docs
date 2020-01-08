@@ -13,6 +13,14 @@
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
+* [model.afterImport](#modelafterimport)
+* [model.beforeImport](#modelbeforeimport)
+* [shopaholic.offer.extend_xml_import_data](#shopaholicofferextend_xml_import_data)
+* [shopaholic.offer.extend_xml_import_fields](#shopaholicofferextend_xml_import_fields)
+* [shopaholic.price.extend_xml_import_data](#shopaholicpriceextend_xml_import_data)
+* [shopaholic.price.extend_xml_import_fields](#shopaholicpriceextend_xml_import_fields)
+* [shopaholic.sorting.offer.get.list](#shopaholicsortingoffergetlist)
+
 ## model.afterImport
 
 Event allows you to process import data, after saving model object

@@ -5,8 +5,8 @@
 • Item
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
-<!--
 • [Events](modules/order/event/event.md)
+<!--
 • [Examples](modules/order/examples/examples.md)
 • [Extending](modules/order/extending/extending.md)
 -->
@@ -116,8 +116,8 @@ echo $obOrderItem->my_property;
 • Item
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
-<!--
 • [Events](modules/order/event/event.md)
+<!--
 • [Examples](modules/order/examples/examples.md)
 • [Extending](modules/order/extending/extending.md)
 -->

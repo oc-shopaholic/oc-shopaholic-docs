@@ -62,16 +62,24 @@ Available properties:
 |slug|{{ :slug }}|URL parameter from page settings|
 |slug_required|0 or 1|If value is 1, component will generate 404 page, if "slug" parameter is empty|
 |smart_url_check|0 or 1|If value is 1, then component will make additional check for full URL of page|
+|has_wildcard|0 or 1|If value is 1, then component will process slug how wildcard URL parameter|
+|skip_error|0 or 1|If value is 1, then component will not return "Not found" error|
 
 ### get()
 
 Method returns [CategoryItem](modules/category/item/item.md#categoryitem) object for current page.
 
 ```twig
+title = "Catalog"
+url = "/catalog/:slug"
+layout = "main"
+
 [CategoryPage]
 slug = "{{ :slug }}"
 slug_required = 1
 smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
 ==
 
 {# Get category item #}

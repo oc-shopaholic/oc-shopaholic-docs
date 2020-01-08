@@ -25,6 +25,7 @@ All available methods of ElementCollection class you can find in [section](colle
 * [filterByQuantity](#filterbyquantity)
 * [getTotalQuantity](#gettotalquantity)
 * [sort](#sortssorting)
+* [sortByPeriod](#sortbyperiod)
 
 ### active()
 
@@ -97,6 +98,11 @@ Available sorting value:
 ```
 
 > You can use [**shopaholic.sorting.offer.get.list**](modules/offer/event/event.md#shopaholicsortingoffergetlist) event and add custom sorting for list of offers
+
+### sortByPeriod()
+
+Method applies sorting by access period to subscriptions.
+Method available with [Subscriptions for Shopaholic](plugins/home#subscriptions-for-shopaholic) plugin.
 
 [Home](modules/offer/home.md)
 • [Model](modules/offer/model/model.md)

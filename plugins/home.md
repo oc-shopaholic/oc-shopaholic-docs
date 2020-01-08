@@ -50,8 +50,6 @@ Plugin adds:
 
 ## Discounts for Shopaholic
 
-## Digital products for Shopaholic
-
 ## Facebook for Shopaholic
 
 ## Filter for Shopaholic
@@ -121,6 +119,28 @@ Plugin adds:
 * "search" method to [BrandCollection](modules/brand/collection/collection#searchssearchstring) collection class
 * "search" method to [CategoryCollection](modules/category/collection/collection#searchssearchstring) collection class
 * "search" method to [TagCollection](modules/tag/collection/collection#searchssearchstring) collection class
+
+## Subscriptions for Shopaholic
+
+Using "Subscriptions for Shopaholic" plugin you can sell products with a subscription sales model.
+User will be able to buy products for a certain period, renew their current subscription, and see their purchased subscriptions.
+
+You can give access to any custom model (for example "Article" model). This will give you opportunity to give access to paid content, such as an article in paid journal.
+
+See more information about subscriptions module in [section](modules/subscription/home).
+
+Plugin adds:
+* [Subscription access](modules/subscription-access/home.md) module
+* [Subscription period](modules/subscription-period/home.md) module
+* "is_subscription" field to [Product](modules/product/model/model) model
+* "subscription_period" relation to [Offer](modules/offer/model/model) model
+* "subscription_period" attribute to [OfferItem](modules/offer/item/item) item class
+* "sortByPeriod" method to [OfferCollection](modules/offer/collection/collection#sortbyperiod) class
+* "is_subscription", "subscription_access_id", "subscription_period_id" fields to [OrderPosition](modules/order-position/model/model) model
+* "subscription_access", "subscription_period" relations to [OrderPosition](modules/order-position/model/model) model
+* "expire_at", "subscription_access", "subscription_period" attributes to [OrderPositionItem](modules/order-position/item/item) class
+* "checkAccessToSubscription", "findAccessToSubscription" attributes to [User](modules/user/model/model) model
+* "checkAccessToSubscription", "findAccessToSubscription", "subscription_access" attributes to [UserItem](modules/user/item/item) class
 
 ## Tags for Shopaholic
 

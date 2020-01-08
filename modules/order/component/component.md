@@ -5,8 +5,8 @@
 • [Item](modules/order/item/item.md)
 • [Collection](modules/order/collection/collection.md)
 • Components
-<!--
 • [Events](modules/order/event/event.md)
+<!--
 • [Examples](modules/order/examples/examples.md)
 • [Extending](modules/order/extending/extending.md)
 -->
@@ -373,8 +373,8 @@ Method adds ability to send purchase request to payment gateway from order page.
 • [Item](modules/order/item/item.md)
 • [Collection](modules/order/collection/collection.md)
 • Components
-<!--
 • [Events](modules/order/event/event.md)
+<!--
 • [Examples](modules/order/examples/examples.md)
 • [Extending](modules/order/extending/extending.md)
 -->

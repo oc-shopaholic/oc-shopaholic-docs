@@ -20,6 +20,7 @@
 * [Reviews](#reviews)
 * [Search](#search)
 * [Sending emails with queues](#sending-emails-with-queues)
+* [Subscriptions](#subscriptions)
 * [Taxes](#taxes)
 * [Translatable URL](#translatable-url)
 * [Viewed products](#viewed-products)
@@ -124,6 +125,13 @@ You can enable "Sending emails with queues" in "Application settings".
 
 Go to **Backend -> Application settings -> "Sending emails" tab**
 ![](./../../assets/images/backend-settings-3.png)
+
+## Subscriptions
+
+You can set logic for creating access to subscriptions.
+
+Go to **Backend -> Settings -> Basic settings -> "Subscriptions" tab**
+![](./../../assets/images/backend-settings-15.png)
 
 ## Taxes
 

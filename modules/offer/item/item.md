@@ -23,8 +23,8 @@
 |currency|string|Active currency symbol. For example: $|
 |currency_code|string|Active currency code. For example: USD|
 |description|string|
-|digital_product_period|[DigitalProductPeriodItem](modules/digitalproductperiod/item/item.md)|Available with [Digital products for Shopaholic](plugins/home.md#digital-products-for-shopaholic) plugin|
-|digital_product_period_id|int|Available with [Digital products for Shopaholic](plugins/home.md#digital-products-for-shopaholic) plugin|
+|subscription_period|[SubscriptionPeriodItem](modules/subscriptionperiod/item/item.md)|Available with [Subscriptions for Shopaholic](plugins/home.md#subscriptions-for-shopaholic) plugin|
+|subscription_period_id|int|Available with [Subscriptions for Shopaholic](plugins/home.md#subscriptions-for-shopaholic) plugin|
 |discount|[DiscountItem](modules/discount/item/item.md)|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |discount_id|int|Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|
 |discount_type|string|Available values: fixed, percent. Available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin|

@@ -44,9 +44,12 @@ from CategoryPage component;
 ```
 
 ### 1.3 Source code
+
+!> [CategoryPage](modules/category/component/component.md#categorypage) components must be attached on page so that child categories are higher than parent categories.
+
 <!-- tabs:start -->
 
-#### ** Variant 1 **
+#### ** One level **
 
 Simple example of category page (one level).
 
@@ -61,6 +64,8 @@ is_hidden = 0
 slug = "{{ :slug }}"
 slug_required = 1
 smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
 ==
 
 {# Get category item #}
@@ -70,7 +75,7 @@ smart_url_check = 1
     <h1 itemprop="name">{{ obCategory.name }}</h1>
 </div>
 ```
-#### ** Variant 2 **
+#### ** Two levels **
 
 Simple example of category page (two levels).
 
@@ -85,11 +90,15 @@ is_hidden = 0
 slug = "{{ :slug }}"
 slug_required = 1
 smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
 
 [CategoryPage ParentCategoryPage]
 slug = "{{ :main_category }}"
 slug_required = 1
 smart_url_check = 0
+has_wildcard = 0
+skip_error = 0
 ==
 
 {# Get category item #}
@@ -98,6 +107,61 @@ smart_url_check = 0
 <div data-id="{{ obCategory.id }}" itemscope itemtype="http://schema.org/Category">
     <h1 itemprop="name">{{ obCategory.name }}</h1>
 </div>
+```
+
+#### ** Wildcard **
+
+Catalog page with wildcard URL parameter.
+
+File: **pages/catalog.htm**
+```twig
+title = "Catalog"
+url = "/catalog/:category*/:slug?"
+layout = "main"
+is_hidden = 0
+
+[CategoryPage MainCategoryPage]
+slug = "{{ :category }}"
+slug_required = 1
+smart_url_check = 1
+has_wildcard = 1
+skip_error = 0
+
+[CategoryPage]
+slug = "{{ :slug }}"
+slug_required = 0
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 1
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 0
+smart_url_check = 1
+skip_error = 1
+==
+function onInit() {
+    $obProductItem = $this->ProductPage->get();
+    $obCategoryItem = $this->CategoryPage->get();
+    $obMainCategoryItem = $this->MainCategoryPage->get();
+    if (!empty($this->param('slug')) && empty($obProductItem) && empty($obCategoryItem)) {
+        return $this->ProductPage->getErrorResponse();
+    }
+
+    $obActiveCategoryItem = !empty($obCategoryItem) ? $obCategoryItem : $obMainCategoryItem;
+    
+    $this['obProduct'] = $obProductItem;
+    $this['obActiveCategory'] = $obActiveCategoryItem;
+}
+==
+{% if obProduct.isNotEmpty() %}
+    {# Render product page #}
+{% else %}
+    {# Render catalog page #}
+    <div data-id="{{ obActiveCategory.id }}" itemscope itemtype="http://schema.org/Category">
+        <h1 itemprop="name">{{ obActiveCategory.name }}</h1>
+    </div>
+{% endif %}
 ```
 <!-- tabs:end -->
 

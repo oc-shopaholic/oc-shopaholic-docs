@@ -58,6 +58,7 @@ is_hidden = 0
 slug = "{{ :slug }}"
 slug_required = 1
 smart_url_check = 1
+skip_error = 0
 ==
 
 {# Get brand item #}
@@ -343,9 +344,8 @@ is_hidden = 0
 slug = "{{ :category }}"
 slug_required = 1
 smart_url_check = 1
-
-[ProductList]
-sorting = "popularity|desc"
+has_wildcard = 0
+skip_error = 0
 
 [BrandList]
 ==
