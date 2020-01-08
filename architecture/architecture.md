@@ -60,6 +60,8 @@ You can be found detailed information about models in OctoberCMS [documentation]
 
 We use [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md), [Store](store-class/store-class.md)
 classes for caching of model data and output cached data in templates.
+Generated cache is automatically reset when an event occurs that affects the validity of this cache.
+The logic of automatic cache reset allows you to store cache data for a long time and get good indicators of the speed of your site.
 
 !> **Attention!**  Caching is very important information for faster development with using Shopaholic plugins.
 We recommend that you definitely study [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) sections.
