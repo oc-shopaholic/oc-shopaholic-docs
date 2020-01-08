@@ -200,7 +200,7 @@ skip_error = 0
 {% set obProduct = ProductPage.get() %}
 <div data-id="{{ obProduct.id }}">
     <h1>{{ obProduct.name }}</h1>
-    {% if obProduct.preview_imag    e is not empty %}
+    {% if obProduct.preview_image is not empty %}
         <img src="{{ obProduct.preview_image.path }}" title="{{ obProduct.preview_image.title }}" alt="{{ obProduct.preview_image.description }}">
     {% endif %}
     <span>Category: {{ obProduct.category.name }}</span>
