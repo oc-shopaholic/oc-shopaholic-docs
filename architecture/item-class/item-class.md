@@ -177,11 +177,29 @@ ElementItem::extend(function($obItem) {
          $obItem->setAttribute('my_property', $obModel->my_property);
      });
 });
-
 ...
 
 $obItem = ElementItem::make(1);
 echo $obItem->my_property;
+```
+
+### Defining an accessor
+
+To define an accessor, add a getFooAttribute method on your item class where Foo is the "camel" cased name of the field you wish to access.
+In this example, we'll define an accessor for the first_name attribute.
+The accessor will automatically be called when attempting to retrieve the value of first_name.
+
+```php
+ElementItem::extend(function($obItem) {
+
+     $obItem->addDynamicMethod('getFirstNameAttribute', function() use ($obItem) {
+
+         $sValue = $obItem->getAttribute('first_name');
+         $sValue .= 'test';
+         
+         return $sValue;
+     });
+});
 ```
 
 ## Integration with [Translate](http://octobercms.com/plugin/rainlab-translate) plugin

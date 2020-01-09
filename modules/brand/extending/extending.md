@@ -250,6 +250,11 @@ public function boot()
 ### Step 5: Render field in template  
 
 ```twig
+title = "Brand page"
+url = "/brands/:slug"
+layout = "main"
+is_hidden = 0
+
 [BrandPage]
 slug = "{{ :slug }}"
 slug_required = 1

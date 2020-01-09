@@ -32,6 +32,9 @@ Method returns new object of [BrandCollection](modules/brand/collection/collecti
 
 **Example 1:** Get collection of brands, apply sorting + filter by flag "active"
 ```twig
+[BrandList]
+==
+
 {% set obBrandList = BrandList.make().sort().active() %}
 {% if obBrandList.isNotEmpty() %}
     <ul>
@@ -59,6 +62,11 @@ Available properties:
 Method returns [BrandItem](modules/brand/item/item.md#branditem) object for current page.
 
 ```twig
+title = "Brand page"
+url = "/brands/:slug"
+layout = "main"
+is_hidden = 0
+
 [BrandPage]
 slug = "{{ :slug }}"
 slug_required = 1
@@ -85,6 +93,9 @@ Component allows you to render blocks with brand. You can get brand object by ID
 
 Method returns [BrandItem](modules/brand/item/item.md#branditem) object with ID = $iElementID.
 ```twig
+[BrandData]
+==
+
 {# Get brand item with ID = 10 #}
 {% set obBrand = BrandData.get(10) %}
 {% if obBrand.isNotEmpty() %}

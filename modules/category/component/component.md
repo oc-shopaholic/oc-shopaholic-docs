@@ -32,6 +32,9 @@ Method returns new object of [CategoryCollection](modules/category/collection/co
 
 **Example 1:** Get tree of categories. Example is used in render of category menu.
 ```twig
+[CategoryList]
+==
+
 {% set obCategoryList = CategoryList.make().tree() %}
 {% if obCategoryList.isNotEmpty() %}
     <ul>
@@ -108,6 +111,9 @@ Component allows you to render blocks with category. You can get category object
 
 Method returns [CategoryItem](modules/category/item/item.md#categoryitem) object with ID = $iElementID.
 ```twig
+[CategoryData]
+==
+
 {# Get category item with ID = 10 #}
 {% set obCategory = CategoryData.get(10) %}
 {% if obCategory.isNotEmpty() %}

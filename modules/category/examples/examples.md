@@ -195,6 +195,9 @@ from CategoryList component;
 
 File: **partials/category/category-tree/category-tree.htm**
 ```twig
+[CategoryList]
+==
+
 {% set obCategoryList = CategoryList.make().tree() %}
 {% if obCategoryList.isNotEmpty() %}
     <ul>

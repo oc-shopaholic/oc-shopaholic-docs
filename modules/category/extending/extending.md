@@ -250,6 +250,11 @@ public function boot()
 ### Step 5: Render field in template  
 
 ```twig
+title = "Category page"
+url = "/catalog/:slug"
+layout = "main"
+is_hidden = 0
+
 [CategoryPage]
 slug = "{{ :slug }}"
 slug_required = 1
