@@ -249,6 +249,11 @@ public function boot()
 ### Step 5: Render field in template  
 
 ```twig
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
@@ -330,6 +335,11 @@ public function boot()
 ### Step 2: Render list with custom filter
 
 ```twig
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
@@ -549,6 +559,11 @@ public function boot()
 ### Step 4: Render list with custom filter
 
 ```twig
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1

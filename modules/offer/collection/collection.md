@@ -68,12 +68,39 @@ You needs to prepare array $arFilterList in format:
     ];
 ```
 
-You needs to get $obPropertyList object from current category item:
-```php
+You needs to get $obPropertyList object from current category item object or from [FilterPanel](modules/filter/component/component.md#filterpanel) component:
+
+**Example 1:** Get $obPropertyList object from current category item object
+```twig
     $obCategory = CategoryItem.make(10);
     $obPropertyList = $obCategory.offer_filter_property;
     
     $obList = OfferCollection::make([1,2,10,15])->filterByProperty($arFilterList, $obPropertyList);
+```
+
+**Example 2:** Get $obPropertyList object from [FilterPanel](modules/filter/component/component.md#filterpanel) component
+```twig
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 1
+smart_url_check = 1
+skip_error = 0
+
+[FilterPanel]
+==
+{# Get product object from ProductPage component #}
+{% set obProduct = ProductPage.get() %}
+
+{# Get offer list from product object #}
+{% set obOfferList = obProduct.offer %}
+
+{# Get offer proeprty list for property sets with code 'main', enabled how filters #}
+{% set obPropertyList = FilterPanel.getOfferPropertyList(['main'], null, obOfferList) %}
 ```
 
 ### filterByQuantity()
@@ -89,12 +116,12 @@ The method returns total quantity of offers.
 
 Method sorts elements of collection by $sSorting value.
 Available sorting value:
-  * 'no' - default value
-  * 'price|asc'
-  * 'price|desc'
-  * 'new'
+* 'no' - default value
+* 'price|asc'
+* 'price|desc'
+* 'new'
 ```php
-    $obList = OfferCollection::make([1,2,10,15])->sort('price|desc');
+$obList = OfferCollection::make([1,2,10,15])->sort('price|desc');
 ```
 
 > You can use [**shopaholic.sorting.offer.get.list**](modules/offer/event/event.md#shopaholicsortingoffergetlist) event and add custom sorting for list of offers

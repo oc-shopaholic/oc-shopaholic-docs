@@ -16,6 +16,7 @@ Component allows you to render of custom filter panel for different site pages. 
 [FilterPanel]
 
 [ProductList]
+sorting = "popularity|desc"
 ==
 
 {# Get product list collection #}
@@ -64,6 +65,7 @@ Component allows you to render of custom filter panel for different site pages. 
 [FilterPanel]
 
 [ProductList]
+sorting = "popularity|desc"
 ==
 
 {# Get product list collection#}

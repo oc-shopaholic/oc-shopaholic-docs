@@ -105,9 +105,66 @@ skip_error = 0
 ```
 #### ** Variant 2 **
 
-Simple example of product page. Page URL contains category slug.
+Simple example of product page. Page URL contains category slug (one level).
 
-> This example is suitable for **2-level** catalog.
+File: **pages/product.htm**
+```twig
+title = "Product page"
+url = "/catalog/:category/:slug"
+layout = "main"
+is_hidden = 0
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 1
+smart_url_check = 1
+skip_error = 0
+
+[CategoryPage]
+slug = "{{ :category }}"
+slug_required = 1
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
+==
+
+{# Get product item #}
+{% set obProduct = ProductPage.get() %}
+
+<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
+    <h1 itemprop="name">{{ obProduct.name }}</h1>
+</div>
+{# Get first offer object #}
+{% set obOffer = obProduct.offer.first() %}
+{# Render price block #}
+<div>
+    <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">{{ obOffer.currency }}</span>
+    <span itemprop="price">{{ obOffer.price }}</span>
+</div>
+{# Render old price block #}
+{% if obOffer.old_price_value > 0 %}
+    <div>
+        <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">{{ obOffer.currency }}</span>
+        <span itemprop="price">{{ obOffer.old_price }}</span>
+    </div>
+{% endif %}
+{# Get offer list #}
+{% set obOfferList = obProduct.offer %}
+{# Render select with offers #}
+{% if obOfferList.isNotEmpty() %}
+    <select>
+        {% for obOffer in obOfferList %}
+            <option value="{{ obOffer.id }}">{{ obOffer.name }}</option>
+        {% endfor %}
+    </select>
+{% endif %}
+```
+
+#### ** Variant 3 **
+
+Simple example of product page. Page URL contains category slug (two levels).
+
+> CategoryPage components must be attached on page so that child categories are higher than parent categories.
 
 File: **pages/product.htm**
 ```twig
@@ -169,11 +226,11 @@ skip_error = 0
 {% endif %}
 ```
 
-#### ** Variant 3 **
+#### ** Variant 4 **
 
-Simple example of product page. Page URL contains category and brand slug.
+Simple example of product page. Page URL contains categories (two levels) and brand slug.
 
-> This example is suitable for **2-level** catalog.
+> CategoryPage components must be attached on page so that child categories are higher than parent categories.
 
 File: **pages/product.htm**
 ```twig
@@ -240,6 +297,93 @@ skip_error = 0
     </select>
 {% endif %}
 ```
+
+#### ** Wildcard **
+
+Catalog page with wildcard URL parameter.
+
+File: **pages/catalog.htm**
+```twig
+title = "Catalog"
+url = "/catalog/:category*/:slug?"
+layout = "main"
+is_hidden = 0
+
+[CategoryPage MainCategoryPage]
+slug = "{{ :category }}"
+slug_required = 1
+smart_url_check = 1
+has_wildcard = 1
+skip_error = 0
+
+[CategoryPage]
+slug = "{{ :slug }}"
+slug_required = 0
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 1
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 0
+smart_url_check = 1
+skip_error = 1
+==
+function onInit() {
+    $obProductItem = $this->ProductPage->get();
+    $obCategoryItem = $this->CategoryPage->get();
+    $obMainCategoryItem = $this->MainCategoryPage->get();
+    if (!empty($this->param('slug')) && empty($obProductItem) && empty($obCategoryItem)) {
+        return $this->ProductPage->getErrorResponse();
+    }
+
+    $obActiveCategoryItem = !empty($obCategoryItem) ? $obCategoryItem : $obMainCategoryItem;
+    
+    $this['obProduct'] = $obProductItem;
+    $this['obActiveCategory'] = $obActiveCategoryItem;
+}
+==
+{% if obProduct.isNotEmpty() %}
+    {# Render product page #}
+    {# Get product item #}
+    {% set obProduct = ProductPage.get() %}
+    
+    <div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
+        <h1 itemprop="name">{{ obProduct.name }}</h1>
+    </div>
+    {# Get first offer object #}
+    {% set obOffer = obProduct.offer.first() %}
+    {# Render price block #}
+    <div>
+        <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">{{ obOffer.currency }}</span>
+        <span itemprop="price">{{ obOffer.price }}</span>
+    </div>
+    {# Render old price block #}
+    {% if obOffer.old_price_value > 0 %}
+        <div>
+            <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">{{ obOffer.currency }}</span>
+            <span itemprop="price">{{ obOffer.old_price }}</span>
+        </div>
+    {% endif %}
+    {# Get offer list #}
+    {% set obOfferList = obProduct.offer %}
+    {# Render select with offers #}
+    {% if obOfferList.isNotEmpty() %}
+        <select>
+            {% for obOffer in obOfferList %}
+                <option value="{{ obOffer.id }}">{{ obOffer.name }}</option>
+            {% endfor %}
+        </select>
+    {% endif %}
+
+{% else %}
+    {# Render catalog page #}
+    <div data-id="{{ obActiveCategory.id }}" itemscope itemtype="http://schema.org/Category">
+        <h1 itemprop="name">{{ obActiveCategory.name }}</h1>
+    </div>
+{% endif %}
+```
+
 <!-- tabs:end -->
 
 ## Example 2: Product card

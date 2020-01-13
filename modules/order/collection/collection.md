@@ -6,10 +6,8 @@
 • Collection
 • [Components](modules/order/component/component.md)
 • [Events](modules/order/event/event.md)
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 # OrderCollection {docsify-ignore-all}
      
@@ -55,9 +53,7 @@ Method applies filter by user ID.
 • Collection
 • [Components](modules/order/component/component.md)
 • [Events](modules/order/event/event.md)
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 [Back to modules](modules/home.md)

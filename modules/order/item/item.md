@@ -6,10 +6,8 @@
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • [Events](modules/order/event/event.md)
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 # OrderItem {docsify-ignore-all}
 
@@ -117,9 +115,7 @@ echo $obOrderItem->my_property;
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • [Events](modules/order/event/event.md)
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 [Back to modules](modules/home.md)

@@ -142,7 +142,6 @@ slug_required = 1
 smart_url_check = 0
 has_wildcard = 0
 skip_error = 0
-
 ```
 
 ### getRatingCount($iRating)

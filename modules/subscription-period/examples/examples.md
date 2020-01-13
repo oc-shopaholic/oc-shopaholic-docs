@@ -47,6 +47,7 @@ layout = "main"
 is_hidden = 0
 
 [ProductList]
+sorting = "popularity|desc"
 ==
 
 {# Get active product list #}

@@ -6,10 +6,8 @@
 • [Collection](modules/order/collection/collection.md)
 • Components
 • [Events](modules/order/event/event.md)
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 # Components {docsify-ignore-all}
 
@@ -374,8 +372,7 @@ Method adds ability to send purchase request to payment gateway from order page.
 • [Collection](modules/order/collection/collection.md)
 • Components
 • [Events](modules/order/event/event.md)
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
+
 [Back to modules](modules/home.md)

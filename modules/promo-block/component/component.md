@@ -45,6 +45,7 @@ Method returns new object of [PromoBlockCollection](modules/promo-block/collecti
 **Example 1:** Get collection of promo block, apply sorting, filter by flag "active".
 ```twig
 [PromoBlockList]
+sorting = "date_begin|desc"
 ==
 
 {% set obPromoBlockList = PromoBlockList.make().sort(PromoBlockList.getSorting()).active() %}
@@ -60,6 +61,7 @@ Method returns new object of [PromoBlockCollection](modules/promo-block/collecti
 **Example 1:** Get collection of promo blocks, apply filter by flag "active" + [Pagination](https://github.com/lovata/oc-toolbox-plugin/wiki/Components#pagination) component.
 ```twig
 [PromoBlockList]
+sorting = "date_begin|desc"
 ==
 
 {# Get promo block collection #}

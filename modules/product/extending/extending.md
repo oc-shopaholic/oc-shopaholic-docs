@@ -250,6 +250,11 @@ public function boot()
 ### Step 5: Render field in template  
 
 ```twig
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
 [ProductPage]
 slug = "{{ :slug }}"
 slug_required = 1
@@ -330,6 +335,7 @@ public function boot()
 
 ```twig
 [ProductList]
+sorting = "popularity|desc"
 ==
 
 {% set obProductList = ProductList.make().active().myCustomMethod() %}
@@ -542,6 +548,7 @@ public function boot()
 
 ```twig
 [ProductList]
+sorting = "popularity|desc"
 ==
 
 {% set obProductList = ProductList.make().active().myCustomMethod() %}

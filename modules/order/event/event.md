@@ -6,10 +6,8 @@
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • Events
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 # Event list: Order {docsify-ignore-all}
 
@@ -168,9 +166,7 @@ Event::listen(\Lovata\OrdersShopaholic\Classes\Processor\OrderProcessor::EVENT_O
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • Events
-• [Extending](modules/order/extending/extending.md)
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• [Extending](modules/order/extending/extending.md)
 
 [Back to modules](modules/home.md)

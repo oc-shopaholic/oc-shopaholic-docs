@@ -6,10 +6,8 @@
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • [Events](modules/order/event/event.md)
-• Extending
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• Extending
 
 # Extending: Order {docsify-ignore-all}
 
@@ -648,9 +646,7 @@ is_hidden = 0
 • [Collection](modules/order/collection/collection.md)
 • [Components](modules/order/component/component.md)
 • [Events](modules/order/event/event.md)
-• Extending
-<!--
 • [Examples](modules/order/examples/examples.md)
--->
+• Extending
 
 [Back to modules](modules/home.md)

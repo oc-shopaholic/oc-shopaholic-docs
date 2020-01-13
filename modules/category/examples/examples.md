@@ -79,6 +79,8 @@ skip_error = 0
 
 Simple example of category page (two levels).
 
+> CategoryPage components must be attached on page so that child categories are higher than parent categories.
+
 File: **pages/category.htm**
 ```twig
 title = "Category page"

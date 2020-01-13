@@ -51,7 +51,7 @@ Attach one:
 * preview_image_vkontakte - Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin
 * preview_image_yandex - Available with [Yandex Market for Shopaholic](plugins/home#yandex-market-for-shopaholic) plugin
  
- Attach many:
+Attach many:
 * images
 * images_facebook - Available with [Facebook for Shopaholic](plugins/home#facebook-for-shopaholic) plugin
 * images_vkontakte - Available with [VK Goods for Shopaholic](plugins/home#vk-goods-for-shopaholic) plugin
