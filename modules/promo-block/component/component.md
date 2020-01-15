@@ -42,53 +42,36 @@ Get active sorting key value.
 
 Method returns new object of [PromoBlockCollection](modules/promo-block/collection/collection.md) class.
 
-**Example 1:** Get collection of promo block, apply sorting, filter by flag "active".
-```twig
-[PromoBlockList]
-sorting = "date_begin|desc"
-==
+**Example:** Create simple block with random 5 promo block list on index page.
 
-{% set obPromoBlockList = PromoBlockList.make().sort(PromoBlockList.getSorting()).active() %}
-{% if obPromoBlockList.isNotEmpty() %}
-    <ul>
-        {% for obPromoBlock in obPromoBlockList %}
-            <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
+File: **pages/index.htm**
+```twig
+title = "Index"
+url = "/"
+layout = "main"
+is_hidden = 0
+
+[PromoBlockList]
+==
+<div class="promo-block-wrapper">
+    {% partial 'promo-block/promo-block-list/random-promo-block-list' %}
+</div>
 ```
 
-**Example 1:** Get collection of promo blocks, apply filter by flag "active" + [Pagination](https://github.com/lovata/oc-toolbox-plugin/wiki/Components#pagination) component.
+File: **partials/promo-block/promo-block-list/random-promo-block-list.htm**
 ```twig
-[PromoBlockList]
-sorting = "date_begin|desc"
-==
-
 {# Get promo block collection #}
-{% set obPromoBlockList = PromoBlockList.make().sort(PromoBlockList.getSorting()).active() %}
-
-{# Get array with pagination buttons #}
-{% set iPage = Pagination.getPageFromRequest() %}
-{% set arPaginationList = Pagination.get(iPage, obPromoBlockList.count()) %}
-
-{# Apply pagination to promo block collection and get array with promo block items #}
-{% set arPromoBlockList = obPromoBlockList.page(iPage, Pagination.getCountPerPage()) %}
+{% set obPromoBlockList = PromoBlockList.make().active() %}
+{# Get array with random promo blocks #}
+{% set arPromoBlockList = obPromoBlockList.random(5) %}
 
 {% if arPromoBlockList is not empty %}
-
     {# Render promo block list #}
     <ul>
         {% for obPromoBlock in arPromoBlockList %}
             <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
         {% endfor %}
     </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-page="{{ arPagination.value }}">{{ arPagination.name }}</a>
-        {% endfor %}
-    {% endif %}
 {% endif %}
 ```
 

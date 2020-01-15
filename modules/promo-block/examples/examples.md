@@ -35,7 +35,7 @@ All available fields and methods of **PromoBlockItem** class you can find in [se
 @startuml
 :Create page file;
 note left
-    For example: **pages/promo-block.htm**
+    For example: **pages/promo.htm**
 end note
 :Attach **PromoBlockPage** component;
 :Get PromoBlockItem object
@@ -46,10 +46,10 @@ from PromoBlockPage component;
 
 ### 1.3 Source code
 
-File: **pages/promo-block.htm**
+File: **pages/promo.htm**
 ```twig
 title = "Promo block page"
-url = "/promo-blocks/:slug"
+url = "/promo/:slug"
 layout = "main"
 is_hidden = 0
 
