@@ -137,13 +137,23 @@ let data = {
 $.request('MakeOrder::onCreate', {
     'data': data,
     success: function(obResponse) {
-      if (!!obResponse && !obResponse.status) {
-        //Show message with error
-        
+      if (!obResponse) {
         return;
       }
       
-      this.success(obResponse);
+      if (!!obResponse['X_OCTOBER_REDIRECT']) {
+        return this.success(obResponse);  
+      }
+      
+      if (!obResponse.status) {
+        //Show message with error
+        ...
+        return;
+      }
+      
+      //Show "Success message"
+      ...
+      return this.success(obResponse);
     }
 });
 ```
