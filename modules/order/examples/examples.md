@@ -15,6 +15,8 @@
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [Example 1: Make order](#example-1-make-order)
+* [Example 2: Order page](#example-2-order-page)
+* [Example 2: User order list](#example-2-user-order-list)
 
 ## Example 1: Make order
 
@@ -174,6 +176,157 @@ slug = "{{ :slug }}"
     <h1>{{ obOrder.order_number }}</h1>
 </div>
 ```
+
+## Example 2: Order page
+
+### 2.1 Task
+
+Create simple "Thank you" page with order number.
+
+### 2.2 How can i do it?
+
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/checkout_success.htm**
+end note
+:Attach **OrderPage** component;
+:Get OrderItem object
+from OrderPage component;
+:Render order number;
+@enduml
+```
+
+### 2.3 Source code
+
+File: **pages/checkout_success.htm**
+```twig
+title = "Thank you page"
+url = "/checkout/:slug"
+layout = "main"
+
+[OrderPage]
+slug = "{{ :slug }}"
+==
+
+{# Get order object #}
+{% set obOrder = OrderPage.get() %}
+<div data-id="{{ obOrder.id }}">
+    <h1>{{ obOrder.order_number }}</h1>
+</div>
+```
+
+## Example 2: User order list
+
+### 3.1 Task
+
+Render table with user order list.
+
+> Block with user order list can be complicated (contain searching, filtering, sorting, pagination).
+
+### 3.2 How can i do it?
+
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/order_list.htm**
+end note
+:Get user object;
+:Get OrderCollection object
+from user object;
+:Render table with orders;
+@enduml
+```
+
+### 3.3 Source code
+
+<!-- tabs:start -->
+#### ** Lovata.Buddies **
+
+File: **pages/order_list.htm**
+```twig
+title = "User order list"
+url = "/user/order"
+layout = "main"
+is_hidden = 0
+
+[UserData]
+
+[UserPage]
+slug = ""
+slug_required = 0
+mode = "ajax"
+flash_on = 0
+redirect_on = 1
+redirect_page = "user_profile"
+login_page = "login"
+==
+
+{# Get user object #}
+{% set obUser = UserData.get() %}
+
+{# Get OrderCollection object from user object #}
+{% set obOrderList = obUser.order %}
+{% if obOrderList.isNotEmpty() %}
+  <table>
+    <caption>Order list</caption>
+    <tr>
+      <th>Order number</th>
+      <th>Status</th>
+      <th>Total price</th>
+    </tr>
+    {% for obOrder in obOrderList %}
+      <tr>
+        <td>{{ obOrder.order_number }}</td>
+        <td>{{ obOrder.status.name_for_user }}</td>
+        <td>{{ obOrder.total_price }} {{ obOrder.currency_symbol }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+{% else %}
+  <div>You have no orders yet</div>
+{% endif %}
+```
+
+#### ** RainLab.User **
+
+File: **pages/order_list.htm**
+```twig
+title = "Index page"
+url = "/"
+layout = "main"
+is_hidden = 0
+==
+
+{% if user %}
+  {# Get OrderCollection object from user object #}
+  {% set obOrderList = user.order_list %}
+  {% if obOrderList.isNotEmpty() %}
+    <table>
+      <caption>Order list</caption>
+      <tr>
+        <th>Order number</th>
+        <th>Status</th>
+        <th>Total price</th>
+      </tr>
+      {% for obOrder in obOrderList %}
+        <tr>
+          <td>{{ obOrder.order_number }}</td>
+          <td>{{ obOrder.status.name_for_user }}</td>
+          <td>{{ obOrder.total_price }} {{ obOrder.currency_symbol }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+  {% else %}
+    <div>You have no orders yet</div>
+  {% endif %}
+{% else %}
+    <p>Nobody is logged in</p>
+{% endif %}
+```
+<!-- tabs:end -->
 
 [Home](modules/order/home.md)
 • [Model](modules/order/model/model.md)
