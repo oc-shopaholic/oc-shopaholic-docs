@@ -10,6 +10,7 @@
 ||[Currency](modules/currency/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 |**O**|[Offer](modules/offer/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 ||[Order](modules/order/home.md)|Available with [Orders for Shopaholic](plugins/home.md#orders-for-shopaholic) plugin|
+||[Order position](modules/order-position/home.md)|Available with [Orders for Shopaholic](plugins/home.md#orders-for-shopaholic) plugin|
 |**P**|[Price](modules/price/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 ||[Price type](modules/price-type/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
 ||[Product](modules/product/home.md)|Available with [Main](plugins/home.md#main-plugin) plugin|
