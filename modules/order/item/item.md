@@ -20,8 +20,8 @@
 |-------|------|--------|
 |id|int|
 |created_at|\October\Rain\Argon\Argon|
-|currency_code|string|
-|currency_symbol|string|
+|currency_code|string|Currency code. For example: USD|
+|currency_symbol|string|Currency symbol. For example: $|
 |order_number|string|
 |order_position|[OrderPositionCollection](modules/order-position/collection/collection.md)|
 |order_position_id|array|

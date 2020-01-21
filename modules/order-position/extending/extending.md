@@ -1,15 +1,13 @@
 [Back to modules](modules/home.md)
 
-[Home](modules/order/home.md)
-• [Model](modules/order/model/model.md)
-• [Item](modules/order/item/item.md)
-• [Collection](modules/order/collection/collection.md)
-• [Components](modules/order/component/component.md)
-• [Events](modules/order/event/event.md)
-• [Examples](modules/order/examples/examples.md)
+[Home](modules/order-position/home.md)
+• [Model](modules/order-position/model/model.md)
+• [Item](modules/order-position/item/item.md)
+• [Collection](modules/order-position/collection/collection.md)
+• [Examples](modules/order-position/examples/examples.md)
 • Extending
 
-# Extending: Order {docsify-ignore-all}
+# Extending: OrderPosition {docsify-ignore-all}
 
 !> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
 [ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
@@ -36,7 +34,7 @@ In this section, we will go through all required steps that you need to follow t
 ### Step 1: Create custom plugin
 
 You need to create your custom plugin in which we will add all custom code in your project.
-If this plugin has already been created, then you should proceed to [step 2](modules/order/extending/extending.md#step-2-create-field-in-database).
+If this plugin has already been created, then you should proceed to [step 2](modules/order-position/extending/extending.md#step-2-create-field-in-database).
 
 > You can find more information about [plugins](https://octobercms.com/docs/plugin/registration) in OctoberCMS documentation.
 
@@ -63,7 +61,7 @@ class Plugin extends PluginBase
 
 > You can find more information about [migrations](https://octobercms.com/docs/database/structure) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/updates/update_table_orders_1.php**
+File: **plugins/lovata/basecode/updates/update_table_order_positions_1.php**
 
 ```php
 <?php namespace Lovata\BaseCode\Updates;
@@ -73,12 +71,12 @@ use Illuminate\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 
 /**
- * Class UpdateTableOrders1
+ * Class UpdateTableOrderPositions1
  * @package Lovata\Shopaholic\Updates
  */
-class UpdateTableOrders1 extends Migration
+class UpdateTableOrderPositions1 extends Migration
 {
-    const TABLE_NAME = 'lovata_orders_shopaholic_orders';
+    const TABLE_NAME = 'lovata_orders_shopaholic_order_positions';
     
     public function up()
     {
@@ -114,7 +112,7 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 ```yaml
 1.0.0:
     - 'Initialize plugin.'
-    - update_table_orders_1.php
+    - update_table_order_positions_1.php
 ```
 
 3. Run ```php artisan october:up``` command.
@@ -125,23 +123,23 @@ File: **plugins/lovata/basecode/updates/version.yaml**
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/event/order/ExtendOrderFieldsHandler.php**
+File: **plugins/lovata/basecode/classes/event/orderposition/ExtendOrderPositionFieldsHandler.php**
 ```php
-<?php namespace Lovata\BaseCode\Classes\Event\Order;
+<?php namespace Lovata\BaseCode\Classes\Event\OrderPosition;
 
 use Lovata\Toolbox\Classes\Event\AbstractBackendFieldHandler;
 
-use Lovata\OrdersShopaholic\Models\Order;
-use Lovata\OrdersShopaholic\Controllers\Orders;
+use Lovata\OrdersShopaholic\Models\OrderPosition;
+use Lovata\OrdersShopaholic\Controllers\OrderPositions;
 
 /**
- * Class ExtendOrderFieldsHandler
- * @package Lovata\BaseCode\Classes\Event\Order
+ * Class ExtendOrderPositionFieldsHandler
+ * @package Lovata\BaseCode\Classes\Event\OrderPosition
  */
-class ExtendOrderFieldsHandler extends AbstractBackendFieldHandler
+class ExtendOrderPositionFieldsHandler extends AbstractBackendFieldHandler
 {
     /**
-     * Extend orders field
+     * Extend order positions field
      * @param \Backend\Widgets\Form $obWidget
      */
     protected function extendFields($obWidget)
@@ -163,7 +161,7 @@ class ExtendOrderFieldsHandler extends AbstractBackendFieldHandler
      */
     protected function getModelClass() : string
     {
-        return Order::class;
+        return OrderPosition::class;
     }
 
     /**
@@ -172,7 +170,7 @@ class ExtendOrderFieldsHandler extends AbstractBackendFieldHandler
      */
     protected function getControllerClass() : string
     {
-        return Orders::class;
+        return OrderPositions::class;
     }
 }
 ```
@@ -185,41 +183,41 @@ File: **plugins/lovata/basecode/Plugin.php**
 
 use Event;
 use System\Classes\PluginBase;
-use Lovata\BaseCode\Classes\Event\Order\ExtendOrderFieldsHandler;
+use Lovata\BaseCode\Classes\Event\OrderPosition\ExtendOrderPositionFieldsHandler;
 
 //...
 
 public function boot()
 {
-    Event::subscribe(ExtendOrderFieldsHandler::class);
+    Event::subscribe(ExtendOrderPositionFieldsHandler::class);
 }
 ```
 
 ### Step 4: Add field to cache
 
-1. Create event class to extend Order model.
+1. Create event class to extend OrderPosition model.
 
 > You can find more information about [extending plugins](https://octobercms.com/docs/plugin/extending) in OctoberCMS documentation.
 
-File: **plugins/lovata/basecode/classes/event/order/ExtendOrderModel.php**
+File: **plugins/lovata/basecode/classes/event/orderposition/ExtendOrderPositionModel.php**
 ```php
-<?php namespace Lovata\BaseCode\Classes\Event\Order;
+<?php namespace Lovata\BaseCode\Classes\Event\OrderPosition;
 
-use Lovata\OrdersShopaholic\Models\Order;
+use Lovata\OrdersShopaholic\Models\OrderPosition;
 
 /**
- * Class ExtendOrderModel
- * @package Lovata\BaseCode\Classes\Event\Order
+ * Class ExtendOrderPositionModel
+ * @package Lovata\BaseCode\Classes\Event\OrderPosition
  */
-class ExtendOrderModel
+class ExtendOrderPositionModel
 {
     public function subscribe()
     {
-        Order::extend(function ($obOrder) {
-            /** @var Order $obOrder */
-            $obOrder->fillable[] = 'my_field';
+        OrderPosition::extend(function ($obOrderPosition) {
+            /** @var OrderPosition $obOrderPosition */
+            $obOrderPosition->fillable[] = 'my_field';
             
-            $obOrder->addCachedField(['my_field']);
+            $obOrderPosition->addCachedField(['my_field']);
         });
     }
 }
@@ -233,15 +231,15 @@ File: **plugins/lovata/basecode/Plugin.php**
 
 use Event;
 use System\Classes\PluginBase;
-use Lovata\BaseCode\Classes\Event\Order\ExtendOrderFieldsHandler;
-use Lovata\BaseCode\Classes\Event\Order\ExtendOrderModel;
+use Lovata\BaseCode\Classes\Event\OrderPosition\ExtendOrderPositionFieldsHandler;
+use Lovata\BaseCode\Classes\Event\OrderPosition\ExtendOrderPositionModel;
 
 //...
 
 public function boot()
 {
-    Event::subscribe(ExtendOrderFieldsHandler::class);
-    Event::subscribe(ExtendOrderModel::class);
+    Event::subscribe(ExtendOrderPositionFieldsHandler::class);
+    Event::subscribe(ExtendOrderPositionModel::class);
 }
 ```
 
@@ -258,52 +256,55 @@ layout = "main"
 slug = "{{ :slug }}"
 ==
 
-{# Get order object #}
+{# Get order position object #}
 {% set obOrder = OrderPage.get() %}
 <div data-id="{{ obOrder.id }}">
-    <h1>{{ obOrder.order_number }}</h1>
-    <span>{{ obOrder.my_field == true ? 'My field in enabled' : 'My field in disabled' }}</span>
+    {# Get order positions #}
+    {% set obOrderPositionList = obOrder.order_position %}
+    {% for obOrderPosition in obOrderPositionList %}
+      <div>{{ obOrderPosition.my_field == true ? 'My field in enabled' : 'My field in disabled' }}</div>
+    {% endfor %}
 </div>
 ```
 
 ## Add custom filter
 
-In this section, we will go through all required steps that you need to follow to add your custom filter by field **"my_field"** to [OrderCollection](modules/order/collection/collection.md) class.
-In [section](modules/order/extending/extending.md#add-custom-field) you can find information about adding custom field **"my_field"** to model.
+In this section, we will go through all required steps that you need to follow to add your custom filter by field **"my_field"** to [OrderPositionCollection](modules/order-position/collection/collection.md) class.
+In [section](modules/order-position/extending/extending.md#add-custom-field) you can find information about adding custom field **"my_field"** to model.
 
 ### Step 1: Add custom method to collection
 
-1. Create event class to extend OrderCollection class.
+1. Create event class to extend OrderPositionCollection class.
 
-File: **plugins/lovata/basecode/classes/event/order/ExtendOrderCollection.php**
+File: **plugins/lovata/basecode/classes/event/orderposition/ExtendOrderPositionCollection.php**
 ```php
-<?php namespace Lovata\BaseCode\Classes\Event\Order;
+<?php namespace Lovata\BaseCode\Classes\Event\OrderPosition;
 
-use Lovata\OrdersShopaholic\Models\Order;
-use Lovata\Shopaholic\Classes\Collection\OrderCollection;
+use Lovata\OrdersShopaholic\Models\OrderPosition;
+use Lovata\Shopaholic\Classes\Collection\OrderPositionCollection;
 
 /**
- * Class ExtendOrderCollection
- * @package Lovata\BaseCode\Classes\Event\Order
+ * Class ExtendOrderPositionCollection
+ * @package Lovata\BaseCode\Classes\Event\OrderPosition
  */
-class ExtendOrderCollection
+class ExtendOrderPositionCollection
 {
     public function subscribe()
     {
-        OrderCollection::extend(function ($obCollection) {
+        OrderPositionCollection::extend(function ($obCollection) {
             $this->addCustomMethod($obCollection);
         });
     }
 
     /**
      * Add myCustomMethod method
-     * @param OrderCollection $obCollection
+     * @param OrderPositionCollection $obCollection
      */
     protected function addCustomMethod($obCollection)
     {
         $obCollection->addDynamicMethod('myCustomMethod', function () use ($obCollection) {
             
-            $arResultIDList = (array) Order::where('my_field', true)->lists('id');
+            $arResultIDList = (array) OrderPosition::where('my_field', true)->lists('id');
 
             return $obCollection->intersect($arResultIDList);
         });
@@ -320,72 +321,37 @@ File: **plugins/lovata/basecode/Plugin.php**
 use Event;
 
 //...
-use Lovata\BaseCode\Classes\Event\Order\ExtendOrderCollection;
+use Lovata\BaseCode\Classes\Event\OrderPosition\ExtendOrderPositionCollection;
 //...
 
 public function boot()
 {
     //...
-    Event::subscribe(ExtendOrderCollection::class);
+    Event::subscribe(ExtendOrderPositionCollection::class);
 }
 ```
 
 ### Step 2: Render list with custom filter
 
-<!-- tabs:start -->
-#### ** Lovata.Buddies **
-
-File: **pages/index.htm**
 ```twig
-title = "User orders"
-url = "/user/orders"
+title = "Thank you page"
+url = "/checkout/:slug"
 layout = "main"
-is_hidden = 0
 
-[UserData]
+[OrderPage]
+slug = "{{ :slug }}"
 ==
 
-{# Get user object #}
-{% set obUser = UserData.get() %}
-
-{# Get order list from user object #}
-{% set obOrderList = obUser.order.myCustomMethod() %}
-{% if obOrderList.isNotEmpty() %}
-    <ul>
-        {% for obOrder in obOrderList %}
-            <li>{% partial 'order/order-card/order-card' obOrder=obOrder %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
+{# Get order position object #}
+{% set obOrder = OrderPage.get() %}
+<div data-id="{{ obOrder.id }}">
+    {# Get order positions #}
+    {% set obOrderPositionList = obOrder.order_position.myCustomMethod() %}
+    {% for obOrderPosition in obOrderPositionList %}
+      <div>{{ obOrderPosition.item.name }}</div>
+    {% endfor %}
+</div>
 ```
-
-#### ** RainLab.User **
-
-File: **pages/index.htm**
-```twig
-title = "User orders"
-url = "/user/orders"
-layout = "main"
-is_hidden = 0
-==
-
-{% if user %}
-    <p>Hello {{ user.name }}</p>
-    
-    {# Get order list from user object #}
-    {% set obOrderList = user.order_list.myCustomMethod() %}
-    {% if obOrderList.isNotEmpty() %}
-        <ul>
-            {% for obOrder in obOrderList %}
-                <li>{% partial 'order/order-card/order-card' obOrder=obOrder %}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-{% else %}
-    <p>Nobody is logged in</p>
-{% endif %}
-```
-<!-- tabs:end -->
 
 ## Add custom filter with caching
 
@@ -393,16 +359,16 @@ is_hidden = 0
 
 1. Create store class.
 
-File: **plugins/lovata/basecode/classes/store/order/GetCustomList.php**
+File: **plugins/lovata/basecode/classes/store/orderposition/GetCustomList.php**
 ```php
-<?php namespace Lovata\BaseCode\Classes\Store\Order;
+<?php namespace Lovata\BaseCode\Classes\Store\OrderPosition;
 
-use Lovata\OrdersShopaholic\Models\Order;
+use Lovata\OrdersShopaholic\Models\OrderPosition;
 use Lovata\Toolbox\Classes\Store\AbstractStoreWithoutParam;
 
 /**
  * Class GetCustomList
- * @package Lovata\BaseCode\Classes\Store\Order
+ * @package Lovata\BaseCode\Classes\Store\OrderPosition
  */
 class GetCustomList extends AbstractStoreWithoutParam
 {
@@ -414,27 +380,27 @@ class GetCustomList extends AbstractStoreWithoutParam
      */
     protected function getIDListFromDB() : array
     {
-        $arElementIDList = (array) Order::where('my_field', true)->lists('id');
+        $arElementIDList = (array) OrderPosition::where('my_field', true)->lists('id');
 
         return $arElementIDList;
     }
 }
 ```
 
-File: **plugins/lovata/basecode/classes/store/OrderListStore.php**
+File: **plugins/lovata/basecode/classes/store/OrderPositionListStore.php**
 ```php
 <?php namespace Lovata\BaseCode\Classes\Store;
 
 use Lovata\Toolbox\Classes\Store\AbstractListStore;
 
-use Lovata\BaseCode\Classes\Store\Order\GetCustomList;
+use Lovata\BaseCode\Classes\Store\OrderPosition\GetCustomList;
 
 /**
- * Class OrderListStore
+ * Class OrderPositionListStore
  * @package Lovata\BaseCode\Classes\Store
  * @property GetCustomList $my_custom
  */
-class OrderListStore extends AbstractListStore
+class OrderPositionListStore extends AbstractListStore
 {
     protected static $instance;
 
@@ -450,25 +416,25 @@ class OrderListStore extends AbstractListStore
 
 ### Step 2: Adding cache flush
 
-1. Modify event that we added in ["Add custom field"](modules/order/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/order/extending/extending.md#step-4-add-field-to-cache) step.
+1. Modify event that we added in ["Add custom field"](modules/order-position/extending/extending.md#add-custom-field) section on ["Step 4: Add field to cache"](modules/order-position/extending/extending.md#step-4-add-field-to-cache) step.
 
-File: **plugins/lovata/basecode/classes/event/order/ExtendOrderModel.php**
+File: **plugins/lovata/basecode/classes/event/orderposition/ExtendOrderPositionModel.php**
 ```php
-<?php namespace Lovata\BaseCode\Classes\Event\Order;
+<?php namespace Lovata\BaseCode\Classes\Event\OrderPosition;
 
 use Lovata\Toolbox\Classes\Event\ModelHandler;
 
-use Lovata\OrdersShopaholic\Models\Order;
-use Lovata\Shopaholic\Classes\Item\OrderItem;
-use Lovata\BaseCode\Classes\Store\OrderListStore;
+use Lovata\OrdersShopaholic\Models\OrderPosition;
+use Lovata\Shopaholic\Classes\Item\OrderPositionItem;
+use Lovata\BaseCode\Classes\Store\OrderPositionListStore;
 
 /**
- * Class ExtendOrderModel
- * @package Lovata\BaseCode\Classes\Event\Order
+ * Class ExtendOrderPositionModel
+ * @package Lovata\BaseCode\Classes\Event\OrderPosition
  */
-class ExtendOrderModel extends ModelHandler
+class ExtendOrderPositionModel extends ModelHandler
 {
-    /** @var Order */
+    /** @var OrderPosition */
      protected $obElement;
  
      /**
@@ -478,11 +444,11 @@ class ExtendOrderModel extends ModelHandler
      {
         parent::subscribe($obEvent);
 
-        Order::extend(function ($obOrder) {
-            /** @var Order $obOrder */
-            $obOrder->fillable[] = 'my_field';
+        OrderPosition::extend(function ($obOrderPosition) {
+            /** @var OrderPosition $obOrderPosition */
+            $obOrderPosition->fillable[] = 'my_field';
             
-            $obOrder->addCachedField(['my_field']);
+            $obOrderPosition->addCachedField(['my_field']);
         });
     }
 
@@ -491,7 +457,7 @@ class ExtendOrderModel extends ModelHandler
      */
     protected function afterSave()
     {
-        $this->checkFieldChanges('my_field', OrderListStore::instance()->my_custom);
+        $this->checkFieldChanges('my_field', OrderPositionListStore::instance()->my_custom);
     }
 
     /**
@@ -500,7 +466,7 @@ class ExtendOrderModel extends ModelHandler
     protected function afterDelete()
     {
         if ($this->obElement->my_field) {
-            OrderListStore::instance()->my_custom->clear();
+            OrderPositionListStore::instance()->my_custom->clear();
         }
     }
 
@@ -510,7 +476,7 @@ class ExtendOrderModel extends ModelHandler
      */
     protected function getModelClass()
     {
-        return Order::class;
+        return OrderPosition::class;
     }
 
     /**
@@ -519,44 +485,44 @@ class ExtendOrderModel extends ModelHandler
      */
     protected function getItemClass()
     {
-        return OrderItem::class;
+        return OrderPositionItem::class;
     }
 }
 ```
 
 ### Step 3: Add custom method to collection
 
-1. Create event class to extend OrderCollection class.
+1. Create event class to extend OrderPositionCollection class.
 
-File: **plugins/lovata/basecode/classes/event/order/ExtendOrderCollection.php**
+File: **plugins/lovata/basecode/classes/event/orderposition/ExtendOrderPositionCollection.php**
 ```php
-<?php namespace Lovata\BaseCode\Classes\Event\Order;
+<?php namespace Lovata\BaseCode\Classes\Event\OrderPosition;
 
-use Lovata\BaseCode\Classes\Store\OrderListStore;
-use Lovata\Shopaholic\Classes\Collection\OrderCollection;
+use Lovata\BaseCode\Classes\Store\OrderPositionListStore;
+use Lovata\Shopaholic\Classes\Collection\OrderPositionCollection;
 
 /**
- * Class ExtendOrderCollection
- * @package Lovata\BaseCode\Classes\Event\Order
+ * Class ExtendOrderPositionCollection
+ * @package Lovata\BaseCode\Classes\Event\OrderPosition
  */
-class ExtendOrderCollection
+class ExtendOrderPositionCollection
 {
     public function subscribe()
     {
-        OrderCollection::extend(function ($obCollection) {
+        OrderPositionCollection::extend(function ($obCollection) {
             $this->addCustomMethod($obCollection);
         });
     }
 
     /**
      * Add myCustomMethod method
-     * @param OrderCollection $obCollection
+     * @param OrderPositionCollection $obCollection
      */
     protected function addCustomMethod($obCollection)
     {
         $obCollection->addDynamicMethod('myCustomMethod', function () use ($obCollection) {
             
-            $arResultIDList = OrderListStore::instance()->my_custom->get();
+            $arResultIDList = OrderPositionListStore::instance()->my_custom->get();
 
             return $obCollection->intersect($arResultIDList);
         });
@@ -573,80 +539,43 @@ File: **plugins/lovata/basecode/Plugin.php**
 use Event;
 
 //...
-use Lovata\BaseCode\Classes\Event\Order\ExtendOrderCollection;
+use Lovata\BaseCode\Classes\Event\OrderPosition\ExtendOrderPositionCollection;
 //...
 
 public function boot()
 {
     //...
-    Event::subscribe(ExtendOrderCollection::class);
+    Event::subscribe(ExtendOrderPositionCollection::class);
 }
 ```
 
 ### Step 4: Render list with custom filter
 
-<!-- tabs:start -->
-#### ** Lovata.Buddies **
-
-File: **pages/index.htm**
 ```twig
-title = "User orders"
-url = "/user/orders"
+title = "Thank you page"
+url = "/checkout/:slug"
 layout = "main"
-is_hidden = 0
 
-[UserData]
+[OrderPage]
+slug = "{{ :slug }}"
 ==
 
-{# Get user object #}
-{% set obUser = UserData.get() %}
-
-{# Get order list from user object #}
-{% set obOrderList = obUser.order.myCustomMethod() %}
-{% if obOrderList.isNotEmpty() %}
-    <ul>
-        {% for obOrder in obOrderList %}
-            <li>{% partial 'order/order-card/order-card' obOrder=obOrder %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
+{# Get order position object #}
+{% set obOrder = OrderPage.get() %}
+<div data-id="{{ obOrder.id }}">
+    {# Get order positions #}
+    {% set obOrderPositionList = obOrder.order_position.myCustomMethod() %}
+    {% for obOrderPosition in obOrderPositionList %}
+      <div>{{ obOrderPosition.item.name }}</div>
+    {% endfor %}
+</div>
 ```
 
-#### ** RainLab.User **
-
-File: **pages/index.htm**
-```twig
-title = "User orders"
-url = "/user/orders"
-layout = "main"
-is_hidden = 0
-==
-
-{% if user %}
-    <p>Hello {{ user.name }}</p>
-    
-    {# Get order list from user object #}
-    {% set obOrderList = user.order_list.myCustomMethod() %}
-    {% if obOrderList.isNotEmpty() %}
-        <ul>
-            {% for obOrder in obOrderList %}
-                <li>{% partial 'order/order-card/order-card' obOrder=obOrder %}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-{% else %}
-    <p>Nobody is logged in</p>
-{% endif %}
-```
-<!-- tabs:end -->
-
-[Home](modules/order/home.md)
-• [Model](modules/order/model/model.md)
-• [Item](modules/order/item/item.md)
-• [Collection](modules/order/collection/collection.md)
-• [Components](modules/order/component/component.md)
-• [Events](modules/order/event/event.md)
-• [Examples](modules/order/examples/examples.md)
+[Home](modules/order-position/home.md)
+• [Model](modules/order-position/model/model.md)
+• [Item](modules/order-position/item/item.md)
+• [Collection](modules/order-position/collection/collection.md)
+• [Examples](modules/order-position/examples/examples.md)
 • Extending
 
 [Back to modules](modules/home.md)

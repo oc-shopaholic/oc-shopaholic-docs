@@ -2,14 +2,10 @@
 
 Home
 • [Model](modules/order-position/model/model.md)
-<!--
 • [Item](modules/order-position/item/item.md)
 • [Collection](modules/order-position/collection/collection.md)
-• [Components](modules/order-position/component/component.md)
-• [Events](modules/order-position/event/event.md)
 • [Examples](modules/order-position/examples/examples.md)
 • [Extending](modules/order-position/extending/extending.md)
--->
 
 # Order position {docsify-ignore-all}
 
@@ -34,13 +30,9 @@ You can create and edit orders and order positions by going to **Backend -> Orde
 
 Home
 • [Model](modules/order-position/model/model.md)
-<!--
 • [Item](modules/order-position/item/item.md)
 • [Collection](modules/order-position/collection/collection.md)
-• [Components](modules/order-position/component/component.md)
-• [Events](modules/order-position/event/event.md)
 • [Examples](modules/order-position/examples/examples.md)
 • [Extending](modules/order-position/extending/extending.md)
--->
 
 [Back to modules](modules/home.md)

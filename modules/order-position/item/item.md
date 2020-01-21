@@ -1,3 +1,12 @@
+[Back to modules](modules/home.md)
+
+[Home](modules/order-position/home.md)
+• [Model](modules/order-position/model/model.md)
+• Item
+• [Collection](modules/order-position/collection/collection.md)
+• [Examples](modules/order-position/examples/examples.md)
+• [Extending](modules/order-position/extending/extending.md)
+
 # OrderPositionItem {docsify-ignore-all}
 
 !> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
@@ -9,8 +18,9 @@
 |-------|------|--------|
 |id|int|
 |code|string|
-|currency|string|Currency symbol. For example: $|
+|currency|[CurrencyItem](modules/currency/item/item.md)|
 |currency_code|string|Currency code. For example: USD|
+|currency_symbol|string|Currency symbol. For example: $|
 |item|[OfferItem](offer/item/item.md)|
 |item_id|int|Related element ID ([morphTo](https://octobercms.com/docs/database/relations#one-to-one-polymorphic-relations) relation)|
 |item_type|string|Related element model class ([morphTo](https://octobercms.com/docs/database/relations#one-to-one-polymorphic-relations) relation)|
@@ -136,3 +146,12 @@ OrderPositionItem::extend(function($obItem) {
 $obOrderPositionItem = OrderPositionItem::make(1);
 echo $obOrderPositionItem->my_property;
 ```
+
+[Home](modules/order-position/home.md)
+• [Model](modules/order-position/model/model.md)
+• Item
+• [Collection](modules/order-position/collection/collection.md)
+• [Examples](modules/order-position/examples/examples.md)
+• [Extending](modules/order-position/extending/extending.md)
+
+[Back to modules](modules/home.md)

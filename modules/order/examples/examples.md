@@ -16,7 +16,7 @@
 
 * [Example 1: Make order](#example-1-make-order)
 * [Example 2: Order page](#example-2-order-page)
-* [Example 2: User order list](#example-2-user-order-list)
+* [Example 3: User order list](#example-3-user-order-list)
 
 ## Example 1: Make order
 
@@ -217,7 +217,7 @@ slug = "{{ :slug }}"
 </div>
 ```
 
-## Example 2: User order list
+## Example 3: User order list
 
 ### 3.1 Task
 

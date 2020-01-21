@@ -2,14 +2,10 @@
 
 [Home](modules/order-position/home.md)
 • Model
-<!--
 • [Item](modules/order-position/item/item.md)
 • [Collection](modules/order-position/collection/collection.md)
-• [Components](modules/order-position/component/component.md)
-• [Events](modules/order-position/event/event.md)
 • [Examples](modules/order-position/examples/examples.md)
 • [Extending](modules/order-position/extending/extending.md)
--->
 
 # OrderPosition model {docsify-ignore-all}
 
@@ -102,13 +98,9 @@ OrderPosition::extend(function ($obOrderPosition) {
 
 [Home](modules/order-position/home.md)
 • Model
-<!--
 • [Item](modules/order-position/item/item.md)
 • [Collection](modules/order-position/collection/collection.md)
-• [Components](modules/order-position/component/component.md)
-• [Events](modules/order-position/event/event.md)
 • [Examples](modules/order-position/examples/examples.md)
 • [Extending](modules/order-position/extending/extending.md)
--->
 
 [Back to modules](modules/home.md)
