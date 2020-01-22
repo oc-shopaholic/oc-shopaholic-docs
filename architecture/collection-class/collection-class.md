@@ -11,10 +11,10 @@ and [Collection](https://octobercms.com/docs/services/collections) class
 from laravel framework are same is wrong.
 
 Object of ElementCollection class processes arrays of element IDs without getting full data of elements.
-Object creates [ElementItem](item-class/item-class.md#elementitem-classes) objects only in methods of getting lists of items
-(For example: [take](collection-class/collection-class.md#takeicount-0), [page](collection-class/collection-class.md#pageipage-ielementonpage-10), [random](collection-class/collection-class.md#randomicount), [first](collection-class/collection-class.md#first) and etc.).
+Object creates [ElementItem](architecture/item-class/item-class.md#elementitem-classes) objects only in methods of getting lists of items
+(For example: [take](architecture/collection-class/collection-class.md#takeicount-0), [page](architecture/collection-class/collection-class.md#pageipage-ielementonpage-10), [random](architecture/collection-class/collection-class.md#randomicount), [first](architecture/collection-class/collection-class.md#first) and etc.).
 
-Methods of ElementCollection class uses [Store classes](store-class/store-class.md) to get cached lists in element IDs.
+Methods of ElementCollection class uses [Store classes](architecture/store-class/store-class.md) to get cached lists in element IDs.
 
 ## Logical diagram
 
@@ -110,7 +110,7 @@ $obList = ElementCollection::make([1, 2, 10, 15]);
 
 ### all()
 
-Method returns array of objects [ElementItem](item-class/item-class.md#elementitem-classes) with all elements of collection.
+Method returns array of objects [ElementItem](architecture/item-class/item-class.md#elementitem-classes) with all elements of collection.
 
 ### applySorting($arElementIDList)
  * $arElementIDList - list of element IDs for intersection

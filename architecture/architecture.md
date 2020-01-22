@@ -58,17 +58,17 @@ You can be found detailed information about models in OctoberCMS [documentation]
 
 ## Caching
 
-We use [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md), [Store](store-class/store-class.md)
+We use [ElementItem](architecture/item-class/item-class.md), [ElementCollection](architecture/collection-class/collection-class.md), [Store](architecture/store-class/store-class.md)
 classes for caching of model data and output cached data in templates.
 Generated cache is automatically reset when an event occurs that affects the validity of this cache.
 The logic of automatic cache reset allows you to store cache data for a long time and get good indicators of the speed of your site.
 
 !> **Attention!**  Caching is very important information for faster development with using Shopaholic plugins.
-We recommend that you definitely study [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) sections.
+We recommend that you definitely study [ElementItem](architecture/item-class/item-class.md), [ElementCollection](architecture/collection-class/collection-class.md) sections.
 
 ## Components
 
-!> **Attention!**  Components don't have templates. Components allow you to get objects of [ElementItem](item-class/item-class.md), [ElementCollection](collection-class/collection-class.md) classes.
+!> **Attention!**  Components don't have templates. Components allow you to get objects of [ElementItem](architecture/item-class/item-class.md), [ElementCollection](architecture/collection-class/collection-class.md) classes.
 
 Components don't have templates, because each project has its own unique design and html structure.
 Logic of blocks may be similar, but with few differences.
@@ -78,7 +78,7 @@ Most components belong to one of 4 types: element list, element data, element pa
 
 ### Component type: element list
 
-Components of this type can make objects of [ElementCollection](collection-class/collection-class.md) class and allow to render blocks with lists of elements.
+Components of this type can make objects of [ElementCollection](architecture/collection-class/collection-class.md) class and allow to render blocks with lists of elements.
 Developers can easily render blocks:
   * Full list with all active elements
   * List with active elements + pagination

@@ -1,7 +1,7 @@
 # MakeReview component {docsify-ignore-all}
 
-!> **Attention!**  We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
-[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+!> **Attention!**  We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
+[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 Component is available in **[Reviews for Shopaholic](plugins/home.md#reviews-for-shopaholic)** plugin.
 

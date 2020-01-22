@@ -11,8 +11,8 @@
 
 # Examples: Promo block {docsify-ignore-all}
 
-!> **Attention!** We recommend that you read [Architecture](home.md#architecture), [ElementItem class](item-class/item-class.md),
-[ElementCollection class](collection-class/collection-class.md) sections for complete understanding of  project architecture.
+!> **Attention!** We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
+[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
 
 * [Example 1: Promo block page](#example-1-promo-block-page)
 * [Example 2: Promo block card](#example-2-promo-block-card)
