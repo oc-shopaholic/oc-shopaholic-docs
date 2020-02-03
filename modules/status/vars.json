@@ -1,0 +1,68 @@
+{
+  "title": "Status",
+  "name": "Status",
+  "name_many": "Statuses",
+  "slug": "status",
+  "available": ["status"],
+  "model": {
+    "class": "Status",
+    "table": "",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "": {
+        "type": "",
+        "model": "",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "StatusItem",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "StatusCollection",
+    "namespace": ""
+  },
+  "component": {
+    "-page": {
+      "class": "Page",
+      "anchor": "page"
+    },
+    "-data": {
+      "class": "Data",
+      "anchor": "data"
+    },
+    "-list": {
+      "class": "List",
+      "anchor": "list"
+    }
+  },
+  "controller": {
+    "class": "",
+    "namespace": ""
+  }
+}

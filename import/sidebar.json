@@ -1,0 +1,12 @@
+{
+  "import-from-xml": {
+    "title": "Import from XML",
+    "slug": "home",
+    "anchor": "import-from-xml"
+  },
+  "import-from-csv": {
+    "title": "Import from CSV",
+    "slug": "home",
+    "anchor": "import-from-csv"
+  }
+}

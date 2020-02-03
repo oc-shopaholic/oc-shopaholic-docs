@@ -1,0 +1,94 @@
+{
+  "shopaholic": {
+    "name": "Shopaholic",
+    "anchor": "main-plugin"
+  },
+  "accessories": {
+    "name": "Accessories for Shopaholic",
+    "anchor": "accessories-for-shopaholic"
+  },
+  "campaigns": {
+    "name": "Campaigns for Shopaholic",
+    "anchor": "campaigns-for-shopaholic"
+  },
+  "cdek": {
+    "name": "CDEK for Shopaholic",
+    "anchor": "cdek-for-shopaholic"
+  },
+  "compare": {
+    "name": "Compare for Shopaholic",
+    "anchor": "compare-for-shopaholic"
+  },
+  "coupons": {
+    "name": "Coupons for Shopaholic",
+    "anchor": "coupons-for-shopaholic"
+  },
+  "discounts": {
+    "name": "Discounts for Shopaholic",
+    "anchor": "discounts-for-shopaholic"
+  },
+  "filter": {
+    "name": "Filter for Shopaholic",
+    "anchor": "filter-for-shopaholic"
+  },
+  "labels": {
+    "name": "Labels for Shopaholic",
+    "anchor": "labels-for-shopaholic"
+  },
+  "orders": {
+    "name": "Orders for Shopaholic",
+    "anchor": "orders-for-shopaholic"
+  },
+  "popularity": {
+    "name": "Popularity for Shopaholic",
+    "anchor": "popularity-for-shopaholic"
+  },
+  "properties": {
+    "name": "Properties for Shopaholic",
+    "anchor": "properties-for-shopaholic"
+  },
+  "related-products": {
+    "name": "Related products for Shopaholic",
+    "anchor": "related-products-for-shopaholic"
+  },
+  "reviews": {
+    "name": "Reviews for Shopaholic",
+    "anchor": "reviews-for-shopaholic"
+  },
+  "search": {
+    "name": "Search for Shopaholic",
+    "anchor": "search-for-shopaholic"
+  },
+  "sphinx": {
+    "name": "Sphinx for Shopaholic",
+    "anchor": "sphinx-for-shopaholic"
+  },
+  "subscriptions": {
+    "name": "Subscriptions for Shopaholic",
+    "anchor": "subscriptions-for-shopaholic"
+  },
+  "tags": {
+    "name": "Tags for Shopaholic",
+    "anchor": "tags-for-shopaholic"
+  },
+  "viewed-products": {
+    "name": "Viewed products for Shopaholic",
+    "anchor": "viewed-products-for-shopaholic"
+  },
+  "vk-goods": {
+    "name": "VK Goods for Shopaholic",
+    "anchor": "vk-goods-for-shopaholic"
+  },
+  "wish-list": {
+    "name": "Wish list for Shopaholic",
+    "anchor": "wish-list-for-shopaholic"
+  },
+  "yandex-market": {
+    "name": "Yandex Market for Shopaholic",
+    "anchor": "yandex-market-for-shopaholic"
+  },
+  "user": {
+    "name": "User",
+    "anchor": "user"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Coupon",
+  "name": "Coupon",
+  "name_many": "Coupons",
+  "slug": "coupon",
+  "available": ["coupons"],
+  "model": {
+    "class": "Coupon",
+    "table": "",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "": {
+        "type": "",
+        "model": "",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "",
+    "namespace": ""
+  },
+  "component": {
+    "-page": {
+      "class": "Page",
+      "anchor": "page"
+    },
+    "-data": {
+      "class": "Data",
+      "anchor": "data"
+    },
+    "-list": {
+      "class": "List",
+      "anchor": "list"
+    }
+  },
+  "controller": {
+    "class": "",
+    "namespace": ""
+  }
+}

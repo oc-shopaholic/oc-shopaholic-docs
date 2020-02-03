@@ -1,0 +1,109 @@
+{
+  "title": "Subscription access",
+  "name": "SubscriptionAccess",
+  "name_many": "SubscriptionAccesses",
+  "slug": "subscription-access",
+  "available": ["subscriptions"],
+  "model": {
+    "class": "SubscriptionAccess",
+    "table": "lovata_subscription_shopaholic_access",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Models\\SubscriptionAccess",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "element_id": {
+        "type": "int",
+        "description": "Relation with custom model. For example: Article.",
+        "available": "",
+        "relation": ""
+      },
+      "element_type": {
+        "type": "string",
+        "description": "Relation with custom model. For example: Article.",
+        "available": "",
+        "relation": ""
+      },
+      "expire_at": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "product"
+      },
+      "updated_at": "default",
+      "user_id": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "product": {
+        "type": "BelongsTo",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "user": {
+        "type": "BelongsTo",
+        "model": "user",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "SubscriptionAccessItem",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Classes\\Item\\SubscriptionAccessItem",
+    "field": {
+      "id": "default",
+      "expire_at": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order_position": {
+        "type": "{{ get_collection('order-position').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order_position_id_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product": {
+        "type": "{{ get_item('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "user_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "SubscriptionAccessCollection",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Classes\\Collection\\SubscriptionAccessCollection"
+  },
+  "controller": {
+    "class": "SubscriptionAccesses",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Controllers\\SubscriptionAccesses"
+  }
+}

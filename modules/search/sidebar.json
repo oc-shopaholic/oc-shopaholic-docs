@@ -1,0 +1,12 @@
+{
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-search"
+  },
+  "sphinx": {
+    "title": "Sphinx",
+    "slug": "sphinx",
+    "anchor": "sphinx-search"
+  }
+}

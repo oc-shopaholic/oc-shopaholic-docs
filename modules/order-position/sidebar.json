@@ -1,0 +1,36 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "orderposition-model",
+    "field-list": {"title": "Field list", "anchor": "field-list"},
+    "relations": {"title": "Relations", "anchor": "relations"},
+    "extending": {"title": "Extending", "anchor": "extending"}
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "orderpositionitem",
+    "field-list": {"title": "Field list", "anchor": "field-list"},
+    "extending": {"title": "Extending", "anchor": "extending"}
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "orderpositioncollection"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-orderposition",
+    "example-1-order-page": {"title": "Example 1: Order page", "anchor": "example-1-order-page"}
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-orderposition",
+    "add-custom-field": {"title": "Add custom field", "anchor": "add-custom-field"},
+    "add-custom-filter": {"title": "Add custom filter", "anchor": "add-custom-filter"},
+    "add-custom-filter-with-caching": {"title": "Add custom filter with caching", "anchor": "add-custom-filter-with-caching"}
+  }
+}

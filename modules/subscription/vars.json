@@ -1,0 +1,7 @@
+{
+  "title": "Subscription",
+  "name": "Subscription",
+  "name_many": "Subscriptions",
+  "slug": "subscription",
+  "available": ["subscriptions"]
+}

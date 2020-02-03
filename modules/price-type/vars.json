@@ -1,0 +1,74 @@
+{
+  "title": "Price type",
+  "name": "PriceType",
+  "name_many": "PriceTypes",
+  "slug": "price-type",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "PriceType",
+    "table": "lovata_shopaholic_price_types",
+    "namespace": "Lovata\\Shopaholic\\Models\\PriceType",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": "default",
+      "created_at": "default",
+      "currency_id": {
+        "type": "int",
+        "description": "",
+        "available": "shopaholic",
+        "relation": "currency"
+      },
+      "deleted_at": "default",
+      "external_id": "default",
+      "name": "default",
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "currency": {
+        "type": "BelongsTo",
+        "model": "currency",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  },
+  "item": {
+    "class": "",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "",
+    "namespace": ""
+  },
+  "component": {
+    "-page": {
+      "class": "Page",
+      "anchor": "page"
+    },
+    "-data": {
+      "class": "Data",
+      "anchor": "data"
+    },
+    "-list": {
+      "class": "List",
+      "anchor": "list"
+    }
+  },
+  "controller": {
+    "class": "",
+    "namespace": ""
+  }
+}

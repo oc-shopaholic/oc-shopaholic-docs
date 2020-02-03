@@ -1,0 +1,57 @@
+{
+  "title": "Cart",
+  "name": "Cart",
+  "name_many": "Carts",
+  "slug": "cart",
+  "available": ["orders"],
+  "model": {
+    "class": "Cart",
+    "table": "lovata_orders_shopaholic_carts",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\Cart",
+    "field": {
+      "id": "default",
+      "billing_address": "default",
+      "created_at": "default",
+      "email": "default",
+      "payment_method_id": "default",
+      "property": {
+        "type": "array",
+        "description": "Array with order properties.",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_address": "default",
+      "shipping_type_id": "default",
+      "user_id": "default",
+      "user_data": {
+        "type": "array",
+        "description": "Array with user properties.",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "position": {
+        "type": "HasMany",
+        "model": "cart-position",
+        "description": "",
+        "available": "orders"
+      },
+      "user": {
+        "type": "BelongsTo",
+        "model": "user",
+        "description": "",
+        "available": "user"
+      }
+    }
+  },
+  "component": {
+    "cart": {
+      "class": "Cart",
+      "anchor": "cart"
+    }
+  }
+}

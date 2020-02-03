@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "tax-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "taxitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "taxcollection"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-tax"
+  },
+  "advanced-usage": {
+    "title": "Advanced usage",
+    "slug": "home",
+    "anchor": "advanced-usage"
+  }
+}

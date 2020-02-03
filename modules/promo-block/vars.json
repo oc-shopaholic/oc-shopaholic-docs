@@ -1,0 +1,120 @@
+{
+  "title": "Promo block",
+  "name": "PromoBlock",
+  "name_many": "PromoBlocks",
+  "slug": "promo-block",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "PromoBlock",
+    "table": "lovata_shopaholic_promo_block",
+    "namespace": "Lovata\\Shopaholic\\Models\\PromoBlock",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": "default",
+      "created_at": "default",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "name": "default",
+      "preview_text": "default",
+      "sort_order": "default",
+      "slug": "default",
+      "type": "default",
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
+        "description": "",
+        "available": "campaigns"
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "discount": {
+        "type": "BelongsToMany",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  },
+  "item": {
+    "class": "PromoBlockItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\PromoBlockItem",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "images": "default",
+      "name": "default",
+      "preview_image": "default",
+      "preview_text": "default",
+      "product": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "slug": "default",
+      "type": "default"
+    }
+  },
+  "collection": {
+    "class": "PromoBlockCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\PromoBlockCollection"
+  },
+  "component": {
+    "promo-block-page": {
+      "class": "PromoBlockPage",
+      "anchor": "promoblockpage"
+    },
+    "promo-block-data": {
+      "class": "PromoBlockData",
+      "anchor": "promoblockdata"
+    },
+    "promo-block-list": {
+      "class": "PromoBlockList",
+      "anchor": "promoblocklist"
+    }
+  },
+  "controller": {
+    "class": "PromoBlocks",
+    "namespace": "\\Lovata\\Shopaholic\\Controllers\\PromoBlocks"
+  }
+}

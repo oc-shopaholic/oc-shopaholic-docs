@@ -1,0 +1,81 @@
+{
+  "title": "Price",
+  "name": "Price",
+  "name_many": "Prices",
+  "slug": "price",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Price",
+    "table": "lovata_shopaholic_prices",
+    "namespace": "Lovata\\Shopaholic\\Models\\Price",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "discount_price": {
+        "type": "string",
+        "description": "Discount price with applying number format. Discount price = old price - price. For example: \"49,00\"",
+        "available": "",
+        "relation": ""
+      },
+      "discount_price_value": {
+        "type": "string",
+        "description": "Float discount price value. Discount price = old price - price. For example: 49",
+        "available": "",
+        "relation": ""
+      },
+      "item_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "item_type": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "old_price": {
+        "type": "string",
+        "description": "Old price (without discounts) with applying number format. For example: \"12 499,99\"",
+        "available": "",
+        "relation": ""
+      },
+      "old_price_value": {
+        "type": "float",
+        "description": "Float old price value (without discounts). For example: 12499.99",
+        "available": "",
+        "relation": ""
+      },
+      "price_type_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "price-type"
+      },
+      "price": {
+        "type": "string",
+        "description": "Price with applying number format. For example: \"12 450,99\"",
+        "available": "",
+        "relation": ""
+      },
+      "price_value": {
+        "type": "float",
+        "description": "Float price value. For example: 12450.99",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "price_type": {
+        "type": "BelongsTo",
+        "model": "price-type",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  }
+}

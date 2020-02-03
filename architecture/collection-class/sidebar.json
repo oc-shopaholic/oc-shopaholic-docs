@@ -1,0 +1,14 @@
+{
+  "logical-diagram": {
+    "title": "Logical diagram",
+    "anchor": "logical-diagram"
+  },
+  "extending": {
+    "title": "Extending",
+    "anchor": "extending"
+  },
+  "method-list": {
+    "title": "Method List",
+    "anchor": "method-list"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "offer-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "offeritem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "offercollection"
+  },
+  "event": {
+    "title": "Events",
+    "slug": "event",
+    "anchor": "event-list-offer"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-offer"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-offer"
+  }
+}

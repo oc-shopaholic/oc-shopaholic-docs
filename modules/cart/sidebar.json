@@ -1,0 +1,12 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "cart-model"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  }
+}

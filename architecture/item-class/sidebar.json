@@ -1,0 +1,18 @@
+{
+  "logical-diagram": {
+    "title": "Logical diagram",
+    "anchor": "logical-diagram"
+  },
+  "method-list": {
+    "title": "Method List",
+    "anchor": "method-list"
+  },
+  "extending": {
+    "title": "Extending",
+    "anchor": "extending"
+  },
+  "integration-with-translate-plugin": {
+    "title": "Integration with Translate plugin",
+    "anchor": "integration-with-translate-plugin"
+  }
+}

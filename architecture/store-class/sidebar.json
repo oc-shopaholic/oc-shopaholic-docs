@@ -1,0 +1,14 @@
+{
+  "abstractstorewithoutparam": {
+    "title": "AbstractStoreWithoutParam",
+    "anchor": "abstractstorewithoutparam"
+  },
+  "abstractstorewithparam": {
+    "title": "AbstractStoreWithParam",
+    "anchor": "abstractstorewithparam"
+  },
+  "abstractstorewithtwoparam": {
+    "title": "AbstractStoreWithTwoParam",
+    "anchor": "abstractstorewithtwoparam"
+  }
+}

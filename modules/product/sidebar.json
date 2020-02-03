@@ -1,0 +1,36 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "product-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "productitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "productcollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "event": {
+    "title": "Events",
+    "slug": "event"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-product"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-product"
+  }
+}

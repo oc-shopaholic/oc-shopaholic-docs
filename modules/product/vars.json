@@ -1,0 +1,330 @@
+{
+  "title": "Product",
+  "name": "Product",
+  "name_many": "Products",
+  "slug": "product",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Product",
+    "table": "lovata_shopaholic_products",
+    "namespace": "Lovata\\Shopaholic\\Models\\Product",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "active_vk": {
+        "type": "bool",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "brand_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "brand"
+      },
+      "category_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "category"
+      },
+      "code": "default",
+      "created_at": "default",
+      "deleted_at": "default",
+      "description": "default",
+      "external_id": "default",
+      "external_vk_id": {
+        "type": "int",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "is_subscription": {
+        "type": "bool",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "name": "default",
+      "preview_text": "default",
+      "popularity": {
+        "type": "int",
+        "description": "Product popularity counter.",
+        "available": "popularity",
+        "relation": ""
+      },
+      "rating": {
+        "type": "float",
+        "description": "",
+        "available": "reviews",
+        "relation": ""
+      },
+      "rating_data": {
+        "type": "array",
+        "description": "",
+        "available": "reviews",
+        "relation": ""
+      },
+      "search_content": {
+        "type": "string",
+        "description": "",
+        "available": ["search", "sphinx"],
+        "relation": ""
+      },
+      "search_synonym": {
+        "type": "string",
+        "description": "",
+        "available": ["search", "sphinx"],
+        "relation": ""
+      },
+      "slug": "default",
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image", "preview_image_vkontakte", "preview_image_yandex"],
+    "attach_many": ["images", "images_vkontakte", "images_yandex"],
+    "relation": {
+      "accessory": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "accessories"
+      },
+      "additional_category": {
+        "type": "BelongsToMany",
+        "model": "category",
+        "description": "",
+        "available": ""
+      },
+      "brand": {
+        "type": "BelongsTo",
+        "model": "brand",
+        "description": "",
+        "available": ""
+      },
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
+        "description": "",
+        "available": "campaigns"
+      },
+      "category": {
+        "type": "BelongsTo",
+        "model": "category",
+        "description": "",
+        "available": ""
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon_group",
+        "description": "",
+        "available": "coupons"
+      },
+      "discount": {
+        "type": "BelongsToMany",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "label": {
+        "type": "BelongsToMany",
+        "model": "label",
+        "description": "",
+        "available": "labels"
+      },
+      "offer": {
+        "type": "HasMany",
+        "model": "offer",
+        "description": "",
+        "available": ""
+      },
+      "property_value": {
+        "type": "MorphMany",
+        "model": "property-value",
+        "description": "",
+        "available": "properties"
+      },
+      "related": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "related-products"
+      },
+      "review": {
+        "type": "HasMany",
+        "model": "review",
+        "description": "",
+        "available": "reviews"
+      }
+    }
+  },
+  "item": {
+    "class": "ProductItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\ProductItem",
+    "field": {
+      "id": "default",
+      "accessory": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "accessories",
+        "relation": ""
+      },
+      "active": "default",
+      "active_vk": {
+        "type": "bool",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "additional_category": {
+        "type": "{{ get_collection('category').link() }}",
+        "description": "Collection of additional categories.",
+        "available": "",
+        "relation": ""
+      },
+      "additional_category_id": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "brand": {
+        "type": "{{ get_item('brand').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "brand_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "category": {
+        "type": "{{ get_item('category').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "category_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "code": "default",
+      "description": "default",
+      "external_vk_id": {
+        "type": "int",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "images": "default",
+      "images_vkontakte": {
+        "type": "\\October\\Rain\\Database\\Collection, \\System\\Models\\File[]",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "images_yandex": {
+        "type": "\\October\\Rain\\Database\\Collection, \\System\\Models\\File[]",
+        "description": "",
+        "available": "yandex-market",
+        "relation": ""
+      },
+      "label": {
+        "type": "{{ get_collection('label').link() }}",
+        "description": "",
+        "available": "labels",
+        "relation": ""
+      },
+      "name": "default",
+      "offer": {
+        "type": "{{ get_collection('offer').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "offer_id_list": {
+        "type": "array",
+        "description": "List with **active** offer IDs",
+        "available": "",
+        "relation": ""
+      },
+      "preview_image": "default",
+      "preview_image_vkontakte": {
+        "type": "\\System\\Models\\File",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "preview_image_yandex": {
+        "type": "\\System\\Models\\File",
+        "description": "",
+        "available": "yandex-market",
+        "relation": ""
+      },
+      "preview_text": "default",
+      "property": {
+        "type": "{{ get_collection('property').link() }}",
+        "description": "Object with sorted active product properties.",
+        "available": "properties",
+        "relation": ""
+      },
+      "rating": {
+        "type": "float",
+        "description": "",
+        "available": "reviews",
+        "relation": ""
+      },
+      "rating_data": {
+        "type": "array",
+        "description": "For example: [1 => 0, 2 => 4, 3 => 7, 4 => 21, 5 => 48].",
+        "available": "reviews",
+        "relation": ""
+      },
+      "related": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "related-products",
+        "relation": ""
+      },
+      "review": {
+        "type": "{{ get_collection('review').link() }}",
+        "description": "",
+        "available": "reviews",
+        "relation": ""
+      },
+      "slug": "default",
+      "trashed": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "ProductCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\ProductCollection"
+  },
+  "component": {
+    "product-page": {
+      "class": "ProductPage",
+      "anchor": "productpage"
+    },
+    "product-data": {
+      "class": "ProductData",
+      "anchor": "productdata"
+    },
+    "product-list": {
+      "class": "ProductList",
+      "anchor": "productlist"
+    }
+  },
+  "controller": {
+    "class": "Products",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Products"
+  }
+}

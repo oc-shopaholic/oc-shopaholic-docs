@@ -1,0 +1,37 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "currency-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "currencyitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "currencycollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-currency"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-currency"
+  },
+  "advanced-usage": {
+    "title": "Advanced usage",
+    "slug": "advanced-usage",
+    "anchor": "advanced-usage"
+  }
+}

@@ -10,7 +10,7 @@
 |id|int|
 |api|ShippingPriceProcessorInterface|
 |api_class|string|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |currency|string|Currency symbol. For example: $|
 |currency_code|string|Currency code. For example: USD|
 |name|string|

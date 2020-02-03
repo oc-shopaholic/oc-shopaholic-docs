@@ -1,0 +1,12 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "pricetype-model"
+  },
+  "advanced-usage": {
+    "title": "Advanced usage",
+    "slug": "home",
+    "anchor": "advanced-usage"
+  }
+}

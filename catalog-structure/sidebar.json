@@ -1,0 +1,18 @@
+{
+  "step-1-products-and-offers": {
+    "title": "Step 1: Products and offers",
+    "anchor": "step-1-products-and-offers"
+  },
+  "step-2-related-products": {
+    "title": "Step 2: Related products",
+    "anchor": "step-2-related-products"
+  },
+  "step-3-category-and-tags": {
+    "title": "Step 3: Category and tags",
+    "anchor": "step-3-category-and-tags"
+  },
+  "step-4-product-and-offer-properties": {
+    "title": "Step 4: Product and offer properties",
+    "anchor": "step-4-product-and-offer-properties"
+  }
+}

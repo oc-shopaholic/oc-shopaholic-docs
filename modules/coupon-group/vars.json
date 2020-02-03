@@ -1,0 +1,28 @@
+{
+  "title": "Coupon group",
+  "slug": "coupon-group",
+  "model": {
+    "class": "CouponGroup",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "": {
+        "type": "",
+        "model": "",
+        "description": "",
+        "available": ""
+      }
+    }
+  }
+}

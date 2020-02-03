@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "subscriptionperiod-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "subscriptionperioditem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "subscriptionperiodcollection"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-subscription"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-subscriptionperiod"
+  }
+}

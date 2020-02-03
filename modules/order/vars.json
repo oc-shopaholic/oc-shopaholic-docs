@@ -1,0 +1,354 @@
+{
+  "title": "Order",
+  "name": "Order",
+  "name_many": "Orders",
+  "slug": "order",
+  "available": ["orders"],
+  "model": {
+    "class": "Order",
+    "table": "lovata_orders_shopaholic_orders",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\Order",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "currency_code": {
+        "type": "string",
+        "description": "Active currency code. For example: USD.",
+        "available": "",
+        "relation": ""
+      },
+      "currency_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "currency"
+      },
+      "currency_symbol": {
+        "type": "string",
+        "description": "Active currency symbol. For example: $.",
+        "available": "",
+        "relation": ""
+      },
+      "manager_id": {
+        "type": "int",
+        "description": "Relation with BackendUser model.",
+        "available": "",
+        "relation": ""
+      },
+      "order_number": {
+        "type": "string",
+        "description": "The order number is automatically generated.",
+        "available": "",
+        "relation": ""
+      },
+      "payment_data": {
+        "type": "array",
+        "description": "Field can be used for integration with payment gateway.",
+        "available": "",
+        "relation": ""
+      },
+      "payment_method_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "payment-method"
+      },
+      "payment_response": {
+        "type": "array",
+        "description": "Field can be used for integration with payment gateway.",
+        "available": "",
+        "relation": ""
+      },
+      "payment_token": {
+        "type": "string",
+        "description": "Field can be used for integration with payment gateway.",
+        "available": "",
+        "relation": ""
+      },
+      "position_total_price": {
+        "type": "string",
+        "description": "Formatted position total price string (**\"120,05\"**).",
+        "available": "",
+        "relation": ""
+      },
+      "position_total_price_data": {
+        "type": "[TotalPriceContainer](modules/price-container/home.md#TotalPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "position_total_price_value": {
+        "type": "float",
+        "description": "Float position total price value (**120.05**).",
+        "available": "",
+        "relation": ""
+      },
+      "property": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_price": {
+        "type": "string",
+        "description": "Formatted shipping price string (**\"10,50\"**).",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_price_data": {
+        "type": "[ItemPriceContainer](modules/price-container/home.md#ItemPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_price_value": {
+        "type": "float",
+        "description": "Float shipping price value (**10.5**).",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_type_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "shipping-type"
+      },
+      "shipping_tax_percent": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "secret_key": {
+        "type": "string",
+        "description": "Field value is hash that is used as a slug for order page.",
+        "available": "",
+        "relation": ""
+      },
+      "status_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "status"
+      },
+      "total_price": {
+        "type": "string",
+        "description": "Formatted order total price string (**\"130,55\"**).",
+        "available": "",
+        "relation": ""
+      },
+      "total_price_data": {
+        "type": "[ItemPriceContainer](modules/price-container/home.md#ItemPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "total_price_value": {
+        "type": "float",
+        "description": "Float order total price value (**130.55**).",
+        "available": "",
+        "relation": ""
+      },
+      "transaction_id": {
+        "type": "string",
+        "description": "Field can be used for integration with payment gateway.",
+        "available": "",
+        "relation": ""
+      },
+      "user_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "user"
+      },
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "active_task": {
+        "type": "HasMany",
+        "model": "task",
+        "description": "",
+        "available": "orders"
+      },
+      "cdek": {
+        "type": "HasOne",
+        "model": "cdek-dispatch",
+        "description": "",
+        "available": "cdek"
+      },
+      "completed_task": {
+        "type": "HasMany",
+        "model": "task",
+        "description": "",
+        "available": "orders"
+      },
+      "coupon": {
+        "type": "BelongsToMany",
+        "model": "coupon",
+        "description": "",
+        "available": "coupons"
+      },
+      "currency": {
+        "type": "BelongsTo",
+        "model": "currency",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "order_position": {
+        "type": "HasMany",
+        "model": "order-position",
+        "description": "",
+        "available": "orders"
+      },
+      "order_promo_mechanism": {
+        "type": "HasMany",
+        "model": "order-promo-mechanism",
+        "description": "",
+        "available": "orders"
+      },
+      "payment_method": {
+        "type": "BelongsTo",
+        "model": "payment-method",
+        "description": "",
+        "available": "orders"
+      },
+      "shipping_type": {
+        "type": "BelongsTo",
+        "model": "shipping-type",
+        "description": "",
+        "available": "orders"
+      },
+      "status": {
+        "type": "BelongsTo",
+        "model": "status",
+        "description": "",
+        "available": "orders"
+      },
+      "task": {
+        "type": "HasMany",
+        "model": "task",
+        "description": "",
+        "available": "orders"
+      },
+      "user": {
+        "type": "BelongsTo",
+        "model": "user",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "OrderItem",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\OrderItem",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "currency_code": {
+        "type": "string",
+        "description": "Active currency code. For example: USD.",
+        "available": "",
+        "relation": ""
+      },
+      "currency_symbol": {
+        "type": "string",
+        "description": "Active currency symbol. For example: $.",
+        "available": "",
+        "relation": ""
+      },
+      "order_number": {
+        "type": "string",
+        "description": "The order number is automatically generated.",
+        "available": "",
+        "relation": ""
+      },
+      "order_position": {
+        "type": "{{ get_collection('order-position').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order_position_id": {
+        "type": "array",
+        "description": "Array with order position IDs",
+        "available": "",
+        "relation": ""
+      },
+      "payment_method": {
+        "type": "{{ get_item('payment-method').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "payment_method_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "secret_key": {
+        "type": "string",
+        "description": "Field value is hash that is used as a slug for order page.",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_type": {
+        "type": "{{ get_item('shipping-type').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "shipping_type_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "status": {
+        "type": "{{ get_item('status').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "status_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default",
+      "user_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "OrderCollection",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\OrderCollection"
+  },
+  "component": {
+    "make-order": {
+      "class": "MakeOrder",
+      "anchor": "makeorder"
+    },
+    "order-page": {
+      "class": "OrderPage",
+      "anchor": "orderpage"
+    }
+  },
+  "controller": {
+    "class": "Orders",
+    "namespace": "Lovata\\OrdersShopaholic\\Controllers\\Orders"
+  }
+}

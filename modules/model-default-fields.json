@@ -1,0 +1,140 @@
+{
+  "id": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "active": {
+    "type": "bool",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "billing_address": {
+    "type": "array",
+    "description": "Array with billing address fields.",
+    "available": "",
+    "relation": ""
+  },
+  "code": {
+    "type": "string",
+    "description": "Unique element code that can be used in our custom plugins or theme templates",
+    "available": "",
+    "relation": ""
+  },
+  "created_at": {
+    "type": "\\October\\Rain\\Argon\\Argon",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "deleted_at": {
+    "type": "\\October\\Rain\\Argon\\Argon",
+    "description": "Field required for [SoftDelete](https://octobercms.com/docs/database/traits#soft-deleting) trait.",
+    "available": "",
+    "relation": ""
+  },
+  "description": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "email": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "external_id": {
+    "type": "string",
+    "description": "Unique ID of element in external system. Used to link an element in import scripts",
+    "available": "",
+    "relation": ""
+  },
+  "name": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "payment_method_id": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": "payment-method"
+  },
+  "preview_text": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "property": {
+    "type": "array",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "quantity": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "search_content": {
+    "type": "string",
+    "description": "",
+    "available": ["search", "sphinx"],
+    "relation": ""
+  },
+  "search_synonym": {
+    "type": "string",
+    "description": "",
+    "available": ["search", "sphinx"],
+    "relation": ""
+  },
+  "sort_order": {
+    "type": "int",
+    "description": "Field required for [Sortable](https://octobercms.com/docs/database/traits#sortable) trait",
+    "available": "",
+    "relation": ""
+  },
+  "shipping_address": {
+    "type": "array",
+    "description": "Array with shipping address fields.",
+    "available": "",
+    "relation": ""
+  },
+  "shipping_type_id": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": "shipping-type"
+  },
+  "slug": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "type": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "updated_at": {
+    "type": "\\October\\Rain\\Argon\\Argon",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "user_id": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": "user"
+  }
+}

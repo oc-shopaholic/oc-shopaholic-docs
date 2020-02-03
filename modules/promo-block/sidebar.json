@@ -1,0 +1,37 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "promoblock-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "promoblockitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "promoblockcollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "event": {
+    "title": "Events",
+    "slug": "event",
+    "anchor": "event-list-promo-block"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-promo-block"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-promo-block"
+  }
+}

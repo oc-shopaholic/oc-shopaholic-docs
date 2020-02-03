@@ -1,0 +1,95 @@
+{
+  "title": "Currency",
+  "name": "Currency",
+  "name_many": "Currencies",
+  "slug": "currency",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Currency",
+    "table": "lovata_shopaholic_currency",
+    "namespace": "Lovata\\Shopaholic\\Models\\Currency",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": {
+        "type": "string",
+        "description": "For example: USD",
+        "available": "",
+        "relation": ""
+      },
+      "created_at": "default",
+      "deleted_at": "default",
+      "external_id": "default",
+      "is_default": {
+        "type": "bool",
+        "description": "You can set one of currencies as default currency.",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "rate": {
+        "type": "float",
+        "description": "Currency conversion rate.",
+        "available": "",
+        "relation": ""
+      },
+      "sort_order": "default",
+      "symbol": {
+        "type": "string",
+        "description": "For example: $",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {}
+  },
+  "item": {
+    "class": "CurrencyItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\CurrencyItem",
+    "field": {
+      "id": "default",
+      "code": {
+        "type": "string",
+        "description": "For example: USD",
+        "available": "",
+        "relation": ""
+      },
+      "is_default": {
+        "type": "bool",
+        "description": "You can set one of currencies as default currency.",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "rate": {
+        "type": "float",
+        "description": "Currency conversion rate.",
+        "available": "",
+        "relation": ""
+      },
+      "symbol": {
+        "type": "string",
+        "description": "For example: $",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "CurrencyCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\CurrencyCollection"
+  },
+  "component": {
+    "currency-list": {
+      "class": "CurrencyList",
+      "anchor": "currencylist"
+    }
+  },
+  "controller": {
+    "class": "Currencies",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Currencies"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "database-integrity": {
+    "title": "Database integrity",
+    "anchor": "database-integrity"
+  },
+  "discounts": {
+    "title": "Discounts",
+    "anchor": "discounts"
+  },
+  "import-from-xml": {
+    "title": "Import from XML",
+    "anchor": "import-from-xml"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "anchor": "tasks"
+  }
+}

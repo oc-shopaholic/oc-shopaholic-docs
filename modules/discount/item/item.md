@@ -8,7 +8,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |date_begin|\October\Rain\Argon\Argon|
 |date_end|\October\Rain\Argon\Argon|
 |discount_type|string|Available values: fixed, percent|

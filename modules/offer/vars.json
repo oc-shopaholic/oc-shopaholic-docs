@@ -1,0 +1,296 @@
+{
+  "title": "Offer",
+  "name": "Offer",
+  "name_many": "Offers",
+  "slug": "offer",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Offer",
+    "table": "lovata_shopaholic_offers",
+    "namespace": "Lovata\\Shopaholic\\Models\\Offer",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": {
+        "type": "string",
+        "description": "Barcode",
+        "available": "",
+        "relation": ""
+      },
+      "created_at": "default",
+      "deleted_at": "default",
+      "description": "default",
+      "discount_id": {
+        "type": "int",
+        "description": "",
+        "available": "discounts",
+        "relation": "discount"
+      },
+      "discount_price": {
+        "type": "string",
+        "description": "Discount price with applying number format. Discount price = old price - price. For example: \"49,00\"",
+        "available": "",
+        "relation": ""
+      },
+      "discount_price_value": {
+        "type": "float",
+        "description": "Float discount price value. Discount price = old price - price. For example: 49",
+        "available": "",
+        "relation": ""
+      },
+      "discount_type": {
+        "type": "string",
+        "description": "Available values: \"fixed\", \"percent\".",
+        "available": "discounts",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "discounts",
+        "relation": ""
+      },
+      "external_id": "default",
+      "name": "default",
+      "old_price": {
+        "type": "string",
+        "description": "Old price (without discounts) with applying number format. For example: \"12 499,99\".",
+        "available": "",
+        "relation": ""
+      },
+      "old_price_value": {
+        "type": "float",
+        "description": "Float old price value (without discounts). For example: 12499.99.",
+        "available": "",
+        "relation": ""
+      },
+      "price": {
+        "type": "string",
+        "description": "Price with applying number format. For example: \"12 450,99\".",
+        "available": "",
+        "relation": ""
+      },
+      "price_value": {
+        "type": "float",
+        "description": "Float price value. For example: 12450.99.",
+        "available": "",
+        "relation": ""
+      },
+      "preview_text": "default",
+      "product_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "product"
+      },
+      "quantity": "default",
+      "tax_percent": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "subscription_period_id": {
+        "type": "int",
+        "description": "",
+        "available": "subscriptions",
+        "relation": "subscription-period"
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image", "preview_image_vkontakte", "preview_image_yandex"],
+    "attach_many": ["images", "images_vkontakte", "images_yandex"],
+    "relation": {
+      "active_discount": {
+        "type": "BelongsTo",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
+        "description": "",
+        "available": "campaigns"
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "discount": {
+        "type": "BelongsToMany",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "main_price": {
+        "type": "MorphOne",
+        "model": "price",
+        "description": "",
+        "available": ""
+      },
+      "price_link": {
+        "type": "MorphMany",
+        "model": "price",
+        "description": "",
+        "available": ""
+      },
+      "product": {
+        "type": "BelongsTo",
+        "model": "product",
+        "description": "",
+        "available": ""
+      },
+      "property_value": {
+        "type": "MorphMany",
+        "model": "",
+        "description": "",
+        "available": "properties"
+      },
+      "subscription_period": {
+        "type": "BelongsTo",
+        "model": "subscription-period",
+        "description": "",
+        "available": "subscriptions"
+      }
+    }
+  },
+  "item": {
+    "class": "OfferItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\OfferItem",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": {
+        "type": "string",
+        "description": "Barcode",
+        "available": "",
+        "relation": ""
+      },
+      "currency": {
+        "type": "string",
+        "description": "Active currency symbol. For example: $.",
+        "available": "",
+        "relation": ""
+      },
+      "currency_code": {
+        "type": "string",
+        "description": "Active currency code. For example: USD.",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "subscription_period": {
+        "type": "{{ get_item('subscription-period').link() }}",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "subscription_period_id": {
+        "type": "int",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "discount": {
+        "type": "{{ get_item('discount').link() }}",
+        "description": "",
+        "available": "discounts",
+        "relation": ""
+      },
+      "discount_id": {
+        "type": "int",
+        "description": "",
+        "available": "discounts",
+        "relation": ""
+      },
+      "discount_type": {
+        "type": "string",
+        "description": "Available values: fixed, percent.",
+        "available": "discounts",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "discounts",
+        "relation": ""
+      },
+      "images": "default",
+      "images_vkontakte": {
+        "type": "\\October\\Rain\\Database\\Collection, \\System\\Models\\File[]",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "images_yandex": {
+        "type": "\\October\\Rain\\Database\\Collection, \\System\\Models\\File[]",
+        "description": "",
+        "available": "yandex-market",
+        "relation": ""
+      },
+      "name": "default",
+      "preview_image": "default",
+      "preview_image_vkontakte": {
+        "type": "\\System\\Models\\File",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "preview_image_yandex": {
+        "type": "\\System\\Models\\File",
+        "description": "",
+        "available": "yandex-market",
+        "relation": ""
+      },
+      "preview_text": "default",
+      "product": {
+        "type": "{{ get_item('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": {
+        "type": "{{ get_collection('property').link() }}",
+        "description": "Object with sorted active offer properties.",
+        "available": "properties",
+        "relation": ""
+      },
+      "quantity": "default",
+      "tax_list": {
+        "type": "{{ get_collection('tax').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "tax_percent": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "trashed": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "OfferCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\OfferCollection"
+  },
+  "controller": {
+    "class": "Offers",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Offers"
+  }
+}

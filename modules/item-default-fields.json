@@ -1,0 +1,110 @@
+{
+  "id": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "active": {
+    "type": "bool",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "code": {
+    "type": "string",
+    "description": "Unique element code that can be used in our custom plugins or theme templates",
+    "available": "",
+    "relation": ""
+  },
+  "created_at": {
+    "type": "\\October\\Rain\\Argon\\Argon",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "currency": {
+    "type": "string",
+    "description": "Currency symbol. For example: $.",
+    "available": "",
+    "relation": ""
+  },
+  "currency_code": {
+    "type": "string",
+    "description": "Currency code. For example: USD.",
+    "available": "",
+    "relation": ""
+  },
+  "description": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "external_id": {
+    "type": "string",
+    "description": "Unique ID of element in external system. Used to link an element in import scripts",
+    "available": "",
+    "relation": ""
+  },
+  "images": {
+    "type": "\\October\\Rain\\Database\\Collection, \\System\\Models\\File[]",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "name": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "preview_image": {
+    "type": "\\System\\Models\\File",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "preview_text": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "property": {
+    "type": "array",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "quantity": {
+    "type": "int",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "sort_order": {
+    "type": "int",
+    "description": "Field required for [Sortable](https://octobercms.com/docs/database/traits#sortable) trait",
+    "available": "",
+    "relation": ""
+  },
+  "slug": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "type": {
+    "type": "string",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "updated_at": {
+    "type": "\\October\\Rain\\Argon\\Argon",
+    "description": "",
+    "available": "",
+    "relation": ""
+  }
+}

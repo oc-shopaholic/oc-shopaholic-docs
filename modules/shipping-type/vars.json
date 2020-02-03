@@ -1,0 +1,68 @@
+{
+  "title": "Shipping type",
+  "name": "ShippingType",
+  "name_many": "ShippingTypes",
+  "slug": "shipping-type",
+  "available": ["orders"],
+  "model": {
+    "class": "ShippingType",
+    "table": "lovata_orders_shopaholic_shipping_types",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\ShippingType",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "": {
+        "type": "",
+        "model": "",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "ShippingTypeItem",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\ShippingTypeItem",
+    "field": {
+      "id": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "",
+    "namespace": ""
+  },
+  "component": {
+    "-page": {
+      "class": "Page",
+      "anchor": "page"
+    },
+    "-data": {
+      "class": "Data",
+      "anchor": "data"
+    },
+    "-list": {
+      "class": "List",
+      "anchor": "list"
+    }
+  },
+  "controller": {
+    "class": "",
+    "namespace": ""
+  }
+}

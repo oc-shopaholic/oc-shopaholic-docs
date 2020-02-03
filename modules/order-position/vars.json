@@ -1,0 +1,213 @@
+{
+  "title": "Order position",
+  "name": "OrderPosition",
+  "name_many": "OrderPositions",
+  "slug": "order-position",
+  "available": ["orders"],
+  "model": {
+    "class": "OrderPosition",
+    "table": "lovata_orders_shopaholic_order_positions",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\OrderPosition",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "code": {
+        "type": "string",
+        "description": "Barcode",
+        "available": "",
+        "relation": ""
+      },
+      "currency_code": {
+        "type": "string",
+        "description": "Active currency code. For example: USD.",
+        "available": "",
+        "relation": ""
+      },
+      "currency_symbol": {
+        "type": "string",
+        "description": "Active currency symbol. For example: $.",
+        "available": "",
+        "relation": ""
+      },
+      "is_subscription": {
+        "type": "bool",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "item_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "item_type": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "offer_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "order"
+      },
+      "price_data": {
+        "type": "[ItemPriceContainer](modules/price-container/home.md#ItemPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "quantity": "default",
+      "subscription_access_id": {
+        "type": "int",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "subscription_period_id": {
+        "type": "int",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "tax_percent": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "item": {
+        "type": "MorphTo",
+        "model": "offer",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "offer": {
+        "type": "BelongsTo",
+        "model": "offer",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "order": {
+        "type": "BelongsTo",
+        "model": "order",
+        "description": "",
+        "available": "orders"
+      },
+      "subscription_access": {
+        "type": "BelongsTo",
+        "model": "subscription-access",
+        "description": "",
+        "available": "subscriptions"
+      },
+      "subscription_period": {
+        "type": "BelongsTo",
+        "model": "subscription-period",
+        "description": "",
+        "available": "subscriptions"
+      }
+    }
+  },
+  "item": {
+    "class": "OrderPositionItem",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\OrderPositionItem",
+    "field": {
+      "id": "default",
+      "code": {
+        "type": "string",
+        "description": "Barcode",
+        "available": "",
+        "relation": ""
+      },
+      "currency": {
+        "type": "{{ get_item('currency').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "currency_code": {
+        "type": "string",
+        "description": "Active currency code. For example: USD.",
+        "available": "",
+        "relation": ""
+      },
+      "currency_symbol": {
+        "type": "string",
+        "description": "Active currency symbol. For example: $.",
+        "available": "",
+        "relation": ""
+      },
+      "item": {
+        "type": "{{ get_item('offer').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "item_id": {
+        "type": "int",
+        "description": "Related element ID ([morphTo](https://octobercms.com/docs/database/relations#one-to-one-polymorphic-relations) relation).",
+        "available": "",
+        "relation": ""
+      },
+      "item_type": {
+        "type": "string",
+        "description": "Related element model class ([morphTo](https://octobercms.com/docs/database/relations#one-to-one-polymorphic-relations) relation).",
+        "available": "",
+        "relation": ""
+      },
+      "offer": {
+        "type": "{{ get_item('offer').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order": {
+        "type": "{{ get_item('order').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "price_data": {
+        "type": "[ItemPriceContainer](modules/price-container/home.md#ItemPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "quantity": "default",
+      "type": {
+        "type": "string",
+        "description": "Related element type. Available values: offer.",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "OrderPositionCollection",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\OrderPositionCollection"
+  },
+  "controller": {
+    "class": "OrderPositions",
+    "namespace": "Lovata\\OrdersShopaholic\\Controllers\\OrderPositions"
+  }
+}

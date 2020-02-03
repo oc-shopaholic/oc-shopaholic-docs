@@ -1,0 +1,37 @@
+{
+  "directory-structure": {
+    "title": "Directory structure",
+    "anchor": "directory-structure"
+  },
+  "migration-and-seeder-files": {
+    "title": "Migration and seeder files",
+    "anchor": "migration-and-seeder-files"
+  },
+  "model-classes": {
+    "title": "Model classes",
+    "anchor": "model-classes"
+  },
+  "caching": {
+    "title": "Caching",
+    "anchor": "caching"
+  },
+  "components": {
+    "title": "Components",
+    "anchor": "components"
+  },
+  "item-class": {
+    "title": "**ElementItem class**",
+    "slug": "item-class",
+    "anchor": "elementitem-classes"
+  },
+  "collection-class": {
+    "title": "**ElementCollection class**",
+    "slug": "collection-class",
+    "anchor": "elementcollection-class"
+  },
+  "store-class": {
+    "title": "Store class",
+    "slug": "store-class",
+    "anchor": "store-class"
+  }
+}

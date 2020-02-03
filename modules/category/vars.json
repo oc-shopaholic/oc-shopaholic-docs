@@ -1,0 +1,199 @@
+{
+  "title": "Category",
+  "name": "Category",
+  "name_many": "Categories",
+  "slug": "category",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Category",
+    "table": "lovata_shopaholic_categories",
+    "namespace": "Lovata\\Shopaholic\\Models\\Category",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "category_vk_id": {
+        "type": "int",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "code": "default",
+      "created_at": "default",
+      "description": "default",
+      "external_id": "default",
+      "inherit_property_set": {
+        "type": "bool",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
+      "name": "default",
+      "nest_depth": {
+        "type": "int",
+        "description": "Field required for [NestedTree](https://octobercms.com/docs/database/traits#nested-tree) trait",
+        "available": "",
+        "relation": ""
+      },
+      "nest_left": {
+        "type": "int",
+        "description": "Field required for [NestedTree](https://octobercms.com/docs/database/traits#nested-tree) trait",
+        "available": "",
+        "relation": ""
+      },
+      "nest_right": {
+        "type": "int",
+        "description": "Field required for [NestedTree](https://octobercms.com/docs/database/traits#nested-tree) trait",
+        "available": "",
+        "relation": ""
+      },
+      "parent_id": {
+        "type": "int",
+        "description": "Field required for [NestedTree](https://octobercms.com/docs/database/traits#nested-tree) trait",
+        "available": "",
+        "relation": ""
+      },
+      "preview_text": "default",
+      "search_content": "default",
+      "search_synonym": "default",
+      "slug": "default",
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
+        "description": "",
+        "available": "campaigns"
+      },
+      "children": {
+        "type": "HasMany",
+        "model": "category",
+        "description": "",
+        "available": ""
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "discount": {
+        "type": "BelongsToMany",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "parent": {
+        "type": "BelongsTo",
+        "model": "category",
+        "description": "",
+        "available": ""
+      },
+      "product": {
+        "type": "HasMany",
+        "model": "product",
+        "description": "",
+        "available": ""
+      },
+      "product_link": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "Uses for \"additional_category\" relation in {{ get_model('product').link() }} model",
+        "available": ""
+      },
+      "property_set": {
+        "type": "BelongsToMany",
+        "model": "property-set",
+        "description": "",
+        "available": "properties"
+      }
+    }
+  },
+  "item": {
+    "class": "CategoryItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\CategoryItem",
+    "field": {
+      "id": "default",
+      "children": {
+        "type": "[CategoryCollection](modules/category/collection/collection)",
+        "description": "Collection with **active** children categories",
+        "available": "",
+        "relation": ""
+      },
+      "category_vk_id": {
+        "type": "int",
+        "description": "",
+        "available": "vk-goods",
+        "relation": ""
+      },
+      "code": "default",
+      "description": "default",
+      "images": "default",
+      "name": "default",
+      "nest_depth": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "offer_filter_property": {
+        "type": "{{ get_collection('filter-property').link() }}",
+        "description": "",
+        "available": "",
+        "relation": "filter"
+      },
+      "parent": {
+        "type": "[CategoryItem](modules/category/item/item)",
+        "description": "Object of parent category.",
+        "available": "",
+        "relation": ""
+      },
+      "parent_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "preview_image": "default",
+      "preview_text": "default",
+      "product_count": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_filter_property": {
+        "type": "{{ get_collection('filter-property').link() }}",
+        "description": "",
+        "available": "filter",
+        "relation": ""
+      },
+      "slug": "default",
+      "updated_at": "default"
+    }
+  },
+  "collection": {
+    "class": "CategoryCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\CategoryCollection"
+  },
+  "component": {
+    "category-page": {
+      "class": "CategoryPage",
+      "anchor": "categorypage"
+    },
+    "category-data": {
+      "class": "CategoryData",
+      "anchor": "categorydata"
+    },
+    "category-list": {
+      "class": "CategoryList",
+      "anchor": "categorylist"
+    }
+  },
+  "controller": {
+    "class": "Categories",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Categories"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Subscription period",
+  "name": "SubscriptionPeriod",
+  "name_many": "SubscriptionPeriods",
+  "slug": "subscription-period",
+  "available": ["subscriptions"],
+  "model": {
+    "class": "SubscriptionPeriod",
+    "table": "lovata_subscription_shopaholic_period",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Models\\SubscriptionPeriod",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "name": "default",
+      "period": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {}
+  },
+  "item": {
+    "class": "SubscriptionPeriodItem",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Classes\\Item\\SubscriptionPeriodItem",
+    "field": {
+      "id": "default",
+      "name": "default",
+      "period": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "SubscriptionPeriodCollection",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Classes\\Collection\\SubscriptionPeriodCollection"
+  },
+  "controller": {
+    "class": "SubscriptionPeriods",
+    "namespace": "Lovata\\SubscriptionsShopaholic\\Controllers\\SubscriptionPeriods"
+  }
+}

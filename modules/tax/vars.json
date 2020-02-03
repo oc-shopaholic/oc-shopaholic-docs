@@ -1,0 +1,127 @@
+{
+  "title": "Tax",
+  "name": "Tax",
+  "name_many": "Taxes",
+  "slug": "tax",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Tax",
+    "table": "lovata_shopaholic_taxes",
+    "namespace": "Lovata\\Shopaholic\\Models\\Tax",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "applied_to_shipping_price": {
+        "type": "bool",
+        "description": "",
+        "available": "orders",
+        "relation": ""
+      },
+      "created_at": "default",
+      "deleted_at": "default",
+      "is_global": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "name": "default",
+      "percent": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "category": {
+        "type": "BelongsToMany",
+        "model": "category",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "country": {
+        "type": "BelongsToMany",
+        "model": "",
+        "description": "Relation with \\RainLab\\Location\\Models\\Country model. Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.",
+        "available": ""
+      },
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "state": {
+        "type": "BelongsToMany",
+        "model": "",
+        "description": "Relation with \\RainLab\\Location\\Models\\State model. Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "TaxItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\TaxItem",
+    "field": {
+      "id": "default",
+      "applied_to_shipping_price": {
+        "type": "bool",
+        "description": "",
+        "available": "orders",
+        "relation": ""
+      },
+      "category_id_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "country_id_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "is_global": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "percent": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "state_id_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "TaxCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\TaxCollection"
+  },
+  "controller": {
+    "class": "Taxes",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Taxes"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Cart position",
+  "name": "CartPosition",
+  "name_many": "CartPositions",
+  "slug": "cart-position",
+  "available": ["orders"],
+  "model": {
+    "class": "CartPosition",
+    "table": "lovata_orders_shopaholic_cart_positions",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\CartPosition",
+    "field": {
+      "id": "default",
+      "cart_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "cart"
+      },
+      "created_at": "default",
+      "deleted_at": "default",
+      "item_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "item_type": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "quantity": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "cart": {
+        "type": "BelongsTo",
+        "model": "cart",
+        "description": "",
+        "available": "orders"
+      },
+      "item": {
+        "type": "MorphTo",
+        "model": "offer",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  },
+  "item": {
+    "class": "CartPositionItem",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\CartPositionItem",
+    "field": {
+      "id": "default",
+      "currency": "default",
+      "currency_code": "default",
+      "item": {
+        "type": "{{ get_item('offer').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "item_id": {
+        "type": "int",
+        "description": "Related element ID ([morphTo](https://octobercms.com/docs/database/relations#one-to-one-polymorphic-relations) relation)",
+        "available": "",
+        "relation": ""
+      },
+      "item_type": {
+        "type": "string",
+        "description": "Related element model class ([morphTo](https://octobercms.com/docs/database/relations#one-to-one-polymorphic-relations) relation)",
+        "available": "",
+        "relation": ""
+      },
+      "offer": {
+        "type": "{{ get_item('offer').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "price_data": {
+        "type": "[ItemPriceContainer](modules/price-container/home.md#ItemPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "quantity": "default",
+      "type": {
+        "type": "string",
+        "description": "Related element type. Available values: offer",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "CartPositionCollection",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\CartPositionCollection"
+  }
+}

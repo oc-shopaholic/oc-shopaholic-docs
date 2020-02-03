@@ -1,0 +1,91 @@
+{
+  "title": "Brand",
+  "name": "Brand",
+  "name_many": "Brands",
+  "slug": "brand",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Brand",
+    "table": "lovata_shopaholic_brands",
+    "namespace": "Lovata\\Shopaholic\\Models\\Brand",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": "default",
+      "created_at": "default",
+      "description": "default",
+      "external_id": "default",
+      "name": "default",
+      "preview_text": "default",
+      "search_content": "default",
+      "search_synonym": "default",
+      "sort_order": "default",
+      "slug": "default",
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
+        "description": "",
+        "available": "campaigns"
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "discount": {
+        "type": "BelongsToMany",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "product": {
+        "type": "HasMany",
+        "model": "product",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "BrandItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\BrandItem",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "description": "default",
+      "images": "default",
+      "name": "default",
+      "preview_image": "default",
+      "preview_text": "default",
+      "slug": "default"
+    }
+  },
+  "collection": {
+    "class": "BrandCollection",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Collection\\BrandCollection"
+  },
+  "component": {
+    "brand-page": {
+      "class": "BrandPage",
+      "anchor": "brandpage"
+    },
+    "brand-data": {
+      "class": "BrandData",
+      "anchor": "branddata"
+    },
+    "brand-list": {
+      "class": "BrandList",
+      "anchor": "brandlist"
+    }
+  },
+  "controller": {
+    "class": "Brands",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Brands"
+  }
+}

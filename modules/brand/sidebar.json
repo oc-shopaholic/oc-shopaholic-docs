@@ -1,0 +1,37 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "brand-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "branditem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "brandcollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "event": {
+    "title": "Events",
+    "slug": "event",
+    "anchor": "event-list-brand"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-brand"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-brand"
+  }
+}

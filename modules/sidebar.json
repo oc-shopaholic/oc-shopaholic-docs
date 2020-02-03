@@ -1,0 +1,107 @@
+{
+  "accessory": {
+    "title": "Accessory",
+    "slug": "home",
+    "anchor": "accessory"
+  },
+  "brand": {
+    "title": "Brand",
+    "slug": "home",
+    "anchor": "brand"
+  },
+  "cart": {
+    "title": "Cart",
+    "slug": "home",
+    "anchor": "cart"
+  },
+  "cart-position": {
+    "title": "CartPosition",
+    "slug": "home",
+    "anchor": "cartposition"
+  },
+  "category": {
+    "title": "Category",
+    "slug": "home",
+    "anchor": "category"
+  },
+  "currency": {
+    "title": "Currency",
+    "slug": "home",
+    "anchor": "currency"
+  },
+  "offer": {
+    "title": "Offer",
+    "slug": "home",
+    "anchor": "offer"
+  },
+  "order": {
+    "title": "Order",
+    "slug": "home",
+    "anchor": "order"
+  },
+  "order-position": {
+    "title": "Order position",
+    "slug": "home",
+    "anchor": "order-position"
+  },
+  "payment-method": {
+    "title": "Payment method",
+    "slug": "home",
+    "anchor": "payment-method"
+  },
+  "price": {
+    "title": "Price",
+    "slug": "home",
+    "anchor": "price"
+  },
+  "price-type": {
+    "title": "Price type",
+    "slug": "home",
+    "anchor": "price-type"
+  },
+  "product": {
+    "title": "Product",
+    "slug": "home",
+    "anchor": "product"
+  },
+  "promo-block": {
+    "title": "Promo block",
+    "slug": "home",
+    "anchor": "promo-block"
+  },
+  "related-products": {
+    "title": "Related products",
+    "slug": "home",
+    "anchor": "related-products"
+  },
+  "search": {
+    "title": "Search",
+    "slug": "home",
+    "anchor": "search"
+  },
+  "settings": {
+    "title": "Settings",
+    "slug": "home",
+    "anchor": "settings"
+  },
+  "subscription": {
+    "title": "Subscription",
+    "slug": "home",
+    "anchor": "subscription"
+  },
+  "subscription-access": {
+    "title": "Subscription access",
+    "slug": "home",
+    "anchor": "subscription-access"
+  },
+  "subscription-period": {
+    "title": "Subscription period",
+    "slug": "home",
+    "anchor": "subscription-period"
+  },
+  "tax": {
+    "title": "Tax",
+    "slug": "home",
+    "anchor": "tax"
+  }
+}

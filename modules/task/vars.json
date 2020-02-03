@@ -1,0 +1,68 @@
+{
+  "title": "Task",
+  "name": "Task",
+  "name_many": "Tasks",
+  "slug": "task",
+  "available": ["orders"],
+  "model": {
+    "class": "Task",
+    "table": "",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "": {
+        "type": "",
+        "model": "",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "TaskItem",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "TaskCollection",
+    "namespace": ""
+  },
+  "component": {
+    "-page": {
+      "class": "Page",
+      "anchor": "page"
+    },
+    "-data": {
+      "class": "Data",
+      "anchor": "data"
+    },
+    "-list": {
+      "class": "List",
+      "anchor": "list"
+    }
+  },
+  "controller": {
+    "class": "",
+    "namespace": ""
+  }
+}

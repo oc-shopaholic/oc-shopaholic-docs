@@ -8,7 +8,7 @@
 |  Name | Type | Description |
 |-------|------|--------|
 |id|int|
-|code|string|
+|code|string|Unique element code that can be used in our custom plugins or theme templates|
 |is_user_show|bool|
 |name|string|
 |name_for_user|string|

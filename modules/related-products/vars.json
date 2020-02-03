@@ -1,0 +1,7 @@
+{
+  "title": "Related products",
+  "name": "RelatedProduct",
+  "name_many": "RelatedProducts",
+  "slug": "related-products",
+  "available": ["related-products"]
+}

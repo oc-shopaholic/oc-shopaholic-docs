@@ -1,0 +1,140 @@
+{
+  "title": "Payment method",
+  "name": "PaymentMethod",
+  "name_many": "PaymentMethods",
+  "slug": "payment-method",
+  "available": ["orders"],
+  "model": {
+    "class": "PaymentMethod",
+    "table": "lovata_orders_shopaholic_payment_methods",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\PaymentMethod",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "after_status_id": {
+        "type": "int",
+        "description": "",
+        "available": "orders",
+        "relation": "status"
+      },
+      "before_status_id": {
+        "type": "int",
+        "description": "",
+        "available": "orders",
+        "relation": "status"
+      },
+      "cancel_status_id": {
+        "type": "int",
+        "description": "",
+        "available": "orders",
+        "relation": "status"
+      },
+      "created_at": "default",
+      "code": "default",
+      "fail_status_id": {
+        "type": "int",
+        "description": "",
+        "available": "orders",
+        "relation": "status"
+      },
+      "gateway_id": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "gateway_currency": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "gateway_property": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "preview_text": "default",
+      "send_purchase_request": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "after_status": {
+        "type": "BelongsTo",
+        "model": "status",
+        "description": "",
+        "available": "orders"
+      },
+      "before_status": {
+        "type": "BelongsTo",
+        "model": "status",
+        "description": "",
+        "available": "orders"
+      },
+      "cancel_status": {
+        "type": "BelongsTo",
+        "model": "status",
+        "description": "",
+        "available": "orders"
+      },
+      "fail_status": {
+        "type": "BelongsTo",
+        "model": "status",
+        "description": "",
+        "available": "orders"
+      },
+      "order": {
+        "type": "HasMany",
+        "model": "order",
+        "description": "",
+        "available": "orders"
+      },
+      "payment_restriction": {
+        "type": "BelongsToMany",
+        "model": "payment-restriction",
+        "description": "",
+        "available": "orders"
+      }
+    }
+  },
+  "item": {
+    "class": "PaymentMethodItem",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\PaymentMethodItem",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "name": "default",
+      "preview_text": "default",
+      "restriction": {
+        "type": "array",
+        "description": "Array with params of payment restrictions",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "PaymentMethodCollection",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\PaymentMethodCollection"
+  },
+  "component": {
+    "payment-method-list": {
+      "class": "PaymentMethodList",
+      "anchor": "paymentmethodlist"
+    }
+  },
+  "controller": {
+    "class": "PaymentMethods",
+    "namespace": "Lovata\\OrdersShopaholic\\Controllers\\PaymentMethods"
+  }
+}
