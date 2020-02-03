@@ -49,6 +49,11 @@
     "slug": "home",
     "anchor": "payment-method"
   },
+  "payment-restriction": {
+    "title": "Payment restriction",
+    "slug": "home",
+    "anchor": "payment-restriction"
+  },
   "price": {
     "title": "Price",
     "slug": "home",
