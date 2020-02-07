@@ -21,6 +21,7 @@
 |**R**|[Related products](modules/related-products/home.md)|{{ 'related-products'|available_with }}|
 |**S**|[Search](modules/search/home.md)|{{ ['search', 'sphinx']|available_with }}|
 ||[Settings](modules/settings/home.md)||
+||[Shipping restriction](modules/shipping-restriction/home.md)|{{ 'orders'|available_with }}|
 ||[Shipping type](modules/shipping-type/home.md)|{{ 'orders'|available_with }}|
 ||[Subscription](modules/subscription/home.md)|{{ 'subscriptions'|available_with }}|
 ||[Subscription access](modules/subscription-access/home.md)|{{ 'subscriptions'|available_with }}|

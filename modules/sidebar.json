@@ -94,6 +94,11 @@
     "slug": "home",
     "anchor": "settings"
   },
+  "shipping-restriction": {
+    "title": "Shipping restriction",
+    "slug": "home",
+    "anchor": "shipping-restriction"
+  },
   "shipping-type": {
     "title": "Shipping type",
     "slug": "home",

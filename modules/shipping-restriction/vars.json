@@ -1,0 +1,39 @@
+{
+  "title": "Shipping restriction",
+  "name": "ShippingRestriction",
+  "name_many": "ShippingRestrictions",
+  "slug": "shipping-restriction",
+  "available": ["orders"],
+  "model": {
+    "class": "ShippingRestriction",
+    "table": "lovata_ordersshopaholic_shipping_restrictions",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\ShippingRestriction",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": "default",
+      "created_at": "default",
+      "description": "default",
+      "name": "default",
+      "property": "default",
+      "restriction": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "shipping_type": {
+        "type": "BelongsToMany",
+        "model": "shipping-type",
+        "description": "",
+        "available": "orders"
+      }
+    }
+  }
+}
