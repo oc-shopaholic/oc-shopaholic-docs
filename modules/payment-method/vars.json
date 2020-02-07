@@ -117,7 +117,7 @@
       "preview_text": "default",
       "restriction": {
         "type": "array",
-        "description": "Array with params of payment restrictions",
+        "description": "Array with params of payment restrictions.",
         "available": "",
         "relation": ""
       }

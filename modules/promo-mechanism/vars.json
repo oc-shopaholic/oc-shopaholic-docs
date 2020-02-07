@@ -1,0 +1,51 @@
+{
+  "title": "Promo mechanism",
+  "name": "PromoMechanism",
+  "name_many": "PromoMechanisms",
+  "slug": "promo-mechanism",
+  "available": ["orders"],
+  "model": {
+    "class": "PromoMechanism",
+    "table": "lovata_orders_shopaholic_promo_mechanism",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\PromoMechanism",
+    "field": {
+      "id": "default",
+      "created_at": "default",
+      "discount_type": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "final_discount": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "priority": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "type": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {}
+  },
+  "controller": {
+    "class": "PromoMechanisms",
+    "namespace": "Lovata\\OrdersShopaholic\\Controllers\\PromoMechanisms"
+  }
+}

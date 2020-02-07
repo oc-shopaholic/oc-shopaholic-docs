@@ -2,36 +2,31 @@
   "model": {
     "title": "Model",
     "slug": "model",
-    "anchor": "promoblock-model"
+    "anchor": "shippingtype-model"
   },
   "item": {
     "title": "Item",
     "slug": "item",
-    "anchor": "promoblockitem"
+    "anchor": "shippingtypeitem"
   },
   "collection": {
     "title": "Collection",
     "slug": "collection",
-    "anchor": "promoblockcollection"
+    "anchor": "shippingtypecollection"
   },
   "component": {
     "title": "Components",
     "slug": "component",
     "anchor": "components"
   },
-  "event": {
-    "title": "Events",
-    "slug": "event",
-    "anchor": "event-list-promoblock"
-  },
-  "examples": {
-    "title": "Examples",
-    "slug": "examples",
-    "anchor": "examples-promoblock"
-  },
   "extending": {
     "title": "Extending",
     "slug": "extending",
-    "anchor": "extending-promoblock"
+    "anchor": "extending-shippingtype"
+  },
+  "api": {
+    "title": "Integration with API",
+    "slug": "api",
+    "anchor": "extending-shippingtype"
   }
 }

@@ -10,23 +10,65 @@
     "namespace": "Lovata\\OrdersShopaholic\\Models\\ShippingType",
     "field": {
       "id": "default",
-      "created_at": "default",
-      "": {
-        "type": "",
+      "active": "default",
+      "api_class": {
+        "type": "string",
         "description": "",
         "available": "",
         "relation": ""
       },
+      "code": "default",
+      "created_at": "default",
+      "name": "default",
+      "preview_text": "default",
+      "price": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "price_data": {
+        "type": "[ItemPriceContainer](modules/price-container/home.md#ItemPriceContainer)",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "price_value": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "sort_order": "default",
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
         "description": "",
-        "available": ""
+        "available": "campaigns"
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "order": {
+        "type": "HasMany",
+        "model": "order",
+        "description": "",
+        "available": "orders"
+      },
+      "shipping_restriction": {
+        "type": "BelongsToMany",
+        "model": "shipping-restriction",
+        "description": "",
+        "available": "orders"
       }
     }
   },
@@ -35,8 +77,44 @@
     "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\ShippingTypeItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "api": {
+        "type": "ShippingPriceProcessorInterface",
+        "description": "Class for integration with the delivery system.",
+        "available": "",
+        "relation": ""
+      },
+      "api_class": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "code": "default",
+      "currency": "default",
+      "currency_code": "default",
+      "name": "default",
+      "preview_text": "default",
+      "price_full": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "property": "default",
+      "restriction": {
+        "type": "array",
+        "description": "Array with params of shipping restrictions.",
+        "available": "",
+        "relation": ""
+      },
+      "tax_list": {
+        "type": "{{ get_collection('tax').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "tax_percent": {
+        "type": "float",
         "description": "",
         "available": "",
         "relation": ""
@@ -44,25 +122,17 @@
     }
   },
   "collection": {
-    "class": "",
-    "namespace": ""
+    "class": "ShippingTypeCollection",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\ShippingTypeCollection"
   },
   "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
+    "shipping-type-list": {
+      "class": "ShippingTypeList",
+      "anchor": "shippingtypelist"
     }
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "ShippingTypes",
+    "namespace": "Lovata\\OrdersShopaholic\\Controllers\\ShippingTypes"
   }
 }

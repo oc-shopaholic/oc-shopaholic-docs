@@ -3,5 +3,10 @@
     "title": "Model",
     "slug": "model",
     "anchor": "promomechanism-model"
+  },
+  "event": {
+    "title": "Events",
+    "slug": "event",
+    "anchor": "event-list-promomechanism"
   }
 }

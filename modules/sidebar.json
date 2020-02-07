@@ -74,6 +74,11 @@
     "slug": "home",
     "anchor": "promo-block"
   },
+  "promo-mechanism": {
+    "title": "Promo mechanism",
+    "slug": "home",
+    "anchor": "promo-mechanism"
+  },
   "related-products": {
     "title": "Related products",
     "slug": "home",
@@ -88,6 +93,11 @@
     "title": "Settings",
     "slug": "home",
     "anchor": "settings"
+  },
+  "shipping-type": {
+    "title": "Shipping type",
+    "slug": "home",
+    "anchor": "shipping-type"
   },
   "subscription": {
     "title": "Subscription",
