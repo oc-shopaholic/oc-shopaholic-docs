@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "status-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "statusitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "statuscollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-status"
+  }
+}

@@ -104,6 +104,11 @@
     "slug": "home",
     "anchor": "shipping-type"
   },
+  "status": {
+    "title": "Status",
+    "slug": "home",
+    "anchor": "status"
+  },
   "subscription": {
     "title": "Subscription",
     "slug": "home",

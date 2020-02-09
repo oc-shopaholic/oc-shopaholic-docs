@@ -23,6 +23,7 @@
 ||[Settings](modules/settings/home.md)||
 ||[Shipping restriction](modules/shipping-restriction/home.md)|{{ 'orders'|available_with }}|
 ||[Shipping type](modules/shipping-type/home.md)|{{ 'orders'|available_with }}|
+||[Status](modules/status/home.md)|{{ 'orders'|available_with }}|
 ||[Subscription](modules/subscription/home.md)|{{ 'subscriptions'|available_with }}|
 ||[Subscription access](modules/subscription-access/home.md)|{{ 'subscriptions'|available_with }}|
 ||[Subscription period](modules/subscription-period/home.md)|{{ 'subscriptions'|available_with }}|

@@ -3,40 +3,83 @@
   "name": "Status",
   "name_many": "Statuses",
   "slug": "status",
-  "available": ["status"],
+  "available": ["orders"],
   "model": {
     "class": "Status",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_orders_shopaholic_statuses",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\Status",
     "field": {
       "id": "default",
-      "created_at": "default",
-      "": {
-        "type": "",
+      "code": "default",
+      "color": {
+        "type": "string",
         "description": "",
         "available": "",
         "relation": ""
       },
-      "updated_at": "default"
-    },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
-    "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "created_at": "default",
+      "is_user_show": {
+        "type": "bool",
         "description": "",
-        "available": ""
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "preview_text": "default",
+      "sort_order": "default",
+      "updated_at": "default",
+      "user_status_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "status"
+      }
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "order": {
+        "type": "HasMany",
+        "model": "order",
+        "description": "",
+        "available": "orders"
+      },
+      "user_status": {
+        "type": "BelongsTo",
+        "model": "status",
+        "description": "",
+        "available": "orders"
       }
     }
   },
   "item": {
     "class": "StatusItem",
-    "namespace": "",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\StatusItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "code": "default",
+      "is_user_show": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "name_for_user": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "preview_text": "default",
+      "user_status": {
+        "type": "{{ get_item('status').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "user_status_id": {
+        "type": "int",
         "description": "",
         "available": "",
         "relation": ""
@@ -45,24 +88,16 @@
   },
   "collection": {
     "class": "StatusCollection",
-    "namespace": ""
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\StatusCollection"
   },
   "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
+    "status-list": {
+      "class": "StatusList",
+      "anchor": "statuslist"
     }
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "Statuses",
+    "namespace": "Lovata\\OrdersShopaholic\\Controllers\\Statuses"
   }
 }
