@@ -6,63 +6,95 @@
   "available": ["orders"],
   "model": {
     "class": "Task",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_orders_shopaholic_tasks",
+    "namespace": "Lovata\\OrdersShopaholic\\Models\\Task",
     "field": {
       "id": "default",
-      "created_at": "default",
-      "": {
-        "type": "",
+      "author_id": {
+        "type": "int",
         "description": "",
         "available": "",
         "relation": ""
       },
+      "created_at": "default",
+      "date": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "mail_template": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "manager_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "order_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "sent": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "status": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "title": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "user_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "user"
+      },
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "author": {
+        "type": "BelongsTo",
+        "model": "BackendUser",
+        "description": "",
+        "available": "orders"
+      },
+      "manager": {
+        "type": "BelongsTo",
+        "model": "BackendUser",
+        "description": "",
+        "available": "orders"
+      },
+      "order": {
+        "type": "BelongsTo",
+        "model": "order",
+        "description": "",
+        "available": "orders"
+      },
+      "user": {
+        "type": "BelongsTo",
+        "model": "user",
         "description": "",
         "available": ""
       }
     }
-  },
-  "item": {
-    "class": "TaskItem",
-    "namespace": "",
-    "field": {
-      "id": "default",
-      "": {
-        "type": "",
-        "description": "",
-        "available": "",
-        "relation": ""
-      }
-    }
-  },
-  "collection": {
-    "class": "TaskCollection",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
-  },
-  "controller": {
-    "class": "",
-    "namespace": ""
   }
 }

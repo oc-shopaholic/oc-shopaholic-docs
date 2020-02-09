@@ -47,8 +47,8 @@
       },
       "country": {
         "type": "BelongsToMany",
-        "model": "",
-        "description": "Relation with \\RainLab\\Location\\Models\\Country model. Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.",
+        "model": "Country",
+        "description": "Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.",
         "available": ""
       },
       "product": {
@@ -59,8 +59,8 @@
       },
       "state": {
         "type": "BelongsToMany",
-        "model": "",
-        "description": "Relation with \\RainLab\\Location\\Models\\State model. Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.",
+        "model": "State",
+        "description": "Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.",
         "available": ""
       }
     }

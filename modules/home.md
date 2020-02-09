@@ -27,4 +27,5 @@
 ||[Subscription](modules/subscription/home.md)|{{ 'subscriptions'|available_with }}|
 ||[Subscription access](modules/subscription-access/home.md)|{{ 'subscriptions'|available_with }}|
 ||[Subscription period](modules/subscription-period/home.md)|{{ 'subscriptions'|available_with }}|
-|**T**|[Tax](modules/tax/home.md)|{{ 'shopaholic'|available_with }}|
+|**T**|[Task](modules/task/home.md)|{{ 'orders'|available_with }}|
+||[Tax](modules/tax/home.md)|{{ 'shopaholic'|available_with }}|

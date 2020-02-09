@@ -28,11 +28,11 @@ You can change sorting of statuses by going to **Backend -> Settings -> Order st
 
 ![](./../../assets/images/backend-status-2.png)
 
-You can filter the list of orders by status by going to **Backend -> Settings -> Orders**
+You can filter the list of orders by status by going to **Backend -> Orders**
 
 ![](./../../assets/images/backend-status-3.png)
 
-You can change the order status by going to **Backend -> Settings -> Orders -> Edit order**
+You can change the order status by going to **Backend -> Orders -> Edit order**
 
 ![](./../../assets/images/backend-status-4.png)
 
