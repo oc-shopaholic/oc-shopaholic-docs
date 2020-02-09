@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "useraddress-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "useraddressitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "useraddresscollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-useraddress"
+  }
+}

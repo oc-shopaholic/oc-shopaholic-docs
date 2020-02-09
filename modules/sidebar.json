@@ -133,5 +133,10 @@
     "title": "Tax",
     "slug": "home",
     "anchor": "tax"
+  },
+  "user-address": {
+    "title": "User address",
+    "slug": "home",
+    "anchor": "user-address"
   }
 }

@@ -1,0 +1,184 @@
+{
+  "title": "User address",
+  "name": "UserAddress",
+  "name_many": "UserAddresses",
+  "slug": "user-address",
+  "available": ["orders"],
+  "model": {
+    "class": "UserAddress",
+    "table": "lovata_orders_shopaholic_user_addresses",
+    "namespace": "Lovata\\Ordersshopaholic\\Models\\UserAddress",
+    "field": {
+      "id": "default",
+      "address1": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "address2": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "building": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "city": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "country": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "created_at": "default",
+      "flat": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "floor": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "house": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "postcode": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "state": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "street": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "type": {
+        "type": "string",
+        "description": "Available values: shipping, billing",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default",
+      "user_id": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "user": {
+        "type": "BelongsTo",
+        "model": "user",
+        "description": "",
+        "available": ""
+      }
+    }
+  },
+  "item": {
+    "class": "UserAddressItem",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Item\\UserAddressItem",
+    "field": {
+      "id": "default",
+      "address1": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "address2": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "building": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "city": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "country": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "floor": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "house": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "postcode": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "state": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "street": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "type": {
+        "type": "string",
+        "description": "Available values: shipping, billing",
+        "available": "",
+        "relation": ""
+      },
+      "user_id": "default"
+    }
+  },
+  "collection": {
+    "class": "UserAddressCollection",
+    "namespace": "Lovata\\OrdersShopaholic\\Classes\\Collection\\UserAddressCollection"
+  },
+  "component": {
+    "user-address": {
+      "class": "UserAddress",
+      "anchor": "useraddress"
+    }
+  }
+}

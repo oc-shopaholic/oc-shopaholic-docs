@@ -29,3 +29,4 @@
 ||[Subscription period](modules/subscription-period/home.md)|{{ 'subscriptions'|available_with }}|
 |**T**|[Task](modules/task/home.md)|{{ 'orders'|available_with }}|
 ||[Tax](modules/tax/home.md)|{{ 'shopaholic'|available_with }}|
+|**U**|[User address](modules/user-address/home.md)|{{ 'orders'|available_with }}|

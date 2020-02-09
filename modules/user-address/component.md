@@ -1,9 +1,15 @@
-# UserAddress component {docsify-ignore-all}
-   
-!> **Attention!**  We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
-[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
+{% extends 'docs/modules/component-default.md' %}
 
-> Component is available in **[Orders for Shopaholic](plugins/home.md#orders-for-shopaholic)** plugin.
+{% block content %}
+
+* [UserAddress](#useraddress)
+  * [onAdd](#onadd)
+  * [onClear](#onclear)
+  * [onRemove](#onremove)
+  * [onUpdate](#onupdate)
+  * [onUpdateList](#onupdatelist)
+
+## UserAddress
 
 Component allows to create/update/remove user addresses.
 
@@ -74,3 +80,4 @@ $.request('UserAddress::onUpdateList', {
     'data': data
 });
 ```
+{% endblock %}
