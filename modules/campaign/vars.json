@@ -6,37 +6,140 @@
   "available": ["campaigns"],
   "model": {
     "class": "Campaign",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_campaigns_shopaholic_campaigns",
+    "namespace": "Lovata\\CampaignsShopaholic\\Models\\Campaign",
     "field": {
       "id": "default",
+      "active": "default",
       "created_at": "default",
-      "": {
-        "type": "",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
         "description": "",
         "available": "",
         "relation": ""
       },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "name": "default",
+      "preview_text": "default",
+      "promo_mechanism_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "promo-mechanism"
+      },
+      "promo_block_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "promo-block"
+      },
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "brand": {
+        "type": "BelongsToMany",
+        "model": "brand",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
+      },
+      "category": {
+        "type": "BelongsToMany",
+        "model": "category",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "mechanism": {
+        "type": "BelongsTo",
+        "model": "promo-mechanism",
+        "description": "",
+        "available": "orders"
+      },
+      "offer": {
+        "type": "BelongsToMany",
+        "model": "offer",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "promo_block": {
+        "type": "BelongsTo",
+        "model": "promo-block",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "shipping_type": {
+        "type": "BelongsToMany",
+        "model": "shipping-type",
+        "description": "",
+        "available": "orders"
+      },
+      "tag": {
+        "type": "BelongsToMany",
+        "model": "tag",
+        "description": "",
+        "available": "tags"
       }
     }
   },
   "item": {
-    "class": "",
-    "namespace": "",
+    "class": "CampaignItem",
+    "namespace": "Lovata\\CampaignsShopaholic\\Classes\\Item\\CampaignItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "discount_type": {
+        "type": "string",
+        "description": "Available values: fixed, percent.",
+        "available": "",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "name": "default",
+      "preview_text": "default",
+      "product": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "promo_block": {
+        "type": "{{ get_item('promo-block').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "promo_block_id": {
+        "type": "int",
         "description": "",
         "available": "",
         "relation": ""
@@ -47,22 +150,8 @@
     "class": "CampaignCollection",
     "namespace": "Lovata\\CampaignsShopaholic\\Classes\\Collection\\CampaignCollection"
   },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
-  },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "Campaigns",
+    "namespace": "Lovata\\CampaignsShopaholic\\Controllers\\Campaigns"
   }
 }

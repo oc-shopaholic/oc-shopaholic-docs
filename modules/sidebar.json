@@ -9,6 +9,11 @@
     "slug": "home",
     "anchor": "brand"
   },
+  "campaign": {
+    "title": "Campaign",
+    "slug": "home",
+    "anchor": "campaign"
+  },
   "cart": {
     "title": "Cart",
     "slug": "home",

@@ -1,11 +1,10 @@
-# Campaign {docsify-ignore-all}
+{% extends "docs/modules/home-default.md" %}
 
-[Back to modules](modules/home.md)
+{% block content %}
+{{ parent() }}
 
-!> **Attention!**  We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
-[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
-
-“Campaigns” is module that allows you to apply promo mechanisms on cart/checkout page.
+“Campaigns” is module that allows you to automatically apply promo mechanisms to cart and orders according to your schedule.
+You can attach products, offers, categories, brands, shipping types, tags to limit the list of products and offers to which the promo mechanism will be applied.
 
 > After you create and configure "campaign", it will automatically begin to apply promo mechanisms to cart and order positions.
 No additional code changes are required.
@@ -19,5 +18,5 @@ For example:
 You can create and edit campaigns by going to **Backend -> Promotions -> Campaigns**
 
 ![](./../../assets/images/backend-campaign-1.png)
-
-[Back to modules](modules/home.md)
+![](./../../assets/images/backend-campaign-2.png)
+{% endblock %}

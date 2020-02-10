@@ -4,7 +4,8 @@
 |---|---|---|
 |**A**|[Accessory](modules/accessory/home.md)|{{ 'accessories'|available_with }}|
 |**B**|[Brand](modules/brand/home.md)|{{ 'shopaholic'|available_with }}|
-|**C**|[Cart](modules/cart/home.md)|{{ 'orders'|available_with }}|
+|**C**|[Campaign](modules/campaign/home.md)|{{ 'campaigns'|available_with }}|
+||[Cart](modules/cart/home.md)|{{ 'orders'|available_with }}|
 ||[CartPosition](modules/cart-position/home.md)|{{ 'orders'|available_with }}|
 ||[Category](modules/category/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Currency](modules/currency/home.md)|{{ 'shopaholic'|available_with }}|
