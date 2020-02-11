@@ -1,5 +1,6 @@
 [Back to modules](modules/home.md)
 
+{% if arMenuItem is not empty %}
 {% if section == 'home' %}
 Home
 {% else %}
@@ -12,6 +13,7 @@ Home
 • {{ arMenuItem.title }}
   {% endif %}
 {% endfor %}
+{% endif %}
 
 # {% block page_title %}{{ module.title }}{% endblock %} {docsify-ignore-all}
 
@@ -20,6 +22,7 @@ Home
 
 {% block content %}{% endblock %}
 
+{% if arMenuItem is not empty %}
 {% if section == 'home' %}
   Home
 {% else %}
@@ -32,5 +35,6 @@ Home
     • {{ arMenuItem.title }}
   {% endif %}
 {% endfor %}
+{% endif %}
 
 [Back to modules](modules/home.md)

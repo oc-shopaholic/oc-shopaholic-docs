@@ -8,6 +8,7 @@
 ||[Cart](modules/cart/home.md)|{{ 'orders'|available_with }}|
 ||[CartPosition](modules/cart-position/home.md)|{{ 'orders'|available_with }}|
 ||[Category](modules/category/home.md)|{{ 'shopaholic'|available_with }}|
+||[Compare](modules/compare/home.md)|{{ 'compare'|available_with }}|
 ||[Currency](modules/currency/home.md)|{{ 'shopaholic'|available_with }}|
 |**O**|[Offer](modules/offer/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Order](modules/order/home.md)|{{ 'orders'|available_with }}|

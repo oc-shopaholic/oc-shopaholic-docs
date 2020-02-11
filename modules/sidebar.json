@@ -29,6 +29,11 @@
     "slug": "home",
     "anchor": "category"
   },
+  "compare": {
+    "title": "Compare",
+    "slug": "home",
+    "anchor": "compare"
+  },
   "currency": {
     "title": "Currency",
     "slug": "home",
