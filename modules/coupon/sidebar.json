@@ -1,0 +1,22 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "coupon-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "couponitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "couponcollection"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-coupon"
+  }
+}

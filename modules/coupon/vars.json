@@ -6,37 +6,76 @@
   "available": ["coupons"],
   "model": {
     "class": "Coupon",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_coupons_shopaholic_coupons",
+    "namespace": "Lovata\\CouponsShopaholic\\Models\\Coupon",
     "field": {
       "id": "default",
+      "code": "default",
       "created_at": "default",
-      "": {
-        "type": "",
+      "group_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "coupon-group"
+      },
+      "hidden": {
+        "type": "bool",
         "description": "",
         "available": "",
         "relation": ""
       },
-      "updated_at": "default"
-    },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
-    "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "max_usage": {
+        "type": "int",
         "description": "",
-        "available": ""
+        "available": "",
+        "relation": ""
+      },
+      "total_usage": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default",
+      "user_id": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "coupon_group": {
+        "type": "BelongsTo",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "order": {
+        "type": "BelongsToMany",
+        "model": "order",
+        "description": "",
+        "available": "orders"
+      },
+      "cart": {
+        "type": "BelongsToMany",
+        "model": "cart",
+        "description": "",
+        "available": "orders"
       }
     }
   },
   "item": {
-    "class": "",
-    "namespace": "",
+    "class": "CouponItem",
+    "namespace": "Lovata\\CouponsShopaholic\\Classes\\Item\\CouponItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "code": "default",
+      "group": {
+        "type": "{{ get_item('coupon-group').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "group_id": {
+        "type": "int",
         "description": "",
         "available": "",
         "relation": ""
@@ -44,25 +83,7 @@
     }
   },
   "collection": {
-    "class": "",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
-  },
-  "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "CouponCollection",
+    "namespace": "Lovata\\CouponsShopaholic\\Classes\\Collection\\CouponCollection"
   }
 }

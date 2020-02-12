@@ -1,6 +1,6 @@
 [Back to modules](modules/home.md)
 
-{% if arMenuItem is not empty %}
+{% if menu is not empty %}
 {% if section == 'home' %}
 Home
 {% else %}

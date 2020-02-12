@@ -9,6 +9,8 @@
 ||[CartPosition](modules/cart-position/home.md)|{{ 'orders'|available_with }}|
 ||[Category](modules/category/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Compare](modules/compare/home.md)|{{ 'compare'|available_with }}|
+||[Coupon](modules/coupon/home.md)|{{ 'coupons'|available_with }}|
+||[Coupon group](modules/coupon-group/home.md)|{{ 'coupons'|available_with }}|
 ||[Currency](modules/currency/home.md)|{{ 'shopaholic'|available_with }}|
 |**O**|[Offer](modules/offer/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Order](modules/order/home.md)|{{ 'orders'|available_with }}|

@@ -34,6 +34,16 @@
     "slug": "home",
     "anchor": "compare"
   },
+  "coupon": {
+    "title": "Coupon",
+    "slug": "home",
+    "anchor": "coupon"
+  },
+  "coupon-group": {
+    "title": "Coupon group",
+    "slug": "home",
+    "anchor": "coupon-group"
+  },
   "currency": {
     "title": "Currency",
     "slug": "home",
