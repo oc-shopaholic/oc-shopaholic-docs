@@ -1,8 +1,13 @@
 {
   "title": "Coupon group",
+  "name": "",
+  "name_many": "",
   "slug": "coupon-group",
+  "available": [""],
   "model": {
     "class": "CouponGroup",
+    "table": "",
+    "namespace": "",
     "field": {
       "id": "default",
       "created_at": "default",
@@ -24,5 +29,40 @@
         "available": ""
       }
     }
+  },
+  "item": {
+    "class": "",
+    "namespace": "",
+    "field": {
+      "id": "default",
+      "": {
+        "type": "",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "",
+    "namespace": ""
+  },
+  "component": {
+    "-page": {
+      "class": "Page",
+      "anchor": "page"
+    },
+    "-data": {
+      "class": "Data",
+      "anchor": "data"
+    },
+    "-list": {
+      "class": "List",
+      "anchor": "list"
+    }
+  },
+  "controller": {
+    "class": "",
+    "namespace": ""
   }
 }
