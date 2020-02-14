@@ -22,7 +22,7 @@ Home
 
 {% block content %}{% endblock %}
 
-{% if arMenuItem is not empty %}
+{% if menu is not empty %}
 {% if section == 'home' %}
   Home
 {% else %}

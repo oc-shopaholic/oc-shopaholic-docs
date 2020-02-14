@@ -1,68 +1,177 @@
 {
   "title": "Coupon group",
-  "name": "",
-  "name_many": "",
+  "name": "CouponGroup",
+  "name_many": "CouponGroups",
   "slug": "coupon-group",
-  "available": [""],
+  "available": ["coupons"],
   "model": {
     "class": "CouponGroup",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_coupons_shopaholic_coupon_groups",
+    "namespace": "Lovata\\CouponsShopaholic\\Models\\CouponGroup",
     "field": {
       "id": "default",
-      "created_at": "default",
-      "": {
-        "type": "",
+      "active": "default",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
         "description": "",
         "available": "",
         "relation": ""
       },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "coupon_count": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "created_at": "default",
+      "max_usage": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "max_usage_per_user": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "promo_block_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "promo-block"
+      },
+      "promo_mechanism_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "promo-mechanism"
+      },
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "brand": {
+        "type": "BelongsToMany",
+        "model": "brand",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
+      },
+      "category": {
+        "type": "BelongsToMany",
+        "model": "category",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "coupon": {
+        "type": "HasMany",
+        "model": "coupon",
+        "description": "",
+        "available": "coupons"
+      },
+      "mechanism": {
+        "type": "BelongsTo",
+        "model": "promo-mechanism",
+        "description": "",
+        "available": "orders"
+      },
+      "offer": {
+        "type": "BelongsToMany",
+        "model": "offer",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "promo_block": {
+        "type": "BelongsTo",
+        "model": "promo-block",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "shipping_type": {
+        "type": "BelongsToMany",
+        "model": "shipping-type",
+        "description": "",
+        "available": "orders"
+      },
+      "tag": {
+        "type": "BelongsToMany",
+        "model": "tag",
+        "description": "",
+        "available": "tags"
       }
     }
   },
   "item": {
-    "class": "",
-    "namespace": "",
+    "class": "CouponGroupItem",
+    "namespace": "Lovata\\CouponsShopaholic\\Classes\\Item\\CouponGroupItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
         "description": "",
         "available": "",
         "relation": ""
+      },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "discount_type": {
+        "type": "string",
+        "description": "Available values: fixed, percent.",
+        "available": "",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "product": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "promo_block": {
+        "type": "{{ get_item('promo-block').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "promo_block_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "promo-block"
       }
     }
   },
   "collection": {
-    "class": "",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
+    "class": "CouponGroupCollection",
+    "namespace": "Lovata\\CouponsShopaholic\\Classes\\Collection\\CouponGroupCollection"
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "CouponGroups",
+    "namespace": "Lovata\\CouponsShopaholic\\Controllers\\CouponGroups"
   }
 }
