@@ -1,0 +1,35 @@
+{
+  "title": "Unit measure",
+  "name": "Measure",
+  "name_many": "Measures",
+  "slug": "measure",
+  "available": ["shopaholic"],
+  "model": {
+    "class": "Measure",
+    "table": "lovata_shopaholic_measure",
+    "namespace": "Lovata\\Shopaholic\\Models\\Measure",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "created_at": "default",
+      "name": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {}
+  },
+  "item": {
+    "class": "MeasureItem",
+    "namespace": "Lovata\\Shopaholic\\Classes\\Item\\MeasureItem",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "name": "default"
+    }
+  },
+  "controller": {
+    "class": "Measures",
+    "namespace": "Lovata\\Shopaholic\\Controllers\\Measures"
+  }
+}

@@ -59,6 +59,11 @@
     "slug": "home",
     "anchor": "label"
   },
+  "measure": {
+    "title": "Measure",
+    "slug": "home",
+    "anchor": "measure"
+  },
   "offer": {
     "title": "Offer",
     "slug": "home",

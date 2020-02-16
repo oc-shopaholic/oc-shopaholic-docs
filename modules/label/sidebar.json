@@ -2,17 +2,17 @@
   "model": {
     "title": "Model",
     "slug": "model",
-    "anchor": "brand-model"
+    "anchor": "label-model"
   },
   "item": {
     "title": "Item",
     "slug": "item",
-    "anchor": "branditem"
+    "anchor": "labelitem"
   },
   "collection": {
     "title": "Collection",
     "slug": "collection",
-    "anchor": "brandcollection"
+    "anchor": "labelcollection"
   },
   "component": {
     "title": "Components",
@@ -22,6 +22,6 @@
   "extending": {
     "title": "Extending",
     "slug": "extending",
-    "anchor": "extending-brand"
+    "anchor": "extending-label"
   }
 }

@@ -14,6 +14,7 @@
   * [Step 3: Add field to cache](#step-3-add-field-to-cache)
   * [Step 4: Render field in template](#step-4-render-field-in-template)
 {% endif %}
+{% if module.get('collection.class') is not empty %}
 * [Add custom filter](#add-custom-filter)
   * [Step 1: Add custom method to collection](#step-1-add-custom-method-to-collection)
   * [Step 2: Get collection object with custom filter](#step-2-get-collection-object-with-custom-filter)
@@ -22,6 +23,7 @@
   * [Step 2: Adding cache flush](#step-2-adding-cache-flush)
   * [Step 3: Add custom method to collection](#step-3-add-custom-method-to-collection)
   * [Step 4: Get collection object with custom filter](#step-4-get-collection-object-with-custom-filter)
+{% endif %}
 
 ## Add custom field
 
@@ -269,7 +271,7 @@ if ($ob{{ item.class }}->my_field) {
   echo 'My field == false';
 }
 ```
-
+{% if module.get('collection.class') is not empty %}
 ## Add custom filter
 
 In this section, we will go through all required steps that you need to follow to add your custom filter by field **"my_field"** to {{ collection.link() }} class.
@@ -545,5 +547,5 @@ use {{ collection.namespace }};
 
 $ob{{ model.class }}List = {{ collection.class }}::make()->myCustomMethod();
   ```
-
+{% endif %}
 {% endblock %}

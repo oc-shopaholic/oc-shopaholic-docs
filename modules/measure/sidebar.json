@@ -1,0 +1,17 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "measure-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "measureitem"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-measure"
+  }
+}
