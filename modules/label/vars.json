@@ -1,0 +1,79 @@
+{
+  "title": "Label",
+  "name": "Label",
+  "name_many": "Labels",
+  "slug": "label",
+  "available": ["labels"],
+  "model": {
+    "class": "Label",
+    "table": "lovata_labels_shopaholic_labels",
+    "namespace": "Lovata\\LabelsShopaholic\\Models\\Label",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "code": "default",
+      "created_at": "default",
+      "description": "default",
+      "external_id": "default",
+      "name": "default",
+      "slug": "default",
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": ["image"],
+    "attach_many": [],
+    "relation": {
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  },
+  "item": {
+    "class": "LabelItem",
+    "namespace": "Lovata\\LabelsShopaholic\\Classes\\Item\\LabelItem",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "description": "default",
+      "image": {
+        "type": "\\System\\Models\\File",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "product": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "slug": "default"
+    }
+  },
+  "collection": {
+    "class": "LabelCollection",
+    "namespace": "Lovata\\LabelsShopaholic\\Classes\\Collection\\LabelCollection"
+  },
+  "component": {
+    "label-page": {
+      "class": "LabelPage",
+      "anchor": "labelpage"
+    },
+    "label-data": {
+      "class": "LabelData",
+      "anchor": "labeldata"
+    },
+    "label-list": {
+      "class": "LabelList",
+      "anchor": "labellist"
+    }
+  },
+  "controller": {
+    "class": "Labels",
+    "namespace": "Lovata\\LabelsShopaholic\\Controllers\\Labels"
+  }
+}

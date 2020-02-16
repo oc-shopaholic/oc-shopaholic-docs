@@ -54,6 +54,11 @@
     "slug": "home",
     "anchor": "discount"
   },
+  "label": {
+    "title": "Label",
+    "slug": "home",
+    "anchor": "label"
+  },
   "offer": {
     "title": "Offer",
     "slug": "home",

@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "brand-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "branditem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "brandcollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-brand"
+  }
+}
