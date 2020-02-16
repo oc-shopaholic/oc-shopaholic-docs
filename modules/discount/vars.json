@@ -1,42 +1,143 @@
 {
   "title": "Discount",
-  "name": "",
-  "name_many": "",
+  "name": "Discount",
+  "name_many": "Discounts",
   "slug": "discount",
-  "available": [""],
+  "available": ["discounts"],
   "model": {
     "class": "Discount",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_discounts_shopaholic_discounts",
+    "namespace": "Lovata\\DiscountsShopaholic\\Models\\Discount",
     "field": {
       "id": "default",
+      "active": "default",
+      "code": "default",
       "created_at": "default",
-      "": {
-        "type": "",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
         "description": "",
         "available": "",
         "relation": ""
       },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "discount_type": {
+        "type": "string",
+        "description": "Available values: fixed, percent.",
+        "available": "",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "external_id": "default",
+      "name": "default",
+      "preview_text": "default",
+      "promo_block_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "promo-block"
+      },
+      "sort_order": "default",
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "brand": {
+        "type": "BelongsToMany",
+        "model": "brand",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
+      },
+      "category": {
+        "type": "BelongsToMany",
+        "model": "category",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "offer": {
+        "type": "BelongsToMany",
+        "model": "offer",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "promo_block": {
+        "type": "BelongsTo",
+        "model": "promo-block",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "tag": {
+        "type": "BelongsToMany",
+        "model": "tag",
+        "description": "",
+        "available": "tags"
       }
     }
   },
   "item": {
     "class": "DiscountItem",
-    "namespace": "",
+    "namespace": "Lovata\\DiscountsShopaholic\\Classes\\Item\\DiscountItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "code": "default",
+      "date_begin": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "date_end": {
+        "type": "\\October\\Rain\\Argon\\Argon",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "discount_type": {
+        "type": "string",
+        "description": "Available values: fixed, percent.",
+        "available": "",
+        "relation": ""
+      },
+      "discount_value": {
+        "type": "float",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "name": "default",
+      "preview_text": "default",
+      "product": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "promo_block": {
+        "type": "{{ get_item('promo-block').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "promo_block_id": {
+        "type": "int",
         "description": "",
         "available": "",
         "relation": ""
@@ -44,25 +145,11 @@
     }
   },
   "collection": {
-    "class": "",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
+    "class": "DiscountCollection",
+    "namespace": "Lovata\\DiscountsShopaholic\\Classes\\Collection\\DiscountCollection"
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "Discounts",
+    "namespace": "Lovata\\DiscountsShopaholic\\Controllers\\Discounts"
   }
 }

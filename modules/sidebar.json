@@ -49,6 +49,11 @@
     "slug": "home",
     "anchor": "currency"
   },
+  "discount": {
+    "title": "Discount",
+    "slug": "home",
+    "anchor": "discount"
+  },
   "offer": {
     "title": "Offer",
     "slug": "home",
