@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "review-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "reviewitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "reviewcollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-review"
+  }
+}

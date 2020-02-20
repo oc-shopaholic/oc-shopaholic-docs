@@ -20,12 +20,14 @@
 ||[Order position](modules/order-position/home.md)|{{ 'orders'|available_with }}|
 |**P**|[Payment method](modules/payment-method/home.md)|{{ 'orders'|available_with }}|
 ||[Payment restriction](modules/payment-restriction/home.md)|{{ 'orders'|available_with }}|
+||[Popularity](modules/popularity/home.md)|{{ 'popularity'|available_with }}|
 ||[Price](modules/price/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Price type](modules/price-type/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Product](modules/product/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Promo block](modules/promo-block/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Promo mechanism](modules/promo-mechanism/home.md)|{{ 'orders'|available_with }}|
 |**R**|[Related products](modules/related-products/home.md)|{{ 'related-products'|available_with }}|
+||[Reviews](modules/review/home.md)|{{ 'reviews'|available_with }}|
 |**S**|[Search](modules/search/home.md)|{{ ['search', 'sphinx']|available_with }}|
 ||[Settings](modules/settings/home.md)||
 ||[Shipping restriction](modules/shipping-restriction/home.md)|{{ 'orders'|available_with }}|

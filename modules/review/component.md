@@ -1,9 +1,10 @@
-# MakeReview component {docsify-ignore-all}
+{% extends 'docs/modules/component-default.md' %}
 
-!> **Attention!**  We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
-[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
+{% block content %}
 
-Component is available in **[Reviews for Shopaholic](plugins/home.md#reviews-for-shopaholic)** plugin.
+* [MakeReview](#makereview)
+
+## MakeReview
 
 The component allows to create reviews.
 
@@ -20,7 +21,8 @@ Available fields: name, email, phone, comment, rating.
 
 **Example 1:** Submit form
 
-```html
+{% verbatim %}
+```twig
 [MakeReview]
 mode="submit"
 redirect_on=1
@@ -55,10 +57,10 @@ redirect_page="review_success"
 {% if arError.message is not empty %}
     <p>{{ arError.message }}</p>
 {% endif %}
-
 ```
+{% endverbatim %}
 
-**Example 2: Ajax request
+**Example 2:** Ajax request
 
 ```javascript
 $('form').request('MakeReview::onCreate');
@@ -72,3 +74,4 @@ The MakeReview.getErrorMessage method returns error message if form was sent and
     'field'   => 'email',           //Field name, if there was validation error
 ]
 ```
+{% endblock %}

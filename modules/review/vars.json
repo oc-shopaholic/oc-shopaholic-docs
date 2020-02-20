@@ -1,0 +1,108 @@
+{
+  "title": "Reviews",
+  "name": "Review",
+  "name_many": "Reviews",
+  "slug": "review",
+  "available": ["reviews"],
+  "model": {
+    "class": "Review",
+    "table": "lovata_reviews_shopaholic_reviews",
+    "namespace": "Lovata\\ReviewsShopaholic\\Models\\Review",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "comment": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "created_at": "default",
+      "email": "default",
+      "name": "default",
+      "phone": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "product"
+      },
+      "rating": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {
+      "product": {
+        "type": "BelongsTo",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  },
+  "item": {
+    "class": "ReviewItem",
+    "namespace": "Lovata\\ReviewsShopaholic\\Classes\\Item\\ReviewItem",
+    "field": {
+      "id": "default",
+      "comment": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "created_at": "default",
+      "email": "default",
+      "name": "default",
+      "phone": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product": {
+        "type": "{{ get_item('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "rating": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "ReviewCollection",
+    "namespace": "Lovata\\ReviewsShopaholic\\Classes\\Collection\\ReviewCollection"
+  },
+  "component": {
+    "make-review": {
+      "class": "MakeReview",
+      "anchor": "makereview"
+    }
+  },
+  "controller": {
+    "class": "Reviews",
+    "namespace": "Lovata\\ReviewsShopaholic\\Controllers\\Reviews"
+  }
+}

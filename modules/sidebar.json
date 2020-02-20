@@ -89,6 +89,11 @@
     "slug": "home",
     "anchor": "payment-restriction"
   },
+  "popularity": {
+    "title": "Popularity",
+    "slug": "home",
+    "anchor": "Popularity"
+  },
   "price": {
     "title": "Price",
     "slug": "home",
@@ -118,6 +123,11 @@
     "title": "Related products",
     "slug": "home",
     "anchor": "related-products"
+  },
+  "review": {
+    "title": "Reviews",
+    "slug": "home",
+    "anchor": "reviews"
   },
   "search": {
     "title": "Search",
