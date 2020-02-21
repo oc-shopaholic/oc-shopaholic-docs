@@ -1,0 +1,27 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "tag-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "tagitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "tagcollection"
+  },
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-tag"
+  }
+}

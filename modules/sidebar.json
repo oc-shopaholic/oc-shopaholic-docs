@@ -169,6 +169,11 @@
     "slug": "home",
     "anchor": "subscription-period"
   },
+  "tag": {
+    "title": "Tag",
+    "slug": "home",
+    "anchor": "tag"
+  },
   "task": {
     "title": "Task",
     "slug": "home",

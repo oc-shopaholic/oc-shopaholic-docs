@@ -1,0 +1,134 @@
+{
+  "title": "Tag",
+  "name": "Tag",
+  "name_many": "Tags",
+  "slug": "tag",
+  "available": ["tags"],
+  "model": {
+    "class": "Tag",
+    "table": "lovata_tagsshopaholic_tags",
+    "namespace": "Lovata\\TagsShopaholic\\Models\\Tag",
+    "field": {
+      "id": "default",
+      "active": "default",
+      "category_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "category"
+      },
+      "created_at": "default",
+      "description": "default",
+      "name": "default",
+      "preview_text": "default",
+      "slug": "default",
+      "sort_order": "default",
+      "static_slug": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "updated_at": "default"
+    },
+    "attach_one": ["preview_image"],
+    "attach_many": ["images"],
+    "relation": {
+      "campaign": {
+        "type": "BelongsToMany",
+        "model": "campaign",
+        "description": "",
+        "available": "campaigns"
+      },
+      "category": {
+        "type": "BelongsTo",
+        "model": "category",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "coupon_group": {
+        "type": "BelongsToMany",
+        "model": "coupon-group",
+        "description": "",
+        "available": "coupons"
+      },
+      "discount": {
+        "type": "BelongsToMany",
+        "model": "discount",
+        "description": "",
+        "available": "discounts"
+      },
+      "product": {
+        "type": "BelongsToMany",
+        "model": "product",
+        "description": "",
+        "available": "shopaholic"
+      }
+    }
+  },
+  "item": {
+    "class": "TagItem",
+    "namespace": "Lovata\\TagsShopaholic\\Classes\\Item\\TagItem",
+    "field": {
+      "id": "default",
+      "category": {
+        "type": "{{ get_item('category').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "category_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "description": "default",
+      "images": "default",
+      "name": "default",
+      "preview_image": "default",
+      "preview_text": "default",
+      "product": {
+        "type": "{{ get_collection('product').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_id_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "slug": "default",
+      "static_slug": {
+        "type": "string",
+        "description": "",
+        "available": "",
+        "relation": ""
+      }
+    }
+  },
+  "collection": {
+    "class": "TagCollection",
+    "namespace": "Lovata\\TagsShopaholic\\Classes\\Collection\\TagCollection"
+  },
+  "component": {
+    "tag-page": {
+      "class": "TagPage",
+      "anchor": "tagpage"
+    },
+    "tag-data": {
+      "class": "TagData",
+      "anchor": "tagdata"
+    },
+    "tag-list": {
+      "class": "TagList",
+      "anchor": "taglist"
+    }
+  },
+  "controller": {
+    "class": "Tags",
+    "namespace": "Lovata\\TagsShopaholic\\Controllers\\Tags"
+  }
+}
