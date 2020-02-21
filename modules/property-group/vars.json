@@ -1,0 +1,42 @@
+{
+  "title": "Property group",
+  "name": "Group",
+  "name_many": "Groups",
+  "slug": "property-group",
+  "available": ["properties"],
+  "model": {
+    "class": "Group",
+    "table": "lovata_properties_shopaholic_groups",
+    "namespace": "Lovata\\PropertiesShopaholic\\Models\\Group",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "created_at": "default",
+      "description": "default",
+      "name": "default",
+      "sort_order": "default",
+      "updated_at": "default"
+    },
+    "attach_one": [],
+    "attach_many": [],
+    "relation": {}
+  },
+  "item": {
+    "class": "GroupItem",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Item\\GroupItem",
+    "field": {
+      "id": "default",
+      "code": "default",
+      "description": "default",
+      "name": "default"
+    }
+  },
+  "collection": {
+    "class": "GroupCollection",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Collection\\GroupCollection"
+  },
+  "controller": {
+    "class": "Groups",
+    "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\Groups"
+  }
+}

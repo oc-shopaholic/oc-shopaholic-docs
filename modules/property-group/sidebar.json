@@ -1,0 +1,22 @@
+{
+  "model": {
+    "title": "Model",
+    "slug": "model",
+    "anchor": "group-model"
+  },
+  "item": {
+    "title": "Item",
+    "slug": "item",
+    "anchor": "groupitem"
+  },
+  "collection": {
+    "title": "Collection",
+    "slug": "collection",
+    "anchor": "groupcollection"
+  },
+  "extending": {
+    "title": "Extending",
+    "slug": "extending",
+    "anchor": "extending-group"
+  }
+}

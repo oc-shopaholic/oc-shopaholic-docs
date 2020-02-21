@@ -119,6 +119,11 @@
     "slug": "home",
     "anchor": "promo-mechanism"
   },
+  "property-group": {
+    "title": "Property group",
+    "slug": "home",
+    "anchor": "property-group"
+  },
   "related-products": {
     "title": "Related products",
     "slug": "home",
