@@ -39,4 +39,6 @@
 |**T**|[Tag](modules/tag/home.md)|{{ 'tags'|available_with }}|
 ||[Task](modules/task/home.md)|{{ 'orders'|available_with }}|
 ||[Tax](modules/tax/home.md)|{{ 'shopaholic'|available_with }}|
+|**V**|[Viewed products](modules/viewed-products/home.md)|{{ 'viewed-products'|available_with }}|
+|**W**|[Wish list](modules/wish-list/home.md)|{{ 'wish-list'|available_with }}|
 |**U**|[User address](modules/user-address/home.md)|{{ 'orders'|available_with }}|

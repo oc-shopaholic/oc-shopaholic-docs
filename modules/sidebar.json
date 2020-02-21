@@ -184,6 +184,16 @@
     "slug": "home",
     "anchor": "tax"
   },
+  "viewed-products": {
+    "title": "Viewed products",
+    "slug": "home",
+    "anchor": "viewed-products"
+  },
+  "wish-list": {
+    "title": "Wish list",
+    "slug": "home",
+    "anchor": "wish-list"
+  },
   "user-address": {
     "title": "User address",
     "slug": "home",

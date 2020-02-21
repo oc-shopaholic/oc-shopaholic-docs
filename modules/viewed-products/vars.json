@@ -1,0 +1,7 @@
+{
+  "title": "Viewed products",
+  "name": "ViewedProduct",
+  "name_many": "ViewedProducts",
+  "slug": "viewed-products",
+  "available": ["viewed-products"]
+}
