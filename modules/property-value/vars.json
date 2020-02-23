@@ -6,37 +6,39 @@
   "available": ["properties"],
   "model": {
     "class": "PropertyValue",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_properties_shopaholic_values",
+    "namespace": "Lovata\\PropertiesShopaholic\\Models\\PropertyValue",
     "field": {
       "id": "default",
       "created_at": "default",
-      "": {
-        "type": "",
+      "slug": "default",
+      "value": {
+        "type": "string",
         "description": "",
         "available": "",
         "relation": ""
       },
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "property": {
+        "type": "BelongsToMany",
+        "model": "property",
         "description": "",
-        "available": ""
+        "available": "properties"
       }
     }
   },
   "item": {
-    "class": "",
-    "namespace": "",
+    "class": "PropertyValueItem",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Item\\PropertyValueItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "slug": "default",
+      "value": {
+        "type": "string",
         "description": "",
         "available": "",
         "relation": ""
@@ -44,25 +46,11 @@
     }
   },
   "collection": {
-    "class": "",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
+    "class": "PropertyValueCollection",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Collection\\PropertyValueCollection"
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "PropertyValues",
+    "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\PropertyValues"
   }
 }

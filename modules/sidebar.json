@@ -134,6 +134,11 @@
     "slug": "home",
     "anchor": "property-set"
   },
+  "property-value": {
+    "title": "Property value",
+    "slug": "home",
+    "anchor": "property-value"
+  },
   "related-products": {
     "title": "Related products",
     "slug": "home",
