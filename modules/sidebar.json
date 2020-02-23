@@ -129,6 +129,11 @@
     "slug": "home",
     "anchor": "property-group"
   },
+  "property-set": {
+    "title": "Property set",
+    "slug": "home",
+    "anchor": "property-set"
+  },
   "related-products": {
     "title": "Related products",
     "slug": "home",

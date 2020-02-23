@@ -2,21 +2,21 @@
   "model": {
     "title": "Model",
     "slug": "model",
-    "anchor": "property-model"
+    "anchor": "propertyset-model"
   },
   "item": {
     "title": "Item",
     "slug": "item",
-    "anchor": "propertyitem"
+    "anchor": "propertysetitem"
   },
   "collection": {
     "title": "Collection",
     "slug": "collection",
-    "anchor": "propertycollection"
+    "anchor": "propertysetcollection"
   },
   "extending": {
     "title": "Extending",
     "slug": "extending",
-    "anchor": "extending-property"
+    "anchor": "extending-propertyset"
   }
 }

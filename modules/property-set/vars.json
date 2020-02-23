@@ -6,37 +6,68 @@
   "available": ["properties"],
   "model": {
     "class": "PropertySet",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_properties_shopaholic_set",
+    "namespace": "Lovata\\PropertiesShopaholic\\Models\\PropertySet",
     "field": {
       "id": "default",
+      "code": "default",
       "created_at": "default",
-      "": {
-        "type": "",
+      "description": "default",
+      "is_global": {
+        "type": "bool",
         "description": "",
         "available": "",
         "relation": ""
       },
+      "name": "default",
+      "sort_order": "default",
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "category": {
+        "type": "BelongsToMany",
+        "model": "category",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
+      },
+      "offer_property": {
+        "type": "BelongsToMany",
+        "model": "property",
+        "description": "",
+        "available": "properties"
+      },
+      "product_property": {
+        "type": "BelongsToMany",
+        "model": "property",
+        "description": "",
+        "available": "properties"
       }
     }
   },
   "item": {
-    "class": "",
-    "namespace": "",
+    "class": "PropertySetItem",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Item\\PropertySetItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "code": "default",
+      "description": "default",
+      "is_global": {
+        "type": "bool",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "offer_property_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "product_property_list": {
+        "type": "array",
         "description": "",
         "available": "",
         "relation": ""
@@ -44,25 +75,11 @@
     }
   },
   "collection": {
-    "class": "",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
+    "class": "PropertySetCollection",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Collection\\PropertySetCollection"
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "PropertySets",
+    "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\PropertySets"
   }
 }

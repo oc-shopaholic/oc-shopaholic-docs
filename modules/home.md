@@ -28,6 +28,7 @@
 ||[Promo mechanism](modules/promo-mechanism/home.md)|{{ 'orders'|available_with }}|
 ||[Property](modules/property/home.md)|{{ 'properties'|available_with }}|
 ||[Property group](modules/property-group/home.md)|{{ 'properties'|available_with }}|
+||[Property set](modules/property-set/home.md)|{{ 'properties'|available_with }}|
 |**R**|[Related products](modules/related-products/home.md)|{{ 'related-products'|available_with }}|
 ||[Reviews](modules/review/home.md)|{{ 'reviews'|available_with }}|
 |**S**|[Search](modules/search/home.md)|{{ ['search', 'sphinx']|available_with }}|
