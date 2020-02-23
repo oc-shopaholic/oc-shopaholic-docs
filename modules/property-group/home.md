@@ -6,6 +6,7 @@
 The "Property groups" module allows you to group properties and render properties in different parts of the product page or product card.
 
 ![](./../../assets/images/fronend-property-group-1.png)
+
 ![](./../../assets/images/fronend-property-group-2.png)
 
 ## Backend

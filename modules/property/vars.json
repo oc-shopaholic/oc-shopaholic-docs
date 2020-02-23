@@ -6,38 +6,109 @@
   "available": ["properties"],
   "model": {
     "class": "Property",
-    "table": "",
-    "namespace": "",
+    "table": "lovata_properties_shopaholic_properties",
+    "namespace": "Lovata\\PropertiesShopaholic\\Models\\Property",
     "field": {
       "id": "default",
+      "active": "default",
+      "code": "default",
       "created_at": "default",
-      "": {
-        "type": "",
+      "description": "default",
+      "external_id": "default",
+      "measure_id": {
+        "type": "int",
         "description": "",
+        "available": "",
+        "relation": "measure"
+      },
+      "name": "default",
+      "settings": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "slug": "default",
+      "sort_order": "default",
+      "type": {
+        "type": "string",
+        "description": "Available types: input, number, textarea, rich_editor, single_checkbox, switch, checkbox, balloon_selector, tag_list, select, radio, date, colorpicker, mediafinder",
         "available": "",
         "relation": ""
       },
       "updated_at": "default"
     },
-    "attach_one": ["preview_image"],
-    "attach_many": ["images"],
+    "attach_one": [],
+    "attach_many": [],
     "relation": {
-      "": {
-        "type": "",
-        "model": "",
+      "measure": {
+        "type": "BelongsTo",
+        "model": "measure",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
+      },
+      "property_value": {
+        "type": "BelongsToMany",
+        "model": "property-value",
+        "description": "",
+        "available": "properties"
+      },
+      "property_value_link": {
+        "type": "HasMany",
+        "model": "PropertyValueLink",
+        "description": "",
+        "available": "properties"
       }
     }
   },
   "item": {
     "class": "PropertyItem",
-    "namespace": "",
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Item\\PropertyItem",
     "field": {
       "id": "default",
-      "": {
-        "type": "",
+      "code": "default",
+      "description": "default",
+      "filter_name": {
+        "type": "string",
         "description": "",
+        "available": "filters",
+        "relation": ""
+      },
+      "filter_type": {
+        "type": "string",
+        "description": "",
+        "available": "filters",
+        "relation": ""
+      },
+      "in_filter": {
+        "type": "bool",
+        "description": "",
+        "available": "filters",
+        "relation": ""
+      },
+      "measure": {
+        "type": "{{ get_item('measure').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "measure_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "name": "default",
+      "property_value": {
+        "type": "{{ get_collection('property-value').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "slug": "default",
+      "type": {
+        "type": "string",
+        "description": "Available types: input, number, textarea, rich_editor, single_checkbox, switch, checkbox, balloon_selector, tag_list, select, radio, date, colorpicker, mediafinder",
         "available": "",
         "relation": ""
       }
@@ -45,24 +116,10 @@
   },
   "collection": {
     "class": "PropertyCollection",
-    "namespace": ""
-  },
-  "component": {
-    "-page": {
-      "class": "Page",
-      "anchor": "page"
-    },
-    "-data": {
-      "class": "Data",
-      "anchor": "data"
-    },
-    "-list": {
-      "class": "List",
-      "anchor": "list"
-    }
+    "namespace": "Lovata\\PropertiesShopaholic\\Classes\\Collection\\PropertyCollection"
   },
   "controller": {
-    "class": "",
-    "namespace": ""
+    "class": "Properties",
+    "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\Properties"
   }
 }

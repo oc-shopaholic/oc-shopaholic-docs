@@ -26,6 +26,7 @@
 ||[Product](modules/product/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Promo block](modules/promo-block/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Promo mechanism](modules/promo-mechanism/home.md)|{{ 'orders'|available_with }}|
+||[Property](modules/property/home.md)|{{ 'properties'|available_with }}|
 ||[Property group](modules/property-group/home.md)|{{ 'properties'|available_with }}|
 |**R**|[Related products](modules/related-products/home.md)|{{ 'related-products'|available_with }}|
 ||[Reviews](modules/review/home.md)|{{ 'reviews'|available_with }}|

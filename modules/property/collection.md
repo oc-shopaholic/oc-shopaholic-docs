@@ -1,7 +1,17 @@
-# PropertyCollection {docsify-ignore-all}
+{% extends 'docs/modules/collection-default.md' %}
 
-!> **Attention!**  We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
-[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
+{% block method_list %}
+{{ parent() }}
+
+* [active](#active)
+* [code](#codearcodelist)
+* [getByCode](#getbycodescode)
+* [getGroupList](#getgrouplist)
+* [group](#groupigroupid)
+* [sort](#sort)
+* [getFilterName](#getfilternameipropertyid)
+* [getFilterType](#getfiltertypeipropertyid)
+* [type](#typesfiltertype)
 
 ### active()
 
@@ -80,3 +90,4 @@ Method used pivot field "filter_type" of relation between Category model and Pro
     
     $obCheckboxFilterList = $obPropertyList->type('checkbox');
 ```
+{% endblock %}
