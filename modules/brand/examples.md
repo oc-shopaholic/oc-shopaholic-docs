@@ -11,7 +11,7 @@
 
 ### 1.1 Task
 
-Create simple brand page and render brand name.
+Create simple brand page and render brand name, preview image, description.
 
 ### 1.2 How can i do it?
 
@@ -23,39 +23,19 @@ All available fields and methods of **BrandItem** class you can find in {{ item.
 @startuml
 :Create page file;
 note left
-    For example: **pages/brand.htm**
+    For example: **pages/brand-page.htm**
 end note
 :Attach **BrandPage** component;
 :Get BrandItem object
 from BrandPage component;
-:Render brand name;
+:Render brand name,
+preview_image,
+description fields;
 @enduml
 ```
 
 ### 1.3 Source code
-File: **pages/brand.htm**
-{% verbatim %}
-```twig
-title = "Brand page"
-url = "/brands/:slug"
-layout = "main"
-is_hidden = 0
-
-[BrandPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-==
-
-{# Get brand item #}
-{% set obBrand = BrandPage.get() %}
-
-<div data-id="{{ obBrand.id }}" itemscope itemtype="http://schema.org/Brand">
-    <h1 itemprop="name">{{ obBrand.name }}</h1>
-</div>
-```
-{% endverbatim %}
+{{ get_module('brand').example('pages/brand-page-1.htm')|raw }}
 
 ## Example 2: Brand card
 
@@ -70,24 +50,7 @@ Render link on brand page.
 
 Simple example of brand card.
 
-File: **partials/brand/brand-card/brand-card.htm**
-{% verbatim %}
-```twig
-<a href="{{ obBrand.getPageUrl('brand') }}">
-    <div itemscope itemtype="http://schema.org/Brand">
-        {% if obBrand.preview_image is not empty %}
-            <img src="{{ obBrand.preview_image.path }}" itemprop="image" alt="{{ obBrand.preview_image.description }}" title="{{ obBrand.preview_image.title }}">
-        {% endif %}
-        <h3 itemprop="name">{{ obBrand.name }}</h3>
-        {% if obBrand.preview_text is not empty %}
-            <div itemprop="description">
-                {{ obBrand.preview_text }}
-            </div>
-        {% endif %}
-    </div>
-</a>
-```
-{% endverbatim %}
+{{ get_module('brand').example('partials/brand/brand-card/brand-card-1.htm')|raw }}
 
 ## Example 3: Random brand list
 
@@ -111,7 +74,7 @@ end note
 :Create partial "random-brand-list";
 note left
     For example:
-    **partials/brand/brand-list**
+    **partials/brand/random-brand-list**
     **/random-brand-list.htm**
 end note
 :Get BrandCollection object from
@@ -126,38 +89,11 @@ BrandItem objects;
 
 ### 3.3 Source code
 
-File: **pages/index.htm**
-{% verbatim %}
-```twig
-title = "Index"
-url = "/"
-layout = "main"
-is_hidden = 0
+{{ get_module('brand').example('pages/index-1.htm')|raw }}
 
-[BrandList]
-==
-<div class="brand-wrapper">
-    {% partial 'brand/brand-list/random-brand-list' %}
-</div>
-```
+{{ get_module('brand').example('partials/brand/random-brand-list/random-brand-list-1.htm')|raw }}
 
-File: **partials/brand/brand-list/random-brand-list.htm**
-```twig
-{# Get brand collection #}
-{% set obBrandList = BrandList.make().active() %}
-{# Get array with random brands #}
-{% set arBrandList = obBrandList.random(5) %}
-
-{% if arBrandList is not empty %}
-    {# Render brand list #}
-    <ul>
-        {% for obBrand in arBrandList %}
-            <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('brand').example('partials/brand/brand-card/brand-card-1.htm')|raw }}
 
 ## Example 4: Brand list with pagination
 
@@ -172,7 +108,7 @@ Brand list must have pagination block.
 Component method returns {{ collection.link() }} class object.
 All available methods of **{{ collection.class }}** class you can find in {{ collection.link('section') }}
 
-> You can find more information about **Pagination** component [here](modules/pagination/home.md)
+> You can find more information about **Pagination** component {{ get_module('pagination').link('here') }}
 
 ```plantuml
 @startuml
@@ -212,78 +148,11 @@ and update HTML code inside wrapper block;
 
 ### 4.3 Source code
 
-File: **pages/brand-list.htm**
-{% verbatim %}
-```twig
-title = "Brand list"
-url = "/brands"
-layout = "main"
-is_hidden = 0
+{{ get_module('brand').example('pages/brand-list-1.htm')|raw }}
 
-[BrandList]
+{{ get_module('brand').example('partials/brand/brand-list/brand-list-1.htm')|raw }}
 
-[Pagination]
-count_per_page = 15
-pagination_limit = 5
-active_class = ""
-button_list = "first,first-more,main,last-more,last"
-first_button_name = "First"
-first_button_limit = 3
-first_button_number = 1
-first-more_button_name = "..."
-first-more_button_limit = 4
-prev_button_name = "Prev"
-prev_button_limit = 1
-prev-more_button_name = "..."
-prev-more_button_limit = 1
-next-more_button_name = "..."
-next-more_button_limit = 1
-next_button_name = "Next"
-next_button_limit = 1
-last-more_button_name = "..."
-last-more_button_limit = 4
-last_button_name = "Last"
-last_button_limit = 3
-last_button_number = 1
-==
-<div class="brand-wrapper">
-    {% partial 'brand/brand-list/brand-list' %}
-</div>
-```
-
-File: **partials/brand/brand-list/brand-list.htm**
-```twig
-{# Get brand collection #}
-{% set obBrandList = BrandList.make().sort().active() %}
-
-{# Get array with pagination buttons #}
-{% set iPage = Pagination.getPageFromRequest() %}
-{% set arPaginationList = Pagination.get(iPage, obBrandList.count()) %}
-
-{# Apply pagination to brand collection and get array with brand items #}
-{% set arBrandList = obBrandList.page(iPage, Pagination.getCountPerPage()) %}
-
-{% if arBrandList is not empty %}
-    {# Render brand list #}
-    <ul>
-        {% for obBrand in arBrandList %}
-            <li>{% partial 'brand/brand-card/brand-card' obBrand=obBrand %}</li>
-        {% endfor %}
-    </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-page="{{ arPagination.value }}">{{ arPagination.name }}</a>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div>
-        Brands not found
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('brand').example('partials/brand/brand-card/brand-card-1.htm')|raw }}
 
 ## Example 5: Filter panel with brands
 
@@ -309,7 +178,7 @@ end note
 :Create partial "filter-brand-list";
 note left
     For example:
-    **partials/brand/brand-list**
+    **partials/brand/filter-brand-list**
     **/filter-brand-list.htm**
 end note
 :Get CategoryItem object from
@@ -327,47 +196,8 @@ to BrandCollection object;
 
 ### 5.3 Source code
 
-File: **pages/catalog.htm**
-{% verbatim %}
-```twig
-title = "Catalog"
-url = "/catalog/:category"
-layout = "main"
-is_hidden = 0
+{{ get_module('brand').example('pages/catalog-1.htm')|raw }}
 
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
+{{ get_module('brand').example('partials/brand/filter-brand-list/filter-brand-list-1.htm')|raw }}
 
-[BrandList]
-==
-<div class="filter-brand-wrapper">
-    {% partial 'brand/brand-list/filter-brand-list' %}
-</div>
-```
-
-File: **partials/brand/brand-list/filter-brand-list.htm**
-```twig
-{# Get CategoryItem object #}
-{% set obCategory = CategoryPage.get() %}
-
-{# Get brand collection #}
-{% set obBrandList = BrandList.make().active().sort().category(obCategory.id) %}
-
-{% if obBrandList.isNotEmpty() %}
-    {# Render brand list #}
-    <ul>
-        {% for obBrand in obBrandList %}
-            <li>
-                <input type="checkbox" name="filter-brand" value="{{ obBrand.slug }}" id="brand-{{ obBrand.id }}">
-                <label for="brand-{{ obBrand.id }}">{{ obBrand.name }}</label>
-            </li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
 {% endblock %}

@@ -1,0 +1,17 @@
+{# Get CategoryItem object #}
+{% set obCategory = CategoryPage.get() %}
+
+{# Get brand collection #}
+{% set obBrandList = BrandList.make().active().sort().category(obCategory.id) %}
+
+{% if obBrandList.isNotEmpty() %}
+    {# Render brand list #}
+    <ul>
+        {% for obBrand in obBrandList %}
+            <li>
+                <input type="checkbox" name="filter-brand" value="{{ obBrand.slug }}" id="brand-{{ obBrand.id }}">
+                <label for="brand-{{ obBrand.id }}">{{ obBrand.name }}</label>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

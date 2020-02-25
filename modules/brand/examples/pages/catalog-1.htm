@@ -1,0 +1,17 @@
+title = "Catalog"
+url = "/catalog/:category"
+layout = "main"
+is_hidden = 0
+
+[CategoryPage]
+slug = "{{ :category }}"
+slug_required = 1
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
+
+[BrandList]
+==
+<div class="filter-brand-wrapper">
+    {% partial 'brand/filter-brand-list/filter-brand-list' %}
+</div>

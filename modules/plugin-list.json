@@ -71,6 +71,10 @@
     "name": "Tags for Shopaholic",
     "anchor": "tags-for-shopaholic"
   },
+  "toolbox": {
+    "name": "Toolbox",
+    "anchor": "toolbox"
+  },
   "viewed-products": {
     "name": "Viewed products for Shopaholic",
     "anchor": "viewed-products-for-shopaholic"

@@ -3,6 +3,11 @@
 {% block content %}
 {{ parent() }}
 
+The "Brands" module allows you to create manufacturers of products for your site.
+You can link one brand to a product.
+You can display the list of brands, brand page.
+You can filter products by brands.
+
 ## Backend
 
 You can create and edit brands by going to **Backend -> Catalog -> Brands**

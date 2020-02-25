@@ -48,7 +48,7 @@
         "type": "HasMany",
         "model": "product",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       }
     }
   },

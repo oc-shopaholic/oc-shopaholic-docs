@@ -69,7 +69,7 @@ Event::listen(ImportBrandModelFromXML::EXTEND_FIELD_LIST, function($arFieldList)
 
 ## shopaholic.brand.open
 
-Event is triggered when you open brand page. Event triggered with using [BrandPage](modules/brand/component/component#brandpage) component
+Event is triggered when you open brand page. Event triggered with using {{ component.link('brand-page') }} component
 ```php
 Event::listen('shopaholic.brand.open', function($obBrand) {
     /** @var \Lovata\Shopaholic\Models\Brand $obBrand */

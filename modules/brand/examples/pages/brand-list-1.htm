@@ -1,0 +1,34 @@
+title = "Brand list"
+url = "/brands"
+layout = "main"
+is_hidden = 0
+
+[BrandList]
+
+[Pagination]
+count_per_page = 15
+pagination_limit = 5
+active_class = ""
+button_list = "first,first-more,main,last-more,last"
+first_button_name = "First"
+first_button_limit = 3
+first_button_number = 1
+first-more_button_name = "..."
+first-more_button_limit = 4
+prev_button_name = "Prev"
+prev_button_limit = 1
+prev-more_button_name = "..."
+prev-more_button_limit = 1
+next-more_button_name = "..."
+next-more_button_limit = 1
+next_button_name = "Next"
+next_button_limit = 1
+last-more_button_name = "..."
+last-more_button_limit = 4
+last_button_name = "Last"
+last_button_limit = 3
+last_button_number = 1
+==
+<div class="brand-wrapper">
+    {% partial 'brand/brand-list/brand-list' %}
+</div>

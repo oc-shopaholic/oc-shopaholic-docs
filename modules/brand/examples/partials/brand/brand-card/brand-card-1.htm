@@ -1,0 +1,13 @@
+<a href="{{ obBrand.getPageUrl('brand-page') }}">
+    <div itemscope itemtype="http://schema.org/Brand">
+        {% if obBrand.preview_image is not empty %}
+            <img src="{{ obBrand.preview_image.path }}" itemprop="image" alt="{{ obBrand.preview_image.description }}" title="{{ obBrand.preview_image.title }}">
+        {% endif %}
+        <h3 itemprop="name">{{ obBrand.name }}</h3>
+        {% if obBrand.preview_text is not empty %}
+            <div itemprop="description">
+                {{ obBrand.preview_text }}
+            </div>
+        {% endif %}
+    </div>
+</a>
