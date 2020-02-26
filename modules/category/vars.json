@@ -131,6 +131,12 @@
       "code": "default",
       "description": "default",
       "images": "default",
+      "inherit_property_set": {
+        "type": "bool",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
       "name": "default",
       "nest_depth": {
         "type": "int",
@@ -141,8 +147,20 @@
       "offer_filter_property": {
         "type": "{{ get_collection('filter-property').link() }}",
         "description": "",
-        "available": "",
-        "relation": "filter"
+        "available": "filter",
+        "relation": ""
+      },
+      "offer_property": {
+        "type": "{{ get_collection('property').link() }}",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
+      "offer_property_list": {
+        "type": "array",
+        "description": "",
+        "available": "properties",
+        "relation": ""
       },
       "parent": {
         "type": "[CategoryItem](modules/category/item/item)",
@@ -160,7 +178,7 @@
       "preview_text": "default",
       "product_count": {
         "type": "int",
-        "description": "",
+        "description": "Count of active products in the category. The method contains count of products in the current category and in child categories.",
         "available": "",
         "relation": ""
       },
@@ -168,6 +186,30 @@
         "type": "{{ get_collection('filter-property').link() }}",
         "description": "",
         "available": "filter",
+        "relation": ""
+      },
+      "product_property": {
+        "type": "{{ get_collection('property').link() }}",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
+      "product_property_list": {
+        "type": "array",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
+      "property_set": {
+        "type": "{{ get_collection('property-set').link() }}",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
+      "property_set_id": {
+        "type": "array",
+        "description": "",
+        "available": "properties",
         "relation": ""
       },
       "slug": "default",

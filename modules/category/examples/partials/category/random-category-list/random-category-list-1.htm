@@ -1,0 +1,13 @@
+{# Get category collection #}
+{% set obCategoryList = CategoryList.make().active() %}
+{# Get array with random categories #}
+{% set arCategoryList = obCategoryList.random(5) %}
+
+{% if arCategoryList is not empty %}
+    {# Render category list #}
+    <ul>
+        {% for obCategory in arCategoryList %}
+            <li>{% partial 'category/category-card/category-card' obCategory=obCategory %}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

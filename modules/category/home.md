@@ -3,6 +3,11 @@
 {% block content %}
 {{ parent() }}
 
+The "Categories" module allows you to create a tree of product categories for your site.
+You can display the category tree in the menu of your site or on the catalog page.
+You can attach one main category to a product and several additional ones.
+You can create category pages and display a list of products filtered by category.
+
 ## Backend
 
 You can create and edit categories by going to **Backend -> Catalog -> Categories**

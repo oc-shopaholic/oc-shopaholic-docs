@@ -3,7 +3,7 @@
 {% block content %}
 * [Example 1: Category page](#example-1-category-page)
 * [Example 2: Category tree](#example-2-category-tree)
-* [Example 3: Category card](#example-3-category-card)
+* [Example 3: Random categories](#example-3-random-categories)
 
 ## Example 1: Category page
 
@@ -21,7 +21,7 @@ All available fields and methods of **CategoryItem** class you can find in [sect
 @startuml
 :Create page file;
 note left
-    For example: **pages/category.htm**
+    For example: **pages/category-page.htm**
 end note
 :Attach **CategoryPage** component;
 :Get CategoryItem object
@@ -40,125 +40,19 @@ from CategoryPage component;
 
 Simple example of category page (one level).
 
-File: **pages/category.htm**
-{% verbatim %}
-```twig
-title = "Category page"
-url = "/catalog/:slug"
-layout = "main"
-is_hidden = 0
-
-[CategoryPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
-==
-
-{# Get category item #}
-{% set obCategory = CategoryPage.get() %}
-
-<div data-id="{{ obCategory.id }}" itemscope itemtype="http://schema.org/Category">
-    <h1 itemprop="name">{{ obCategory.name }}</h1>
-</div>
-```
-{% endverbatim %}
+{{ get_module('category').example('pages/category-page-1.htm')|raw }}
 
 #### ** Two levels **
 
 Simple example of category page (two levels).
 
-> CategoryPage components must be attached on page so that child categories are higher than parent categories.
-
-File: **pages/category.htm**
-{% verbatim %}
-```twig
-title = "Category page"
-url = "/catalog/:main_category/:slug"
-layout = "main"
-is_hidden = 0
-
-[CategoryPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
-
-[CategoryPage ParentCategoryPage]
-slug = "{{ :main_category }}"
-slug_required = 1
-smart_url_check = 0
-has_wildcard = 0
-skip_error = 0
-==
-
-{# Get category item #}
-{% set obCategory = CategoryPage.get() %}
-
-<div data-id="{{ obCategory.id }}" itemscope itemtype="http://schema.org/Category">
-    <h1 itemprop="name">{{ obCategory.name }}</h1>
-</div>
-```
-{% endverbatim %}
+{{ get_module('category').example('pages/category-page-2.htm')|raw }}
 
 #### ** Wildcard **
 
 Catalog page with wildcard URL parameter.
 
-File: **pages/catalog.htm**
-{% verbatim %}
-```twig
-title = "Catalog"
-url = "/catalog/:category*/:slug?"
-layout = "main"
-is_hidden = 0
-
-[CategoryPage MainCategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 1
-skip_error = 0
-
-[CategoryPage]
-slug = "{{ :slug }}"
-slug_required = 0
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 1
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 0
-smart_url_check = 1
-skip_error = 1
-==
-function onInit() {
-    $obProductItem = $this->ProductPage->get();
-    $obCategoryItem = $this->CategoryPage->get();
-    $obMainCategoryItem = $this->MainCategoryPage->get();
-    if (!empty($this->param('slug')) && empty($obProductItem) && empty($obCategoryItem)) {
-        return $this->ProductPage->getErrorResponse();
-    }
-
-    $obActiveCategoryItem = !empty($obCategoryItem) ? $obCategoryItem : $obMainCategoryItem;
-    
-    $this['obProduct'] = $obProductItem;
-    $this['obActiveCategory'] = $obActiveCategoryItem;
-}
-==
-{% if obProduct.isNotEmpty() %}
-    {# Render product page #}
-{% else %}
-    {# Render catalog page #}
-    <div data-id="{{ obActiveCategory.id }}" itemscope itemtype="http://schema.org/Category">
-        <h1 itemprop="name">{{ obActiveCategory.name }}</h1>
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('category').example('pages/category-page-3.htm')|raw }}
 <!-- tabs:end -->
 
 ## Example 2: Category tree
@@ -178,7 +72,8 @@ All available methods of **{{ collection.class }}** class you can find in {{ col
 @startuml
 :Create layout file;
 note left
-    For example: **layouts/main.htm**
+    For example: **partials/category**
+    **/category-tree/category-tree.htm**
 end note
 :Attach **CategoryList** component to layout;
 :Get CategoryCollection object
@@ -189,61 +84,50 @@ from CategoryList component;
 
 ### 2.3 Source code
 
-File: **partials/category/category-tree/category-tree.htm**
-{% verbatim %}
-```twig
-[CategoryList]
-==
+{{ get_module('category').example('partials/category/category-tree/category-tree-1.htm')|raw }}
 
-{% set obCategoryList = CategoryList.make().tree() %}
-{% if obCategoryList.isNotEmpty() %}
-    <ul>
-        {% for obCategory in obCategoryList if obCategory.product_count > 0 %}
-            <li data-id="{{ obCategory.id }}">
-                {{ obCategory.name }}
-                {% if obCategory.children.isNotEmpty() %}
-                    <ul>
-                        {% for obChildCategory in obCategory.children if obChildCategory.product_count > 0 %}
-                            <li>{{ obChildCategory.name }}</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            </li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
-
-## Example 3: Category card
+## Example 3: Random categories
 
 ### 3.1 Task
 
+Create simple block with random 3 categories on index page.
 Create simple category card and render category name, preview_image, preview_text fields.
 Render link on category page.
 
-> **"obCategory"** is object of {{ item.link() }} class.
+### 3.2 How can i do it?
 
-### 3.2 Source code
+> Example uses {{ component.link('category-list') }} component.
+Component method returns {{ collection.link() }} class object.
+All available methods of **{{ collection.class }}** class you can find in {{ collection.link('section') }}
 
-Simple example of category card.
-
-File: **partials/category/category-card/category-card.htm**
-{% verbatim %}
-```twig
-<a href="{{ obCategory.getPageUrl('category') }}">
-    <div itemscope itemtype="http://schema.org/Category">
-        {% if obCategory.preview_image is not empty %}
-            <img src="{{ obCategory.preview_image.path }}" itemprop="image" alt="{{ obCategory.preview_image.description }}" title="{{ obCategory.preview_image.title }}">
-        {% endif %}
-        <h3 itemprop="name">{{ obCategory.name }}</h3>
-        {% if obCategory.preview_text is not empty %}
-            <div itemprop="description">
-                {{ obCategory.preview_text }}
-            </div>
-        {% endif %}
-    </div>
-</a>
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/index.htm**
+end note
+:Attach CategoryList component to page;
+:Create partial "random-category-list";
+note left
+    For example:
+    **partials/category/random-category-list**
+    **/random-category-list.htm**
+end note
+:Get CategoryCollection object from
+CategoryList component;
+:Apply filter by "active" field
+to CategoryCollection object;
+:Get array with 5 random
+CategoryItem objects;
+:Render category list;
+@enduml
 ```
-{% endverbatim %}
+
+### 3.3 Source code
+
+{{ get_module('category').example('pages/index-1.htm')|raw }}
+
+{{ get_module('category').example('partials/category/random-category-list/random-category-list-1.htm')|raw }}
+
+{{ get_module('category').example('partials/category/category-card/category-card-1.htm')|raw }}
 {% endblock %}

@@ -1,0 +1,19 @@
+title = "Category page"
+url = "/catalog/:slug"
+layout = "main"
+is_hidden = 0
+
+[CategoryPage]
+slug = "{{ :slug }}"
+slug_required = 1
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 0
+==
+
+{# Get category item #}
+{% set obCategory = CategoryPage.get() %}
+
+<div data-id="{{ obCategory.id }}" itemscope itemtype="http://schema.org/Category">
+    <h1 itemprop="name">{{ obCategory.name }}</h1>
+</div>

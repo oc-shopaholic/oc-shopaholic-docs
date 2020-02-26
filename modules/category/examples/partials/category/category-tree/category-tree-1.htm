@@ -1,0 +1,20 @@
+[CategoryList]
+==
+{# Get category list#}
+{% set obCategoryList = CategoryList.make().tree() %}
+{% if obCategoryList.isNotEmpty() %}
+    <ul>
+        {% for obCategory in obCategoryList if obCategory.product_count > 0 %}
+            <li data-id="{{ obCategory.id }}">
+                <a href="{{ obCategory.getPageUrl('category-page') }}">{{ obCategory.name }}</a>
+                {% if obCategory.children.isNotEmpty() %}
+                    <ul>
+                        {% for obChildCategory in obCategory.children if obChildCategory.product_count > 0 %}
+                            <li><a href="{{ obChildCategory.getPageUrl('category-page') }}">{{ obChildCategory.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
