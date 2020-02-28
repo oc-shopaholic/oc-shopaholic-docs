@@ -3,6 +3,9 @@
 {% block content %}
 {{ parent() }}
 
+The "Currencies" module allows you to display catalog prices in different currencies.
+The offer price should be set only in the default currency.
+
 ## Backend
 
 You can create and edit currency by going to **Backend -> Settings -> Currency**

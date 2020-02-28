@@ -18,6 +18,8 @@ random categories, etc.
 
 Method returns new object of {{ collection.link() }} class.
 
+{{ get_module('category').example('partials/category/category-tree/category-tree-1.htm')|raw }}
+
 ## CategoryPage
 
 Component allows you to render category page.
@@ -37,6 +39,28 @@ Available properties:
 ### get()
 
 Method returns {{ item.link() }} object for current page.
+
+<!-- tabs:start -->
+
+#### ** One level **
+
+Simple example of category page (one level).
+
+{{ get_module('category').example('pages/category-page-1.htm')|raw }}
+
+#### ** Two levels **
+
+Simple example of category page (two levels).
+
+{{ get_module('category').example('pages/category-page-2.htm')|raw }}
+
+#### ** Wildcard **
+
+Catalog page with wildcard URL parameter.
+
+{{ get_module('category').example('pages/category-page-3.htm')|raw }}
+<!-- tabs:end -->
+
 
 ## CategoryData
 

@@ -41,40 +41,9 @@ to CurrencyCollection object;
 
 ### 1.3 Source code
 
-File: **pages/index.htm**
-{% verbatim %}
-```twig
-title = "Index"
-url = "/"
-layout = "main"
-is_hidden = 0
+{{ get_module('currency').example('pages/index-1.htm')|raw }}
 
-[CurrencyList]
-==
-<div class="currency-wrapper">
-    {% partial 'currency/currency-list/currency-list' %}
-</div>
-```
-{% endverbatim %}
-
-File: **partials/currency/currency-list/currency-list.htm**
-{% verbatim %}
-```twig
-{# Get currency collection #}
-{% set obCurrencyList = CurrencyList.make().active().sort() %}
-
-{% if obCurrencyList.isNotEmpty() %}
-    {# Render currency list #}
-    <select>
-        {% for obCurrency in obCurrencyList %}
-            <option value="{{ obCurrency.code }}" {% if obCurrency.isActive() %}selected="selected" {% endif %}>
-                {{ obCurrency.symbol }}
-            </option>
-        {% endfor %}
-    </select>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('currency').example('partials/currency/currency-list/currency-list-1.htm')|raw }}
 
 ## Example 2: Switching active currency
 
@@ -92,19 +61,15 @@ You need to send AJAX requests after user switches active currency on frontend.
 
 #### ** javascript **
 
-```javascript
-function swirchCurrency(sCurrencyCode) {
-    $.request('CurrencyList::onSwitch', {
-      data: {currency: sCurrencyCode}
-    }); 
-}
-```
+{{ get_module('currency').example('partials/currency/currency-list/currency-list-1.js')|raw }}
 
 #### ** php **
 
 You can find more information about CurrencyHelper class [here](modules/currency/advanced-usage/home.md) 
 
 ```php
+use Lovata\Shopaholic\Classes\Helper\CurrencyHelper;
+
 CurrencyHelper::instance()->switchActive('usd');
 ```
 

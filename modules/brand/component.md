@@ -18,6 +18,10 @@ random brands, filter panel with brands, etc.
 
 Method returns new object of {{ collection.link() }} class.
 
+{{ get_module('brand').example('partials/brand/random-brand-list/random-brand-list-1.htm')|raw }}
+
+{{ get_module('brand').example('partials/brand/brand-card/brand-card-1.htm')|raw }}
+
 ## BrandPage
 
 Component allows you to render brand page.
@@ -35,6 +39,8 @@ Available properties:
 ### get()
 
 Method returns {{ item.link() }} object for current page.
+
+{{ get_module('brand').example('pages/brand-page-1.htm')|raw }}
 
 ## BrandData
 

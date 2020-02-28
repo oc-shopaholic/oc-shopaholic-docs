@@ -19,8 +19,9 @@
 
 Class allows you to get/set active currencies, switches active currency, etc.
 ```php
-CurrencyHelper::instance()->switchActive('usd');
+use Lovata\Shopaholic\Classes\Helper\CurrencyHelper;
 
+CurrencyHelper::instance()->switchActive('usd');
 echo CurrencyHelper::instance()->getActiveCurrencyCode();
 ```
 
@@ -63,6 +64,8 @@ Method allow you reset active currency for user.
 
 Method allow you to switch active currency.
 ```php
+use Lovata\Shopaholic\Classes\Helper\CurrencyHelper;
+
 CurrencyHelper::instance()->switchActive('usd');
 ```
 {% endblock %}

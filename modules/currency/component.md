@@ -14,29 +14,16 @@ switching active currency, etc.
 
 ### make(_[$arElementIDList = null]_)
 
-**Example 1:** Get collection of currencies, apply sorting + filter by flag "active"
-{% verbatim %}
-```twig
-{% set obCurrencyList = CurrencyList.make().sort().active() %}
-{% if obCurrencyList.isNotEmpty() %}
-    <ul class="currency-list-wrapper">
-        {% for obCurrency in obCurrencyList %}
-            <li data-code="{{ obCurrency.code }}">{{ obCurrency.symbol }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
+Method returns new object of {{ collection.link() }} class.
+
+{{ get_module('currency').example('partials/currency/currency-list/currency-list-1.htm')|raw }}
 
 ### onSwitch()
 
 Method switches active currency.
-You can send AJAX request with currency code to switch active currency. 
-```javascript
-$.request('CurrencyList::onSwitch', {
-  data: {currency: 'EUR'}
-});
-```
+You can send AJAX request with currency code to switch active currency.
+
+{{ get_module('currency').example('partials/currency/currency-list/currency-list-1.js')|raw }}
 
 ### switch(_[$sCurrencyCode = null]_)
   * $sCurrencyCode - currency code

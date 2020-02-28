@@ -1,0 +1,13 @@
+{# Get currency collection #}
+{% set obCurrencyList = CurrencyList.make().active().sort() %}
+
+{% if obCurrencyList.isNotEmpty() %}
+    {# Render currency list #}
+    <select name="currency">
+        {% for obCurrency in obCurrencyList %}
+            <option value="{{ obCurrency.code }}" {% if obCurrency.isActive() %}selected="selected"{% endif %}>
+                {{ obCurrency.symbol }}
+            </option>
+        {% endfor %}
+    </select>
+{% endif %}
