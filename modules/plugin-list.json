@@ -1,7 +1,7 @@
 {
   "shopaholic": {
     "name": "Shopaholic",
-    "anchor": "main-plugin"
+    "anchor": "shopaholic-plugin"
   },
   "accessories": {
     "name": "Accessories for Shopaholic",

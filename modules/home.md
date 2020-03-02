@@ -14,7 +14,6 @@
 ||[Currency](modules/currency/home.md)|{{ 'shopaholic'|available_with }}|
 |**D**|[Discount](modules/discount/home.md)|{{ 'discounts'|available_with }}|
 |**L**|[Label](modules/label/home.md)|{{ 'labels'|available_with }}|
-|**M**|[Measure](modules/measure/home.md)|{{ 'shopaholic'|available_with }}|
 |**O**|[Offer](modules/offer/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Order](modules/order/home.md)|{{ 'orders'|available_with }}|
 ||[Order position](modules/order-position/home.md)|{{ 'orders'|available_with }}|
@@ -45,4 +44,5 @@
 ||[Tax](modules/tax/home.md)|{{ 'shopaholic'|available_with }}|
 |**V**|[Viewed products](modules/viewed-products/home.md)|{{ 'viewed-products'|available_with }}|
 |**W**|[Wish list](modules/wish-list/home.md)|{{ 'wish-list'|available_with }}|
-|**U**|[User address](modules/user-address/home.md)|{{ 'orders'|available_with }}|
+|**U**|[Unit measure](modules/measure/home.md)|{{ 'shopaholic'|available_with }}|
+||[User address](modules/user-address/home.md)|{{ 'orders'|available_with }}|

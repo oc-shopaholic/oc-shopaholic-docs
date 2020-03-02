@@ -1,0 +1,5 @@
+{% set iMaxPage = Pagination.getMaxPage(iCount) %}
+
+{% if iMaxPage > iPage %}
+    <a>Show more</a>
+{% endif %}

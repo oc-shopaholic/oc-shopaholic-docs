@@ -1,0 +1,5 @@
+{% set iNextPageCount = Pagination.getCountForNextPage(iPage, iCount) %}
+
+{% if iNextPageCount > 0 %}
+    <a>Show {{ iNextPageCount }} more</a>
+{% endif %}

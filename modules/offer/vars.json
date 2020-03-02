@@ -51,6 +51,20 @@
         "relation": ""
       },
       "external_id": "default",
+      "height": "default",
+      "length": "default",
+      "measure_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "measure"
+      },
+      "measure_of_unit_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": "measure"
+      },
       "name": "default",
       "old_price": {
         "type": "string",
@@ -84,6 +98,12 @@
         "relation": "product"
       },
       "quantity": "default",
+      "quantity_in_unit": {
+        "type": "double",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
       "tax_percent": {
         "type": "float",
         "description": "",
@@ -96,7 +116,9 @@
         "available": "subscriptions",
         "relation": "subscription-period"
       },
-      "updated_at": "default"
+      "updated_at": "default",
+      "weight": "default",
+      "width": "default"
     },
     "attach_one": ["preview_image", "preview_image_vkontakte", "preview_image_yandex"],
     "attach_many": ["images", "images_vkontakte", "images_yandex"],
@@ -130,6 +152,18 @@
         "model": "price",
         "description": "",
         "available": ""
+      },
+      "measure": {
+        "type": "BelongsTo",
+        "model": "measure",
+        "description": "",
+        "available": "shopaholic"
+      },
+      "measure_of_unit": {
+        "type": "BelongsTo",
+        "model": "measure",
+        "description": "",
+        "available": "shopaholic"
       },
       "price_link": {
         "type": "MorphMany",
@@ -182,16 +216,10 @@
         "relation": ""
       },
       "description": "default",
-      "subscription_period": {
-        "type": "{{ get_item('subscription-period').link() }}",
+      "dimensions_measure": {
+        "type": "{{ get_item('measure').link() }}",
         "description": "",
-        "available": "subscriptions",
-        "relation": ""
-      },
-      "subscription_period_id": {
-        "type": "int",
-        "description": "",
-        "available": "subscriptions",
+        "available": "",
         "relation": ""
       },
       "discount": {
@@ -231,6 +259,32 @@
         "available": "yandex-market",
         "relation": ""
       },
+      "height": "default",
+      "length": "default",
+      "measure": {
+        "type": "{{ get_item('measure').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "measure_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "measure_of_unit": {
+        "type": "{{ get_item('measure').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "measure_of_unit_id": {
+        "type": "int",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
       "name": "default",
       "preview_image": "default",
       "preview_image_vkontakte": {
@@ -246,6 +300,12 @@
         "relation": ""
       },
       "preview_text": "default",
+      "price_list": {
+        "type": "array",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
       "product": {
         "type": "{{ get_item('product').link() }}",
         "description": "",
@@ -264,7 +324,31 @@
         "available": "properties",
         "relation": ""
       },
+      "property_value_array": {
+        "type": "array",
+        "description": "",
+        "available": "properties",
+        "relation": ""
+      },
       "quantity": "default",
+      "quantity_in_unit": {
+        "type": "double",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "subscription_period": {
+        "type": "{{ get_item('subscription-period').link() }}",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
+      "subscription_period_id": {
+        "type": "int",
+        "description": "",
+        "available": "subscriptions",
+        "relation": ""
+      },
       "tax_list": {
         "type": "{{ get_collection('tax').link() }}",
         "description": "",
@@ -282,7 +366,15 @@
         "description": "",
         "available": "",
         "relation": ""
-      }
+      },
+      "weight": "default",
+      "weight_measure": {
+        "type": "{{ get_item('measure').link() }}",
+        "description": "",
+        "available": "",
+        "relation": ""
+      },
+      "width": "default"
     }
   },
   "collection": {

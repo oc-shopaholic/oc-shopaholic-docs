@@ -9,7 +9,7 @@
 
 ## model.afterImport
 
-Event allows you to process import data, after saving model object
+Event allows you to process import data, after saving model object.
 
 ```php
 $obEvent->listen(ImportBrandModelFromCSV::EVENT_AFTER_IMPORT, function ($obModel, $arImportData) {
@@ -23,7 +23,7 @@ $obEvent->listen(ImportBrandModelFromCSV::EVENT_AFTER_IMPORT, function ($obModel
 
 ## model.beforeImport
 
-Event allows you to change import data, before saving model object
+Event allows you to change import data, before saving model object.
 
 ```php
 $obEvent->listen(ImportBrandModelFromCSV::EVENT_BEFORE_IMPORT, function ($sModelClass, $arImportData) {
@@ -39,7 +39,7 @@ $obEvent->listen(ImportBrandModelFromCSV::EVENT_BEFORE_IMPORT, function ($sModel
 
 ## shopaholic.brand.extend_xml_import_data
 
-Event allows you to extend processing of XML node and change import data
+Event allows you to extend processing of XML node and change import data.
 
 ```php
 Event::listen(ImportBrandModelFromXML::EXTEND_IMPORT_DATA, function($arImportData, $obParseNode) {
@@ -69,7 +69,7 @@ Event::listen(ImportBrandModelFromXML::EXTEND_FIELD_LIST, function($arFieldList)
 
 ## shopaholic.brand.open
 
-Event is triggered when you open brand page. Event triggered with using {{ component.link('brand-page') }} component
+Event is triggered when you open brand page. Event triggered with using {{ component.link('brand-page') }} component.
 ```php
 Event::listen('shopaholic.brand.open', function($obBrand) {
     /** @var \Lovata\Shopaholic\Models\Brand $obBrand */

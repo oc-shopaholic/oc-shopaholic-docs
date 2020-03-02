@@ -26,8 +26,8 @@ note left
     For example: **pages/brand-page.htm**
 end note
 :Attach **BrandPage** component;
-:Get BrandItem object
-from BrandPage component;
+:Get **BrandItem** object
+from **BrandPage** component;
 :Render brand name,
 preview_image,
 description fields;
@@ -70,15 +70,15 @@ All available methods of **{{ collection.class }}** class you can find in {{ col
 note left
     For example: **pages/index.htm**
 end note
-:Attach BrandList component to page;
+:Attach **BrandList** component to page;
 :Create partial "random-brand-list";
 note left
     For example:
     **partials/brand/random-brand-list**
     **/random-brand-list.htm**
 end note
-:Get BrandCollection object from
-BrandList component;
+:Get **BrandCollection** object from
+**BrandList** component;
 :Apply filter by "active" field
 to BrandCollection object;
 :Get array with 5 random
@@ -116,21 +116,21 @@ All available methods of **{{ collection.class }}** class you can find in {{ col
 note left
     For example: **pages/brand-list.htm**
 end note
-:Attach BrandList component to page;
+:Attach **BrandList** component to page;
 :Create wrapper for block with list of brands;
 :Create partial "brand-list";
 note left
     For example:
     **partials/brand/brand-list/brand-list.htm**
 end note
-:Get BrandCollection object from
-BrandList component;
+:Get **BrandCollection** object from
+**BrandList** component;
 :Apply filter by "active" field
 to BrandCollection object;
 :Apply sorting to BrandCollection object;
 :Get current page number from request;
 :Get list of pagination buttons;
-:Get array of BrandItem objects
+:Get array of **BrandItem** objects
 for current page;
 if (Brand list is empty?) then (yes)
     :Render block "Brands not found";

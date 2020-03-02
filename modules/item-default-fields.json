@@ -53,6 +53,18 @@
     "available": "",
     "relation": ""
   },
+  "height": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "length": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
   "name": {
     "type": "string",
     "description": "",
@@ -103,6 +115,18 @@
   },
   "updated_at": {
     "type": "\\October\\Rain\\Argon\\Argon",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "weight": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "width": {
+    "type": "double",
     "description": "",
     "available": "",
     "relation": ""

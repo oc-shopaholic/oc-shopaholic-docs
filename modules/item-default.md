@@ -3,6 +3,9 @@
 {% block page_title %}{{ item.class }}{% endblock %}
 
 {% block content %}
+!> **Attention!** **{{ item.class }}** extends [ElementItem class](architecture/item-class/item-class.md).
+All available methods of ElementItem class you can find in [section](architecture/item-class/item-class.md#method-list)
+
 {% block fields %}
 {% set arFieldList = item.fields() %}
 {% if arFieldList is not empty %}

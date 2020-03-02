@@ -59,11 +59,6 @@
     "slug": "home",
     "anchor": "label"
   },
-  "measure": {
-    "title": "Measure",
-    "slug": "home",
-    "anchor": "measure"
-  },
   "offer": {
     "title": "Offer",
     "slug": "home",
@@ -213,6 +208,11 @@
     "title": "Wish list",
     "slug": "home",
     "anchor": "wish-list"
+  },
+  "measure": {
+    "title": "Unit measure",
+    "slug": "home",
+    "anchor": "unit-measure"
   },
   "user-address": {
     "title": "User address",

@@ -1,0 +1,12 @@
+{
+  "component": {
+    "title": "Components",
+    "slug": "component",
+    "anchor": "components"
+  },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-pagination"
+  }
+}

@@ -37,4 +37,28 @@ Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_TYPE_LIST, functio
     return $arResult;
 });
 ```
+
+## **shopaholic.promo_block.sorting.get.list**
+
+Event allows you to quickly add custom sorting for list of promo blocks {{ collection.link() }} class, sort() method)
+
+For example:
+```php
+Event::listen('shopaholic.promo_block.sorting.get.list', function($sSorting) {
+    if ($sSorting != 'my_custom_sorting') {
+        return null;
+    }
+    
+    //Get array with promo block ID list for your custom sorting
+    $arElementIDList = ...;
+    
+    return $arElementIDList;
+});
+```
+
+!> You need to add cache clearing for your custom sorting
+
+```php
+\Lovata\Shopaholic\Classes\Store\PromoBlockListStore->sorting->clear('my_custom_sorting');
+```
 {% endblock %}

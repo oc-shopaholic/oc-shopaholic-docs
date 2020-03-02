@@ -18,7 +18,7 @@ Method applies filter to field "active" = true  for elements of collection.
 
 ### filterByDiscount()
 
-Method applies filter and returns offer list with offers that have discount.
+Method applies filter and returns offer list with offers that have discount (old_price > 0).
 Method {{ 'filter'|available_with|lcfirst }}
 
 ### filterByPrice($fStartPrice, $fStopPrice, _[$iPriceTypeID = null]_)
@@ -53,44 +53,7 @@ You needs to prepare array $arFilterList in format:
     ];
 ```
 
-You needs to get $obPropertyList object from current category item object or from {{ get_component('filter-property').link('filter-panel') }} component:
-
-**Example 1:** Get $obPropertyList object from current category item object
-{% verbatim %}
-```twig
-    $obCategory = CategoryItem.make(10);
-    $obPropertyList = $obCategory.offer_filter_property;
-    
-    $obList = OfferCollection::make([1,2,10,15])->filterByProperty($arFilterList, $obPropertyList);
-```
-{% endverbatim %}
-
-**Example 2:** Get $obPropertyList object from {{ get_component('filter-property').link('filter-panel') }} component
-{% verbatim %}
-```twig
-title = "Product page"
-url = "/product/:slug"
-layout = "main"
-is_hidden = 0
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-
-[FilterPanel]
-==
-{# Get product object from ProductPage component #}
-{% set obProduct = ProductPage.get() %}
-
-{# Get offer list from product object #}
-{% set obOfferList = obProduct.offer %}
-
-{# Get offer proeprty list for property sets with code 'main', enabled how filters #}
-{% set obPropertyList = FilterPanel.getOfferPropertyList(['main'], null, obOfferList) %}
-```
-{% endverbatim %}
+You needs to get $obPropertyList object from current {{ get_item('category').link() }} object or from {{ get_component('filter-property').link('filter-panel') }} component.
 
 ### filterByQuantity()
 

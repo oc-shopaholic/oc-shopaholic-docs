@@ -48,6 +48,7 @@
       },
       "name": "default",
       "preview_text": "default",
+      "property": "default",
       "popularity": {
         "type": "int",
         "description": "Product popularity counter.",

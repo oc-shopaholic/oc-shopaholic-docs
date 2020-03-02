@@ -3,11 +3,8 @@
 {% block content %}
 
 * [BrandList](#brandlist)
-  * [make](#makearelementidlist-null)
 * [BrandPage](#brandpage)
-  * [get](#get)
 * [BrandData](#branddata)
-  * [get](#getielementid)
 
 ## BrandList
 
@@ -17,6 +14,8 @@ random brands, filter panel with brands, etc.
 ### make(_[$arElementIDList = null]_)
 
 Method returns new object of {{ collection.link() }} class.
+
+For example: create simple block with random 5 brand list on index page.
 
 {{ get_module('brand').example('partials/brand/random-brand-list/random-brand-list-1.htm')|raw }}
 
@@ -39,6 +38,8 @@ Available properties:
 ### get()
 
 Method returns {{ item.link() }} object for current page.
+
+For example: create simple brand page and render brand name, preview image, description.
 
 {{ get_module('brand').example('pages/brand-page-1.htm')|raw }}
 

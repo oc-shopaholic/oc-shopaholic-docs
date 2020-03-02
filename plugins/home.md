@@ -1,15 +1,15 @@
 # Plugins end extensions
 
-## Main plugin
+## Shopaholic plugin
 
 Main plugin allows you to create simple catalog.
 You can easily render product catalog page, product page, blocks with list of brands, content brand page,
 blocks with list of promo blocks, promotions or sales, marketing pages with list of discounted products.
 
-If your site only needs to display products, without making an order, then main plugin is perfect for solving this task.
+If your site only needs to display products, without making an order, then shopaholic plugin is perfect for solving this task.
 
 Main plugin allows you to create/edit [brands](modules/brand/home.md), [categories](modules/category/home.md),
-[products](modules/product/home.md), [offers](modules/offer/home.md), 
+[products](modules/product/home.md), [offers](modules/offer/home.md), [unit measure](modules/measure/home.md), 
 [promo blocks](modules/promo-block/home.md), [price types](modules/price-type/home.md),
 [currencies](modules/currency/home.md), [taxes](modules/tax/home.md).
 
@@ -28,6 +28,8 @@ Main plugin allows you to create/edit [brands](modules/brand/home.md), [categori
 ![](./../assets/images/backend-currency-1.png)
 
 ![](./../assets/images/backend-tax-1.png)
+
+![](./../assets/images/backend-measure-1.png)
 
 ## Accessories for Shopaholic
 

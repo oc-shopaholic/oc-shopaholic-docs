@@ -53,6 +53,18 @@
     "available": "",
     "relation": ""
   },
+  "height": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "length": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
   "name": {
     "type": "string",
     "description": "",
@@ -136,5 +148,17 @@
     "description": "",
     "available": "",
     "relation": "user"
+  },
+  "weight": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
+  },
+  "width": {
+    "type": "double",
+    "description": "",
+    "available": "",
+    "relation": ""
   }
 }

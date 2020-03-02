@@ -30,4 +30,25 @@ You can use [events](modules/brand/event/event#event-list-brand), that allows yo
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
 ![](./../../assets/images/backend-brand-3.png)
+
+#### Import from CSV
+
+You can hide import buttons in "Basic settings".
+
+Go to **Backend -> Settings -> Basic settings -> "Import" tab**
+![](./../../assets/images/import-from-csv-settings-3.png)
+
+#### Import from XML
+
+For big catalog, you can use queues to reduce server load during import.
+You can enable queues in **"Application settings"**.
+
+Go to **Backend -> Settings -> Application settings -> "Import" tab**
+![](./../../assets/images/import-from-xml-settings-8.png)
+
+You can hide import buttons in "Basic settings".
+
+Go to **Backend -> Settings -> Basic settings -> "Import" tab**
+![](./../../assets/images/import-from-xml-settings-9.png)
+
 {% endblock %}
