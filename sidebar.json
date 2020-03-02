@@ -23,6 +23,11 @@
     "slug": "import-from-xml/home",
     "anchor": "import-from-xml"
   },
+  "payment-gateway": {
+    "title": "Payment gateway",
+    "slug": "custom-integration",
+    "anchor": "integration-with-custom-payment-gateway"
+  },
   "plugins": {
     "title": "Plugins",
     "slug": "home"

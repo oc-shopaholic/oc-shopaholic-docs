@@ -1,8 +1,9 @@
 # Integration with custom payment gateway
 
 Required steps that you need to perform to successfully integrate with your custom payment gateway:
-* Extend PaymentMethod model form. Add payment gateway properties.
-* Add your payment gateway to list of available payment gateways in the PaymentMethod model form. Use **shopaholic.payment_method.get.gateway.list** event.
+
+1. Extend PaymentMethod model form. Add payment gateway properties.
+2. Add your payment gateway to list of available payment gateways in the PaymentMethod model form. You must use **shopaholic.payment_method.get.gateway.list** event.
 ```php
     Event::listen(\Lovata\OrdersShopaholic\Models\PaymentMethod::EVENT_GET_GATEWAY_LIST, function() {
         $arPaymentMethodList = [
@@ -13,10 +14,10 @@ Required steps that you need to perform to successfully integrate with your cust
         return $arPaymentMethodList;
     });
 ```
-* Add your PaymentGateway class. PaymentGateway class should
-extend of [AbstractPaymentGateway](https://github.com/lovata/oc-shopaholic-plugin/wiki/AbstractPaymentGateway) abstract class
-or implement of [PaymentGatewayInterface](https://github.com/lovata/oc-shopaholic-plugin/wiki/PaymentGatewayInterface) interface.
-* Extend PaymentMethod model. Add payment gateway class.
+3. Add your PaymentGateway class. PaymentGateway class should
+extend of [AbstractPaymentGateway](#abstractpaymentgateway-class) abstract class
+or implement of [PaymentGatewayInterface](#paymentgatewayinterface-interface) interface.
+4. Extend PaymentMethod model and add payment gateway class.
 ```php
     PaymentMethod:extend(function ($obElement) {
         /** @var PaymentMethod $obElement */
@@ -25,7 +26,7 @@ or implement of [PaymentGatewayInterface](https://github.com/lovata/oc-shopaholi
     }
 ```
 
-# PaymentGatewayInterface interface
+## PaymentGatewayInterface interface
 
 Your payment gateway class must implement PaymentGatewayInterface interface.
 
@@ -104,10 +105,10 @@ class PaymentGateway implements PaymentGatewayInterface
         $this->obPaymentMethod = $obOrder->payment_method;
         
         $this->arRequestData = [
-            'currency'   => $this->obPaymentMethod->gateway_currency,            
-            'secred_key' => $this->getGatewayProperty('secred_key'),            
-            'total_cost' => $this->obOrder->total_price_value,            
-            'user_name'  => $this->getOrderProperty('name'),            
+            'currency'   => $this->obPaymentMethod->gateway_currency,
+            'secred_key' => $this->getGatewayProperty('secred_key'),
+            'total_cost' => $this->obOrder->total_price_value,
+            'user_name'  => $this->getOrderProperty('name'),
         ];
         
          //Send request to payment gateway
@@ -128,7 +129,9 @@ class PaymentGateway implements PaymentGatewayInterface
 
 ```
 
-# abstract class AbstractPaymentGateway implements [PaymentGatewayInterface](https://github.com/lovata/oc-shopaholic-plugin/wiki/PaymentGatewayInterface)
+## AbstractPaymentGateway class
+
+AbstractPaymentGateway class  implements [PaymentGatewayInterface](paymentgatewayinterface-interface)
 
 AbstractPaymentGateway class makes it easy to add integration with your custom payment gateways.
 
