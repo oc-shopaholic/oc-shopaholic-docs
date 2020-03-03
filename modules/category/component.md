@@ -3,11 +3,8 @@
 {% block content %}
 
 * [CategoryList](#categorylist)
-  * [make](#makearelementidlist-null)
 * [CategoryPage](#categorypage)
-  * [get](#get)
 * [CategoryData](#categorydata)
-  * [get](#getielementid)
 
 ## CategoryList
 

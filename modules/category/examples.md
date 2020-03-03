@@ -24,8 +24,8 @@ note left
     For example: **pages/category-page.htm**
 end note
 :Attach **CategoryPage** component;
-:Get CategoryItem object
-from CategoryPage component;
+:Get **CategoryItem** object
+from **CategoryPage** component;
 :Render category name;
 @enduml
 ```
@@ -76,8 +76,8 @@ note left
     **/category-tree/category-tree.htm**
 end note
 :Attach **CategoryList** component to layout;
-:Get CategoryCollection object
-from CategoryList component;
+:Get **CategoryCollection** object
+from **CategoryList** component;
 :Render block with category menu;
 @enduml
 ```
@@ -106,19 +106,19 @@ All available methods of **{{ collection.class }}** class you can find in {{ col
 note left
     For example: **pages/index.htm**
 end note
-:Attach CategoryList component to page;
+:Attach **CategoryList** component to page;
 :Create partial "random-category-list";
 note left
     For example:
     **partials/category/random-category-list**
     **/random-category-list.htm**
 end note
-:Get CategoryCollection object from
-CategoryList component;
+:Get **CategoryCollection** object from
+**CategoryList** component;
 :Apply filter by "active" field
 to CategoryCollection object;
 :Get array with 5 random
-CategoryItem objects;
+**CategoryItem** objects;
 :Render category list;
 @enduml
 ```
