@@ -15,7 +15,12 @@ You can use [Sphinx](http://sphinxsearch.com/) to add full-text search on your s
 sudo apt-get install sphinxsearch
 ```
 
-2. Configure sphinx.conf. You need to create indexes for products, categories, brand, tags. For example:
+2. Install composer package in your project.
+```bash
+composer require sngrl/sphinxsearch
+```
+
+3. Configure sphinx.conf. You need to create indexes for products, categories, brand, tags. For example:
   * 'oc_product' - index for default language
   * 'oc_product_ru' - index for language with code ru
 
@@ -34,10 +39,11 @@ source oc_product_ru
 }
 ```
 
-3. Copy sphinxsearch.php config from plugin folder to project folder.
+4. Copy sphinxsearch.php config from plugin folder to project folder.
 ```bash
 cp plugins/lovata/sphinxshopaholic/config/sphinxsearch.php config/sphinxsearch.php
 ```
 
-4. Configure config/sphinxsearch.php for your project
+5. Configure config/sphinxsearch.php for your project
+
 {% endblock %}
