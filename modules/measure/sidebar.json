@@ -9,6 +9,11 @@
     "slug": "item",
     "anchor": "measureitem"
   },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-measure"
+  },
   "extending": {
     "title": "Extending",
     "slug": "extending",

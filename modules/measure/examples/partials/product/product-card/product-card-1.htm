@@ -1,0 +1,14 @@
+[ProductList]
+==
+{# @var obProduct \Lovata\Shopaholic\Classes\Item\ProductItem #}
+{# @var obOffer \Lovata\Shopaholic\Classes\Item\OfferItem #}
+{% set obProduct = ProductList.make().active().first() %}
+{% set obOffer = obProduct.offer.first() %}
+<div>
+    <h3>{{ obProduct.name }}</h3>
+    <span>
+        {{ obOffer.quantity_in_unit }}{{ obOffer.measure_of_unit.name }}
+        in {{ obOffer.measure.name }}
+    </span>
+    <div>Height: {{ obOffer.height }} {{ obOffer.dimensions_measure.name }}</div>
+</div>

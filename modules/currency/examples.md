@@ -22,15 +22,15 @@ All available methods of **{{ collection.class }}** class you can find in {{ col
 note left
     For example: **pages/index.htm**
 end note
-:Attach CurrencyList to page;
+:Attach **CurrencyList** component to page;
 :Create partial "currency-list";
 note left
     For example:
     **partials/currency/currency-list**
     **/currency-list.htm**
 end note
-:Get CurrencyCollection object
-from CurrencyList component;
+:Get **CurrencyCollection** object
+from **CurrencyList** component;
 :Apply filter by "active" field
 to CurrencyCollection object;
 :Apply filter by "sort" field

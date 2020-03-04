@@ -1,5 +1,6 @@
 [CategoryList]
 ==
+{# @var obCategory \Lovata\Shopaholic\Classes\Item\CategoryItem #}
 {# Get category list#}
 {% set obCategoryList = CategoryList.make().tree() %}
 {% if obCategoryList.isNotEmpty() %}
