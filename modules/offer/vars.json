@@ -151,7 +151,7 @@
         "type": "MorphOne",
         "model": "price",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "measure": {
         "type": "BelongsTo",
@@ -169,13 +169,13 @@
         "type": "MorphMany",
         "model": "price",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "product": {
         "type": "BelongsTo",
         "model": "product",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "property_value": {
         "type": "MorphMany",

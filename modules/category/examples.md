@@ -13,9 +13,9 @@ Create simple category page and render category name.
 
 ### 1.2 How can i do it?
 
-> Example uses [CategoryPage](modules/category/component/component.md#categorypage) component.
-Component method returns [CategoryItem](modules/category/item/item.md#categoryitem) class object.
-All available fields and methods of **CategoryItem** class you can find in [section](modules/category/item/item.md#categoryitem)
+> Example uses {{ component.link('category-page') }} component.
+Component method returns {{ item.link() }} class object.
+All available fields and methods of **CategoryItem** class you can find in {{ item.link('section') }}.
 
 ```plantuml
 @startuml

@@ -102,7 +102,7 @@ Event::listen(ImportOfferPriceFromXML::EXTEND_FIELD_LIST, function($arFieldList)
 
 ## **shopaholic.sorting.offer.get.list**
 
-Event allows you to quickly add custom sorting for list of offers ([OfferCollection](modules/offer/collection/collection.md) class, sort() method)
+Event allows you to quickly add custom sorting for list of offers ({{ collection.link() }} class, sort() method)
 
 For example:
 ```php

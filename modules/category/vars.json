@@ -71,7 +71,7 @@
         "type": "HasMany",
         "model": "category",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "coupon_group": {
         "type": "BelongsToMany",
@@ -89,19 +89,19 @@
         "type": "BelongsTo",
         "model": "category",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "product": {
         "type": "HasMany",
         "model": "product",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "product_link": {
         "type": "BelongsToMany",
         "model": "product",
-        "description": "Uses for \"additional_category\" relation in {{ get_model('product').link() }} model",
-        "available": ""
+        "description": "Uses for \"additional_category\" relation with Product model.",
+        "available": "shopaholic"
       },
       "property_set": {
         "type": "BelongsToMany",
