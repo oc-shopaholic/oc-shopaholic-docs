@@ -84,7 +84,7 @@ File: **product/cart-position/cart-position.htm**
         {% if obCartPosition.discount_price_value > 0 %}
             <span price="{{ obCartPosition.old_price_value }}">{{ obCartPosition.old_price }}</span>
         {% endif %}
-        <input type="number" name="quantity" value="{{ obCartPosition.value }}" max="{{ obOffer.quantity }}" min="1">
+        <input type="number" name="quantity" value="{{ obCartPosition.quantity }}" max="{{ obOffer.quantity }}" min="1">
     </div>
 </a>
 ```
@@ -167,7 +167,7 @@ File: **product/cart-position/cart-position.htm**
         {% if obCartPosition.discount_price_value > 0 %}
             <span price="{{ obCartPosition.old_price_value }}">{{ obCartPosition.old_price }}</span>
         {% endif %}
-        <input type="number" name="quantity" value="{{ obCartPosition.value }}" max="{{ obOffer.quantity }}" min="1">
+        <input type="number" name="quantity" value="{{ obCartPosition.quantity }}" max="{{ obOffer.quantity }}" min="1">
     </div>
 </a>
 ```

@@ -1,0 +1,22 @@
+[ProductList]
+==
+{# @var obProduct \Lovata\Shopaholic\Classes\Item\ProductItem #}
+{# @var obProperty \Lovata\PropertiesShopaholic\Classes\Item\PropertyItem #}
+{% set obProduct = ProductList.make().active().first() %}
+{% set obPropertyList = obProduct.property %}
+<div>
+    <h3>{{ obProduct.name }}</h3>
+    {% if obPropertyList.isNotEmpty() %}
+        <ul>
+            {% for obProperty in obPropertyList if obProperty.hasValue() %}
+                <li>
+                    <span>{{ obProperty.name }}:</span>
+                    <span>
+                        {{ obProperty.property_value.getValueString() }}
+                        {{ obProperty.measure.name }}
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>

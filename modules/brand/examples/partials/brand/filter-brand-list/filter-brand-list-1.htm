@@ -10,7 +10,12 @@
     <ul>
         {% for obBrand in obBrandList %}
             <li>
-                <input type="checkbox" name="filter-brand" value="{{ obBrand.slug }}" id="brand-{{ obBrand.id }}">
+                <input
+                    type="checkbox"
+                    name="filter-brand"
+                    value="{{ obBrand.slug }}"
+                    id="brand-{{ obBrand.id }}"
+                >
                 <label for="brand-{{ obBrand.id }}">{{ obBrand.name }}</label>
             </li>
         {% endfor %}

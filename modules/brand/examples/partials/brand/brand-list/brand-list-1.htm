@@ -19,7 +19,15 @@
     {# Render pagination buttons #}
     {% if arPaginationList is not empty %}
         {% for arPagination in arPaginationList %}
-            <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-page="{{ arPagination.value }}">{{ arPagination.name }}</a>
+            <a
+                {% if arPagination.value != iPage %}
+                    href="?page={{ arPagination.value }}"
+                {% endif %}
+                class="{{ arPagination.class }}"
+                data-page="{{ arPagination.value }}"
+            >
+                {{ arPagination.name }}
+            </a>
         {% endfor %}
     {% endif %}
 {% else %}

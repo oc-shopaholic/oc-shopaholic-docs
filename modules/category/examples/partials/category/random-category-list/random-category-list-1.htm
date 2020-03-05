@@ -7,7 +7,9 @@
     {# Render category list #}
     <ul>
         {% for obCategory in arCategoryList %}
-            <li>{% partial 'category/category-card/category-card' obCategory=obCategory %}</li>
+            <li>
+                {% partial 'category/category-card/category-card' obCategory=obCategory %}
+            </li>
         {% endfor %}
     </ul>
 {% endif %}
