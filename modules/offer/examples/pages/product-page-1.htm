@@ -1,0 +1,42 @@
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 1
+smart_url_check = 1
+skip_error = 0
+==
+{# Get product item #}
+{% set obProduct = ProductPage.get() %}
+
+<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
+    <h1 itemprop="name">{{ obProduct.name }}</h1>
+</div>
+{# Get first offer object #}
+{% set obOffer = obProduct.offer.first() %}
+{# Render price block #}
+<div>
+    <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">{{ obOffer.currency }}</span>
+    <span itemprop="price">{{ obOffer.price }}</span>
+</div>
+{# Render old price block #}
+{% if obOffer.discount_price_value > 0 %}
+    <div>
+        <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">{{ obOffer.currency }}</span>
+        <span itemprop="price">{{ obOffer.old_price }}</span>
+    </div>
+{% endif %}
+{# Get offer list #}
+{% set obOfferList = obProduct.offer %}
+{# Render select with offers #}
+{% if obOfferList.isNotEmpty() %}
+    <label for="offer_id">Choose offer:</label>
+    <select name="offer_id" id="offer_id">
+        {% for obOffer in obOfferList %}
+            <option value="{{ obOffer.id }}">{{ obOffer.name }}</option>
+        {% endfor %}
+    </select>
+{% endif %}

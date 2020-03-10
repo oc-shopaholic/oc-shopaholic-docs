@@ -34,7 +34,7 @@ Main plugin allows you to create/edit [brands](modules/brand/home.md), [categori
 ## Accessories for Shopaholic
 
 Accessories plugin allows to bind products and assign them as an accessory to another product (for instance a mobile phone and headphones).
-See more information about accessory module in [section](modules/accessory/home). 
+See more information about accessory module in [section](modules/accessory/home).
 
 ![](./../assets/images/backend-accessory-1.png)
 
@@ -44,19 +44,33 @@ Plugin adds:
 
 ## Campaigns for Shopaholic
 
-## CDEK for Shopaholic
+“Campaigns” plugin allows you to automatically apply promo mechanisms to cart and orders according to your schedule.
+
+For example:
+![](./../assets/images/example-campaign-1.png)
+![](./../assets/images/example-campaign-2.png)
 
 ## Compare for Shopaholic
 
+The "Compare" plugin allows you to add products to the comparison list.
+Users can view the comparison list, add products to compare list and remove products from the list.
+The module now does not contain any complex logic for comparing product properties.
+
 ## Coupons for Shopaholic
+
+Description will be added soon...
 
 ## Discounts for Shopaholic
 
-## Facebook for Shopaholic
+"Discounts" plugin allows you to automatically update "price" and "old_price" fields of offers.
 
 ## Filter for Shopaholic
 
+"Filter" plugin allows you to render a filtering panel and filter your products by price, brands and properties of products and offers.
+
 ## Labels for Shopaholic
+
+“Labels” plugin allows you to mark products with such attributes as: “top”, “best seller”, “new”, etc.
 
 ## Orders for Shopaholic
 
@@ -70,7 +84,24 @@ change quantity and remove positions from cart.
 
 ## Popularity for Shopaholic
 
+"Popularity" plugin adds popularity to products.
+Products with a higher popularity value will be higher than products with a lower popularity value.
+You can change the value of the product’s popularity manually.
+
+Product popularity can be increased automatically when costumer open product page, add the product to cart, and make an order.
+You can specify count by which the product’s popularity will be increased.
+
 ## Properties for Shopaholic
+
+The "Property" plugin allows you to render product and offer properties in different parts of the product page or product card.
+
+![](./../assets/images/fronend-property-group-2.png)
+
+![](./../assets/images/fronend-property-group-1.png)
+
+You can display the offer selection block on the product page using the properties of the offers.
+
+![](./../assets/images/fronend-property-1.png)
 
 ## Related products for Shopaholic
 
@@ -84,6 +115,11 @@ Plugin adds:
 * "related" attribute to [ProductItem](modules/product/item/item) item class
 
 ## Reviews for Shopaholic
+
+"Reviews" plugin allows you to place a feedback form on the product page.
+You can display a list of collected reviews on the product page.
+Review may contain a rating value.
+The rating value is used to calculate the rating of the product and to sort the products by rating.
 
 ## Search for Shopaholic
 
@@ -146,10 +182,23 @@ Plugin adds:
 
 ## Tags for Shopaholic
 
+"Tags" plugin allows you to create seo pages with a list of products within a single category.
+Tag can only be linked to one category.
+
 ## Viewed products for Shopaholic
+
+The "Viewed products" plugin allows you to add automatically products to the viewed products list.
+Users can view the product list and remove products from the viewed products list.
 
 ## VK Goods for Shopaholic
 
+Description will be added soon...
+
 ## Wish list for Shopaholic
 
+The "Wish list" plugin allows you to add products to the wish list.
+Users can view the wish list, add products to wish list, remove products from wish list.
+
 ## Yandex Market for Shopaholic
+
+Description will be added soon...
