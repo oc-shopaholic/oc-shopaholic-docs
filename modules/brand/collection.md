@@ -26,7 +26,7 @@ $obBrandList = BrandCollection::make()->category(2);
   * $sSearchString - search string
 
 Method search elements by name, preview_text, description, search_synonym, search_content fields.
-Method available with {{ get_plugin('search').link() }} or {{ get_plugin('sphinx').link() }} plugins.
+Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 
 > You can find more information about search settings {{ get_module('search').link('here') }}
 

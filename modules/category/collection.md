@@ -15,7 +15,7 @@ Method applies filter to field "active" == true for elements of collection.
   * $sSearchString - search string
 
 Method search elements by name, preview_text, description, search_synonym, search_content fields.
-Method available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins.
+Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 ```php
     $obList = CategoryCollection::make()->search('test search');
 ```

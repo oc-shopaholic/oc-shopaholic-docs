@@ -151,3 +151,4 @@ Catalog page with wildcard URL parameter.
 {{ get_module('offer').example('pages/product-page-10.htm')|raw }}
 
 <!-- tabs:end -->
+{% endblock %}

@@ -24,7 +24,6 @@ You can set one of currencies as default currency.
 Example:
 {% verbatim %}
 ```twig
-Example:
 <span itemprop="priceCurrency" content="{{ obOffer.currency_code }}">
     {{ obOffer.currency }}
 </span>

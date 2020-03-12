@@ -6,7 +6,7 @@
 |**B**|[Brand](modules/brand/home.md)|{{ 'shopaholic'|available_with }}|
 |**C**|[Campaign](modules/campaign/home.md)|{{ 'campaigns'|available_with }}|
 ||[Cart](modules/cart/home.md)|{{ 'orders'|available_with }}|
-||[CartPosition](modules/cart-position/home.md)|{{ 'orders'|available_with }}|
+||[Cart position](modules/cart-position/home.md)|{{ 'orders'|available_with }}|
 ||[Category](modules/category/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Compare](modules/compare/home.md)|{{ 'compare'|available_with }}|
 ||[Coupon](modules/coupon/home.md)|{{ 'coupons'|available_with }}|

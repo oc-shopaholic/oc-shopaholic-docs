@@ -39,7 +39,7 @@ If **$fStopPrice and $fStartPrice has empty values**, then method isn't  apply f
   * $obPropertyList - object {{ get_collection('filter-property').link() }}
 
 Method applies filter by offer properties.
-Method available with {{ get_plugin('filter').link() }} and {{ get_plugin('properties').link() }} plugins.
+Method {{ ['filter', 'properties']|available_with|lcfirst }}
 
 You needs to prepare array $arFilterList in format:
 ```php

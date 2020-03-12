@@ -86,7 +86,7 @@ Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_PRODUCT_LIST, func
 
 ## **shopaholic.sorting.get.list**
 
-Event allows you to quickly add custom sorting for list of products ([ProductCollection](modules/product/collection/collection.md) class, sort() method)
+Event allows you to quickly add custom sorting for list of products ({{ get_collection('product').link() }} class, sort() method)
 
 For example:
 ```php

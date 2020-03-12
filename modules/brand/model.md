@@ -5,7 +5,7 @@
 
 ## Search fields
 
-Search fields available with {{ get_plugin('search').link() }} or {{ get_plugin('sphinx').link() }} plugins.
+Search fields {{ ['search', 'sphinx']|available_with|lcfirst }}
 
 **search_synonym** field is available in backend. **search_content** filed isn't available in backend. **search_content** field should be filled in automatically. 
 

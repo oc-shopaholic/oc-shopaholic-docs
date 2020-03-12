@@ -16,9 +16,9 @@ Create simple product page and render product name.
 
 ### 1.2 How can i do it?
 
-> Example uses [ProductPage](modules/product/component/component.md#productpage) component.
-Component method returns [ProductItem](modules/product/item/item.md#productitem) class object.
-All available fields and methods of **ProductItem** class you can find in [section](modules/product/item/item.md#productitem)
+> Example uses {{ get_component('product').link('product-page') }} component.
+Component method returns {{ get_item('product').link() }} class object.
+All available fields and methods of **ProductItem** class you can find in {{ get_item('product').link('section') }}.
 
 ```plantuml
 @startuml
@@ -236,7 +236,7 @@ function onInit() {
 Create simple product card and render product name, preview_image, preview_text fields.
 Render link on product page.
 
-> **"obProduct"** is object of [ProductItem](modules/product/item/item.md#productitem) class.
+> **"obProduct"** is object of {[ get_item('product').link() }} class.
 
 ### 2.2 Source code
 
@@ -270,9 +270,9 @@ Product list must have pagination block.
 
 ### 3.2 How can i do it?
 
-> Example uses [ProductList](modules/product/component/component.md#productlist) component.
-Component method returns [ProductCollection](modules/product/collection/collection.md#productcollection) class object.
-All available methods of **ProductCollection** class you can find in [section](modules/product/collection/collection.md#productcollection)
+> Example uses {{ get_component('product').link('product-list') }} component.
+Component method returns {{ get_collection('product').link() }} class object.
+All available methods of **ProductCollection** class you can find in {{ get_collection('product').link('section') }}.
 
 ```plantuml
 @startuml
@@ -649,7 +649,7 @@ Block can be complicated (contain searching, filtering, sorting, pagination).
 
 ### 4.2 How can i do it?
 
-!> Accessories available with [Accessories for Shopaholic](plugins/home.md#accessories-for-shopaholic) plugin
+!> Accessories {{ 'accessories'|available_with|lcfirst }}
 
 ```plantuml
 @startuml
@@ -722,7 +722,7 @@ Block can be complicated (contain searching, filtering, sorting, pagination).
 
 ### 5.2 How can i do it?
 
-!> Related products available with [Related products for Shopaholic](plugins/home.md#related-products-for-shopaholic) plugin
+!> Related products {{ 'related-products'|available_with|lcfirst }}
 
 ```plantuml
 @startuml
@@ -791,14 +791,11 @@ Create simple block with serch results and render 5 first products.
 
 ### 6.2 How can i do it?
 
-!> Search method available with
-[Search for Shopaholic](plugins/home.md#search-for-shopaholic) and
-[Sphinx for Shopaholic](plugins/home.md#sphinx-for-shopaholic)
-plugins
+!> Search method {{ ['search', 'sphinx']|available_with|lcfirst }}
 
-> Example uses [ProductList](modules/product/component/component.md#productlist) component.
-Component method returns [ProductCollection](modules/product/collection/collection.md#productcollection) class object.
-All available methods of **ProductCollection** class you can find in [section](modules/product/collection/collection.md#productcollection).
+> Example uses {{ get_component('product').link('product-list') }} component.
+Component method returns {{ get_collection('product').link() }} class object.
+All available methods of **ProductCollection** class you can find in {{ get_collection('product').link('section') }}.
 Block can be complicated (contain filtering, pagination)
 
 ```plantuml
@@ -869,14 +866,11 @@ Product list must have pagination block.
 
 ### 7.2 How can i do it?
 
-!> Search method available with
-[Search for Shopaholic](plugins/home.md#search-for-shopaholic) and
-[Sphinx for Shopaholic](plugins/home.md#sphinx-for-shopaholic)
-plugins
+!> Search method {{ ['search', 'sphinx']|available_with|lcfirst }}
 
-> Example uses [ProductList](modules/product/component/component.md#productlist) component.
-Component method returns [ProductCollection](modules/product/collection/collection.md#productcollection) class object.
-All available methods of **ProductCollection** class you can find in [section](modules/product/collection/collection.md#productcollection).
+> Example uses {{ get_component('product').link('product-list') }} component.
+Component method returns {{ get_collection('product').link() }} class object.
+All available methods of **ProductCollection** class you can find in {{ get_collection('product').link('section') }}.
 Block can be complicated (contain filtering, pagination)
 
 ```plantuml

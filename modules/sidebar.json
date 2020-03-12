@@ -20,7 +20,7 @@
     "anchor": "cart"
   },
   "cart-position": {
-    "title": "CartPosition",
+    "title": "Cart position",
     "slug": "home",
     "anchor": "cartposition"
   },

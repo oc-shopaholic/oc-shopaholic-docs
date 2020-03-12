@@ -114,6 +114,15 @@ You can create and edit products by going to **Backend -> Catalog -> Products**
 
 ![](./../../assets/images/backend-product-1.png)
 
+## Active products
+
+Often projects require you to hide products that do not have active offers.
+You can enable additional check when you get list of active products.
+If this setting is enabled, list of active products will contain only those products that have active offers.
+Go to **Backend -> Settings -> Basic Settings**
+
+![](./../../assets/images/backend-settings-4.png)
+
 ## Import
 
 You can import products from XML and CSV files.
@@ -123,12 +132,23 @@ You can use [events](modules/product/event/event#event-list-product), that allow
 
 ![](./../../assets/images/backend-product-2.png)
 
-## Active products
+#### Import from CSV
 
-Often projects require you to hide products that do not have active offers.
-You can enable additional check when you get list of active products.
-If this setting is enabled, list of active products will contain only those products that have active offers.
+You can hide import buttons in "Basic settings".
+Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-Go to **Backend -> Settings -> Basic Settings**
-![](./../../assets/images/backend-settings-4.png)
+![](./../../assets/images/import-from-csv-settings-3.png)
+
+#### Import from XML
+
+For big catalog, you can use queues to reduce server load during import.
+You can enable queues in **"Application settings"**.
+Go to **Backend -> Settings -> Application settings -> "Import" tab**
+
+![](./../../assets/images/import-from-xml-settings-8.png)
+
+You can hide import buttons in "Basic settings".
+Go to **Backend -> Settings -> Basic settings -> "Import" tab**
+
+![](./../../assets/images/import-from-xml-settings-9.png)
 {% endblock %}

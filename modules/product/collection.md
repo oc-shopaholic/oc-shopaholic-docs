@@ -48,7 +48,7 @@ $obList = ProductCollection::make()->brand(2);
 ### campaign($iCampaignID)
   * $iCampaignID - campaign ID
 
-Method applies filter by campaign ID. Method available with [Campaign for Shopaholic](plugins/home.md#campaign-for-shopaholic) plugin.
+Method applies filter by campaign ID. Method {{ ['campaigns']|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->campaign(2);
 ```
@@ -70,12 +70,12 @@ $obList = ProductCollection::make()->category([2, 5, 6], true);
 
 ### compare()
 
-Method returns list of products added to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method returns list of products added to compare. Method {{ ['compare']|available_with|lcfirst }}
 
 ### couponGroup($iCouponGroupID)
   * $iCouponGroupID - coupon group ID
 
-Method applies filter by coupon group ID. Method available with [Coupons for Shopaholic](plugins/home.md#coupons-for-shopaholic) plugin.
+Method applies filter by coupon group ID. Method {{ ['coupons']|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->couponGroup(2);
 ```
@@ -83,7 +83,7 @@ $obList = ProductCollection::make()->couponGroup(2);
 ### discount($iDiscountID)
   * $iDiscountID - discount ID
 
-Method applies filter by discount ID. Method available with [Discounts for Shopaholic](plugins/home.md#discounts-for-shopaholic) plugin.
+Method applies filter by discount ID. Method {{ ['discounts']|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->discount(2);
 ```
@@ -117,11 +117,11 @@ If $fStopPrice and $fStartPrice has empty value, then method isn't  apply filter
 
 ### filterByProperty($arFilterList, $obPropertyList, _[$obOfferList = null]_)
   * $arFilterList - array with filter values
-  * $obPropertyList - object [FilterPropertyCollection](modules/property/collection/collection.md#filterpropertycollection)
-  * $obOfferList - object [OfferCollection](offer/collection/collection.md) - filtered offer collection. Only these offers will be involved in filtering of products.
+  * $obPropertyList - object {{ get_collection('filter-property').link() }}
+  * $obOfferList - object {{ get_collection('offer').link() }} - filtered offer collection. Only these offers will be involved in filtering of products.
 
 Method applies filter by product or offer properties.
-Method available with [Filter for Shopaholic](plugins/home.md#filter-for-shopaholic) and [Properties for Shopaholic](plugins/home.md#properties-for-shopaholic) plugins.
+Method {{ ['filter', 'properties']|available_with|lcfirst }}
 
 You needs to prepare array $arFilterList in format:
 ```php
@@ -135,7 +135,7 @@ $arFilterList = [
 ];
 ```
 
-You needs to get $obPropertyList object from current category item or with using [FilterPanel](modules/property/component/component.md#filterpanel):
+You needs to get $obPropertyList object from current category item or with using {{ get_component('filter-property').link('filter-panel') }}:
 ```php
 //Apply filter by product properties
 $obCategory = CategoryItem->make(10);
@@ -151,8 +151,9 @@ $obPropertyList = $obCategory->offer_filter_property;
 
 $obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, $obPropertyList);
 ```
+{% verbatim %}
 ```twig
-//Apply filter by product properties
+{# Apply filter by product properties #}
 {# Get product list collection #}
 {% set obProductList = ProductList.make().active() %}
 
@@ -163,7 +164,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, 
 
 {# .... #}
     
-//Apply filter by offer properties
+{# Apply filter by offer properties #}
 {# Get product list collection #}
 {% set obProductList = ProductList.make().active() %}
 
@@ -172,6 +173,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, 
 
 {% set obProductList = obProductList.filterByProperty(arFilterList, obPropertyList) %}
 ```
+{% endverbatim %}
 
 ### filterByQuantity()
 
@@ -182,7 +184,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByQuantity();
 
 ### getOfferMaxPrice(_[$sPriceTypeCode = null]_)
 
-Method returns object of [OfferItem](offer/item/item.md) class with max price value for product collection.
+Method returns object of {{ get_item('offer').link() }} class with max price value for product collection.
 Method returns only active offer.
 
 ```php
@@ -192,7 +194,7 @@ $obOfferMaxPrice = $obList->getOfferMaxPrice();
 
 ### getOfferMinPrice(_[$sPriceTypeCode = null]_)
 
-Method returns object of [OfferItem](offer/item/item.md) class with min price value for product collection.
+Method returns object of {{ get_item('offer').link() }} class with min price value for product collection.
 Method returns only active offer.
 
 ```php
@@ -203,7 +205,7 @@ $obOfferMinPrice = $obList->getOfferMinPrice();
 ### label($iLabelID)
   * $iLabelID - label ID
 
-Method applies filter by label ID. Method available with [Labels for Shopaholic](plugins/home.md#labels-for-shopaholic) plugin.
+Method applies filter by label ID. Method {{ ['labels']|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->label(2);
 ```
@@ -228,7 +230,7 @@ $obList = ProductCollection::make()->promoBlock(2);
   * $sSearchString - search string
 
 Method search elements by name, code, preview_text, description, search_synonym, search_content fields.
-Method available with [Search for Shopaholic](plugins/home.md#search-for-shopaholic) or [Sphinx for Shopaholic](plugins/home.md#search-for-shopaholic) plugins.
+Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->search('test search');
 ```
@@ -241,9 +243,9 @@ Available sorting value:
   * 'price|asc'
   * 'price|desc'
   * 'new'
-  * 'popularity|desc' (Available with "[Popularity for Shopaholic](plugins/home.md#popularity-for-shopaholic)" plugin).
-  * 'rating|desc' (Available with "[Reviews for Shopaholic](plugins/home.md#reviews-for-shopaholic)" plugin).
-  * 'rating|asc' (Available with "[Reviews for Shopaholic](plugins/home.md#reviews-for-shopaholic)" plugin).
+  * 'popularity|desc' ({{ 'popularity'|available_with }}).
+  * 'rating|desc' ({{ 'reviews'|available_with }}).
+  * 'rating|asc' ({{ 'reviews'|available_with }}).
 
 > You can apply sorting by price with using price type code. For example: 'price|desc|b2b', where b2b is code of price type.
 
@@ -252,21 +254,21 @@ Available sorting value:
 ### tag($iTagID)
   * $iTagID - tag ID
 
-Method applies filter by tag ID. Method available with [Tags for Shopaholic](plugins/home.md#tags-for-shopaholic) plugin.
+Method applies filter by tag ID. Method {{ 'tags'|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->tag(2);
 ```
 
 ### viewed()
 
-Method returns list of viewed products. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method returns list of viewed products. Method {{ 'viewed-products'|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->viewed()->active();
 ```
 
 ### wishList()
 
-Method returns list of products from user wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method returns list of products from user wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make()->wishList()->active();
 ```

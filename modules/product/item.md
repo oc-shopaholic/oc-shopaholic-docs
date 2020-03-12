@@ -9,7 +9,7 @@ Method returns true, if product is added in compare. {{ "compare"|available_with
 
 ### inWishList()
 
-Method returns true, if product is added in wish list. Available with ["Wish list for Shopaholic"](plugins/home.md#with-list-for-shopaholic) plugin.
+Method returns true, if product is added in wish list. {{ 'wish-list'|available_with }}
 
 ### isActive()
 
@@ -60,19 +60,19 @@ skip_error = 0
 
 ### getRatingCount($iRating)
 
-Method returns number of reviews with rating value = $iRating. Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin.
+Method returns number of reviews with rating value = $iRating. {{ 'reviews'|available_with }}
 
 For example: if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, then code ```$obProduct->getRatingCount(4);```  returns 3.
 
 ### getRatingPercent($iRating)
 
-Method returns number of reviews with rating value = $iRating in percentage. Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin.
+Method returns number of reviews with rating value = $iRating in percentage. {{ 'reviews'|available_with }}
 
 For example: if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, then code ```$obProduct->getRatingPercent(4)``` returns 75.
 
 ### getRatingTotalCount()
 
-Method returns total count of reviews with rating. Available with ["Reviews for Shopaholic"](plugins/home.md#reviews-for-shopaholic) plugin.
+Method returns total count of reviews with rating. {{ 'reviews'|available_with }}
 
 For example:  if ```rating_data = [1 => 0, 2 => 0, 3 => 0, 4 => 3, 5 => 1]```, then code ```$obProduct->getRatingTotalCount()``` returns 4.
 {% endblock %}

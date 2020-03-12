@@ -42,20 +42,20 @@ Component allows you to render blocks with products. For example: popular produc
 random products, etc.
 
 Available values of default "sorting" property:
-  * 'no' - default value
-  * 'price|asc'
-  * 'price|desc'
-  * 'new'
-  * 'popularity|desc' (Available with "[Popularity for Shopaholic](plugins/home.md#popularity-for-shopaholic)" plugin).
-  * 'rating|desc' (Available with "[Reviews for Shopaholic](plugins/home.md#reviews-for-shopaholic)" plugin).
-  * 'rating|asc' (Available with "[Reviews for Shopaholic](plugins/home.md#reviews-for-shopaholic)" plugin).
+* 'no' - default value
+* 'price|asc'
+* 'price|desc'
+* 'new'
+* 'popularity|desc' ({{ 'popularity'|available_with }}).
+* 'rating|desc' ({{ 'reviews'|available_with }}).
+* 'rating|asc' ({{ 'reviews'|available_with }}).
 
 ### getSorting()
 Get active sorting value. Method tries to get sorting value from request (**"sort"** field).
 
 ### make(_[$arElementIDList = null]_)
 
-Method returns new object of [ProductCollection](modules/product/collection/collection.md) class.
+Method returns new object of {{ get_collection('product').link() }} class.
 
 **Example 1:** Get collection of product, apply sorting, filter by flag "active" and category ID.
 {% verbatim %}
@@ -91,7 +91,7 @@ skip_error = 0
 
 ### onAddToCompare()
 
-Method adds product to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method adds product to compare. Method {{ 'compare'|available_with|lcfirst }}
 You can send AJAX request with product ID to add product to compare list.
 ```javascript
 $.request('ProductList::onAddToCompare', {
@@ -101,7 +101,7 @@ $.request('ProductList::onAddToCompare', {
 
 ### onAddToWishList()
 
-Method adds product to wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method adds product to wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 You can send AJAX request with product ID to add product to wish list.
 ```javascript
 $.request('ProductList::onAddToWishList', {
@@ -111,28 +111,28 @@ $.request('ProductList::onAddToWishList', {
 
 ### onClearCompareList()
 
-Method clears list of products added to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method clears list of products added to compare. Method {{ 'compare'|available_with|lcfirst }}
 ```javascript
 $.request('ProductList::onClearCompareList');
 ```
 
 ### onClearViewedProductList()
 
-Method clears list of viewed products. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method clears list of viewed products. Method {{ 'viewed-products'|available_with|lcfirst }}
 ```javascript
 $.request('ProductList::onClearViewedProductList');
 ```
 
 ### onClearWishList()
 
-Method clears list of products added to wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method clears list of products added to wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 ```javascript
 $.request('ProductList::onClearWishList');
 ```
 
 ### onRemoveFromCompare()
 
-Method removes product from compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method removes product from compare. Method {{ 'compare'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form compare list.
 ```javascript
 $.request('ProductList::onRemoveFromCompare', {
@@ -142,7 +142,7 @@ $.request('ProductList::onRemoveFromCompare', {
 
 ### onRemoveFromViewedProductList()
 
-Method removes product from viewed products list. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method removes product from viewed products list. Method {{ 'viewed-products'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form viewed product list.
 ```javascript
 $.request('ProductList::onRemoveFromViewedProductList', {
@@ -152,7 +152,7 @@ $.request('ProductList::onRemoveFromViewedProductList', {
 
 ### onRemoveFromWishList()
 
-Method removes product from wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method removes product from wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form wish list.
 ```javascript
 $.request('ProductList::onRemoveFromWishList', {
@@ -215,7 +215,7 @@ skip_error = 0
 
 ### onAddToCompare()
 
-Method adds product to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method adds product to compare. Method {{ 'compare'|available_with|lcfirst }}
 You can send AJAX request with product ID to add product to compare list.
 ```javascript
 $.request('ProductPage::onAddToCompare', {
@@ -225,7 +225,7 @@ $.request('ProductPage::onAddToCompare', {
 
 ### onAddToWishList()
 
-Method adds product to wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method adds product to wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 You can send AJAX request with product ID to add product to wish list.
 ```javascript
 $.request('ProductPage::onAddToWishList', {
@@ -235,28 +235,28 @@ $.request('ProductPage::onAddToWishList', {
 
 ### onClearCompareList()
 
-Method clears list of products added to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method clears list of products added to compare. Method {{ 'compare'|available_with|lcfirst }}
 ```javascript
 $.request('ProductPage::onClearCompareList');
 ```
 
 ### onClearViewedProductList()
 
-Method clears list of viewed products. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method clears list of viewed products. Method {{ 'viewed-products'|available_with|lcfirst }}
 ```javascript
 $.request('ProductPage::onClearViewedProductList');
 ```
 
 ### onClearWishList()
 
-Method clears list of products added to wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method clears list of products added to wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 ```javascript
 $.request('ProductPage::onClearWishList');
 ```
 
 ### onRemoveFromCompare()
 
-Method removes product from compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method removes product from compare. Method {{ 'compare'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form compare list.
 ```javascript
 $.request('ProductPage::onRemoveFromCompare', {
@@ -266,7 +266,7 @@ $.request('ProductPage::onRemoveFromCompare', {
 
 ### onRemoveFromViewedProductList()
 
-Method removes product from viewed products list. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method removes product from viewed products list. Method {{ 'viewed-products'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form viewed product list.
 ```javascript
 $.request('ProductPage::onRemoveFromViewedProductList', {
@@ -276,7 +276,7 @@ $.request('ProductPage::onRemoveFromViewedProductList', {
 
 ### onRemoveFromWishList()
 
-Method removes product from wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method removes product from wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form wish list.
 ```javascript
 $.request('ProductPage::onRemoveFromWishList', {
@@ -315,11 +315,11 @@ Usage example:
 
 ### get($iElementID)
 
-Method returns [Product Item](modules/product/item/item.md) class object with ID = $iElementID.
+Method returns {{ get_item('product').link() }} class object with ID = $iElementID.
 
 ### onAddToCompare()
 
-Method adds product to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method adds product to compare. Method {{ 'compare'|available_with|lcfirst }}
 You can send AJAX request with product ID to add product to compare list.
 ```javascript
 $.request('ProductData::onAddToCompare', {
@@ -329,7 +329,7 @@ $.request('ProductData::onAddToCompare', {
 
 ### onAddToWishList()
 
-Method adds product to wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method adds product to wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 You can send AJAX request with product ID to add product to wish list.
 ```javascript
 $.request('ProductData::onAddToWishList', {
@@ -339,21 +339,21 @@ $.request('ProductData::onAddToWishList', {
 
 ### onClearCompareList()
 
-Method clears list of products added to compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method clears list of products added to compare. Method {{ 'compare'|available_with|lcfirst }}
 ```javascript
 $.request('ProductData::onClearCompareList');
 ```
 
 ### onClearViewedProductList()
 
-Method clears list of viewed products. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method clears list of viewed products. Method {{ 'viewed-products'|available_with|lcfirst }}
 ```javascript
 $.request('ProductData::onClearViewedProductList');
 ```
 
 ### onClearWishList()
 
-Method clears list of products added to wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method clears list of products added to wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 ```javascript
 $.request('ProductData::onClearWishList');
 ```
@@ -378,7 +378,7 @@ $.request('ProductData::onGetJSONData', {
 
 ### onRemoveFromCompare()
 
-Method removes product from compare. Method available with [Compare for Shopaholic](plugins/home.md#compare-for-shopaholic) plugin.
+Method removes product from compare. Method {{ 'compare'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form compare list.
 ```javascript
 $.request('ProductData::onRemoveFromCompare', {
@@ -388,7 +388,7 @@ $.request('ProductData::onRemoveFromCompare', {
 
 ### onRemoveFromViewedProductList()
 
-Method removes product from viewed products list. Method available with [Viewed products for Shopaholic](plugins/home.md#viewed-products-for-shopaholic) plugin.
+Method removes product from viewed products list. Method {{ 'viewed-products'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form viewed product list.
 ```javascript
 $.request('ProductData::onRemoveFromViewedProductList', {
@@ -398,7 +398,7 @@ $.request('ProductData::onRemoveFromViewedProductList', {
 
 ### onRemoveFromWishList()
 
-Method removes product from wish list. Method available with [Wish list for Shopaholic](plugins/home.md#wish-list-for-shopaholic) plugin.
+Method removes product from wish list. Method {{ 'wish-list'|available_with|lcfirst }}
 You can send AJAX request with product ID to remove product form wish list.
 ```javascript
 $.request('ProductData::onRemoveFromWishList', {

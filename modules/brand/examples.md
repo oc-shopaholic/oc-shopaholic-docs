@@ -5,7 +5,7 @@
 * [Example 2: Brand card](#example-2-brand-card)
 * [Example 3: Random brand list](#example-3-random-brand-list)
 * [Example 4: Brand list with pagination](#example-4-brand-list-with-pagination)
-* [Example 5: Filter panel with brands](example-5-filter-panel-with-brands)
+* [Example 5: Filter panel with brands](#example-5-filter-panel-with-brands)
 
 ## Example 1: Brand page
 

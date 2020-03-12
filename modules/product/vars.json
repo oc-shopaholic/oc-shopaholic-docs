@@ -95,13 +95,13 @@
         "type": "BelongsToMany",
         "model": "category",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "brand": {
         "type": "BelongsTo",
         "model": "brand",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "campaign": {
         "type": "BelongsToMany",
@@ -113,7 +113,7 @@
         "type": "BelongsTo",
         "model": "category",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "coupon_group": {
         "type": "BelongsToMany",
@@ -137,7 +137,7 @@
         "type": "HasMany",
         "model": "offer",
         "description": "",
-        "available": ""
+        "available": "shopaholic"
       },
       "property_value": {
         "type": "MorphMany",
