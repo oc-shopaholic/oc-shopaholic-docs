@@ -98,7 +98,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByBrandList([10, 15]);
 
 ### filterByDiscount()
 
-Method applies filter and returns product list with offers that have discount. Method {{ 'filter'|available_with|lcfirst }}
+Method applies filter and returns product list with offers that have discount (old_price > 0). Method {{ 'filter'|available_with|lcfirst }}
 ```php
 $obList = ProductCollection::make([1,2,10,15])->filterByDiscount();
 ```
@@ -118,7 +118,7 @@ If $fStopPrice and $fStartPrice has empty value, then method isn't  apply filter
 ### filterByProperty($arFilterList, $obPropertyList, _[$obOfferList = null]_)
   * $arFilterList - array with filter values
   * $obPropertyList - object {{ get_collection('filter-property').link() }}
-  * $obOfferList - object {{ get_collection('offer').link() }} - filtered offer collection. Only these offers will be involved in filtering of products.
+  * $obOfferList - object {{ get_collection('offer').link() }} - filtered offer collection. Only these offers will be used in filtering of products.
 
 Method applies filter by product or offer properties.
 Method {{ ['filter', 'properties']|available_with|lcfirst }}
@@ -135,7 +135,7 @@ $arFilterList = [
 ];
 ```
 
-You needs to get $obPropertyList object from current category item or with using {{ get_component('filter-property').link('filter-panel') }}:
+You should get $obPropertyList object from current {{ get_item('category').link() }} or with using {{ get_component('filter-property').link('filter-panel') }}:
 ```php
 //Apply filter by product properties
 $obCategory = CategoryItem->make(10);

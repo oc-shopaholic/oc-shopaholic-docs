@@ -1,0 +1,74 @@
+title = "Catalog"
+url = "/catalog/:category*/:slug?"
+layout = "main"
+is_hidden = 0
+
+[CategoryPage MainCategoryPage]
+slug = "{{ :category }}"
+slug_required = 1
+smart_url_check = 1
+has_wildcard = 1
+skip_error = 0
+
+[CategoryPage]
+slug = "{{ :slug }}"
+slug_required = 0
+smart_url_check = 1
+has_wildcard = 0
+skip_error = 1
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 0
+smart_url_check = 1
+skip_error = 1
+
+[ProductList]
+sorting = "popularity|desc"
+
+[Pagination]
+count_per_page = 15
+pagination_limit = 5
+active_class = ""
+button_list = "first,first-more,main,last-more,last"
+first_button_name = "First"
+first_button_limit = 3
+first_button_number = 1
+first-more_button_name = "..."
+first-more_button_limit = 4
+prev_button_name = "Prev"
+prev_button_limit = 1
+prev-more_button_name = "..."
+prev-more_button_limit = 1
+next-more_button_name = "..."
+next-more_button_limit = 1
+next_button_name = "Next"
+next_button_limit = 1
+last-more_button_name = "..."
+last-more_button_limit = 4
+last_button_name = "Last"
+last_button_limit = 3
+last_button_number = 1
+==
+function onInit() {
+    $obProductItem = $this->ProductPage->get();
+    $obCategoryItem = $this->CategoryPage->get();
+    $obMainCategoryItem = $this->MainCategoryPage->get();
+    if (!empty($this->param('slug')) && empty($obProductItem) && empty($obCategoryItem)) {
+        return $this->ProductPage->getErrorResponse();
+    }
+
+    $obActiveCategoryItem = !empty($obCategoryItem) ? $obCategoryItem : $obMainCategoryItem;
+
+    $this['obProduct'] = $obProductItem;
+    $this['obActiveCategory'] = $obActiveCategoryItem;
+}
+==
+{% if obProduct.isNotEmpty() %}
+    {# Render product page #}
+{% else %}
+    {# Render catalog page #}
+    <div class="catalog-wrapper">
+        {% partial 'product/catalog/catalog' %}
+    </div>
+{% endif %}

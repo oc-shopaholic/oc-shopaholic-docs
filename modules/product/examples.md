@@ -24,7 +24,7 @@ All available fields and methods of **ProductItem** class you can find in {{ get
 @startuml
 :Create page file;
 note left
-    For example: **pages/product.htm**
+    For example: **pages/product-page.htm**
 end note
 :Attach **ProductPage** component;
 if (URL page contains brand slug?) then (yes)
@@ -39,8 +39,8 @@ if (URL page contains categories slug?) then (yes)
     end note
 else (no)
 endif
-:Get ProductItem object
-from ProductPage component;
+:Get **ProductItem** object
+from **ProductPage** component;
 :Render product name;
 @enduml
 ```
@@ -51,183 +51,27 @@ from ProductPage component;
 
 Simple example of product page. Page URL does not contain category slug.
 
-File: **pages/product.htm**
-{% verbatim %}
-```twig
-title = "Product page"
-url = "/product/:slug"
-layout = "main"
-is_hidden = 0
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-==
-
-{# Get product item #}
-{% set obProduct = ProductPage.get() %}
-
-<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
-    <h1 itemprop="name">{{ obProduct.name }}</h1>
-</div>
-```
-{% endverbatim %}
+{{ get_module('product').example('pages/product-page-1.htm')|raw }}
 #### ** Variant 2 **
 
 Simple example of product page. Page URL contains category slug (two levels).
 
 > CategoryPage components must be attached on page so that child categories are higher than parent categories.
 
-File: **pages/product.htm**
-{% verbatim %}
-```twig
-title = "Product page"
-url = "/catalog/:main_category/:category/:slug"
-layout = "main"
-is_hidden = 0
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
-
-[CategoryPage ParentCategoryPage]
-slug = "{{ :main_category }}"
-slug_required = 1
-smart_url_check = 0
-has_wildcard = 0
-skip_error = 0
-==
-
-{# Get product item #}
-{% set obProduct = ProductPage.get() %}
-
-<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
-    <h1 itemprop="name">{{ obProduct.name }}</h1>
-</div>
-```
-{% endverbatim %}
-
+{{ get_module('product').example('pages/product-page-2.htm')|raw }}
 #### ** Variant 3 **
 
 Simple example of product page. Page URL contains category (two levels) and brand slug.
 
 > CategoryPage components must be attached on page so that child categories are higher than parent categories.
 
-File: **pages/product.htm**
-{% verbatim %}
-```twig
-title = "Product page"
-url = "/catalog/:main_category/:category/:brand/:slug"
-layout = "main"
-is_hidden = 0
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-
-[BrandPage]
-slug = "{{ :brand }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
-
-[CategoryPage ParentCategoryPage]
-slug = "{{ :main_category }}"
-slug_required = 1
-smart_url_check = 0
-has_wildcard = 0
-skip_error = 0
-==
-
-{# Get product item #}
-{% set obProduct = ProductPage.get() %}
-
-<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
-    <h1 itemprop="name">{{ obProduct.name }}</h1>
-</div>
-```
+{{ get_module('product').example('pages/product-page-3.htm')|raw }}
 
 #### ** Wildcard **
 
 Catalog page with wildcard URL parameter.
 
-File: **pages/catalog.htm**
-```twig
-title = "Catalog"
-url = "/catalog/:category*/:slug?"
-layout = "main"
-is_hidden = 0
-
-[CategoryPage MainCategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 1
-skip_error = 0
-
-[CategoryPage]
-slug = "{{ :slug }}"
-slug_required = 0
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 1
-
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 0
-smart_url_check = 1
-skip_error = 1
-==
-function onInit() {
-    $obProductItem = $this->ProductPage->get();
-    $obCategoryItem = $this->CategoryPage->get();
-    $obMainCategoryItem = $this->MainCategoryPage->get();
-    if (!empty($this->param('slug')) && empty($obProductItem) && empty($obCategoryItem)) {
-        return $this->ProductPage->getErrorResponse();
-    }
-
-    $obActiveCategoryItem = !empty($obCategoryItem) ? $obCategoryItem : $obMainCategoryItem;
-    
-    $this['obProduct'] = $obProductItem;
-    $this['obActiveCategory'] = $obActiveCategoryItem;
-}
-==
-{% if obProduct.isNotEmpty() %}
-    {# Render product page #}
-    {# Get product item #}
-    {% set obProduct = ProductPage.get() %}
-
-    <div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
-        <h1 itemprop="name">{{ obProduct.name }}</h1>
-    </div>
-{% else %}
-    {# Render catalog page #}
-    <div data-id="{{ obActiveCategory.id }}" itemscope itemtype="http://schema.org/Category">
-        <h1 itemprop="name">{{ obActiveCategory.name }}</h1>
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('product').example('pages/product-page-4.htm')|raw }}
 <!-- tabs:end -->
 
 ## Example 2: Product card
@@ -236,30 +80,13 @@ function onInit() {
 Create simple product card and render product name, preview_image, preview_text fields.
 Render link on product page.
 
-> **"obProduct"** is object of {[ get_item('product').link() }} class.
+> **"obProduct"** is object of {{ get_item('product').link() }} class.
 
 ### 2.2 Source code
 
 Simple example of product card.
 
-File: **partials/product/product-card/product-card.htm**
-{% verbatim %}
-```twig
-<a href="{{ obProduct.getPageUrl() }}">
-    <div itemscope itemtype="http://schema.org/Product">
-        {% if obProduct.preview_image is not empty %}
-            <img src="{{ obProduct.preview_image.path }}" itemprop="image" alt="{{ obProduct.preview_image.description }}" title="{{ obProduct.preview_image.title }}">
-        {% endif %}
-        <h3 itemprop="name">{{ obProduct.name }}</h3>
-        {% if obProduct.preview_text is not empty %}
-            <div itemprop="description">
-                {{ obProduct.preview_text }}
-            </div>
-        {% endif %}
-    </div>
-</a>
-```
-{% endverbatim %}
+{{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
 ## Example 3: Catalog page
 
@@ -294,10 +121,10 @@ note left
     For example:
     **partials/product/catalog/catalog.htm**
 end note
-:Get CategoryItem object
-from CategoryPage component;
-:Get ProductCollection object
-from ProductList component;
+:Get **CategoryItem** object
+from **CategoryPage** component;
+:Get **ProductCollection** object
+from **ProductList** component;
 :Apply sorting to ProductCollection object;
 :Apply filter by "active" field
 to ProductCollection object;
@@ -329,90 +156,13 @@ and update HTML code inside wrapper block;
 
 Simple example of catalog page (one level).
 
-File: **pages/catalog.htm**
-{% verbatim %}
-```twig
-title = "Catalog"
-url = "/catalog/:category"
-layout = "main"
-is_hidden = 0
+{{ get_module('product').example('pages/catalog-1.htm')|raw }}
 
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
+{{ get_module('product').example('partials/product/catalog/catalog-2.htm')|raw }}
 
-[ProductList]
-sorting = "popularity|desc"
+{{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
-[Pagination]
-count_per_page = 15
-pagination_limit = 5
-active_class = ""
-button_list = "first,first-more,main,last-more,last"
-first_button_name = "First"
-first_button_limit = 3
-first_button_number = 1
-first-more_button_name = "..."
-first-more_button_limit = 4
-prev_button_name = "Prev"
-prev_button_limit = 1
-prev-more_button_name = "..."
-prev-more_button_limit = 1
-next-more_button_name = "..."
-next-more_button_limit = 1
-next_button_name = "Next"
-next_button_limit = 1
-last-more_button_name = "..."
-last-more_button_limit = 4
-last_button_name = "Last"
-last_button_limit = 3
-last_button_number = 1
-==
-<div class="catalog-wrapper">
-    {% partial 'product/catalog/catalog' %}
-</div>
-```
-
-File: **partials/product/catalog/catalog.htm**
-```twig
-{% set obCategory = CategoryPage.get() %}
-
-{# Get product collection #}
-{% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obCategory.id) %}
-
-{# Get array with pagination buttons #}
-{% set iPage = Pagination.getPageFromRequest() %}
-{% set arPaginationList = Pagination.get(iPage, obProductList.count()) %}
-
-{# Apply pagination to product collection and get array with product items #}
-{% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
-
-{% if arProductList is not empty %}
-    {# Render product list #}
-    <ul>
-        {% for obProduct in arProductList %}
-            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
-        {% endfor %}
-    </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="{{ obCategory.getPageUrl() }}?page={{ arPagination.value }}" class="{{ arPagination.class }}">
-                {{ arPagination.name }}
-            </a>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div>
-        Products not found
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('pagination').example('partials/pagination/pagination-1.htm')|raw }}
 
 #### ** Two levels **
 
@@ -420,220 +170,25 @@ Simple example of catalog page (two levels).
 
 > CategoryPage components must be attached on page so that child categories are higher than parent categories.
 
-File: **pages/catalog.htm**
-{% verbatim %}
-```twig
-title = "Catalog"
-url = "/catalog/:main_category/:category"
-layout = "main"
-is_hidden = 0
+{{ get_module('product').example('pages/catalog-2.htm')|raw }}
 
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
+{{ get_module('product').example('partials/product/catalog/catalog-2.htm')|raw }}
 
-[CategoryPage ParentCategoryPage]
-slug = "{{ :main_category }}"
-slug_required = 1
-smart_url_check = 0
-has_wildcard = 0
-skip_error = 0
+{{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
-[ProductList]
-sorting = "popularity|desc"
-
-[Pagination]
-count_per_page = 15
-pagination_limit = 5
-active_class = ""
-button_list = "first,first-more,main,last-more,last"
-first_button_name = "First"
-first_button_limit = 3
-first_button_number = 1
-first-more_button_name = "..."
-first-more_button_limit = 4
-prev_button_name = "Prev"
-prev_button_limit = 1
-prev-more_button_name = "..."
-prev-more_button_limit = 1
-next-more_button_name = "..."
-next-more_button_limit = 1
-next_button_name = "Next"
-next_button_limit = 1
-last-more_button_name = "..."
-last-more_button_limit = 4
-last_button_name = "Last"
-last_button_limit = 3
-last_button_number = 1
-==
-<div class="catalog-wrapper">
-    {% partial 'product/catalog/catalog' %}
-</div>
-```
-
-File: **partials/product/catalog/catalog.htm**
-```twig
-{% set obCategory = CategoryPage.get() %}
-
-{# Get product collection #}
-{% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obCategory.id) %}
-
-{# Get array with pagination buttons #}
-{% set iPage = Pagination.getPageFromRequest() %}
-{% set arPaginationList = Pagination.get(iPage, obProductList.count()) %}
-
-{# Apply pagination to product collection and get array with product items #}
-{% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
-
-{% if arProductList is not empty %}
-    {# Render product list #}
-    <ul>
-        {% for obProduct in arProductList %}
-            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
-        {% endfor %}
-    </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="{{ obCategory.getPageUrl() }}?page={{ arPagination.value }}" class="{{ arPagination.class }}">
-                {{ arPagination.name }}
-            </a>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div>
-        Products not found
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('pagination').example('partials/pagination/pagination-1.htm')|raw }}
 
 #### ** Wildcard **
 
 Catalog page with wildcard URL parameter.
 
-File: **pages/catalog.htm**
-{% verbatim %}
-```twig
-title = "Catalog"
-url = "/catalog/:category*/:slug?"
-layout = "main"
-is_hidden = 0
+{{ get_module('product').example('pages/catalog-3.htm')|raw }}
 
-[CategoryPage MainCategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 1
-skip_error = 0
+{{ get_module('product').example('partials/product/catalog/catalog-2.htm')|raw }}
 
-[CategoryPage]
-slug = "{{ :slug }}"
-slug_required = 0
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 1
+{{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 0
-smart_url_check = 1
-skip_error = 1
-
-[ProductList]
-sorting = "popularity|desc"
-
-[Pagination]
-count_per_page = 15
-pagination_limit = 5
-active_class = ""
-button_list = "first,first-more,main,last-more,last"
-first_button_name = "First"
-first_button_limit = 3
-first_button_number = 1
-first-more_button_name = "..."
-first-more_button_limit = 4
-prev_button_name = "Prev"
-prev_button_limit = 1
-prev-more_button_name = "..."
-prev-more_button_limit = 1
-next-more_button_name = "..."
-next-more_button_limit = 1
-next_button_name = "Next"
-next_button_limit = 1
-last-more_button_name = "..."
-last-more_button_limit = 4
-last_button_name = "Last"
-last_button_limit = 3
-last_button_number = 1
-==
-function onInit() {
-    $obProductItem = $this->ProductPage->get();
-    $obCategoryItem = $this->CategoryPage->get();
-    $obMainCategoryItem = $this->MainCategoryPage->get();
-    if (!empty($this->param('slug')) && empty($obProductItem) && empty($obCategoryItem)) {
-        return $this->ProductPage->getErrorResponse();
-    }
-
-    $obActiveCategoryItem = !empty($obCategoryItem) ? $obCategoryItem : $obMainCategoryItem;
-    
-    $this['obProduct'] = $obProductItem;
-    $this['obActiveCategory'] = $obActiveCategoryItem;
-}
-==
-{% if obProduct.isNotEmpty() %}
-    {# Render product page #}
-{% else %}
-    {# Render catalog page #}
-    <div class="catalog-wrapper">
-        {% partial 'product/catalog/catalog' %}
-    </div>
-{% endif %}
-```
-{% endverbatim %}
-
-File: **partials/product/catalog/catalog.htm**
-{% verbatim %}
-```twig
-{% set obCategory = CategoryPage.get() %}
-
-{# Get product collection #}
-{% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obActiveCategory.id) %}
-
-{# Get array with pagination buttons #}
-{% set iPage = Pagination.getPageFromRequest() %}
-{% set arPaginationList = Pagination.get(iPage, obProductList.count()) %}
-
-{# Apply pagination to product collection and get array with product items #}
-{% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
-
-{% if arProductList is not empty %}
-    {# Render product list #}
-    <ul>
-        {% for obProduct in arProductList %}
-            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
-        {% endfor %}
-    </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="{{ obCategory.getPageUrl() }}?page={{ arPagination.value }}" class="{{ arPagination.class }}">
-                {{ arPagination.name }}
-            </a>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div>
-        Products not found
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('pagination').example('partials/pagination/pagination-1.htm')|raw }}
 
 <!-- tabs:end -->
 

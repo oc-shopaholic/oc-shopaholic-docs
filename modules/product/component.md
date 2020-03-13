@@ -57,38 +57,6 @@ Get active sorting value. Method tries to get sorting value from request (**"sor
 
 Method returns new object of {{ get_collection('product').link() }} class.
 
-**Example 1:** Get collection of product, apply sorting, filter by flag "active" and category ID.
-{% verbatim %}
-```twig
-title = "Category page"
-url = "/catalog/:category"
-layout = "main"
-is_hidden = 0
-
-[ProductList]
-sorting = "popularity|desc"
-
-[CategoryPage]
-slug = "{{ :category }}"
-slug_required = 1
-smart_url_check = 1
-has_wildcard = 0
-skip_error = 0
-==
-{# Get category object #}
-{% set obCategory = CategoryPage.get() %}
-
-{% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obCategory.id) %}
-{% if obProductList.isNotEmpty() %}
-    <ul>
-        {% for obProduct in obProductList %}
-            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
-
 ### onAddToCompare()
 
 Method adds product to compare. Method {{ 'compare'|available_with|lcfirst }}
@@ -176,36 +144,33 @@ Available properties:
 {% endverbatim %}
 
 Usage example:
-{% verbatim %}
-```twig
-title = "Product"
-url = "/product/:slug"
-layout = "main"
+<!-- tabs:start -->
+#### ** Variant 1 **
 
-[ProductPage]
-slug = "{{ :slug }}"
-slug_required = 1
-smart_url_check = 1
-skip_error = 0
-==
+Simple example of product page. Page URL does not contain category slug.
 
-{# Get product item #}
-{% set obProduct = ProductPage.get() %}
-<div data-id="{{ obProduct.id }}">
-    <h1>{{ obProduct.name }}</h1>
-    {% if obProduct.preview_image is not empty %}
-        <img src="{{ obProduct.preview_image.path }}" title="{{ obProduct.preview_image.title }}" alt="{{ obProduct.preview_image.description }}">
-    {% endif %}
-    <span>Category: {{ obProduct.category.name }}</span>
-    <span>Brand: {{ obProduct.brand.name }}</span>
-    {% set obOffer = obProduct.offer.first() %}
-    {% if obOffer.isNotEmpty()%}  
-        <span>Price: {{ obOffer.price }} {{ obOffer.currency }}</span>
-    {% endif %}
-    <div>{{ obProduct.description|raw }}</div>
-</div>
-```
-{% endverbatim %}
+{{ get_module('product').example('pages/product-page-1.htm')|raw }}
+#### ** Variant 2 **
+
+Simple example of product page. Page URL contains category slug (two levels).
+
+> CategoryPage components must be attached on page so that child categories are higher than parent categories.
+
+{{ get_module('product').example('pages/product-page-2.htm')|raw }}
+#### ** Variant 3 **
+
+Simple example of product page. Page URL contains category (two levels) and brand slug.
+
+> CategoryPage components must be attached on page so that child categories are higher than parent categories.
+
+{{ get_module('product').example('pages/product-page-3.htm')|raw }}
+
+#### ** Wildcard **
+
+Catalog page with wildcard URL parameter.
+
+{{ get_module('product').example('pages/product-page-4.htm')|raw }}
+<!-- tabs:end -->
 
 "Smart URL check" adds additional URL validation. For example:
   * Product page URL = "/women/jeans-women/floral-embroidered-skinny-high-waisted-blue-9"
@@ -291,7 +256,6 @@ Component allows you to render blocks with product. You can get product object b
 Usage example:
 {% verbatim %}
 ```twig
-
 {# Get product item with ID = 10 #}
 {% set obProduct = ProductData.get(10) %}
 {% if obProduct.isNotEmpty() %}
