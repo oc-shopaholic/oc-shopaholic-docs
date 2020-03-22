@@ -1,0 +1,24 @@
+[ProductList]
+sorting = "popularity|desc"
+==
+{# Get search string #}
+{% set sSearch = input('search') %}
+
+{# Get product collection #}
+{% set obProductList = ProductList.make().active().search(sSearch) %}
+
+{# Get first 5 products #}
+{% set arProductList = obProductList.take(5) %}
+
+{% if arProductList is not empty %}
+    {# Render product list #}
+    <ul>
+        {% for obProduct in arProductList %}
+            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <div>
+        Products not found
+    </div>
+{% endif %}

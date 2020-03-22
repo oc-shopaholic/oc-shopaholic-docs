@@ -1,0 +1,27 @@
+{# Get search string #}
+{% set sSearch = input('search') %}
+
+{# Get product collection #}
+{% set obProductList = ProductList.make().active().search(sSearch) %}
+
+{# Get array with pagination buttons #}
+{% set iPage = Pagination.getPageFromRequest() %}
+{% set iCount = obProductList.count() %}
+
+{# Apply pagination to product collection and get array with product items #}
+{% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
+
+{% if arProductList is not empty %}
+    {# Render product list #}
+    <ul>
+        {% for obProduct in arProductList %}
+            <li>{% partial 'product/product-card/product-card' obProduct=obProduct %}</li>
+        {% endfor %}
+    </ul>
+
+    {% partial 'pagination/pagination' iCount=iCount iPage=iPage %}
+{% else %}
+    <div>
+        Products not found
+    </div>
+{% endif %}
