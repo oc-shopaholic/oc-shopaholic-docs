@@ -6,8 +6,8 @@
 Using promo blocks, you can make separate promo pages on your site, with description of promotions, discounts, or separate group of products.
 You can show blocks with list of products that are attached to promo block. For example: block "on sale now".
 
-You can attach [discounts](modules/discount/home.md), [campaigns](modules/campaign/home.md) or [coupon groups](modules/coupon-group/home.md) to promo block.
-This will allow you to render products attached to [discounts](modules/discount/home.md), [campaigns](modules/campaign/home.md) or [coupon groups](modules/coupon-group/home.md) on promo block page. 
+You can attach {{ get_module('discount').link() }}, {{ get_module('campaign').link() }} or {{ get_module('coupon-group').link() }} to promo block.
+This will allow you to render products attached to {{ get_module('discount').link() }}, {{ get_module('campaign').link() }} or {{ get_module('coupon-group').link() }} on promo block page. 
 
 ## Backend
 

@@ -14,46 +14,26 @@ Create simple promo block page and render promo block name.
 
 ### 1.2 How can i do it?
 
-> Example uses [PromoBlockPage](modules/promo-block/component/component.md#promoblockpage) component.
-Component method returns [PromoBlockItem](modules/promo-block/item/item.md#promoblockitem) class object.
-All available fields and methods of **PromoBlockItem** class you can find in [section](modules/promo-block/item/item.md#promoblockitem)
+> Example uses {{ component.link('promo-block-page') }} component.
+Component method returns {{ item.link() }} class object.
+All available fields and methods of **PromoBlockItem** class you can find in {{ item.link('section') }}.
 
 ```plantuml
 @startuml
 :Create page file;
 note left
-    For example: **pages/promo.htm**
+    For example: **pages/promo-page.htm**
 end note
 :Attach **PromoBlockPage** component;
-:Get PromoBlockItem object
-from PromoBlockPage component;
+:Get **PromoBlockItem** object
+from **PromoBlockPage** component;
 :Render promo block name;
 @enduml
 ```
 
 ### 1.3 Source code
 
-File: **pages/promo.htm**
-{% verbatim %}
-```twig
-title = "Promo block page"
-url = "/promo/:slug"
-layout = "main"
-is_hidden = 0
-
-[PromoBlockPage]
-slug = "{{ :slug }}"
-slug_required = 1
-==
-
-{# Get promo block item #}
-{% set obPromoBlock = PromoBlockPage.get() %}
-
-<div data-id="{{ obPromoBlock.id }}">
-    <h1 itemprop="name">{{ obPromoBlock.name }}</h1>
-</div>
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('pages/promo-page-1.htm')|raw }}
 
 ## Example 2: Promo block card
 
@@ -62,30 +42,13 @@ slug_required = 1
 Create simple promo block card and render promo block name, preview_image, preview_text fields.
 Render link on promo block page.
 
-> **"obPromoBlock"** is object of [PromoBlockItem](modules/promo-block/item/item.md#promoblockitem) class.
+> **"obPromoBlock"** is object of {{ item.link() }} class.
 
 ### 2.2 Source code
 
 Simple example of promoblock card.
 
-File: **partials/promo-block/promo-block-card/promo-block-card.htm**
-{% verbatim %}
-```twig
-<a href="{{ obPromoBlock.getPageUrl('promo-block') }}">
-    <div>
-        {% if obPromoBlock.preview_image is not empty %}
-            <img src="{{ obPromoBlock.preview_image.path }}" itemprop="image" alt="{{ obPromoBlock.preview_image.description }}" title="{{ obPromoBlock.preview_image.title }}">
-        {% endif %}
-        <h3 itemprop="name">{{ obPromoBlock.name }}</h3>
-        {% if obPromoBlock.preview_text is not empty %}
-            <div itemprop="description">
-                {{ obPromoBlock.preview_text }}
-            </div>
-        {% endif %}
-    </div>
-</a>
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('partials/promo-block/promo-block-card/promo-block-card-1.htm')|raw }}
 
 ## Example 3: Random promo block list
 
@@ -95,9 +58,9 @@ Create simple block with random 5 promo block list on index page.
 
 ### 3.2 How can i do it?
 
-> Example uses [PromoBlockList](modules/promo-block/component/component.md#promoblocklist) component.
-Component method returns [PromoBlockCollection](modules/promo-block/collection/collection.md#promoblockcollection) class object.
-All available methods of **PromoBlockCollection** class you can find in [section](modules/promo-block/collection/collection.md#promoblockcollection)
+> Example uses {{ component.link('promo-block-list') }} component.
+Component method returns {{ collection.link() }} class object.
+All available methods of **PromoBlockCollection** class you can find in {{ collection.link('section') }}.
 
 ```plantuml
 @startuml
@@ -168,11 +131,11 @@ Promo block list must have pagination block.
 
 ### 4.2 How can i do it?
 
-> Example uses [PromoBlockList](modules/promo-block/component/component.md#promoblocklist) component.
-Component method returns [PromoBlockCollection](modules/promo-block/collection/collection.md#promoblockcollection) class object.
-All available methods of **PromoBlockCollection** class you can find in [section](modules/promo-block/collection/collection.md#promoblockcollection)
+> Example uses {{ component.link('promo-block-list') }} component.
+Component method returns {{ collection.link() }} class object.
+All available methods of **PromoBlockCollection** class you can find in {{ collection.link('section') }}.
 
-> You can find more information about **Pagination** component [here](modules/pagination/home.md)
+> You can find more information about **Pagination** component {{ get_module('pagination').link('here') }} 
 
 ```plantuml
 @startuml

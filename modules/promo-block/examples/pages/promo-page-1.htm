@@ -1,0 +1,15 @@
+title = "Promo block page"
+url = "/promo/:slug"
+layout = "main"
+is_hidden = 0
+
+[PromoBlockPage]
+slug = "{{ :slug }}"
+slug_required = 1
+==
+{# Get promo block item #}
+{% set obPromoBlock = PromoBlockPage.get() %}
+
+<div data-id="{{ obPromoBlock.id }}">
+    <h1 itemprop="name">{{ obPromoBlock.name }}</h1>
+</div>

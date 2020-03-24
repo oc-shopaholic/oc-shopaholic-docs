@@ -15,13 +15,13 @@
       "created_at": "default",
       "date_begin": {
         "type": "\\October\\Rain\\Argon\\Argon",
-        "description": "",
+        "description": "Promotion Start Date",
         "available": "",
         "relation": ""
       },
       "date_end": {
         "type": "\\October\\Rain\\Argon\\Argon",
-        "description": "",
+        "description": "Promotion End Date",
         "available": "",
         "relation": ""
       },
@@ -70,13 +70,13 @@
       "code": "default",
       "date_begin": {
         "type": "\\October\\Rain\\Argon\\Argon",
-        "description": "",
+        "description": "Promotion Start Date",
         "available": "",
         "relation": ""
       },
       "date_end": {
         "type": "\\October\\Rain\\Argon\\Argon",
-        "description": "",
+        "description": "Promotion End Date",
         "available": "",
         "relation": ""
       },

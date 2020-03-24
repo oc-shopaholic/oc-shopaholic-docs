@@ -5,6 +5,10 @@
 
 ## Backend
 
+You can set price of your offers. Products does not have price.
+Only offers contains the price.
+You can create several offers for one product and set them different prices.
+
 !> **Attention!** All offer prices must be set in default currency.
 
 !> **Attention!** You can set **price format** in Backend -> Settings -> Application settings -> "Price format" tab

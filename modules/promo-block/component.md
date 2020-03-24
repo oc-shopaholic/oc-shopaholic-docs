@@ -28,7 +28,7 @@ Get active sorting key value.
 
 ### make(_[$arElementIDList = null]_)
 
-Method returns new object of [PromoBlockCollection](modules/promo-block/collection/collection.md) class.
+Method returns new object of {{ collection.link() }} class.
 
 **Example:** Create simple block with random 5 promo block list on index page.
 
@@ -83,7 +83,7 @@ Available properties:
 
 ### get()
 
-Method returns [PromoBlockItem](modules/promo-block/item/item.md#promo-blockitem) object for current page.
+Method returns {{ item.link() }} object for current page.
 
 {% verbatim %}
 ```twig
@@ -109,7 +109,7 @@ Component allows you to render blocks with promo block. You can get promo block 
 
 ### get($iElementID)
 
-Method returns [PromoBlockItem](modules/promo-block/item/item.md#promo-blockitem) object with ID = $iElementID.
+Method returns {{ item.link() }} object with ID = $iElementID.
 {% verbatim %}
 ```twig
 [PromoBlockData]
