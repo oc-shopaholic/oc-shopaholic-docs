@@ -19,6 +19,11 @@
     "slug": "extending",
     "anchor": "extending-tax"
   },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-tax"
+  },
   "advanced-usage": {
     "title": "Advanced usage",
     "slug": "home",

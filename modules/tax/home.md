@@ -3,6 +3,11 @@
 {% block content %}
 {{ parent() }}
 
+"Taxes" module allows you to set the amount of tax that will be applied to the price of the offers and orders.
+You can create a global tax that will be applied to all products.
+You can apply tax for the category of products or several products.
+You can apply different taxes for different regions with using [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.
+
 ## Backend
 
 You can create and edit taxes by going to **Backend -> Settings -> Taxes**

@@ -1,0 +1,50 @@
+title = "Product page"
+url = "/product/:slug"
+layout = "main"
+is_hidden = 0
+
+[ProductPage]
+slug = "{{ :slug }}"
+slug_required = 1
+smart_url_check = 1
+skip_error = 0
+==
+{# Get product item #}
+{% set obProduct = ProductPage.get() %}
+
+<div data-id="{{ obProduct.id }}" itemscope itemtype="http://schema.org/Product">
+    <h1 itemprop="name">{{ obProduct.name }}</h1>
+</div>
+{# Get first offer object #}
+{% set obOffer = obProduct.offer.first() %}
+{# Render price block #}
+<table>
+    <tr>
+        <th></th>
+        <th>Price without tax</th>
+        <th>Tax percent</th>
+        <th>Tax price</th>
+        <th>Price with tax</th>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td>{{ obOffer.price_without_tax }}</td>
+        <td>{{ obOffer.tax_percent }}</td>
+        <td>{{ obOffer.tax_price }}</td>
+        <td>{{ obOffer.price_with_tax }}</td>
+    </tr>
+    <tr>
+        <td>Old price:</td>
+        <td>{{ obOffer.old_price_without_tax }}</td>
+        <td>{{ obOffer.tax_percent }}</td>
+        <td>{{ obOffer.tax_old_price }}</td>
+        <td>{{ obOffer.old_price_with_tax }}</td>
+    </tr>
+    <tr>
+        <td>Discount price:</td>
+        <td>{{ obOffer.discount_price_without_tax }}</td>
+        <td>{{ obOffer.tax_percent }}</td>
+        <td>{{ obOffer.tax_discount_price }}</td>
+        <td>{{ obOffer.discount_price_with_tax }}</td>
+    </tr>
+</table>
