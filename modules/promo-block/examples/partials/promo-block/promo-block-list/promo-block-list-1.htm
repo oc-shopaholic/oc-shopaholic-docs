@@ -1,0 +1,24 @@
+{# Get promo block collection #}
+{% set obPromoBlockList = PromoBlockList.make().sort().active() %}
+
+{# Get array with pagination buttons #}
+{% set iPage = Pagination.getPageFromRequest() %}
+{% set iCount = obPromoBlockList.count() %}
+
+{# Apply pagination to promo block collection and get array with promo block items #}
+{% set arPromoBlockList = obPromoBlockList.page(iPage, Pagination.getCountPerPage()) %}
+
+{% if arPromoBlockList is not empty %}
+    {# Render promo block list #}
+    <ul>
+        {% for obPromoBlock in arPromoBlockList %}
+            <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
+        {% endfor %}
+    </ul>
+
+    {% partial 'pagination/pagination' iCount=iCount iPage=iPage %}
+{% else %}
+    <div>
+        Promo blocks not found
+    </div>
+{% endif %}

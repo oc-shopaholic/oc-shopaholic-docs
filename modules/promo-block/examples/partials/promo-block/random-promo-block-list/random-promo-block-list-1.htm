@@ -1,0 +1,13 @@
+{# Get promo block collection #}
+{% set obPromoBlockList = PromoBlockList.make().active() %}
+{# Get array with random promo blocks #}
+{% set arPromoBlockList = obPromoBlockList.random(5) %}
+
+{% if arPromoBlockList is not empty %}
+    {# Render promo block list #}
+    <ul>
+        {% for obPromoBlock in arPromoBlockList %}
+            <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

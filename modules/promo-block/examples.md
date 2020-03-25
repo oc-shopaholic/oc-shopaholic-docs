@@ -68,15 +68,15 @@ All available methods of **PromoBlockCollection** class you can find in {{ colle
 note left
     For example: **pages/index.htm**
 end note
-:Attach PromoBlockList component to page;
+:Attach **PromoBlockList** component to page;
 :Create partial "random-promo-block-list";
 note left
     For example:
-    **partials/promo-block/promo-block-list**
+    **partials/promo-block/random-promo-block-list**
     **/random-promo-block-list.htm**
 end note
-:Get PromoBlockCollection object from
-PromoBlockList component;
+:Get **PromoBlockCollection** object from
+**PromoBlockList** component;
 :Apply filter by "active" field
 to PromoBlockCollection object;
 :Get array with 5 random
@@ -87,40 +87,11 @@ PromoBlockItem objects;
 
 ### 3.3 Source code
 
-File: **pages/index.htm**
-{% verbatim %}
-```twig
-title = "Index"
-url = "/"
-layout = "main"
-is_hidden = 0
+{{ get_module('promo-block').example('pages/index-1.htm')|raw }}
 
-[PromoBlockList]
-==
-<div class="promo-block-wrapper">
-    {% partial 'promo-block/promo-block-list/random-promo-block-list' %}
-</div>
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('partials/promo-block/random-promo-block-list/random-promo-block-list-1.htm')|raw }}
 
-File: **partials/promo-block/promo-block-list/random-promo-block-list.htm**
-{% verbatim %}
-```twig
-{# Get promo block collection #}
-{% set obPromoBlockList = PromoBlockList.make().active() %}
-{# Get array with random promo blocks #}
-{% set arPromoBlockList = obPromoBlockList.random(5) %}
-
-{% if arPromoBlockList is not empty %}
-    {# Render promo block list #}
-    <ul>
-        {% for obPromoBlock in arPromoBlockList %}
-            <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('partials/promo-block/promo-block-card/promo-block-card-1.htm')|raw }}
 
 ## Example 4: Promo block list with pagination
 
@@ -143,15 +114,15 @@ All available methods of **PromoBlockCollection** class you can find in {{ colle
 note left
     For example: **pages/promo-block-list.htm**
 end note
-:Attach PromoBlockList component to page;
+:Attach **PromoBlockList** component to page;
 :Create wrapper for block with list of promo blocks;
 :Create partial "promo-block-list";
 note left
     For example:
     **partials/promo-block/promo-block-list/promo-block-list.htm**
 end note
-:Get PromoBlockCollection object from
-PromoBlockList component;
+:Get **PromoBlockCollection** object from
+**PromoBlockList** component;
 :Apply filter by "active" field
 to PromoBlockCollection object;
 :Apply sorting to PromoBlockCollection object;
@@ -175,76 +146,11 @@ and update HTML code inside wrapper block;
 
 ### 4.3 Source code
 
-File: **pages/promo-block-list.htm**
-{% verbatim %}
-```twig
-title = "Promo block list"
-url = "/promo-blocks"
-layout = "main"
-is_hidden = 0
+{{ get_module('promo-block').example('pages/promo-block-list-1.htm')|raw }}
 
-[PromoBlockList]
+{{ get_module('promo-block').example('partials/promo-block/promo-block-list/promo-block-list-1.htm')|raw }}
 
-[Pagination]
-count_per_page = 15
-pagination_limit = 5
-active_class = ""
-button_list = "first,first-more,main,last-more,last"
-first_button_name = "First"
-first_button_limit = 3
-first_button_number = 1
-first-more_button_name = "..."
-first-more_button_limit = 4
-prev_button_name = "Prev"
-prev_button_limit = 1
-prev-more_button_name = "..."
-prev-more_button_limit = 1
-next-more_button_name = "..."
-next-more_button_limit = 1
-next_button_name = "Next"
-next_button_limit = 1
-last-more_button_name = "..."
-last-more_button_limit = 4
-last_button_name = "Last"
-last_button_limit = 3
-last_button_number = 1
-==
-<div class="promo-block-wrapper">
-    {% partial 'promo-block/promo-block-list/promo-block-list' %}
-</div>
-```
+{{ get_module('promo-block').example('partials/promo-block/promo-block-card/promo-block-card-1.htm')|raw }}
 
-File: **partials/promo-block/promo-block-list/promo-block-list.htm**
-```twig
-{# Get promo block collection #}
-{% set obPromoBlockList = PromoBlockList.make().sort().active() %}
-
-{# Get array with pagination buttons #}
-{% set iPage = Pagination.getPageFromRequest() %}
-{% set arPaginationList = Pagination.get(iPage, obPromoBlockList.count()) %}
-
-{# Apply pagination to promo block collection and get array with promo block items #}
-{% set arPromoBlockList = obPromoBlockList.page(iPage, Pagination.getCountPerPage()) %}
-
-{% if arPromoBlockList is not empty %}
-    {# Render promo block list #}
-    <ul>
-        {% for obPromoBlock in arPromoBlockList %}
-            <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
-        {% endfor %}
-    </ul>
-    
-    {# Render pagination buttons #}
-    {% if arPaginationList is not empty %}
-        {% for arPagination in arPaginationList %}
-            <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-page="{{ arPagination.value }}">{{ arPagination.name }}</a>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div>
-        Promo blocks not found
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('pagination').example('partials/pagination/pagination-1.htm')|raw }}
 {% endblock %}

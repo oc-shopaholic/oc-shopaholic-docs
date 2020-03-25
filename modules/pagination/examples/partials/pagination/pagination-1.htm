@@ -3,7 +3,7 @@
 {# Render pagination buttons #}
 {% if arPaginationList is not empty %}
     {% for arPagination in arPaginationList %}
-        <a href="{{ 'product-list'|page }}?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-code="{{ arPagination.code }}">
+        <a href="{{ url_current() }}?page={{ arPagination.value }}" class="{{ arPagination.class }}" data-code="{{ arPagination.code }}">
             {{ arPagination.name }}
         </a>
     {% endfor %}

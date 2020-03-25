@@ -32,41 +32,12 @@ Method returns new object of {{ collection.link() }} class.
 
 **Example:** Create simple block with random 5 promo block list on index page.
 
-File: **pages/index.htm**
-{% verbatim %}
-```twig
-title = "Index"
-url = "/"
-layout = "main"
-is_hidden = 0
 
-[PromoBlockList]
-==
-<div class="promo-block-wrapper">
-    {% partial 'promo-block/promo-block-list/random-promo-block-list' %}
-</div>
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('pages/index-1.htm')|raw }}
 
-File: **partials/promo-block/promo-block-list/random-promo-block-list.htm**
-{% verbatim %}
-```twig
-{# Get promo block collection #}
-{% set obPromoBlockList = PromoBlockList.make().active() %}
-{# Get array with random promo blocks #}
-{% set arPromoBlockList = obPromoBlockList.random(5) %}
+{{ get_module('promo-block').example('partials/promo-block/random-promo-block-list/random-promo-block-list-1.htm')|raw }}
 
-{% if arPromoBlockList is not empty %}
-    {# Render promo block list #}
-    <ul>
-        {% for obPromoBlock in arPromoBlockList %}
-            <li>{% partial 'promo-block/promo-block-card/promo-block-card' obPromoBlock=obPromoBlock %}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-```
-{% endverbatim %}
-
+{{ get_module('promo-block').example('partials/promo-block/promo-block-card/promo-block-card-1.htm')|raw }}
 ## PromoBlockPage
 
 Component allows you to render promo block page.
@@ -85,23 +56,7 @@ Available properties:
 
 Method returns {{ item.link() }} object for current page.
 
-{% verbatim %}
-```twig
-[PromoBlockPage]
-slug = "{{ :slug }}"
-==
-
-{# Get promo block item #}
-{% set obPromoBlock = PromoBlockPage.get() %}
-<div data-id="{{ obPromoBlock.id }}">
-    <h1>{{ obPromoBlock.name }}</h1>
-    {% if obPromoBlock.preview_image is not empty %}
-        <img src="{{ obPromoBlock.preview_image.path }}" title="{{ obPromoBlock.preview_image.title }}" alt="{{ obPromoBlock.preview_image.description }}">
-    {% endif %}
-    <div>{{ obPromoBlock.description|raw }}</div>
-</div>
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('pages/promo-page-1.htm')|raw }}
 
 ## PromoBlockData
 
@@ -110,22 +65,6 @@ Component allows you to render blocks with promo block. You can get promo block 
 ### get($iElementID)
 
 Method returns {{ item.link() }} object with ID = $iElementID.
-{% verbatim %}
-```twig
-[PromoBlockData]
-==
 
-{# Get promo block item with ID = 10 #}
-{% set obPromoBlock = PromoBlockData.get(10) %}
-{% if obPromoBlock.isNotEmpty() %}
-    <div data-id="{{ obPromoBlock.id }}">
-        <h1>{{ obPromoBlock.name }}</h1>
-        {% if obPromoBlock.preview_image is not empty %}
-            <img src="{{ obPromoBlock.preview_image.path }}" title="{{ obPromoBlock.preview_image.title }}" alt="{{ obPromoBlock.preview_image.description }}">
-        {% endif %}
-        <div>{{ obPromoBlock.description|raw }}</div>
-    </div>
-{% endif %}
-```
-{% endverbatim %}
+{{ get_module('promo-block').example('partials/promo-block/promo-block-card/promo-block-card-2.htm')|raw }}
 {% endblock %}
