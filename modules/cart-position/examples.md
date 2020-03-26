@@ -3,6 +3,7 @@
 {% block content %}
 * [Example 1: Render block with mini-cart](#example-1-render-block-with-mini-cart)
 * [Example 2: Render block with cart positions on checkout page](#example-2-render-block-with-cart-positions-on-checkout-page)
+* [Example 3: Render tax price of cart positions](#example-3-render-tax-price-of-cart-positions)
 
 ## Example 1: Render block with mini-cart
 
@@ -172,4 +173,35 @@ File: **product/cart-position/cart-position.htm**
 </a>
 ```
 {% endverbatim %}
+
+## Example 3: Render tax price of cart positions
+
+### 3.1 Task
+
+Create simple cart page and render price block. Get prices of cart positions with tax and without tax.
+
+### 3.2 How can i do it?
+
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/cart.htm**
+end note
+:Attach **Cart** component;
+:Get **CartPositionCollection** object
+from **Cart** component;
+:Render table with prices;
+:Render price without tax;
+:Render price with tax;
+:Render tax price;
+:Render tax percent;
+@enduml
+```
+
+### 3.3 Source code
+
+{{ get_module('tax').example('pages/cart-1.htm')|raw }}
+
+{{ get_module('tax').example('partials/product/cart-position/cart-position-1.htm')|raw }}
 {% endblock %}

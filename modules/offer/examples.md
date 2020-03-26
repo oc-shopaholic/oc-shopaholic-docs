@@ -3,6 +3,7 @@
 {% block content %}
 * [Example 1: Product page 1](#example-1-product-page-1)
 * [Example 2: Product page 2](#example-1-product-page-2)
+* [Example 3: Render tax price of offers](#example-3-render-tax-price-of-offers)
 
 ## Example 1: Product page 1
 
@@ -151,4 +152,37 @@ Catalog page with wildcard URL parameter.
 {{ get_module('offer').example('pages/product-page-10.htm')|raw }}
 
 <!-- tabs:end -->
+
+## Example 3: Render tax price of offers
+
+### 3.1 Task
+
+Create simple product page and render price block. Get the price of the first offer with tax and without tax.
+
+### 3.2 How can i do it?
+
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/product-page.htm**
+end note
+:Attach **ProductPage** component;
+:Get **ProductItem** object
+from **ProductPage** component;
+:Render product name;
+:Get **OfferCollection**
+from **ProductItem** object;
+:Get first **OfferItem** object
+from **OfferCollection** object;
+:Render price without tax;
+:Render price with tax;
+:Render tax price;
+:Render tax percent;
+@enduml
+```
+
+### 3.3 Source code
+
+{{ get_module('tax').example('pages/product-page-1.htm')|raw }}
 {% endblock %}

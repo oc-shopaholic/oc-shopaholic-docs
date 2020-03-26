@@ -8,6 +8,7 @@
 * [Example 5: Related products on product page](#example-5-related-products-on-product-page)
 * [Example 6: Simple search results](#example-6-simple-search-results)
 * [Example 7: Search page](#example-7-search-page)
+* [Example 8: Render tax price of offers](#example-8-render-tax-price-of-offers)
 
 ## Example 1: Product page
 
@@ -381,4 +382,37 @@ and update HTML code inside wrapper block;
 {{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
 {{ get_module('pagination').example('partials/pagination/pagination-1.htm')|raw }}
+
+## Example 8: Render tax price of offers
+
+### 8.1 Task
+
+Create simple product page and render price block. Get the price of the first offer with tax and without tax.
+
+### 8.2 How can i do it?
+
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/product-page.htm**
+end note
+:Attach **ProductPage** component;
+:Get **ProductItem** object
+from **ProductPage** component;
+:Render product name;
+:Get **OfferCollection**
+from **ProductItem** object;
+:Get first **OfferItem** object
+from **OfferCollection** object;
+:Render price without tax;
+:Render price with tax;
+:Render tax price;
+:Render tax percent;
+@enduml
+```
+
+### 8.3 Source code
+
+{{ get_module('tax').example('pages/product-page-1.htm')|raw }}
 {% endblock %}
