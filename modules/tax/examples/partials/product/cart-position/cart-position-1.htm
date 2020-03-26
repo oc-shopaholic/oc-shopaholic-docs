@@ -1,0 +1,36 @@
+{% set obOffer = obCartPosition.item %}
+{% set obProduct = obOffer.product %}
+{% set obPriceData = obCartPosition.price_data %}
+
+<div>{{ obProduct.name }}</div>
+{# Render price block #}
+<table>
+    <tr>
+        <th></th>
+        <th>Price without tax ({{ obCartPosition.currency }})</th>
+        <th>Tax percent</th>
+        <th>Tax price ({{ obCartPosition.currency }})</th>
+        <th>Price with tax ({{ obCartPosition.currency }})</th>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td>{{ obCartPosition.price_without_tax }}</td>
+        <td>{{ obOffer.tax_percent }}</td>
+        <td>{{ obCartPosition.tax_price }}</td>
+        <td>{{ obCartPosition.price_with_tax }}</td>
+    </tr>
+    <tr>
+        <td>Old price:</td>
+        <td>{{ obCartPosition.old_price_without_tax }}</td>
+        <td>{{ obOffer.tax_percent }}</td>
+        <td>{{ obCartPosition.tax_old_price }}</td>
+        <td>{{ obCartPosition.old_price_with_tax }}</td>
+    </tr>
+    <tr>
+        <td>Discount price:</td>
+        <td>{{ obCartPosition.discount_price_without_tax }}</td>
+        <td>{{ obOffer.tax_percent }}</td>
+        <td>{{ obCartPosition.tax_discount_price }}</td>
+        <td>{{ obCartPosition.discount_price_with_tax }}</td>
+    </tr>
+</table>
