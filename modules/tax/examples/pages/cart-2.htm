@@ -1,0 +1,49 @@
+title = "Cart page"
+url = "/cart"
+layout = "main"
+is_hidden = 0
+
+[ShippingTypeList]
+
+[Cart]
+==
+{# Get list of shipping types #}
+{% set obShippingTypeList = ShippingTypeList.make().sort().active() %}
+{% if obShippingTypeList.isNotEmpty() %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Price without tax ({{ Cart.getCurrency() }})</th>
+            <th>Tax percent</th>
+            <th>Tax price ({{ Cart.getCurrency() }})</th>
+            <th>Price with tax ({{ Cart.getCurrency() }})</th>
+        </tr>
+        {% for obShippingType in obShippingTypeList %}
+            <tr>
+                <td>{{ obShippingType.name }}</td>
+                <td>Price:</td>
+                <td>{{ obShippingType.price_without_tax }}</td>
+                <td>{{ obShippingType.tax_percent }}</td>
+                <td>{{ obShippingType.tax_price }}</td>
+                <td>{{ obShippingType.price_with_tax }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Old price:</td>
+                <td>{{ obShippingType.old_price_without_tax }}</td>
+                <td>{{ obShippingType.tax_percent }}</td>
+                <td>{{ obShippingType.tax_old_price }}</td>
+                <td>{{ obShippingType.old_price_with_tax }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Discount price:</td>
+                <td>{{ obShippingType.discount_price_without_tax }}</td>
+                <td>{{ obShippingType.tax_percent }}</td>
+                <td>{{ obShippingType.tax_discount_price }}</td>
+                <td>{{ obShippingType.discount_price_with_tax }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
