@@ -1,16 +1,16 @@
-{% set obOffer = obCartPosition.item %}
+{% set obOffer = obOrderPosition.item %}
 {% set obProduct = obOffer.product %}
-{% set obPriceData = obCartPosition.price_data %}
+{% set obPriceData = obOrderPosition.price_data %}
 
 <div>{{ obProduct.name }}</div>
 {# Render price block #}
 <table>
     <tr>
         <th></th>
-        <th>Price without tax ({{ obCartPosition.currency }})</th>
+        <th>Price without tax ({{ obOrderPosition.currency_symbol }})</th>
         <th>Tax percent</th>
-        <th>Tax price ({{ obCartPosition.currency }})</th>
-        <th>Price with tax ({{ obCartPosition.currency }})</th>
+        <th>Tax price ({{ obOrderPosition.currency_symbol }})</th>
+        <th>Price with tax ({{ obOrderPosition.currency_symbol }})</th>
     </tr>
     <tr>
         <td>Price:</td>

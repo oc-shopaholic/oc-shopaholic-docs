@@ -1,28 +1,34 @@
-title = "Cart page"
-url = "/cart"
+title = "Order page"
+url = "/order/:slug"
 layout = "main"
 is_hidden = 0
 
-[Cart]
+[OrderPage]
+slug = "{{ :slug }}"
 ==
-{# Get cart positions #}
-{% set obCartPositionList = Cart.get() %}
-{% if obCartPositionList.isNotEmpty() %}
+{# Get order object #}
+{% set obOrder = OrderPage.get() %}
+<div data-id="{{ obOrder.id }}">
+    <h1>{{ obOrder.order_number }}</h1>
+</div>
+{# Get order positions #}
+{% set obOrderPositionList = Order.order_position %}
+{% if obOrderPositionList.isNotEmpty() %}
     <ul>
-        {% for obCartPosition in obCartPositionList %}
-            <li>{% partial 'product/cart-position/cart-position' obCartPosition=obCartPosition %}</li>
+        {% for obOrderPosition in obOrderPositionList %}
+            <li>{% partial 'order/order-position/order-position' obOrderPosition=obOrderPosition %}</li>
         {% endfor %}
     </ul>
 
-    <div>Price block with total price of cart positions</div>
-    {% set obPriceData = obCartPositionList.getTotalPriceData() %}
-    {# Render price block with total price of cart positions #}
+    <div>Price block with total price of order positions</div>
+    {% set obPriceData = obOrder.position_total_price_data %}
+    {# Render price block with total price of order positions #}
     <table>
         <tr>
             <th></th>
-            <th>Price without tax ({{ obCartPositionList.getCurrency() }})</th>
-            <th>Tax price ({{ obCartPositionList.getCurrency() }})</th>
-            <th>Price with tax ({{ obCartPositionList.getCurrency() }})</th>
+            <th>Price without tax ({{ obOrder.currency_symbol }})</th>
+            <th>Tax price ({{ obOrder.currency_symbol }})</th>
+            <th>Price with tax ({{ obOrder.currency_symbol }})</th>
         </tr>
         <tr>
             <td>Price:</td>
@@ -44,15 +50,15 @@ is_hidden = 0
         </tr>
     </table>
 
-    <div>Price block with total price of cart</div>
-    {% set obPriceData = obCartPositionList.getTotalPriceData() %}
+    <div>Price block with total price of order</div>
+    {% set obPriceData = obOrder.total_price_data %}
     {# Render price block with total price of cart #}
     <table>
         <tr>
             <th></th>
-            <th>Price without tax ({{ Cart.getCurrency() }})</th>
-            <th>Tax price ({{ Cart.getCurrency() }})</th>
-            <th>Price with tax ({{ Cart.getCurrency() }})</th>
+            <th>Price without tax ({{ obOrder.currency_symbol }})</th>
+            <th>Tax price ({{ obOrder.currency_symbol }})</th>
+            <th>Price with tax ({{ obOrder.currency_symbol }})</th>
         </tr>
         <tr>
             <td>Price:</td>
@@ -73,6 +79,4 @@ is_hidden = 0
             <td>{{ obPriceData.discount_price_with_tax }}</td>
         </tr>
     </table>
-{% else %}
-    <div>Cart is empty</div>
 {% endif %}

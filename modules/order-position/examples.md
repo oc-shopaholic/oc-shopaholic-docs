@@ -2,6 +2,7 @@
 
 {% block content %}
 * [Example 1: Order page](#example-1-order-page)
+* [Example 2: Render tax price of order](#example-2-render-tax-price-of-order)
 
 ## Example 1: Order page
 
@@ -58,4 +59,39 @@ slug = "{{ :slug }}"
 </div>
 ```
 {% endverbatim %}
+
+## Example 2: Render tax price of order
+
+### 2.1 Task
+
+Create simple order page and render price block. Get prices of order positions with tax and without tax.
+
+### 2.2 How can i do it?
+
+```plantuml
+@startuml
+:Create page file;
+note left
+    For example: **pages/order-page.htm**
+end note
+:Attach **OrderPage** component;
+:Get **OrderItem** object
+from **OrderPage** component;
+:Render table with order prices;
+:Get **OrderPositionCollection** object
+from **OrderItem** component;
+:Render table with prices;
+:Render price without tax;
+:Render price with tax;
+:Render tax price;
+:Render tax percent;
+@enduml
+```
+
+### 2.3 Source code
+
+{{ get_module('tax').example('pages/order-page-1.htm')|raw }}
+
+{{ get_module('tax').example('partials/order/order-position/order-position-1.htm')|raw }}
+
 {% endblock %}

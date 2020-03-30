@@ -64,5 +64,12 @@
   "controller": {
     "class": "",
     "namespace": ""
-  }
+  },
+  "example": [
+    {
+      "title": "",
+      "slug": "",
+      "file": ""
+    }
+  ]
 }
