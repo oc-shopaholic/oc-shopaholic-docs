@@ -50,4 +50,13 @@ Component allows you to render blocks with brand. You can get brand object by ID
 ### get($iElementID)
 
 Method returns {{ item.link() }} object with ID = $iElementID.
+
+{% verbatim %}
+```twig
+[BrandData]
+==
+
+{% set obBrand = BrandData.get(1) %}
+```
+{% endverbatim %}
 {% endblock %}

@@ -4,6 +4,11 @@
     "slug": "model",
     "anchor": "pricetype-model"
   },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-pricetype"
+  },
   "advanced-usage": {
     "title": "Advanced usage",
     "slug": "home",

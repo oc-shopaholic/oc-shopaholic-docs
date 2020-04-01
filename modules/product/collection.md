@@ -28,7 +28,7 @@
 
 ### active()
 
-Method applies filter to field "active" = true  for elements of collection.
+Method applies filter by "active" field for elements of collection.
 
 Often projects require you to hide products that do not have active offers.
 You can enable additional check when you get list of active products.
@@ -93,14 +93,14 @@ $obList = ProductCollection::make()->discount(2);
 
 Method applies filter by list of brands. Method {{ 'filter'|available_with|lcfirst }}
 ```php
-$obList = ProductCollection::make([1,2,10,15])->filterByBrandList([10, 15]);
+$obList = ProductCollection::make()->filterByBrandList([10, 15]);
 ```
 
 ### filterByDiscount()
 
 Method applies filter and returns product list with offers that have discount (old_price > 0). Method {{ 'filter'|available_with|lcfirst }}
 ```php
-$obList = ProductCollection::make([1,2,10,15])->filterByDiscount();
+$obList = ProductCollection::make()->filterByDiscount();
 ```
 
 ### filterByPrice($fStartPrice, $fStopPrice, _[$iPriceTypeID = null]_)
@@ -112,7 +112,7 @@ If $fStopPrice has empty value, then method applies filter by range of offer pri
 If $fStopPrice and $fStartPrice has empty value, then method isn't  apply filter by range of offer price.
 
 ```php
-    $obList = ProductCollection::make([1,2,10,15])->filterByPrice(10, 15);
+    $obList = ProductCollection::make()->filterByPrice(10, 15);
 ```
 
 ### filterByProperty($arFilterList, $obPropertyList, _[$obOfferList = null]_)
@@ -141,7 +141,7 @@ You should get $obPropertyList object from current {{ get_item('category').link(
 $obCategory = CategoryItem->make(10);
 $obPropertyList = $obCategory->product_filter_property;
 
-$obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, $obPropertyList);
+$obList = ProductCollection::make()->filterByProperty($arFilterList, $obPropertyList);
 
 //.....
 
@@ -149,7 +149,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, 
 $obCategory = CategoryItem->make(10);
 $obPropertyList = $obCategory->offer_filter_property;
 
-$obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, $obPropertyList);
+$obList = ProductCollection::make()->filterByProperty($arFilterList, $obPropertyList);
 ```
 {% verbatim %}
 ```twig
@@ -179,7 +179,7 @@ $obList = ProductCollection::make([1,2,10,15])->filterByProperty($arFilterList, 
 
 Method applies filter and returns product list with offers that have quantity value > 0. Method {{ 'filter'|available_with|lcfirst }}
 ```php
-$obList = ProductCollection::make([1,2,10,15])->filterByQuantity();
+$obList = ProductCollection::make()->filterByQuantity();
 ```
 
 ### getOfferMaxPrice(_[$sPriceTypeCode = null]_)
@@ -232,7 +232,7 @@ $obList = ProductCollection::make()->promoBlock(2);
 Method search elements by name, code, preview_text, description, search_synonym, search_content fields.
 Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 ```php
-$obList = ProductCollection::make()->search('test search');
+$obProductList = ProductCollection::make()->search('search phrase');
 ```
 
 ### sort($sSorting)

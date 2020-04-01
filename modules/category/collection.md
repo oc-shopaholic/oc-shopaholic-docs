@@ -9,7 +9,7 @@
 
 ### active()
 
-Method applies filter to field "active" == true for elements of collection.
+Method applies filter by "active" field for elements of collection.
 
 ### search($sSearchString)
   * $sSearchString - search string
@@ -17,7 +17,7 @@ Method applies filter to field "active" == true for elements of collection.
 Method search elements by name, preview_text, description, search_synonym, search_content fields.
 Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 ```php
-    $obList = CategoryCollection::make()->search('test search');
+    $obCategoryList = CategoryCollection::make()->search('search phrase');
 ```
 
 ### tree()

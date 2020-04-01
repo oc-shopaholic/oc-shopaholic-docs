@@ -10,7 +10,7 @@
 
 ### active()
 
-Method applies filter by field "active" == true for elements of the collection.
+Method applies filter by "active" field for elements of the collection.
 
 ### category($iCategoryID)
   * $iCategoryID - product category ID
@@ -31,7 +31,7 @@ Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 > You can find more information about search settings {{ get_module('search').link('here') }}
 
 ```php
-$obBrandList = BrandCollection::make()->search('test search');
+$obBrandList = BrandCollection::make()->search('search phrase');
 ```
 
 ### sort()

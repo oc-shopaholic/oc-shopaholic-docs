@@ -8,7 +8,7 @@
 
 ### active()
 
-Method applies filter to field "active" = true  for elements of collection.
+Method applies filter by "active" field for elements of collection.
 
 ### sort()
 

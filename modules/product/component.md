@@ -256,24 +256,10 @@ Component allows you to render blocks with product. You can get product object b
 Usage example:
 {% verbatim %}
 ```twig
-{# Get product item with ID = 10 #}
-{% set obProduct = ProductData.get(10) %}
-{% if obProduct.isNotEmpty() %}
-    <div data-id="{{ obProduct.id }}">
-        <h2>{{ obProduct.name }}</h2>
-        {% if obProduct.preview_image is not empty %}
-            <img src="{{ obProduct.preview_image.path }}" title="{{ obProduct.preview_image.title }}" alt="{{ obProduct.preview_image.description }}">
-        {% endif %}
-        <span>Category: {{ obProduct.category.name }}</span>
-        <span>Brand: {{ obProduct.brand.name }}</span>
-        <span>Brand: {{ obProduct.brand.name }}</span>
-        {% set obOffer = obProduct.offer.first() %}
-        {% if obOffer.isNotEmpty()%}  
-            <span>Price: {{ obOffer.price }} {{ obOffer.currency }}</span>
-        {% endif %}
-        <div>{{ obProduct.description|raw }}</div>
-    </div>
-{% endif %}
+[ProductData]
+==
+
+{% set obProduct = ProductData.get(1) %}
 ```
 {% endverbatim %}
 

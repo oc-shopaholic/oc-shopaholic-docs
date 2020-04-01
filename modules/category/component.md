@@ -66,4 +66,13 @@ Component allows you to render blocks with category. You can get category object
 ### get($iElementID)
 
 Method returns {{ item.link() }} object with ID = $iElementID.
+
+{% verbatim %}
+```twig
+[CategoryData]
+==
+
+{% set obCategory = CategoryData.get(1) %}
+```
+{% endverbatim %}
 {% endblock %}

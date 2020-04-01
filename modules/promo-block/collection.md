@@ -10,15 +10,15 @@
 
 ### active()
 
-Method applies filter to field "active" = true  for elements of collection.
+Method applies filter by field "active" for elements of collection.
 
 ### hidden()
 
-Method applies filter to field "hidden" = true  for elements of collection.
+Method applies filter by "hidden" field for elements of collection.
 
 ### notHidden()
 
-Method applies filter to field "hidden" = false  for elements of collection.
+Method applies filter by "hidden" field for elements of collection.
 
 ### sort($sSorting)
 

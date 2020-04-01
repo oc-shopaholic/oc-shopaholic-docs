@@ -14,7 +14,7 @@
 
 ### active()
 
-Method applies filter to field "active" = true  for elements of collection.
+Method applies filter by "active" field for elements of collection.
 
 ### filterByDiscount()
 
@@ -31,7 +31,7 @@ If **$fStopPrice has empty value**, then method applies filter by range of price
 If **$fStopPrice and $fStartPrice has empty values**, then method isn't  apply filter by range of price value.
 
 ```php
-    $obList = OfferCollection::make()->active()->filterByPrice(10, 15);
+$obList = OfferCollection::make()->active()->filterByPrice(10, 15);
 ```
 
 ### filterByProperty($arFilterList, $obPropertyList)
@@ -43,14 +43,14 @@ Method {{ ['filter', 'properties']|available_with|lcfirst }}
 
 You needs to prepare array $arFilterList in format:
 ```php
-    $arFilterList = [
-        '12' => [ //Property ID
-            'green', 'blue' //Array with values of properties for filtration
-        ],
-        15 => [
-            10, 14 //Array with range of values (only for filter with type 'between')
-        ],
-    ];
+$arFilterList = [
+    '12' => [ //Property ID
+        'green', 'blue' //Array with values of properties for filtration
+    ],
+    15 => [
+        10, 14 //Array with range of values (only for filter with type 'between')
+    ],
+];
 ```
 
 You needs to get $obPropertyList object from current {{ get_item('category').link() }} object or from {{ get_component('filter-property').link('filter-panel') }} component.

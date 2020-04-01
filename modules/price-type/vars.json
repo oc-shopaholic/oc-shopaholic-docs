@@ -70,5 +70,17 @@
   "controller": {
     "class": "",
     "namespace": ""
-  }
+  },
+  "example": [
+    {
+      "title": "Switch active price type",
+      "slug": "switch-active-price-type",
+      "file": "price-type/examples/switch-active-price-type.md"
+    },
+    {
+      "title": "Render offer with different prices",
+      "slug": "render-offer-with-different-prices",
+      "file": "price-type/examples/offer-with-different-price.md"
+    }
+  ]
 }
