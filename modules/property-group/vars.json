@@ -38,5 +38,12 @@
   "controller": {
     "class": "Groups",
     "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\Groups"
-  }
+  },
+  "example": [
+    {
+      "title": "Render property group with code \"main\"",
+      "slug": "render-property-group-with-code-quotmainquot",
+      "file": "property-group/examples/product-main-property-group.md"
+    }
+  ]
 }

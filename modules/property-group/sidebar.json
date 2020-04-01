@@ -14,6 +14,11 @@
     "slug": "collection",
     "anchor": "groupcollection"
   },
+  "examples": {
+    "title": "Examples",
+    "slug": "examples",
+    "anchor": "examples-group"
+  },
   "extending": {
     "title": "Extending",
     "slug": "extending",

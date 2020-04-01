@@ -355,6 +355,11 @@
       "file": "related-products/examples/related-products-on-product-page.md"
     },
     {
+      "title": "Render property group with code \"main\"",
+      "slug": "render-property-group-with-code-quotmainquot",
+      "file": "property-group/examples/product-main-property-group.md"
+    },
+    {
       "title": "Simple search results",
       "slug": "simple-search-results",
       "file": "search/examples/simple-search-results.md"
