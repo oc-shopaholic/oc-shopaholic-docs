@@ -105,5 +105,12 @@
   "controller": {
     "class": "SubscriptionAccesses",
     "namespace": "Lovata\\SubscriptionsShopaholic\\Controllers\\SubscriptionAccesses"
-  }
+  },
+  "example": [
+    {
+      "title": "Check access to subscription",
+      "slug": "check-access-to-subscription",
+      "file": "subscription-access/examples/check-access-to-subscription.md"
+    }
+  ]
 }

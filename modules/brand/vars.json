@@ -90,28 +90,28 @@
   },
   "example": [
     {
-      "title": "Example {{ i }}: Brand page",
-      "slug": "example-{{ i }}-brand-page",
+      "title": "Brand page",
+      "slug": "brand-page",
       "file": "brand/examples/brand-page.md"
     },
     {
-      "title": "Example {{ i }}: Brand card",
-      "slug": "example-{{ i }}-brand-card",
+      "title": "Brand card",
+      "slug": "brand-card",
       "file": "brand/examples/brand-card.md"
     },
     {
-      "title": "Example {{ i }}: Random brand list",
-      "slug": "example-{{ i }}-random-brand-list",
+      "title": "Random brand list",
+      "slug": "random-brand-list",
       "file": "brand/examples/random-brand-list.md"
     },
     {
-      "title": "Example {{ i }}: Brand list with pagination",
-      "slug": "example-{{ i }}-brand-list-with-pagination",
+      "title": "Brand list with pagination",
+      "slug": "brand-list-with-pagination",
       "file": "brand/examples/brand-list-with-pagination.md"
     },
     {
-      "title": "Example {{ i }}: Filter panel with brands",
-      "slug": "example-{{ i }}-filter-panel-with-brands",
+      "title": "Filter panel with brands",
+      "slug": "filter-panel-with-brands",
       "file": "brand/examples/brand-filter-panel.md"
     }
   ]

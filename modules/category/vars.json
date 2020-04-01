@@ -237,5 +237,22 @@
   "controller": {
     "class": "Categories",
     "namespace": "Lovata\\Shopaholic\\Controllers\\Categories"
-  }
+  },
+  "example": [
+    {
+      "title": "Category page",
+      "slug": "category-page",
+      "file": "category/examples/category-page.md"
+    },
+    {
+      "title": "Category tree",
+      "slug": "category-tree",
+      "file": "category/examples/category-tree.md"
+    },
+    {
+      "title": "Random categories",
+      "slug": "random-categories",
+      "file": "category/examples/random-categories.md"
+    }
+  ]
 }

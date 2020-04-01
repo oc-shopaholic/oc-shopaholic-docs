@@ -350,5 +350,27 @@
   "controller": {
     "class": "Orders",
     "namespace": "Lovata\\OrdersShopaholic\\Controllers\\Orders"
-  }
+  },
+  "example": [
+    {
+      "title": "Make order",
+      "slug": "make-order",
+      "file": "order/examples/make-order.md"
+    },
+    {
+      "title": "Order page",
+      "slug": "order-page",
+      "file": "order/examples/order-page.md"
+    },
+    {
+      "title": "User order list",
+      "slug": "user-order-list",
+      "file": "order/examples/user-order-list.md"
+    },
+    {
+      "title": "Render tax price of order",
+      "slug": "render-tax-price-of-order",
+      "file": "tax/examples/render-tax-price-of-order.md"
+    }
+  ]
 }

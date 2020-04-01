@@ -1,15 +1,10 @@
-{% extends 'docs/modules/examples-default.md' %}
+## Example {{ i }}: Render subscription product
 
-{% block content %}
-* [Example 1: Render subscription product](#example-1-render-subscription-product)
-
-## Example 1: Render subscription product
-
-### 1.1 Task
+### {{ i }}.1 Task
 
 Render product list with subscription variants.
 
-### 1.2 How can i do it?
+### {{ i }}.2 How can i do it?
 
 ```plantuml
 @startuml
@@ -26,7 +21,7 @@ object;
 @enduml
 ```
 
-### 1.3 Source code
+### {{ i }}.3 Source code
 
 File: **pages/subscription.htm**
 {% verbatim %}
@@ -56,4 +51,3 @@ sorting = "popularity|desc"
 {% endfor %}
 ```
 {% endverbatim %}
-{% endblock %}

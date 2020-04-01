@@ -3,5 +3,17 @@
   "name": "Search",
   "name_many": "",
   "slug": "search",
-  "available": ["search", "sphinx"]
+  "available": ["search", "sphinx"],
+  "example": [
+    {
+      "title": "Simple search results",
+      "slug": "simple-search-results",
+      "file": "search/examples/simple-search-results.md"
+    },
+    {
+      "title": "Search page",
+      "slug": "search-page",
+      "file": "search/examples/search-page.md"
+    }
+  ]
 }

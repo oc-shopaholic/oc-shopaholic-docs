@@ -1,15 +1,10 @@
-{% extends 'docs/modules/examples-default.md' %}
+## Example {{ i }}: Check access to subscription
 
-{% block content %}
-* [Example 1: Check access to subscription](#example-1-check-access-to-subscription)
-
-## Example 1: Check access to subscription
-
-### 1.1 Task
+### {{ i }}.1 Task
 
 Check user access to subscription.
 
-### 1.2 Source code
+### {{ i }}.2 Source code
 
 <!-- tabs:start -->
 #### ** Lovata.Buddies **
@@ -62,4 +57,3 @@ is_hidden = 0
 ```
 {% endverbatim %}
 <!-- tabs:end -->
-{% endblock %}

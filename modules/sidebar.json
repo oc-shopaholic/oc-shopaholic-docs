@@ -74,6 +74,11 @@
     "slug": "home",
     "anchor": "order-position"
   },
+  "pagination": {
+    "title": "Pagination",
+    "slug": "home",
+    "anchor": "pagination"
+  },
   "payment-method": {
     "title": "Payment method",
     "slug": "home",

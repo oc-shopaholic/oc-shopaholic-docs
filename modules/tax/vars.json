@@ -126,23 +126,23 @@
   },
   "example": [
     {
-      "title": "Example {{ i }}: Render tax price of offers",
-      "slug": "example-{{ i }}-render-tax-price-of-offers",
+      "title": "Render tax price of offers",
+      "slug": "render-tax-price-of-offers",
       "file": "tax/examples/render-tax-price-of-offers.md"
     },
     {
-      "title": "Example {{ i }}: Render tax price of cart positions",
-      "slug": "example-{{ i }}-render-tax-price-of-cart-positions",
+      "title": "Render tax price of cart positions",
+      "slug": "render-tax-price-of-cart-positions",
       "file": "tax/examples/render-tax-price-of-cart-positions.md"
     },
     {
-      "title": "Example {{ i }}: Render tax price of shipping type",
-      "slug": "example-{{ i }}-render-tax-price-of-shipping-type",
+      "title": "Render tax price of shipping type",
+      "slug": "render-tax-price-of-shipping-type",
       "file": "tax/examples/render-tax-price-of-shipping-type.md"
     },
     {
-      "title": "Example {{ i }}: Render tax price of order",
-      "slug": "example-{{ i }}-render-tax-price-of-order",
+      "title": "Render tax price of order",
+      "slug": "render-tax-price-of-order",
       "file": "tax/examples/render-tax-price-of-order.md"
     }
   ]

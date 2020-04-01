@@ -3,5 +3,12 @@
   "name": "Subscription",
   "name_many": "Subscriptions",
   "slug": "subscription",
-  "available": ["subscriptions"]
+  "available": ["subscriptions"],
+  "example": [
+    {
+      "title": "Create subscription",
+      "slug": "create-subscription",
+      "file": "subscription/examples/create-subscription.md"
+    }
+  ]
 }

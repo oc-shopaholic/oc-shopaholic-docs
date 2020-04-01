@@ -3,5 +3,12 @@
   "name": "RelatedProduct",
   "name_many": "RelatedProducts",
   "slug": "related-products",
-  "available": ["related-products"]
+  "available": ["related-products"],
+  "example": [
+    {
+      "title": "Related products on product page",
+      "slug": "related-products-on-product-page",
+      "file": "related-products/examples/related-products-on-product-page.md"
+    }
+  ]
 }

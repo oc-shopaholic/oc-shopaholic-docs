@@ -91,5 +91,17 @@
   "controller": {
     "class": "Currencies",
     "namespace": "Lovata\\Shopaholic\\Controllers\\Currencies"
-  }
+  },
+  "example": [
+    {
+      "title": "Currency list",
+      "slug": "currency-list",
+      "file": "currency/examples/currency-list.md"
+    },
+    {
+      "title": "Switching active currency",
+      "slug": "switching-active-currency",
+      "file": "currency/examples/switching-active-currency.md"
+    }
+  ]
 }

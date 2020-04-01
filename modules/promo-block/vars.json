@@ -116,5 +116,27 @@
   "controller": {
     "class": "PromoBlocks",
     "namespace": "\\Lovata\\Shopaholic\\Controllers\\PromoBlocks"
-  }
+  },
+  "example": [
+    {
+      "title": "Promo block page",
+      "slug": "promo-block-page",
+      "file": "promo-block/examples/promo-block-page.md"
+    },
+    {
+      "title": "Promo block card",
+      "slug": "promo-block-card",
+      "file": "promo-block/examples/promo-block-card.md"
+    },
+    {
+      "title": "Random promo block list",
+      "slug": "random-promo-block-list",
+      "file": "promo-block/examples/random-promo-block-list.md"
+    },
+    {
+      "title": "Promo block list with pagination",
+      "slug": "promo-block-list-with-pagination",
+      "file": "promo-block/examples/promo-block-list-with-pagination.md"
+    }
+  ]
 }

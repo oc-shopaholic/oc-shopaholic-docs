@@ -1,16 +1,11 @@
-{% extends 'docs/modules/examples-default.md' %}
+## Example {{ i }}: Create subscription
 
-{% block content %}
-* [Example 1: Create subscription](#example-1-create-subscription)
-
-## Example 1: Create subscription
-
-### 1.1 Task
+### {{ i }}.1 Task
 
 Create subscription product with offers. Create order with subscription product.
 Check user access to subscription. Product must provide access to article with ID == 12
 
-### 1.2 Solution
+### {{ i }}.2 Solution
 
 **Step 1:** Create access period to subscription
 
@@ -126,4 +121,3 @@ is_hidden = 0
 ```
 {% endverbatim %}
 <!-- tabs:end -->
-{% endblock %}

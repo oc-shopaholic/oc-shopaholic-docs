@@ -3,5 +3,12 @@
   "name": "Accessory",
   "name_many": "Accessories",
   "slug": "accessory",
-  "available": ["accessories"]
+  "available": ["accessories"],
+  "example": [
+    {
+      "title": "Accessories on product page",
+      "slug": "accessories-on-product-page",
+      "file": "accessory/examples/accessories-on-product-page.md"
+    }
+  ]
 }

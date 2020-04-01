@@ -64,5 +64,17 @@
   "controller": {
     "class": "",
     "namespace": ""
-  }
+  },
+  "example": [
+    {
+      "title": "Pagination block",
+      "slug": "pagination-block",
+      "file": "pagination/examples/pagination-block.md"
+    },
+    {
+      "title": "Show more button",
+      "slug": "show-more-button",
+      "file": "pagination/examples/show-more-button.md"
+    }
+  ]
 }

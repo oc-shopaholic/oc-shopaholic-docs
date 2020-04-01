@@ -31,5 +31,17 @@
   "controller": {
     "class": "Measures",
     "namespace": "Lovata\\Shopaholic\\Controllers\\Measures"
-  }
+  },
+  "example": [
+    {
+      "title": "Unit measures and dimensions of offer",
+      "slug": "unit-measures-and-dimensions-of-offer",
+      "file": "measure/examples/unit-measures-and-dimensions-of-offer.md"
+    },
+    {
+      "title": "Unit measures of property values",
+      "slug": "unit-measures-of-property-values",
+      "file": "measure/examples/unit-measures-of-property-values.md"
+    }
+  ]
 }

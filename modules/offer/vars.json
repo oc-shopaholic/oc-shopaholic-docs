@@ -384,5 +384,22 @@
   "controller": {
     "class": "Offers",
     "namespace": "Lovata\\Shopaholic\\Controllers\\Offers"
-  }
+  },
+  "example": [
+    {
+      "title": "Product page 1",
+      "slug": "product-page-1",
+      "file": "offer/examples/product-page-1.md"
+    },
+    {
+      "title": "Product page 2",
+      "slug": "product-page-2",
+      "file": "offer/examples/product-page-2.md"
+    },
+    {
+      "title": "Render tax price of offers",
+      "slug": "render-tax-price-of-offers",
+      "file": "tax/examples/render-tax-price-of-offers.md"
+    }
+  ]
 }

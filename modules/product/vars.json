@@ -327,5 +327,47 @@
   "controller": {
     "class": "Products",
     "namespace": "Lovata\\Shopaholic\\Controllers\\Products"
-  }
+  },
+  "example": [
+    {
+      "title": "Product page",
+      "slug": "product-page",
+      "file": "product/examples/product-page.md"
+    },
+    {
+      "title": "Product card",
+      "slug": "product-card",
+      "file": "product/examples/product-card.md"
+    },
+    {
+      "title": "Catalog page",
+      "slug": "catalog-page",
+      "file": "product/examples/catalog-page.md"
+    },
+    {
+      "title": "Accessories on product page",
+      "slug": "accessories-on-product-page",
+      "file": "accessory/examples/accessories-on-product-page.md"
+    },
+    {
+      "title": "Related products on product page",
+      "slug": "related-products-on-product-page",
+      "file": "related-products/examples/related-products-on-product-page.md"
+    },
+    {
+      "title": "Simple search results",
+      "slug": "simple-search-results",
+      "file": "search/examples/simple-search-results.md"
+    },
+    {
+      "title": "Search page",
+      "slug": "search-page",
+      "file": "search/examples/search-page.md"
+    },
+    {
+      "title": "Render tax price of offers",
+      "slug": "render-tax-price-of-offers",
+      "file": "tax/examples/render-tax-price-of-offers.md"
+    }
+  ]
 }

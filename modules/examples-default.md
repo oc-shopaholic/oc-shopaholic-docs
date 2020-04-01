@@ -3,7 +3,7 @@
 {% block page_title %}Examples: {{ module.name }}{% endblock %}
 {% block content %}
 {% for iKey, obExample in module.get('example') %}
-* [{{ render_twig(obExample.title, {"i": iKey + 1}) }}](#{{ render_twig(obExample.slug, {"i": iKey + 1}) }})
+* [Example {{ iKey + 1}}: {{ obExample.title }}](#example-{{ iKey + 1}}-{{ obExample.slug }})
 {% endfor %}
 
 {% set arParamList = {

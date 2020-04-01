@@ -209,5 +209,17 @@
   "controller": {
     "class": "OrderPositions",
     "namespace": "Lovata\\OrdersShopaholic\\Controllers\\OrderPositions"
-  }
+  },
+  "example": [
+    {
+      "title": "Order page",
+      "slug": "order-page",
+      "file": "order-position/examples/order-page.md"
+    },
+    {
+      "title": "Render tax price of order",
+      "slug": "render-tax-price-of-order",
+      "file": "tax/examples/render-tax-price-of-order.md"
+    }
+  ]
 }

@@ -46,5 +46,12 @@
   "controller": {
     "class": "SubscriptionPeriods",
     "namespace": "Lovata\\SubscriptionsShopaholic\\Controllers\\SubscriptionPeriods"
-  }
+  },
+  "example": [
+    {
+      "title": "Render subscription product",
+      "slug": "render-subscription-product",
+      "file": "subscription-period/examples/render-subscription-product.md"
+    }
+  ]
 }

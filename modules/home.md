@@ -17,7 +17,8 @@
 |**O**|[Offer](modules/offer/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Order](modules/order/home.md)|{{ 'orders'|available_with }}|
 ||[Order position](modules/order-position/home.md)|{{ 'orders'|available_with }}|
-|**P**|[Payment method](modules/payment-method/home.md)|{{ 'orders'|available_with }}|
+|**P**|[Pagination](modules/pagination/home.md)|{{ 'toolbox'|available_with }}|
+||[Payment method](modules/payment-method/home.md)|{{ 'orders'|available_with }}|
 ||[Payment restriction](modules/payment-restriction/home.md)|{{ 'orders'|available_with }}|
 ||[Popularity](modules/popularity/home.md)|{{ 'popularity'|available_with }}|
 ||[Price](modules/price/home.md)|{{ 'shopaholic'|available_with }}|

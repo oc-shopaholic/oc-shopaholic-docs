@@ -134,5 +134,12 @@
   "controller": {
     "class": "ShippingTypes",
     "namespace": "Lovata\\OrdersShopaholic\\Controllers\\ShippingTypes"
-  }
+  },
+  "example": [
+    {
+      "title": "Render tax price of shipping type",
+      "slug": "render-tax-price-of-shipping-type",
+      "file": "tax/examples/render-tax-price-of-shipping-type.md"
+    }
+  ]
 }
