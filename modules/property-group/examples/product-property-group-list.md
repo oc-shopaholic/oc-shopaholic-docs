@@ -1,12 +1,12 @@
-## Example {{ i }}: Render property group with code "main" 
+## Example {{ i }}: Render properties separated by groups
 
 ### {{ i }}.1 Task
 
-Create simple product page and render block with product properties from group with code 'main'.
+Create simple product page and render block with product properties separated by groups.
 
 For example, your block might look like this:
 
-![](./../../../assets/images/fronend-property-group-2.png)
+![](./../../../assets/images/fronend-property-group-1.png)
 
 ### {{ i }}.2 How can i do it?
 
@@ -22,9 +22,6 @@ from **ProductPage** component;
 :Get **PropertyCollection** object
 from **ProductItem** object;
 :Get **GroupCollection** object
-from **PropertyCollection** object;
-:Get **GroupItem** object with code "main"
-from **GroupCollection** object;
 :Filter *PropertyCollection** object
 by property group ID;
 :Render block with properties;
@@ -33,4 +30,4 @@ by property group ID;
 
 ### {{ i }}.3 Source code
 
-{{ get_module('property-group').example('pages/product-page-1.htm')|raw }}
+{{ get_module('property-group').example('pages/product-page-2.htm')|raw }}

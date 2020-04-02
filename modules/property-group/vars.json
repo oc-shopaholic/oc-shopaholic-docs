@@ -44,6 +44,11 @@
       "title": "Render property group with code \"main\"",
       "slug": "render-property-group-with-code-quotmainquot",
       "file": "property-group/examples/product-main-property-group.md"
+    },
+    {
+      "title": "Render properties separated by groups",
+      "slug": "render-properties-separated-by-groups",
+      "file": "property-group/examples/product-property-group-list.md"
     }
   ]
 }

@@ -360,6 +360,11 @@
       "file": "property-group/examples/product-main-property-group.md"
     },
     {
+      "title": "Render properties separated by groups",
+      "slug": "render-properties-separated-by-groups",
+      "file": "property-group/examples/product-property-group-list.md"
+    },
+    {
       "title": "Simple search results",
       "slug": "simple-search-results",
       "file": "search/examples/simple-search-results.md"
