@@ -103,6 +103,11 @@ You can display the offer selection block on the product page using the properti
 
 ![](./../assets/images/fronend-property-1.png)
 
+Plugin allows you to create/edit [properties](modules/property/home.md),
+[property groups](modules/property-group/home.md),
+[property sets](modules/property-set/home.md),
+[property values](modules/property-value/home.md).
+
 ## Related products for Shopaholic
 
 Related products plugin allows to bind products and assign them as an related to another product (for instance a mobile phone iPhone X and iPhone X MAX).
