@@ -60,7 +60,6 @@ It is default function of OctoberCMS.
 
 
     $ob{{ model.class }}->addCachedField(['my_field']);{% endif %}
-
 });
 ```
 {% endblock %}

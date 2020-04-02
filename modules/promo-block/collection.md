@@ -30,7 +30,7 @@ Available sorting value:
   * 'date_end|asc'
   * 'date_end|desc'
 ```php
-$obList = PromoBlockCollection::make([1,2,10,15])->sort('date_begin|desc');
+$obList = PromoBlockCollection::make()->sort('date_begin|desc');
 ```
 
 You can change sorting of promo blocks by going to **Backend -> Promotions -> Promo blocks -> Reorder records**

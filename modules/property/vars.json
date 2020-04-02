@@ -70,7 +70,7 @@
       "description": "default",
       "filter_name": {
         "type": "string",
-        "description": "",
+        "description": "The name of the property that you can use in the filter panel",
         "available": "filters",
         "relation": ""
       },
@@ -121,5 +121,27 @@
   "controller": {
     "class": "Properties",
     "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\Properties"
-  }
+  },
+  "example": [
+    {
+      "title": "Render properties",
+      "slug": "render-properties",
+      "file": "property/examples/product-property-list.md"
+    },
+    {
+      "title": "Product page + select with offer properties",
+      "slug": "product-page-select-with-offer-properties",
+      "file": "offer/examples/product-page-2.md"
+    },
+    {
+      "title": "Render property group with code \"main\"",
+      "slug": "render-property-group-with-code-quotmainquot",
+      "file": "property-group/examples/product-main-property-group.md"
+    },
+    {
+      "title": "Render properties separated by groups",
+      "slug": "render-properties-separated-by-groups",
+      "file": "property-group/examples/product-property-group-list.md"
+    }
+  ]
 }

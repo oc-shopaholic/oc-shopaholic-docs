@@ -73,7 +73,7 @@ Available sorting value:
 * 'price|desc'
 * 'new'
 ```php
-$obList = OfferCollection::make([1,2,10,15])->sort('price|desc');
+$obList = OfferCollection::make()->sort('price|desc');
 ```
 
 > You can use [**shopaholic.sorting.offer.get.list**](modules/offer/event/event.md#shopaholicsortingoffergetlist) event and add custom sorting for list of offers

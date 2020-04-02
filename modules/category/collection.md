@@ -17,7 +17,7 @@ Method applies filter by "active" field for elements of collection.
 Method search elements by name, preview_text, description, search_synonym, search_content fields.
 Method {{ ['search', 'sphinx']|available_with|lcfirst }}
 ```php
-    $obCategoryList = CategoryCollection::make()->search('search phrase');
+$obCategoryList = CategoryCollection::make()->search('search phrase');
 ```
 
 ### tree()

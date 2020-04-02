@@ -387,13 +387,13 @@
   },
   "example": [
     {
-      "title": "Product page 1",
-      "slug": "product-page-1",
+      "title": "Product page + select with offers",
+      "slug": "product-page-select-with-offers",
       "file": "offer/examples/product-page-1.md"
     },
     {
-      "title": "Product page 2",
-      "slug": "product-page-2",
+      "title": "Product page + select with offer properties",
+      "slug": "product-page-select-with-offer-properties",
       "file": "offer/examples/product-page-2.md"
     },
     {

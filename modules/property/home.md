@@ -33,4 +33,23 @@ You can use [events](modules/property/event/event#event-list-property), that all
 
 ![](./../../assets/images/backend-property-3.png)
 
+#### Import from CSV
+
+You can hide import buttons in "Basic settings".
+Go to **Backend -> Settings -> Basic settings -> "Import" tab**
+
+![](./../../assets/images/import-from-csv-settings-3.png)
+
+#### Import from XML
+
+For big catalog, you can use queues to reduce server load during import.
+You can enable queues in **"Application settings"**.
+Go to **Backend -> Settings -> Application settings -> "Import" tab**
+
+![](./../../assets/images/import-from-xml-settings-8.png)
+
+You can hide import buttons in "Basic settings".
+Go to **Backend -> Settings -> Basic settings -> "Import" tab**
+
+![](./../../assets/images/import-from-xml-settings-9.png)
 {% endblock %}

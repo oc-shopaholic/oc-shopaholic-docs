@@ -1,8 +1,13 @@
-## Example {{ i }}: Product page 2
+## Example {{ i }}: Product page + select with offer properties
 
 ### {{ i }}.1 Task
 
-Create simple product page and render select with offers. Render block with offer price and currency.
+Create simple product page and render select with offer properties.
+Render block with offer price and currency.
+
+For example, your block might look like this:
+
+![](./../../../assets/images/fronend-property-1.png)
 
 ### {{ i }}.2 How can i do it?
 

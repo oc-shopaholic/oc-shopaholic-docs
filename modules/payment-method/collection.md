@@ -15,7 +15,7 @@ Method applies filter to field "active" = true for elements of collection.
 
 Method removes payment methods from collection that are not approved via restrictions.
 ```php
-    $obList = PaymentMethodCollection::make([1,2,10,15])->available(['state' => 'NY']);
+$obList = PaymentMethodCollection::make([1,2,10,15])->available(['state' => 'NY']);
 ```
 
 ### sort()

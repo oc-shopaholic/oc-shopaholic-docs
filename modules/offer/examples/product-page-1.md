@@ -1,8 +1,9 @@
-## Example {{ i }}: Product page 1
+## Example {{ i }}: Product page + select with offers
 
 ### {{ i }}.1 Task
 
-Create simple product page and render select with offers. Render block with offer price and currency.
+Create simple product page and render select with offers.
+Render block with offer price and currency.
 
 ### {{ i }}.2 How can i do it?
 

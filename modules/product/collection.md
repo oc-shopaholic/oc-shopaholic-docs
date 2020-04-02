@@ -112,7 +112,7 @@ If $fStopPrice has empty value, then method applies filter by range of offer pri
 If $fStopPrice and $fStartPrice has empty value, then method isn't  apply filter by range of offer price.
 
 ```php
-    $obList = ProductCollection::make()->filterByPrice(10, 15);
+$obList = ProductCollection::make()->filterByPrice(10, 15);
 ```
 
 ### filterByProperty($arFilterList, $obPropertyList, _[$obOfferList = null]_)

@@ -10,7 +10,7 @@
 
 Method returns string with property values.
 ```php
-    $obList = PropertyValueCollection::make([1,2,10,15])->sort();
+    $obList = PropertyValueCollection::make()->sort();
     
     echo $obList->getValueString();
     //result string: 'test1, test2, test10, test15'
