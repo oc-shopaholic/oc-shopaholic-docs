@@ -6,6 +6,14 @@
 The "Property" module allows you to render product and offer properties in different parts of the product page or product card.
 You can use {{ get_module('property-group').link('property groups') }} to display properties in different parts of the product page.
 
+You should follow steps to display properties of products/offers in the backend:
+1. Create unit measure
+2. Create properties
+3. Create {{ get_module('property-group').link('property groups') }}
+4. Create {{ get_module('property-set').link('property sets') }}
+5. Attach properties to {{ get_module('property-set').link('property sets') }}
+6. Enable {{ get_module('property-set').link('"property set"') }} how "global" or attach {{ get_module('property-set').link('"property set"') }} to {{ get_module('category').link('category') }}
+
 ![](./../../assets/images/fronend-property-group-2.png)
 
 ![](./../../assets/images/fronend-property-group-1.png)

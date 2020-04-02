@@ -52,5 +52,12 @@
   "controller": {
     "class": "PropertyValues",
     "namespace": "Lovata\\PropertiesShopaholic\\Controllers\\PropertyValues"
-  }
+  },
+  "example": [
+    {
+      "title": "Render properties",
+      "slug": "render-properties",
+      "file": "property/examples/product-property-list.md"
+    }
+  ]
 }
