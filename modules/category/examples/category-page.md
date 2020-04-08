@@ -6,9 +6,9 @@ Create simple category page and render category name.
 
 ### {{ i }}.2 How can i do it?
 
-> Example uses {{ component.link('category-page') }} component.
-Component method returns {{ item.link() }} class object.
-All available fields and methods of **CategoryItem** class you can find in {{ item.link('section') }}.
+> Example uses {{ get_component('category').link('category-page') }} component.
+Component method returns {{ get_item('category').link() }} class object.
+All available fields and methods of **CategoryItem** class you can find in {{ get_item('category').link('section') }}.
 
 ```plantuml
 @startuml
@@ -25,7 +25,7 @@ from **CategoryPage** component;
 
 ### {{ i }}.3 Source code
 
-!> {{ component.link('category-page') }} components must be attached on page so that child categories are higher than parent categories.
+!> {{ get_component('category').link('category-page') }} components must be attached on page so that child categories are higher than parent categories.
 
 <!-- tabs:start -->
 

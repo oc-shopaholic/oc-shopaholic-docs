@@ -5,7 +5,7 @@
 Create simple promo block card and render promo block name, preview_image, preview_text fields.
 Render link on promo block page.
 
-> **"obPromoBlock"** is object of {{ item.link() }} class.
+> **"obPromoBlock"** is object of {{ get_item('promo-block').link() }} class.
 
 ### {{ i }}.2 Source code
 

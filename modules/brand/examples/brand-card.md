@@ -5,7 +5,7 @@
 Create simple brand card and render brand name, preview_image, preview_text fields.
 Render link on brand page.
 
-> **"obBrand"** is object of {{ item.link() }} class.
+> **"obBrand"** is object of {{ get_item('brand').link() }} class.
 
 ### {{ i }}.2 Source code
 

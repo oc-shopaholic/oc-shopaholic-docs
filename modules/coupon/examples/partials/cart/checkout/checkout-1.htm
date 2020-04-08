@@ -1,0 +1,12 @@
+{# Get array with applied coupons #}
+{% set arCouponList = Cart.getAppliedCouponList() %}
+{% if arCouponList is not empty %}
+    <div>
+        <span>Applied coupons</span>
+        <ul>
+            {% for obCoupon in arCouponList %}
+                <li>{{ obCoupon.code }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

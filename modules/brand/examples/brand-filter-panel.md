@@ -7,7 +7,7 @@ Apply filter by category ID to brand list.
 
 ### {{ i }}.2 How can i do it?
 
-> Example uses {{ component.link('brand-list') }} component.
+> Example uses {{ get_component('brand').link('brand-list') }} component.
 Component method returns {{ get_collection('brand').link() }} class object.
 All available methods of **{{ get_collection('brand').class }}** class you can find in {{ get_collection('brand').link('section') }}
 

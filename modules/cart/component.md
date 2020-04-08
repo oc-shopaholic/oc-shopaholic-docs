@@ -55,26 +55,6 @@ Method returns {{ get_collection('campaign').link() }} class object with active 
 
 Method gets applied coupons and returns array with {{ get_model('coupon').link() }} models.
 
-{% verbatim %}
-```twig
-[Cart]
-==
-
-{# Get active applied coupons #}
-{% set arCouponList = Cart.getAppliedCouponList() %}
-{% if arCouponList is not empty %}
-    <div>
-        <span>Applied coupons</span>
-        <ul>
-            {% for obCoupon in arCouponList %}
-                <li>{{ obCoupon.code }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-{% endif %}
-```
-{% endverbatim %}
-
 ### getCurrency()
 
 Method returns active currency symbol. For example: **$**

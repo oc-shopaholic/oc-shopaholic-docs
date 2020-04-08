@@ -85,5 +85,12 @@
   "collection": {
     "class": "CouponCollection",
     "namespace": "Lovata\\CouponsShopaholic\\Classes\\Collection\\CouponCollection"
-  }
+  },
+  "example": [
+    {
+      "title": "Render block with applied coupons on checkout page",
+      "slug": "render-block-with-applied-coupons-on-checkout-page",
+      "file": "coupon/examples/checkout-page.md"
+    }
+  ]
 }

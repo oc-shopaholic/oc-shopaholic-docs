@@ -7,7 +7,7 @@ Promo block list must have pagination block.
 
 ### {{ i }}.2 How can i do it?
 
-> Example uses {{ component.link('promo-block-list') }} component.
+> Example uses {{ get_component('promo-block').link('promo-block-list') }} component.
 Component method returns {{ get_collection('promo-block').link() }} class object.
 All available methods of **PromoBlockCollection** class you can find in {{ get_collection('promo-block').link('section') }}.
 

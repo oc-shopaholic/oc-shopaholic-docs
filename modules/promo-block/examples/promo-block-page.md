@@ -6,9 +6,9 @@ Create simple promo block page and render promo block name.
 
 ### {{ i }}.2 How can i do it?
 
-> Example uses {{ component.link('promo-block-page') }} component.
-Component method returns {{ item.link() }} class object.
-All available fields and methods of **PromoBlockItem** class you can find in {{ item.link('section') }}.
+> Example uses {{ get_component('promo-block').link('promo-block-page') }} component.
+Component method returns {{ get_item('promo-block').link() }} class object.
+All available fields and methods of **PromoBlockItem** class you can find in {{ get_item('promo-block').link('section') }}.
 
 ```plantuml
 @startuml

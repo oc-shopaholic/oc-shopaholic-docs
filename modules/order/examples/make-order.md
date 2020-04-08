@@ -6,9 +6,9 @@ Make order with using ajax request and redirect user to "Thank you" page.
 
 ### {{ i }}.2 How can i do it?
 
-> Example uses {{ component.link('make-order') }} and {{ component.link('order-page') }} components.
-{{ component.link('order-page') }} component method returns {{ item.link() }} class object.
-All available fields and methods of **OrderItem** class you can find in {{ item.link('section') }}
+> Example uses {{ get_component('order').link('make-order') }} and {{ get_component('order').link('order-page') }} components.
+{{ get_component('order').link('order-page') }} component method returns {{ get_item('order').link() }} class object.
+All available fields and methods of **OrderItem** class you can find in {{ get_item('order').link('section') }}
 
 ```plantuml
 @startuml

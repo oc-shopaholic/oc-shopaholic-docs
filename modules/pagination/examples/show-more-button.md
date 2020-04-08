@@ -6,7 +6,7 @@ Create simple catalog page with "Show more" button.
 
 ### {{ i }}.2 How can i do it?
 
-> Example uses {{ component.link('pagination') }} and {{ get_component('product').link('product-list') }} components.
+> Example uses {{ get_component('pagination').link('pagination') }} and {{ get_component('product').link('product-list') }} components.
 
 ```plantuml
 @startuml
