@@ -345,6 +345,11 @@
       "file": "product/examples/catalog-page.md"
     },
     {
+      "title": "Render filter panel on catalog page",
+      "slug": "render-filter-panel-on-catalog-page",
+      "file": "product/examples/catalog-page-with-filter.md"
+    },
+    {
       "title": "Accessories on product page",
       "slug": "accessories-on-product-page",
       "file": "accessory/examples/accessories-on-product-page.md"

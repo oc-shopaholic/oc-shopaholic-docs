@@ -1,17 +1,13 @@
-[FilterPanel]
-==
-{# Get search string #}
-{% set sSearch = input('search') %}
 {% set arAppliedPropertyList = input('property') %}
 
-{# Get product collection without filtration #}
-{% set obProductList = ProductList.make().active().search(sSearch) %}
+{# Get product collection #}
+{% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obActiveCategory.id, true) %}
 
 {# Get product proeprties for property sets with code 'main', enabled how filters #}
-{% set obProductPropertyList = FilterPanel.getProductPropertyList(['main'], obProductList) %}
+{% set obProductPropertyList = obActiveCategory.product_filter_property.setCategory(null).setProductList(obProductList) %}
 
 {# Get offer proeprties for property sets with code 'main', enabled how filters #}
-{% set obOfferPropertyList = FilterPanel.getOfferPropertyList(['main'], obProductList) %}
+{% set obOfferPropertyList = obActiveCategory.offer_filter_property.setCategory(null).setProductList(obProductList) %}
 
 {# Render filter panel #}
 {% if obProductPropertyList.isNotEmpty() or obOfferPropertyList.isNotEmpty() %}

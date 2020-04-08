@@ -12,6 +12,11 @@
   },
   "example": [
     {
+      "title": "Render filter panel on catalog page",
+      "slug": "render-filter-panel-on-catalog-page",
+      "file": "product/examples/catalog-page-with-filter.md"
+    },
+    {
       "title": "Render filter panel on search page",
       "slug": "render-filter-panel-on-search-page",
       "file": "filter/examples/search-page.md"
