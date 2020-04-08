@@ -17,6 +17,7 @@
     </div>
 {% endif %}
 
+{# Apply filter by properties #}
 {% set obProductList = obProductList.filterByProperty(arAppliedPropertyList, obProductPropertyList).filterByProperty(arAppliedPropertyList, obOfferPropertyList) %}
 
 {# Get array with pagination buttons #}

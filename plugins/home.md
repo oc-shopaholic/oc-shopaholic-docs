@@ -73,6 +73,8 @@ Description will be added soon...
 * The plugin extends [OfferCollection](modules/offer/collection/collection) class and adds **"filterByPrice"**, **"filterByDiscount"**, **"filterByQuantity"**, **"filterByProperty"** methods.
 * The plugin extends [ProductCollection](modules/product/collection/collection) class and adds **"filterByPrice"**, **"filterByBrandList"**, **"filterByDiscount"**, **"filterByQuantity"**, **"filterByProperty"** methods.
 
+You can find more information about filtration [here](modules/filter/home).
+
 For example, the filter panel on your site might look like this:
 
 ![](./../assets/images/fronend-filter-panel-1.png)

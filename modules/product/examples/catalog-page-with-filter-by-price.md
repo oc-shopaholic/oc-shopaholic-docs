@@ -1,10 +1,9 @@
-## Example {{ i }}: Render filter panel on catalog page
+## Example {{ i }}: Price filter on catalog page
 
 ### {{ i }}.1 Task
 Create simple catalog page and render product list.
 Product list must be sorted and filtered by category.
-Render filter panel by product and offer properties.
-Get properties from {{ get_item('category').link() }} object.
+Render price filter.
 Product list must have pagination block.
 
 ### {{ i }}.2 How can i do it?
@@ -42,10 +41,8 @@ from **ProductList** component;
 to ProductCollection object;
 :Apply filter by category
 to ProductCollection object;
-:Get **FilterPropertyCollection** object
-from **CategoryItem** component;
-:Render filter panel;
-:Apply filter by properties
+:Render price filter;
+:Apply filter by price
 to ProductCollection object;
 :Get current page number from request;
 :Get list of pagination buttons;
@@ -76,9 +73,9 @@ Simple example of catalog page (one level).
 
 {{ get_module('product').example('pages/catalog-1.htm')|raw }}
 
-{{ get_module('product').example('partials/product/catalog/catalog-3.htm')|raw }}
+{{ get_module('product').example('partials/product/catalog/catalog-5.htm')|raw }}
 
-{{ get_module('filter').example('partials/product/filter-panel/filter-panel-1.htm')|raw }}
+{{ get_module('filter').example('partials/product/price-filter/price-filter-1.htm')|raw }}
 
 {{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
@@ -92,9 +89,9 @@ Simple example of catalog page (two levels).
 
 {{ get_module('product').example('pages/catalog-2.htm')|raw }}
 
-{{ get_module('product').example('partials/product/catalog/catalog-4.htm')|raw }}
+{{ get_module('product').example('partials/product/catalog/catalog-5.htm')|raw }}
 
-{{ get_module('filter').example('partials/product/filter-panel/filter-panel-1.htm')|raw }}
+{{ get_module('filter').example('partials/product/price-filter/price-filter-1.htm')|raw }}
 
 {{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 
@@ -106,9 +103,9 @@ Catalog page with wildcard URL parameter.
 
 {{ get_module('product').example('pages/catalog-3.htm')|raw }}
 
-{{ get_module('product').example('partials/product/catalog/catalog-4.htm')|raw }}
+{{ get_module('product').example('partials/product/catalog/catalog-5.htm')|raw }}
 
-{{ get_module('filter').example('partials/product/filter-panel/filter-panel-1.htm')|raw }}
+{{ get_module('filter').example('partials/product/price-filter/price-filter-1.htm')|raw }}
 
 {{ get_module('product').example('partials/product/product-card/product-card-1.htm')|raw }}
 

@@ -20,6 +20,11 @@
       "title": "Render filter panel on search page",
       "slug": "render-filter-panel-on-search-page",
       "file": "filter/examples/search-page.md"
+    },
+    {
+      "title": "Price filter on catalog page",
+      "slug": "price-filter-on-catalog-page",
+      "file": "product/examples/catalog-page-with-filter-by-price.md"
     }
   ]
 }
