@@ -1,0 +1,15 @@
+[Cart]
+==
+{# Get cart positions #}
+{% set obCartPositionList = Cart.get() %}
+{% if obCartPositionList.isNotEmpty() %}
+    <ul>
+        {% for obCartPosition in obCartPositionList %}
+            <li>{% partial 'cart/cart-position/cart-position' obCartPosition=obCartPosition %}</li>
+        {% endfor %}
+    </ul>
+
+    <div>Total price: {{ obCartPositionList.getTotalPrice() }} {{ obCartPositionList.getCurrency() }}</div>
+{% else %}
+    <div>Cart is empty</div>
+{% endif %}

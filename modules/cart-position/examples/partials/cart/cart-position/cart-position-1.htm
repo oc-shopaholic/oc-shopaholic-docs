@@ -1,0 +1,27 @@
+{# Get offer and product objects #}
+{% set obOffer = obCartPosition.item %}
+{% set obProduct = obOffer.product %}
+
+<a href="{{ obProduct.getPageUrl('product-page') }}">
+    <div>
+        {% if obProduct.preview_image is not empty %}
+            <img
+                src="{{ obProduct.preview_image.path }}"
+                itemprop="image"
+                alt="{{ obProduct.preview_image.description }}"
+                title="{{ obProduct.preview_image.title }}"
+            >
+        {% endif %}
+        <h3 itemprop="name">{{ obProduct.name }}</h3>
+        {% if obProduct.preview_text is not empty %}
+            <div itemprop="description">
+                {{ obProduct.preview_text }}
+            </div>
+        {% endif %}
+        <span data-price="{{ obCartPosition.price_value }}">{{ obCartPosition.price }}</span>
+        {% if obCartPosition.discount_price_value > 0 %}
+            <span data-price="{{ obCartPosition.old_price_value }}">{{ obCartPosition.old_price }}</span>
+        {% endif %}
+        <input type="number" name="quantity" value="{{ obCartPosition.quantity }}" max="{{ obOffer.quantity }}" min="1">
+    </div>
+</a>

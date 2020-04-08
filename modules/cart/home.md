@@ -13,6 +13,8 @@ change quantity and remove positions from cart.
 
 ## How it works?
 
+In the diagram, we displayed the initialization logic of Cart object.
+
 ```plantuml
 @startuml
 start

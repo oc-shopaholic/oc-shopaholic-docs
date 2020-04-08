@@ -27,4 +27,4 @@ from **Cart** component;
 
 {{ get_module('tax').example('pages/cart-1.htm')|raw }}
 
-{{ get_module('tax').example('partials/product/cart-position/cart-position-1.htm')|raw }}
+{{ get_module('tax').example('partials/cart/cart-position/cart-position-1.htm')|raw }}

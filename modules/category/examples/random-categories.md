@@ -9,8 +9,8 @@ Render link on category page.
 ### {{ i }}.2 How can i do it?
 
 > Example uses {{ component.link('category-list') }} component.
-Component method returns {{ collection.link() }} class object.
-All available methods of **{{ collection.class }}** class you can find in {{ collection.link('section') }}
+Component method returns {{ get_collection('category').link() }} class object.
+All available methods of **{{ get_collection('category').class }}** class you can find in {{ get_collection('category').link('section') }}
 
 ```plantuml
 @startuml

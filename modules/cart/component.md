@@ -4,7 +4,7 @@
 
 ## Cart
 
-* [get](#getobshippingtype-null)
+* [get](#getobshippingtype-null-obpaymentmethoditem-null)
 * [getActiveShippingTypeFromRequest](#getactiveshippingtypefromrequest)
 * [getAppliedCampaignList](#getappliedcampaignlist)
 * [getAppliedCouponList](#getappliedcouponlist)
@@ -31,72 +31,13 @@
 * [onSync](#onsync)
 * [onUpdate](#onupdate)
 
-### get($obShippingType = null)
+### get(_[$obShippingType = null]_, _[$obPaymentMethodItem = null]_)
 
 Method returns {{ get_collection('cart-position').link() }} class object.
-You can pass active sipping type object to method to get total cost of order with shipping price.
+{{ get_collection('cart-position').link() }} object will contain the position of the user's cart.
+You can pass active sipping type object and active payment method object
+to method to get total cost with shipping price and discounts applied.
 You can uses method to render cart positions and blocks with positions total price.
-
-#### Example 1: Block with mini-cart
-
-> Block with mini-cart is often located in the header of your site.
-
-![](./../../../assets/images/fronend-cart-1.png)
-
-{% verbatim %}
-```twig
-[Cart]
-==
-
-{# Get cart positions #}
-{% set obCartPositionList = Cart.get() %}
-{% if obCartPositionList.isNotEmpty() %}
-    <ul>
-    {% for obCartPosition in obCartPositionList %}
-        <li>{% partial 'product/cart-position/cart-position' obCartPosition=obCartPosition %}</li>
-    {% endfor %}
-    </ul>
-    
-    <div>Total price: {{ obCartPositionList.getTotalPrice() }} {{ obCartPositionList.getCurrency() }}</div>
-{% else %}
-    <div>Cart is empty</div>
-{% endif %}
-```
-{% endverbatim %}
-
-#### Example 2: Block with cart positions on checkout page
-
-> You often need to be able to get total order price on checkout page, taking into cost of delivery.
-For example: the user selected shipping type at the previous step of checkout
-
-![](./../../../assets/images/fronend-cart-2.png)
-
-{% verbatim %}
-```twig
-[Cart]
-
-[ShippingTypeList]
-==
-
-{# Get first shipping type #}
-{% set obShippingTypeList = ShippingTypeList.make().active().sort() %}
-{% set obActiveShippingType = obShippingTypeList.first() %}
-
-{# Get cart positions #}
-{% set obCartPositionList = Cart.get(obActiveShippingType) %}
-{% if obCartPositionList.isNotEmpty() %}
-    <ul>
-    {% for obCartPosition in obCartPositionList %}
-        <li>{% partial 'product/cart-position/cart-position' obCartPosition=obCartPosition %}</li>
-    {% endfor %}
-    </ul>
-    
-    <div>Total price: {{ obCartPositionList.getTotalPrice() }} {{ obCartPositionList.getCurrency() }}</div>
-{% else %}
-    <div>Cart is empty</div>
-{% endif %}
-```
-{% endverbatim %}
 
 ### getActiveShippingTypeFromRequest()
 
@@ -107,26 +48,6 @@ Method gets from request "shipping_type_id" field and returns {{ get_item('shipp
 > Method {{ 'campaigns'|available_with|lcfirst }}
 
 Method returns {{ get_collection('campaign').link() }} class object with active applied campaigns.
-
-{% verbatim %}
-```twig
-[Cart]
-==
-
-{# Get active applied campaigns #}
-{% set obCampaignList = Cart.getAppliedCampaignList() %}
-{% if obCampaignList.isNotEmpty() %}
-    <div>
-        <span>Campaigns</span>
-        <ul>
-            {% for obCampaign in obCampaignList %}
-                <li>{{ obCampaign.name }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-{% endif %}
-```
-{% endverbatim %}
 
 ### getAppliedCouponList()
 

@@ -10,7 +10,7 @@ is_hidden = 0
 {% if obCartPositionList.isNotEmpty() %}
     <ul>
         {% for obCartPosition in obCartPositionList %}
-            <li>{% partial 'product/cart-position/cart-position' obCartPosition=obCartPosition %}</li>
+            <li>{% partial 'cart/cart-position/cart-position' obCartPosition=obCartPosition %}</li>
         {% endfor %}
     </ul>
 

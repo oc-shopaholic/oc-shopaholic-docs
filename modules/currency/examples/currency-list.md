@@ -7,8 +7,8 @@ Create simple block with currency list.
 ### {{ i }}.2 How can i do it?
 
 > Example uses {{ component.link('currency-list') }} component.
-Component method returns {{ collection.link() }} class object.
-All available methods of **{{ collection.class }}** class you can find in {{ collection.link('section') }}
+Component method returns {{ get_collection('currency').link() }} class object.
+All available methods of **{{ get_collection('currency').class }}** class you can find in {{ get_collection('currency').link('section') }}
 
 ```plantuml
 @startuml

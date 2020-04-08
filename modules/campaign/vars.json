@@ -153,5 +153,12 @@
   "controller": {
     "class": "Campaigns",
     "namespace": "Lovata\\CampaignsShopaholic\\Controllers\\Campaigns"
-  }
+  },
+  "example": [
+    {
+      "title": "Render block with applied campaigns on checkout page",
+      "slug": "render-block-with-applied-campaigns-on-checkout-page",
+      "file": "campaign/examples/checkout-page.md"
+    }
+  ]
 }

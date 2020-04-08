@@ -53,5 +53,22 @@
       "class": "Cart",
       "anchor": "cart"
     }
-  }
+  },
+  "example": [
+    {
+      "title": "Render block with mini-cart",
+      "slug": "render-block-with-mini-cart",
+      "file": "cart-position/examples/mini-cart.md"
+    },
+    {
+      "title": "Render block with cart positions on checkout page",
+      "slug": "render-block-with-cart-positions-on-checkout-page",
+      "file": "cart-position/examples/checkout-page.md"
+    },
+    {
+      "title": "Render block with applied campaigns on checkout page",
+      "slug": "render-block-with-applied-campaigns-on-checkout-page",
+      "file": "campaign/examples/checkout-page.md"
+    }
+  ]
 }

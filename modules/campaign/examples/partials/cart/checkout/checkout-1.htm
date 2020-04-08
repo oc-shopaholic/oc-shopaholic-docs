@@ -1,0 +1,12 @@
+{# Get cart positions #}
+{% set obCampaignList = Cart.getAppliedCampaignList() %}
+{% if obCampaignList.isNotEmpty() %}
+    <div>
+        <span>Applied campaigns</span>
+        <ul>
+            {% for obCampaign in obCampaignList %}
+                <li>{% partial 'cart/campaign-item/campaign-item' obCampaign=obCampaign %}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
