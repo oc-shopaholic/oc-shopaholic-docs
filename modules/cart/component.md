@@ -98,44 +98,7 @@ Method returns total discount price of cart positions + discount price of active
 Method returns [TotalPriceContainer](modules/price-container/home.md#TotalPriceContainer) class object.
 Object contains all fields of total price. For example: price, old_price, tax_price, discount_price, etc.
 
-{% verbatim %}
-```twig
-[Cart]
-==
-
-{% set obPriceData = Cart.getTotalPriceData() %}
-<table>
-<thead>
-    <tr>
-        <td>Field</td>
-        <td>Price without tax</td>
-        <td>Tax price</td>
-        <td>Price with tax</td>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>Price</td>
-        <td>{{ obPriceData.price_without_tax }}</td>
-        <td>{{ obPriceData.tax_price }}</td>
-        <td>{{ obPriceData.price_with_tax }}</td>
-    </tr>
-    <tr>
-        <td>Discount price</td>
-        <td>{{ obPriceData.discount_price_without_tax }}</td>
-        <td>{{ obPriceData.tax_discount_price }}</td>
-        <td>{{ obPriceData.discount_price_with_tax }}</td>
-    </tr>
-    <tr>
-        <td>Old price</td>
-        <td>{{ obPriceData.old_price_without_tax }}</td>
-        <td>{{ obPriceData.tax_old_price }}</td>
-        <td>{{ obPriceData.old_price_with_tax }}</td>
-    </tr>
-</tbody>
-</table>
-```
-{% endverbatim %}
+{{ get_module('cart').example('partials/cart/total-price/total-price-1.htm')|raw }}
 
 ### onAdd()
 
