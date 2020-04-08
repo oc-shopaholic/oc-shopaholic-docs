@@ -5,6 +5,7 @@ Create simple catalog page and render product list.
 Product list must be sorted and filtered by category.
 Render filter panel by product and offer properties.
 Get properties from {{ get_item('category').link() }} object.
+Render filter by quantity and discounts (old_price > 0).
 Product list must have pagination block.
 
 ### {{ i }}.2 How can i do it?
@@ -45,7 +46,13 @@ to ProductCollection object;
 :Get **FilterPropertyCollection** object
 from **CategoryItem** component;
 :Render filter panel;
+:Render filter by quantity
+and discounts (old_price > 0);
 :Apply filter by properties
+to ProductCollection object;
+:Apply filter by quantity
+to ProductCollection object;
+:Apply filter by discounts
 to ProductCollection object;
 :Get current page number from request;
 :Get list of pagination buttons;

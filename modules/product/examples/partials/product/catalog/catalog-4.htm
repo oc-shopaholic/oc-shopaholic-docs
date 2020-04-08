@@ -1,4 +1,6 @@
 {% set arAppliedPropertyList = input('property') %}
+{% set bFilterByDiscount = input('discount') %}
+{% set bFilterByQuantity = input('quantity') %}
 
 {# Get product collection #}
 {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obActiveCategory.id, true) %}
@@ -9,16 +11,32 @@
 {# Get offer proeprties for property sets with code 'main', enabled how filters #}
 {% set obOfferPropertyList = obActiveCategory.offer_filter_property.setCategory(null).setProductList(obProductList) %}
 
-{# Render filter panel #}
-{% if obProductPropertyList.isNotEmpty() or obOfferPropertyList.isNotEmpty() %}
-    <div>
-        {% partial 'product/filter-panel/filter-panel' obPropertyList=obProductPropertyList arAppliedPropertyList=arAppliedPropertyList %}
-        {% partial 'product/filter-panel/filter-panel' obPropertyList=obOfferPropertyList arAppliedPropertyList=arAppliedPropertyList %}
-    </div>
-{% endif %}
+<div>
+    {# Render filter panel #}
+    {% if obProductPropertyList.isNotEmpty() or obOfferPropertyList.isNotEmpty() %}
+            {% partial 'product/filter-panel/filter-panel' obPropertyList=obProductPropertyList arAppliedPropertyList=arAppliedPropertyList %}
+            {% partial 'product/filter-panel/filter-panel' obPropertyList=obOfferPropertyList arAppliedPropertyList=arAppliedPropertyList %}
+    {% endif %}
+    <label>
+        <input type="checkbox" name="discount" value="1" {% if bFilterByDiscount %}checked="checked"{% endif %}>
+        With discounts
+    </label>
+    <label>
+        <input type="checkbox" name="quantity" value="1" {% if bFilterByQuantity %}checked="checked"{% endif %}>
+        In store
+    </label>
+</div>
 
 {# Apply filter by properties #}
 {% set obProductList = obProductList.filterByProperty(arAppliedPropertyList, obProductPropertyList).filterByProperty(arAppliedPropertyList, obOfferPropertyList) %}
+{# Apply filter by quantity #}
+{% if bFilterByQuantity %}
+    {% set obProductList = obProductList.filterByQuantity() %}
+{% endif %}
+{# Apply filter by discount #}
+{% if bFilterByDiscount %}
+    {% set obProductList = obProductList.filterByDiscount() %}
+{% endif %}
 
 {# Get array with pagination buttons #}
 {% set iPage = Pagination.getPageFromRequest() %}
