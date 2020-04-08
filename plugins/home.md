@@ -68,6 +68,15 @@ Description will be added soon...
 
 "Filter" plugin allows you to render a filtering panel and filter your products by price, brands and properties of products and offers.
 
+* The plugin extends [CategoryItem](modules/category/item/item) class and adds **"product_filter_property"**, **"offer_filter_property"** fields.
+* The plugin extends [PropertyItem](modules/property/item/item) class and adds **"filter_name"** field.
+* The plugin extends [OfferCollection](modules/offer/collection/collection) class and adds **"filterByPrice"**, **"filterByDiscount"**, **"filterByQuantity"**, **"filterByProperty"** methods.
+* The plugin extends [ProductCollection](modules/product/collection/collection) class and adds **"filterByPrice"**, **"filterByBrandList"**, **"filterByDiscount"**, **"filterByQuantity"**, **"filterByProperty"** methods.
+
+For example, the filter panel on your site might look like this:
+
+![](./../assets/images/fronend-filter-panel-1.png)
+
 ## Labels for Shopaholic
 
 “Labels” plugin allows you to mark products with such attributes as: “top”, “best seller”, “new”, etc.
@@ -94,6 +103,13 @@ You can specify count by which the product’s popularity will be increased.
 ## Properties for Shopaholic
 
 The "Property" plugin allows you to render product and offer properties in different parts of the product page or product card.
+* Plugin allows you to create/edit [properties](modules/property/home.md),
+[property groups](modules/property-group/home.md),
+[property sets](modules/property-set/home.md),
+[property values](modules/property-value/home.md).
+* The plugin expands import of products/offers and allows you to import property values.
+* The plugin extends [Product](modules/product/model/model)/[Offer](modules/offer/model/model) models and adds **"property"** field. 
+* The plugin extends [ProductItem](modules/product/item/item)/[OfferItem](modules/offer/item/item) classes and adds **"property"** field. 
 
 ![](./../assets/images/fronend-property-group-2.png)
 
@@ -102,11 +118,6 @@ The "Property" plugin allows you to render product and offer properties in diffe
 You can display the offer selection block on the product page using the properties of the offers.
 
 ![](./../assets/images/fronend-property-1.png)
-
-Plugin allows you to create/edit [properties](modules/property/home.md),
-[property groups](modules/property-group/home.md),
-[property sets](modules/property-set/home.md),
-[property values](modules/property-value/home.md).
 
 ## Related products for Shopaholic
 
