@@ -1,0 +1,39 @@
+{% if obPropertyList.isNotEmpty() %}
+<div>
+    {# Render proeprty list #}
+    {% for obProperty in obPropertyList if obProperty.hasValue() %}
+        <div>
+            {# Render property name #}
+            <span>{{ obProperty.filter_name }}</span>
+            <div>
+                {# Render property values #}
+                {% if obProperty.filter_type == 'checkbox' %}
+                    {% for obPropertyValue in obProperty.property_value %}
+                        <label for="property-{{ obProperty.id }}">{{ obPropertyValue.value }}</label>
+                        <input
+                            type="checkbox"
+                            name="property[{{ obProperty.id }}][]"
+                            id="property-{{ obProperty.id }}"
+                            {% if arAppliedPropertyList[obProperty.id] is not empty obPropertyValue.slug in arAppliedPropertyList[obProperty.id] %}
+                                checked="checked"
+                            {% endif %}
+                            value="{{ obPropertyValue.slug }}">
+                    {% endfor %}
+                {% elseif obProperty.filter_type == 'select' %}
+                    <select name="property[{{ obProperty.id }}][]">
+                        {% for obPropertyValue in obProperty.property_value %}
+                            <option
+                                {% if arAppliedPropertyList[obProperty.id] is not empty obPropertyValue.slug in arAppliedPropertyList[obProperty.id] %}
+                                    selected="selected"
+                                {% endif %}
+                                value="{{ obPropertyValue.slug }}">
+                                {{ obPropertyValue.value }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}

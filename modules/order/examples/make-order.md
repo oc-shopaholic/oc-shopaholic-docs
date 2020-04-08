@@ -76,7 +76,7 @@ redirect_page = "success"
   
   {# Render shipping types #}
   {% set obShippingTypeList = ShippingTypeList.make().sort().active() %}
-  {% if ShippingTypeList.isNotEmpty() %}
+  {% if obShippingTypeList.isNotEmpty() %}
   <div>
     <span>Choose shipping type:</span>
     {% for obShippingType in obShippingTypeList %}
@@ -88,7 +88,7 @@ redirect_page = "success"
   
   {# Render payment methods #}
   {% set obPaymentMethodList = PaymentMethodList.make().sort().active() %}
-  {% if PaymentMethodList.isNotEmpty() %}
+  {% if obPaymentMethodList.isNotEmpty() %}
   <div>
     <span>Choose payment method:</span>
     {% for obPaymentMethod in obPaymentMethodList %}

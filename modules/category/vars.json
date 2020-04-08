@@ -145,7 +145,7 @@
         "relation": ""
       },
       "offer_filter_property": {
-        "type": "{{ get_collection('filter-property').link() }}",
+        "type": "{{ get_collection('property').link() }}",
         "description": "",
         "available": "filter",
         "relation": ""
@@ -183,7 +183,7 @@
         "relation": ""
       },
       "product_filter_property": {
-        "type": "{{ get_collection('filter-property').link() }}",
+        "type": "{{ get_collection('property').link() }}",
         "description": "",
         "available": "filter",
         "relation": ""

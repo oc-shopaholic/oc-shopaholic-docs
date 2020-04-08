@@ -1,0 +1,20 @@
+{
+  "title": "Filtration",
+  "name": "Filter",
+  "name_many": "Filters",
+  "slug": "filter",
+  "available": ["filter"],
+  "component": {
+    "filter-panel": {
+      "class": "FilterPanel",
+      "anchor": "filterpanel"
+    }
+  },
+  "example": [
+    {
+      "title": "Render filter panel on search page",
+      "slug": "render-filter-panel-on-search-page",
+      "file": "filter/examples/search-page.md"
+    }
+  ]
+}

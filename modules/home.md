@@ -13,6 +13,7 @@
 ||[Coupon group](modules/coupon-group/home.md)|{{ 'coupons'|available_with }}|
 ||[Currency](modules/currency/home.md)|{{ 'shopaholic'|available_with }}|
 |**D**|[Discount](modules/discount/home.md)|{{ 'discounts'|available_with }}|
+|**F**|[Filtration](modules/filter/home.md)|{{ 'filter'|available_with }}|
 |**L**|[Label](modules/label/home.md)|{{ 'labels'|available_with }}|
 |**O**|[Offer](modules/offer/home.md)|{{ 'shopaholic'|available_with }}|
 ||[Order](modules/order/home.md)|{{ 'orders'|available_with }}|

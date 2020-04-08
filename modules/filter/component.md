@@ -1,17 +1,17 @@
-# FilterPanel component {docsify-ignore-all}
+{% extends 'docs/modules/component-default.md' %}
 
-!> **Attention!**  We recommend that you read [Architecture](architecture/architecture), [ElementItem class](architecture/item-class/item-class.md),
-[ElementCollection class](architecture/collection-class/collection-class.md) sections for complete understanding of  project architecture.
+{% block content %}
 
-Component is available in **[Filter for Shopaholic](plugins/home.md#filter-for-shopaholic)** plugin.
+## FilterPanel
 
-Component allows you to render of custom filter panel for different site pages. For example: search results page, brand page with product list, etc.
+Component allows you to render custom filter panel for different pages of your site. For example: search page, brand page with product list, etc.
 
 ### getProductPropertyList($arPropertySetList, _[$obProductList = null]_)
   * (array|string) $arPropertySetList - array with list of property set codes
-  * ([ProductCollection](modules/product/collection/collection.md)) $obProductList - product collection. List of property values will be obtained for this product list.
+  * ([ProductCollection](modules/product/collection/collection.md)) $obProductList - product collection. A list of property values will be generated for this product list.
 
 **Example 1:** Render of filter panel for product property set with code "main"
+{% verbatim %}
 ```twig
 [FilterPanel]
 
@@ -54,6 +54,7 @@ sorting = "popularity|desc"
     {% endif %}
 {% endfor %}
 ```
+{% endverbatim %}
 
 ### getOfferPropertyList($arPropertySetList, _[$obProductList = null]_, _[$obOfferList = null]_)
   * (array|string) $arPropertySetList - array with list of property set codes
@@ -61,6 +62,7 @@ sorting = "popularity|desc"
   * ([OfferCollection](offer/collection/collection.md)) $obOfferList - offer collection. List of property values will be obtained for this offer list.
 
 **Example:** Render of filter panel for offer property set with code "main"
+{% verbatim %}
 ```twig
 [FilterPanel]
 
@@ -103,3 +105,5 @@ sorting = "popularity|desc"
     {% endif %}
 {% endfor %}
 ```
+{% endverbatim %}
+{% endblock %}

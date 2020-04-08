@@ -142,6 +142,11 @@
       "title": "Render properties separated by groups",
       "slug": "render-properties-separated-by-groups",
       "file": "property-group/examples/product-property-group-list.md"
+    },
+    {
+      "title": "Render filter panel on search page",
+      "slug": "render-filter-panel-on-search-page",
+      "file": "filter/examples/search-page.md"
     }
   ]
 }

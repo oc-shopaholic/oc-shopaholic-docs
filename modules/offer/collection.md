@@ -36,7 +36,7 @@ $obList = OfferCollection::make()->active()->filterByPrice(10, 15);
 
 ### filterByProperty($arFilterList, $obPropertyList)
   * $arFilterList - array with filter values
-  * $obPropertyList - object {{ get_collection('filter-property').link() }}
+  * $obPropertyList - object {{ get_collection('property').link() }}
 
 Method applies filter by offer properties.
 Method {{ ['filter', 'properties']|available_with|lcfirst }}

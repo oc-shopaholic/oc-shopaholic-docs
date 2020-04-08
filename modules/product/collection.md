@@ -117,7 +117,7 @@ $obList = ProductCollection::make()->filterByPrice(10, 15);
 
 ### filterByProperty($arFilterList, $obPropertyList, _[$obOfferList = null]_)
   * $arFilterList - array with filter values
-  * $obPropertyList - object {{ get_collection('filter-property').link() }}
+  * $obPropertyList - object {{ get_collection('property').link() }}
   * $obOfferList - object {{ get_collection('offer').link() }} - filtered offer collection. Only these offers will be used in filtering of products.
 
 Method applies filter by product or offer properties.
