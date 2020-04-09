@@ -66,6 +66,16 @@
       "file": "cart-position/examples/checkout-page.md"
     },
     {
+      "title": "Add offers to cart without properties",
+      "slug": "add-offers-to-cart-without-properties",
+      "file": "cart/examples/add-cart.md"
+    },
+    {
+      "title": "Add offers to cart with properties",
+      "slug": "add-offers-to-cart-with-properties",
+      "file": "cart/examples/add-cart-with-properties.md"
+    },
+    {
       "title": "Render block with applied coupons on checkout page",
       "slug": "render-block-with-applied-coupons-on-checkout-page",
       "file": "coupon/examples/checkout-page.md"

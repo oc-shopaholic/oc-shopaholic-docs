@@ -221,14 +221,7 @@ $.request('MakeOrder::onCreate', {
 <details>
 <summary>Click to see negative response example</summary>
 
-```json
-{
-"status": false,
-"code": "Error code",
-"message": "Error message",
-"data": {}
-}
-```
+{{ get_module('cart').example('json/negative-response-1.json')|raw }}
 
 </details>
 
@@ -348,14 +341,7 @@ Method adds ability to send purchase request to payment gateway from order page.
 <details>
 <summary>Click to see negative response example</summary>
 
-```json
-{
-"status": false,
-"code": "Error code",
-"message": "Error message",
-"data": {}
-}
-```
+{{ get_module('cart').example('json/negative-response-1.json')|raw }}
 
 </details>
 {% endblock %}
