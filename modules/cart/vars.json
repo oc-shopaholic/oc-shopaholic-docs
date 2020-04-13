@@ -76,6 +76,11 @@
       "file": "cart/examples/add-cart-with-properties.md"
     },
     {
+      "title": "Clear cart",
+      "slug": "clear-cart",
+      "file": "cart/examples/clear-cart.md"
+    },
+    {
       "title": "Add coupon to cart",
       "slug": "add-coupon-to-cart",
       "file": "coupon/examples/add-coupon.md"

@@ -124,6 +124,11 @@
       "file": "cart/examples/add-cart-with-properties.md"
     },
     {
+      "title": "Clear cart",
+      "slug": "clear-cart",
+      "file": "cart/examples/clear-cart.md"
+    },
+    {
       "title": "Render tax price of cart positions",
       "slug": "render-tax-price-of-cart-positions",
       "file": "tax/examples/render-tax-price-of-cart-positions.md"

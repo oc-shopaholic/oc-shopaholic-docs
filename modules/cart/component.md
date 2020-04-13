@@ -221,12 +221,7 @@ Method removes all positions from cart.
 
 #### Request
 
-```javascript
-//Send ajax request and update cart items
-$.request('Cart::onClear', {
-  'update': {'cart-items': '.cart-item-wrapper'} 
-});
-```
+{{ get_module('cart').example('js/clear-cart/clear-cart-1.js')|raw }}
 
 ### onClearCouponList()
 
