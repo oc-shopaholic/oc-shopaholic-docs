@@ -91,6 +91,11 @@
       "file": "coupon/examples/checkout-page.md"
     },
     {
+      "title": "Clear coupons",
+      "slug": "clear-coupons",
+      "file": "coupon/examples/clear-coupon.md"
+    },
+    {
       "title": "Render block with applied campaigns on checkout page",
       "slug": "render-block-with-applied-campaigns-on-checkout-page",
       "file": "campaign/examples/checkout-page.md"

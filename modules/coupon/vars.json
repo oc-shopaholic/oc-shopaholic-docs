@@ -96,6 +96,11 @@
       "title": "Render block with applied coupons on checkout page",
       "slug": "render-block-with-applied-coupons-on-checkout-page",
       "file": "coupon/examples/checkout-page.md"
+    },
+    {
+      "title": "Clear coupons",
+      "slug": "clear-coupons",
+      "file": "coupon/examples/clear-coupon.md"
     }
   ]
 }

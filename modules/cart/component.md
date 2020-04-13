@@ -227,16 +227,13 @@ Method removes all positions from cart.
 
 > Method {{ 'coupons'|available_with|lcfirst }}
 
-Method remove all attached coupons from cart. You can send ID of active shipping type in ajax request to get an object in response in which delivery cost will be added to total price.
+Method remove all attached coupons from cart.
+You can send ID of active shipping type in ajax request to get an object in response in which delivery cost will be added to total price.
+You can send ID of the active payment method in an ajax request to apply promo mechanisms that depend on the payment method.
 
 #### Request
 
-```javascript
-$.request('Cart::onClearCouponList', {
-  'update': {'cart-items': '.cart-item-wrapper'},
-  'shipping_type_id': 4
-});
-```
+{{ get_module('coupon').example('js/clear-coupon/clear-coupon-1.js')|raw }}
 
 #### Response
 
