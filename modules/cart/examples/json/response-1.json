@@ -220,8 +220,8 @@
     },
     "quantity": 2,
     "total_quantity": 5,
-    "payment_method_id": 1,
-    "shipping_type_id": 1,
+    "payment_method_id": 3,
+    "shipping_type_id": 4,
     "user_data": {
       "phone": "+1 11 111-11-11"
     },
