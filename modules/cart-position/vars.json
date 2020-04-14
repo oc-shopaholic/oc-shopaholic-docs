@@ -124,6 +124,16 @@
       "file": "cart/examples/add-cart-with-properties.md"
     },
     {
+      "title": "Remove cart positions by offer ID",
+      "slug": "remove-cart-positions-by-offer-id",
+      "file": "cart/examples/remove-cart.md"
+    },
+    {
+      "title": "Remove cart positions by position ID",
+      "slug": "remove-cart-positions-by-position-id",
+      "file": "cart/examples/remove-cart-by-id.md"
+    },
+    {
       "title": "Clear cart",
       "slug": "clear-cart",
       "file": "cart/examples/clear-cart.md"

@@ -5,7 +5,7 @@ let data = {
     {'offer_id': 44, 'quantity': 1, 'property': {'double_cheese': false}}
   ],
   'shipping_type_id': 4,
-  'payment_method_id': 3,
+  'payment_method_id': 3
 };
 
 //Send ajax request and update cart items
