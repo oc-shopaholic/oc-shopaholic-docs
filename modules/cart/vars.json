@@ -101,6 +101,11 @@
       "file": "coupon/examples/checkout-page.md"
     },
     {
+      "title": "Remove coupon from cart",
+      "slug": "remove-coupon-from-cart",
+      "file": "coupon/examples/remove-coupon.md"
+    },
+    {
       "title": "Clear coupons",
       "slug": "clear-coupons",
       "file": "coupon/examples/clear-coupon.md"

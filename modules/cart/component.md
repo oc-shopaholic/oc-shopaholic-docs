@@ -359,12 +359,7 @@ stop
 Method detach coupon from cart.
 You can send ID of active shipping type in ajax request to get an object in response in which delivery cost will be added to total price.
 
-```javascript
-$.request('Cart::onRemoveCoupon', {
-    'data': {'coupon': 'XXYY-XXZZ-YYZZ'},
-    'shipping_type_id': 4
-});
-```
+{{ get_module('coupon').example('js/remove-coupon/remove-coupon-1.js')|raw }}
 
 #### Response
 
