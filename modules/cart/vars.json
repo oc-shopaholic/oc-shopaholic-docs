@@ -96,6 +96,11 @@
       "file": "cart/examples/clear-cart.md"
     },
     {
+      "title": "Saving cart data",
+      "slug": "saving-cart-data",
+      "file": "cart/examples/save-data.md"
+    },
+    {
       "title": "Add coupon to cart",
       "slug": "add-coupon-to-cart",
       "file": "coupon/examples/add-coupon.md"

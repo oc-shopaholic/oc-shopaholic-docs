@@ -435,23 +435,7 @@ stop
 Method save data in cart object. For example: checkout page, divided into steps.
 Saved values ​​will be automatically saved in the order.
 
-```javascript
-
-//Prepare array with position ID
-let data = {
-    'user': {'email': 'test@test.com'},
-    'property': {'comment': 'User comment ...'},
-    'billing_address': {...},
-    'shipping_address': {...},
-    'shipping_type_id': 2,
-    'payment_method_id': 3
-};
-
-//Send ajax request and update cart items
-$.request('Cart::onSaveData', {
-    'data': data
-});
-```
+{{ get_module('cart').example('js/save-data/save-data-1.js')|raw }}
 
 #### Response
 
