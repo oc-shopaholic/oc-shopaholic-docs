@@ -410,19 +410,7 @@ stop
 @enduml
 ```
 
-```javascript
-//Prepare array with cart position IDs
-let data = {
-    'cart': [11, 12],
-    'shipping_type_id': 4
-};
-
-//Send ajax request and update cart items
-$.request('Cart::onRestore', {
-    'data': data,
-    'update': {'cart-items': '.cart-item-wrapper'}
-});
-```
+{{ get_module('cart').example('js/restore-cart/restore-cart-1.js')|raw }}
 
 #### Response
 

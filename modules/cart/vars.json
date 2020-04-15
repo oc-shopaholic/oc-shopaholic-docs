@@ -86,6 +86,11 @@
       "file": "cart/examples/remove-cart-by-id.md"
     },
     {
+      "title": "Restore cart positions by position ID",
+      "slug": "restore-cart-positions-by-position-id",
+      "file": "cart/examples/restore-cart.md"
+    },
+    {
       "title": "Clear cart",
       "slug": "clear-cart",
       "file": "cart/examples/clear-cart.md"
