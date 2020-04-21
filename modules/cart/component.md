@@ -27,7 +27,6 @@
 * [onRemoveCoupon](#onremovecoupon)
 * [onRestore](#onrestore)
 * [onSaveData](#onsavedata)
-* [onSetShippingType](#onsetshippingtype)
 * [onSync](#onsync)
 * [onUpdate](#onupdate)
 
@@ -460,44 +459,12 @@ Saved values ​​will be automatically saved in the order.
 
 </details>
 
-### onSetShippingType()
-
-Method allows you to send ajax request with ID of active shipping type and get updated cart data
-with total price.
-
-```javascript
-//Send ajax request and update cart data
-$.request('Cart::onSetShippingType', {
-    'data': {'shipping_type_id': 1},
-    success: function(response) {
-        updateCartInfo(response);
-    }
-});
-```
-
-#### Response
-
-> Cart component returns a standard positive response and negative response
-
-<details>
-<summary>Click to see positive response example</summary>
-
-{{ get_module('cart').example('json/response-1.json')|raw }}
-
-</details>
-
-<details>
-<summary>Click to see negative response example</summary>
-
-{{ get_module('cart').example('json/negative-response-1.json')|raw }}
-
-</details>
-
 ### onSync()
 
 Method sync cart positions.
 You can send full state of cart positions in ajax request. The method will create new positions, update existing positions, delete excess positions.
 You can send ID of active shipping type in ajax request to get an object in response in which delivery cost will be added to total price.
+You can send ID of the active payment method in an ajax request to apply promo mechanisms that depend on the payment method.
 
 > Cart positions are searched by offer ID and by an array of properties. The same offer can be added several times to cart if different arrays of properties are in request.
 
@@ -534,22 +501,7 @@ stop
 
 #### Example 1: Sync cart positions without properties
 
-```javascript
-//Prepare object with offers
-let data = {
-    'cart': [
-        {'offer_id': 32, 'quantity': 4},
-        {'offer_id': 44, 'quantity': 1}
-    ],
-    'shipping_type_id': 4
-};
-
-//Send ajax request and sync cart positions
-$.request('Cart::onSync', {
-    'data': data,
-    'update': {'cart-items': '.cart-item-wrapper'}
-});
-```
+{{ get_module('cart').example('js/sync-cart/sync-cart-1.js')|raw }}
 
 #### Response
 
@@ -571,22 +523,7 @@ $.request('Cart::onSync', {
 
 #### Example 2: Sync cart positions with properties
 
-```javascript
-//Prepare object with offers
-let data = {
-    'cart': [
-        {'offer_id': 32, 'quantity': 4, 'property': {'double_cheese': true}},
-        {'offer_id': 44, 'quantity': 1, 'property': {'double_cheese': false}}
-    ],
-    'shipping_type_id': 4
-};
-
-//Send ajax request and sync cart positions
-$.request('Cart::onSync', {
-    'data': data,
-    'update': {'cart-items': '.cart-item-wrapper'}
-});
-```
+{{ get_module('cart').example('js/sync-cart/sync-cart-2.js')|raw }}
 
 #### Response
 
@@ -610,6 +547,7 @@ $.request('Cart::onSync', {
 
 Method updates quantity of offers in cart.
 You can send ID of active shipping type in ajax request to get an object in response in which delivery cost will be added to total price.
+You can send ID of the active payment method in an ajax request to apply promo mechanisms that depend on the payment method.
 
 > Cart positions are searched by offer ID and by an array of properties. The same offer can be added several times to cart if different arrays of properties are in request.
 

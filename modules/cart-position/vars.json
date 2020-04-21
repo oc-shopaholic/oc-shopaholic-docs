@@ -124,6 +124,16 @@
       "file": "cart/examples/add-cart-with-properties.md"
     },
     {
+      "title": "Sync cart positions without properties",
+      "slug": "sync-cart-positions-without-properties",
+      "file": "cart/examples/sync-cart.md"
+    },
+    {
+      "title": "Sync cart positions with properties",
+      "slug": "sync-cart-positions-with-properties",
+      "file": "cart/examples/sync-cart-with-properties.md"
+    },
+    {
       "title": "Remove cart positions by offer ID",
       "slug": "remove-cart-positions-by-offer-id",
       "file": "cart/examples/remove-cart.md"
