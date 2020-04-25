@@ -124,6 +124,26 @@
       "file": "cart/examples/add-cart-with-properties.md"
     },
     {
+      "title": "Update offers in cart without properties",
+      "slug": "update-offers-in-cart-without-properties",
+      "file": "cart/examples/update-cart.md"
+    },
+    {
+      "title": "Update offers in cart with properties",
+      "slug": "update-offers-in-cart-with-properties",
+      "file": "cart/examples/update-cart-with-properties.md"
+    },
+    {
+      "title": "Update cart positions by position ID without properties",
+      "slug": "update-cart-positions-by-position-id-without-properties",
+      "file": "cart/examples/update-cart-position.md"
+    },
+    {
+      "title": "Update cart positions by position ID with properties",
+      "slug": "update-cart-positions-by-position-id-with-properties",
+      "file": "cart/examples/update-cart-position-with-properties.md"
+    },
+    {
       "title": "Sync cart positions without properties",
       "slug": "sync-cart-positions-without-properties",
       "file": "cart/examples/sync-cart.md"

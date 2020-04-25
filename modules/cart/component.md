@@ -580,24 +580,9 @@ stop
 @enduml
 ```
 
-#### Example 1: Update offers to cart without properties
+#### Example 1: Update offers in cart without properties
 
-```javascript
-//Prepare object with offers
-let data = {
-    'cart': [
-        {'offer_id': 32, 'quantity': 4},
-        {'offer_id': 44, 'quantity': 1}
-    ],
-    'shipping_type_id': 4
-};
-
-//Send ajax request and update cart items
-$.request('Cart::onUpdate', {
-    'data': data,
-    'update': {'cart-items': '.cart-item-wrapper'}
-});
-```
+{{ get_module('cart').example('js/update-cart/update-cart-1.js')|raw }}
 
 #### Response
 
@@ -617,24 +602,9 @@ $.request('Cart::onUpdate', {
 
 </details>
 
-#### Example 2: Update offers to cart with properties
+#### Example 2: Update offers in cart with properties
 
-```javascript
-//Prepare object with offers
-let data = {
-    'cart': [
-        {'offer_id': 32, 'quantity': 4, 'property': {'double_cheese': true}},
-        {'offer_id': 44, 'quantity': 1, 'property': {'double_cheese': false}}
-    ],
-    'shipping_type_id': 4
-};
-
-//Send ajax request and update cart items
-$.request('Cart::onUpdate', {
-    'data': data,
-    'update': {'cart-items': '.cart-item-wrapper'}
-});
-```
+{{ get_module('cart').example('js/update-cart/update-cart-2.js')|raw }}
 
 #### Response
 
@@ -654,24 +624,31 @@ $.request('Cart::onUpdate', {
 
 </details>
 
-#### Example 3: Update cart positions by position ID
+#### Example 3: Update cart positions by position ID without properties
 
-```javascript
-//Prepare object with offers
-let data = {
-    'cart': [
-        {'id': 11, 'offer_id': 32, 'quantity': 4},
-        {'id': 12, 'offer_id': 44, 'quantity': 1}
-    ],
-    'shipping_type_id': 4
-};
+{{ get_module('cart').example('js/update-cart/update-cart-3.js')|raw }}
 
-//Send ajax request and update cart items
-$.request('Cart::onUpdate', {
-    'data': data,
-    'update': {'cart-items': '.cart-item-wrapper'}
-});
-```
+#### Response
+
+> Cart component returns a standard positive response and negative response
+
+<details>
+<summary>Click to see positive response example</summary>
+
+{{ get_module('cart').example('json/response-1.json')|raw }}
+
+</details>
+
+<details>
+<summary>Click to see negative response example</summary>
+
+{{ get_module('cart').example('json/negative-response-1.json')|raw }}
+
+</details>
+
+#### Example 4: Update cart positions by position ID with properties
+
+{{ get_module('cart').example('js/update-cart/update-cart-4.js')|raw }}
 
 #### Response
 
