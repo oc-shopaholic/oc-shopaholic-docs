@@ -16,6 +16,6 @@ By creating relationships between property sets and product/offer
 properties, you can enable properties to display them in the filter panel.
 Go to **Backend -> Settings-> Property sets -> Create/Edit -> "Product/Offer properties" tab**
 
-![](./../../assets/images/backend-property-set-5.png)
+![](./../../assets/images/backend-property-set-5.png ':class=medium-image')
 
 {% endblock %}

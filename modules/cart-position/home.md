@@ -2,10 +2,9 @@
 
 {% block content %}
 {{ parent() }}
+With this module you can display cart positions. For example: mini-cart or checkout page.
 
-Using this module you will be able display cart positions (for example: mini-cart).
+![](./../../assets/images/fronend-cart-1.png ':class=medium-image')
 
-![](./../../assets/images/fronend-cart-1.png)
-
-![](./../../assets/images/fronend-cart-2.png)
+![](./../../assets/images/fronend-cart-2.png ':class=medium-image')
 {% endblock %}

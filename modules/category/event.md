@@ -57,7 +57,7 @@ Event::listen(ImportCategoryModelFromXML::EXTEND_IMPORT_DATA, function($arImport
 
 Event allows you to extend list of fields that are available for configuring import from XML.
 
-![](./../../../assets/images/backend-category-7.png) 
+![](./../../../assets/images/backend-category-7.png ':class=medium-image') 
 
 ```php
 Event::listen(ImportCategoryModelFromXML::EXTEND_FIELD_LIST, function($arFieldList) {

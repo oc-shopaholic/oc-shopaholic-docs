@@ -13,11 +13,11 @@ For example:
 * Value = "#FF000"
 * Label = "Red"
 
-![](./../../assets/images/backend-property-value-1.png)
+![](./../../assets/images/backend-property-value-1.png ':class=medium-image')
 
 Property value **in backend** is:
 
-![](./../../assets/images/backend-property-value-2.png)
+![](./../../assets/images/backend-property-value-2.png ':class=medium-image')
 
 When you get the property value **in template**, you get the value == **"#FF000"**
 {% endblock %}

@@ -47,5 +47,5 @@ stop
 You can view and manage access to subscriptions by going to **Backend -> Users -> User access to subscriptions**.
 You can renew your subscription access manually by changing "Access expire at" field.
 
-![](./../../assets/images/backend-subscription-access-1.png)
+![](./../../assets/images/backend-subscription-access-1.png ':class=medium-image')
 {% endblock %}

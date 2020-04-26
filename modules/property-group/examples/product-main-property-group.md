@@ -6,7 +6,7 @@ Create simple product page and render block with product properties from group w
 
 For example, your block might look like this:
 
-![](./../../../assets/images/fronend-property-group-2.png)
+![](./../../../assets/images/fronend-property-group-2.png ':class=medium-image')
 
 ### {{ i }}.2 How can i do it?
 

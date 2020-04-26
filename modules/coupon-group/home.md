@@ -13,9 +13,9 @@ If you linked products, offers, categories, brands or tags with coupon group, th
 
 You can create and edit coupon groups by going to **Backend -> Promotions -> Coupon groups**
 
-![](./../../assets/images/backend-coupon-group-1.png)
+![](./../../assets/images/backend-coupon-group-1.png ':class=medium-image')
 
 You can link products, offers, categories, brands or tags with coupon group by going to **Backend -> Promotions -> Coupon groups**
 
-![](./../../assets/images/backend-coupon-group-2.png)
+![](./../../assets/images/backend-coupon-group-2.png ':class=medium-image')
 {% endblock %}

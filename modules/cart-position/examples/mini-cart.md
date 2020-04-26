@@ -6,7 +6,7 @@ Render block with mini-cart.
 
 > Block with mini-cart is often located in the header of your site.
 
-![](./../../../assets/images/fronend-cart-1.png)
+![](./../../../assets/images/fronend-cart-1.png ':class=medium-image')
 
 ### {{ i }}.2 How can i do it?
 

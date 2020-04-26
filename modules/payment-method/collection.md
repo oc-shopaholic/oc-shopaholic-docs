@@ -22,5 +22,5 @@ $obList = PaymentMethodCollection::make([1,2,10,15])->available(['state' => 'NY'
 
 Method sorts elements of collection by "sort_order" field. You can change sorting of payment methods by going to **Backend -> Settings -> Payment methods -> Reorder records**
 
-![](./../../../assets/images/backend-payment-method-2.png)
+![](./../../../assets/images/backend-payment-method-2.png ':class=medium-image')
 {% endblock %}

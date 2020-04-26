@@ -4,7 +4,7 @@
 
 Render block with cart positions on checkout page.
 
-![](./../../../assets/images/fronend-cart-2.png)
+![](./../../../assets/images/fronend-cart-2.png ':class=medium-image')
 
 ### {{ i }}.2 How can i do it?
 

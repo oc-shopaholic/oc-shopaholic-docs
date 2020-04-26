@@ -35,7 +35,8 @@ You can enable additional check when you get list of active products.
 If this setting is enabled, list of active products will contain only those products that have active offers.
 
 Go to **Backend -> Settings -> Basic Settings**
-![](./../../../assets/images/backend-settings-4.png)
+
+![](./../../../assets/images/backend-settings-4.png ':class=medium-image')
 
 ### brand($iBrandID)
   * $iBrandID - product brand ID

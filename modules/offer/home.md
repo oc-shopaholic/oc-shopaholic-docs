@@ -114,11 +114,11 @@ You can create and edit offers by going to **Backend -> Catalog -> Products -> E
 
 !> **Attention!** All offer prices must be set in default currency.
 
-![](./../../assets/images/backend-offer-1.png)
+![](./../../assets/images/backend-offer-1.png ':class=medium-image')
 
 !> **Attention!** You can set **price format** in Backend -> Settings -> Application settings -> "Price format" tab
 
-![](./../../assets/images/backend-settings-1.png)
+![](./../../assets/images/backend-settings-1.png ':class=medium-image')
 
 ## Import
 
@@ -127,14 +127,14 @@ You can use [events](modules/offer/event/event#event-list-offer), that allows yo
  
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
-![](./../../assets/images/backend-offer-2.png)
+![](./../../assets/images/backend-offer-2.png ':class=medium-image')
 
 #### Import from CSV
 
 You can hide import buttons in "Basic settings".
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-![](./../../assets/images/import-from-csv-settings-3.png)
+![](./../../assets/images/import-from-csv-settings-3.png ':class=medium-image')
 
 #### Import from XML
 
@@ -142,10 +142,10 @@ For big catalog, you can use queues to reduce server load during import.
 You can enable queues in **"Application settings"**.
 Go to **Backend -> Settings -> Application settings -> "Import" tab**
 
-![](./../../assets/images/import-from-xml-settings-8.png)
+![](./../../assets/images/import-from-xml-settings-8.png ':class=medium-image')
 
 You can hide import buttons in "Basic settings".
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-![](./../../assets/images/import-from-xml-settings-9.png)
+![](./../../assets/images/import-from-xml-settings-9.png ':class=medium-image')
 {% endblock %}

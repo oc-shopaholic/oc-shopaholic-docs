@@ -47,7 +47,7 @@ Event::listen('shopaholic.order.created', function($obOrder) {
 You can expand list of fields transferred to manager's email template.
 By default, sending an email to a user is disabled, but you can enable it in the settings. You can specify the letter template that will be used to send emails.
 
-![](./../../../assets/images/backend-settings-16.png)
+![](./../../../assets/images/backend-settings-16.png ':class=medium-image')
 
 To send multilingual letters with using [RainLab.Translate](https://octobercms.com/plugin/rainlab-translate) plugin, you need to create email templates with prefix equal to language code.
 For example:
@@ -69,7 +69,7 @@ Event::listen('shopaholic.order.created.manager.template.data', function($obOrde
 You can expand list of fields transferred to user's email template.
 By default, sending an email to a user is disabled, but you can enable it in the settings. You can specify the letter template that will be used to send emails.
 
-![](./../../../assets/images/backend-settings-16.png)
+![](./../../../assets/images/backend-settings-16.png ':class=medium-image')
 
 To send multilingual letters with using [RainLab.Translate](https://octobercms.com/plugin/rainlab-translate) plugin, you need to create email templates with prefix equal to language code.
 For example:

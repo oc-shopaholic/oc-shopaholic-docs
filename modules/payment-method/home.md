@@ -12,9 +12,9 @@ Link of payment methods and a payment gateway will allow you to redirect the use
 
 You can create and edit payment methods by going to **Backend -> Settings -> Payment methods**
 
-![](./../../assets/images/backend-payment-method-1.png)
+![](./../../assets/images/backend-payment-method-1.png ':class=medium-image')
 
 You can change sorting of payment methods by going to **Backend -> Settings -> Payment methods -> Reorder records**
 
-![](./../../assets/images/backend-payment-method-2.png)
+![](./../../assets/images/backend-payment-method-2.png ':class=medium-image')
 {% endblock %}

@@ -11,13 +11,13 @@ Then the global property set will be displayed for all products.
 
 You can create and edit property sets by going to **Backend -> Settings-> Property sets**
 
-![](./../../assets/images/backend-property-set-1.png)
+![](./../../assets/images/backend-property-set-1.png ':class=medium-image')
 
 You can change sorting of property sets by going to **Backend -> Settings-> Property sets -> Reorder records**
 
-![](./../../assets/images/backend-property-set-2.png)
+![](./../../assets/images/backend-property-set-2.png ':class=medium-image')
 
 You can attach property sets with product and offer properties by going to **Backend -> Settings-> Property sets -> Create/Edit**
 
-![](./../../assets/images/backend-property-set-3.png)
+![](./../../assets/images/backend-property-set-3.png ':class=medium-image')
 {% endblock %}

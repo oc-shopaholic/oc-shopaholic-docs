@@ -11,9 +11,9 @@ You can assign a task to one of the managers of our project.
 
 You can create and edit tasks by going to **Backend -> Orders -> Edit order -> "Tasks" tab"**
 
-![](./../../assets/images/backend-task-1.png)
+![](./../../assets/images/backend-task-1.png ':class=medium-image')
 
 You can create and edit tasks by going to **Backend -> Users -> Edit user -> "Tasks" tab"**
 
-![](./../../assets/images/backend-task-2.png)
+![](./../../assets/images/backend-task-2.png ':class=medium-image')
 {% endblock %}

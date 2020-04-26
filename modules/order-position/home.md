@@ -11,9 +11,9 @@ The order position contains the offer price without any discounts in database.
 
 You can create and edit orders and order positions by going to **Backend -> Orders**
 
-![](./../../assets/images/backend-order-1.png)
+![](./../../assets/images/backend-order-1.png ':class=medium-image')
 
-![](./../../assets/images/backend-order-3.png)
+![](./../../assets/images/backend-order-3.png ':class=medium-image')
 
-![](./../../assets/images/backend-order-4.png)
+![](./../../assets/images/backend-order-4.png ':class=medium-image')
 {% endblock %}

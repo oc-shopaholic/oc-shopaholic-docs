@@ -13,12 +13,12 @@ models.
 to certain keywords so customers can easily find elements by typing semantically related phrases.
 **search_content** filed isn't available in backend. **search_content** field should be filled in automatically. 
 
-![](./../../assets/images/backend-brand-4.png)
+![](./../../assets/images/backend-brand-4.png ':class=medium-image')
 
 ## Settings
 
 You can configure search settings: list of fields that will use in search. 
 Go to **Backend -> Application settings -> "Search" tab**
 
-![](./../../assets/images/backend-settings-14.png)
+![](./../../assets/images/backend-settings-14.png ':class=medium-image')
 {% endblock %}

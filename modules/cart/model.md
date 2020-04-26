@@ -9,5 +9,6 @@ You can use
 **billing_address**, **email**, **payment_method_id**, **property**
 **shipping_address**, **shipping_type_id**, **user_data** fields
  for temporary storage of data that will be transferred to order.
-This can be useful if user making an order in a few steps. 
+This can be useful if user making an order in a few steps.
+You can use **onSaveData** method of {{ get_component('cart').link('cart') }} component to store fields in Cart model. 
 {% endblock %}

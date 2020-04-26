@@ -11,19 +11,19 @@ Check user access to subscription. Product must provide access to article with I
 
 You can create and edit access period to subscriptions by going to **Backend -> Settings -> Access period to subscriptions**
 
-![](./../../../assets/images/backend-subscription-period-1.png)
+![](./../../../assets/images/backend-subscription-period-1.png ':class=medium-image')
 
 **Step 2:** Create subscription product
 
 You can set product as subscription by going to **Backend -> Catalog -> Products -> Edit product -> "Settings" tab -> "Is subscription" checkbox**
 
-![](./../../../assets/images/backend-product-5.png)
+![](./../../../assets/images/backend-product-5.png ':class=medium-image')
 
 **Step 3:** Create offer for subscription product
 
 You can set an access period for offers of subscription by going to **Backend -> Catalog -> Products -> Edit product -> Edit offer -> "Settings" tab -> "Period" select**
 
-![](./../../../assets/images/backend-offer-5.png)
+![](./../../../assets/images/backend-offer-5.png ':class=medium-image')
 
 **Step 4:** Add subscription product to cart
 
@@ -55,7 +55,8 @@ See more information about order module in [section](modules/order/home).
 You can set logic for creating access to subscriptions.
 
 Go to **Backend -> Settings -> Basic settings -> "Subscriptions" tab**
-![](./../../../assets/images/backend-settings-15.png)
+
+![](./../../../assets/images/backend-settings-15.png ':class=medium-image')
 
 **Step 7:** Change order status
 
@@ -66,7 +67,7 @@ After this step, access to subscription will be created or extended for user.
 
 You can view, manage access to subscriptions by going to **Backend -> Users -> User access to subscriptions**
 
-![](./../../../assets/images/backend-subscription-access-1.png)
+![](./../../../assets/images/backend-subscription-access-1.png ':class=medium-image')
 
 **Step 9:** Check access to subscription in template
 

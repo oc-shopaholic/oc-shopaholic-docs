@@ -57,7 +57,7 @@ Event::listen(ImportBrandModelFromXML::EXTEND_IMPORT_DATA, function($arImportDat
 
 Event allows you to extend list of fields that are available for configuring import from XML.
 
-![](./../../../assets/images/backend-brand-6.png) 
+![](./../../../assets/images/backend-brand-6.png ':class=medium-image')
 
 ```php
 Event::listen(ImportBrandModelFromXML::EXTEND_FIELD_LIST, function($arFieldList) {

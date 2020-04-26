@@ -10,5 +10,5 @@ For example, user may see different lists of shipping types for different region
 
 You can create and edit shipping restrictions by going to **Backend -> Settings -> Shipping types -> "Restriction" tab**
 
-![](./../../assets/images/backend-shipping-restriction-1.png)
+![](./../../assets/images/backend-shipping-restriction-1.png ':class=medium-image')
 {% endblock %}

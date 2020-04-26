@@ -18,24 +18,26 @@ You can **clear** applied coupon list with using **onClearCouponList()** method 
 
 You can create and edit coupons by going to **Backend -> Promotions -> Coupon groups -> "Coupons" tab**
 
-![](./../../assets/images/backend-coupon-1.png)
+![](./../../assets/images/backend-coupon-1.png ':class=medium-image')
 
 You can generate coupons by going to **Backend -> Promotions -> Coupon groups -> "Coupons" tab -> "Generate coupons" button**
 
-![](./../../assets/images/backend-coupon-3.png)
-![](./../../assets/images/backend-coupon-2.png)
+![](./../../assets/images/backend-coupon-3.png ':class=medium-image')
+
+![](./../../assets/images/backend-coupon-2.png ':class=medium-image')
 
 You can limit the max usage per coupon with using the settings of the coupon or group of coupons.
 
-![](./../../assets/images/backend-coupon-4.png)
-![](./../../assets/images/backend-coupon-5.png)
+![](./../../assets/images/backend-coupon-4.png ':class=medium-image')
+
+![](./../../assets/images/backend-coupon-5.png ':class=medium-image')
 
 Your site may contain a block with a list of available coupons for the user. You can hide some coupons from this list with using "Hidden" flag.
 
-![](./../../assets/images/backend-coupon-6.png)
+![](./../../assets/images/backend-coupon-6.png ':class=medium-image')
 
 You can create a personal coupon and link it with user.
 
-![](./../../assets/images/backend-coupon-7.png)
+![](./../../assets/images/backend-coupon-7.png ':class=medium-image')
 
 {% endblock %}

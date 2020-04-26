@@ -13,5 +13,5 @@ This will allow you to render products attached to {{ get_module('discount').lin
 
 You can create and edit promo blocks by going to **Backend -> Promotions -> Promo blocks**
 
-![](./../../assets/images/backend-promo-block-1.png)
+![](./../../assets/images/backend-promo-block-1.png ':class=medium-image')
 {% endblock %}

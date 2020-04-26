@@ -12,15 +12,15 @@ You can filter products by brands.
 
 You can create and edit brands by going to **Backend -> Catalog -> Brands**
 
-![](./../../assets/images/backend-brand-1.png)
+![](./../../assets/images/backend-brand-1.png ':class=medium-image')
 
 You can change sorting of brands by going to **Backend -> Catalog -> Brands -> Reorder records**
 
-![](./../../assets/images/backend-brand-5.png)
+![](./../../assets/images/backend-brand-5.png ':class=medium-image')
 
 You can attach one brand to product
 
-![](./../../assets/images/backend-brand-2.png)
+![](./../../assets/images/backend-brand-2.png ':class=medium-image')
 
 ## Import
 
@@ -29,14 +29,14 @@ You can use [events](modules/brand/event/event#event-list-brand), that allows yo
  
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
-![](./../../assets/images/backend-brand-3.png)
+![](./../../assets/images/backend-brand-3.png ':class=medium-image')
 
 #### Import from CSV
 
 You can hide import buttons in "Basic settings".
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-![](./../../assets/images/import-from-csv-settings-3.png)
+![](./../../assets/images/import-from-csv-settings-3.png ':class=medium-image')
 
 #### Import from XML
 
@@ -44,10 +44,10 @@ For big catalog, you can use queues to reduce server load during import.
 You can enable queues in **"Application settings"**.
 Go to **Backend -> Settings -> Application settings -> "Import" tab**
 
-![](./../../assets/images/import-from-xml-settings-8.png)
+![](./../../assets/images/import-from-xml-settings-8.png ':class=medium-image')
 
 You can hide import buttons in "Basic settings".
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-![](./../../assets/images/import-from-xml-settings-9.png)
+![](./../../assets/images/import-from-xml-settings-9.png ':class=medium-image')
 {% endblock %}

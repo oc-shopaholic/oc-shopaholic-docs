@@ -12,22 +12,23 @@ You can apply different taxes for different regions with using [RainLab.Location
 
 You can create and edit taxes by going to **Backend -> Settings -> Taxes**
 
-![](./../../assets/images/backend-tax-1.png)
+![](./../../assets/images/backend-tax-1.png ':class=medium-image')
 
 You can attach categories and products to tax that will be applied
 
-![](./../../assets/images/backend-tax-2.png)
+![](./../../assets/images/backend-tax-2.png ':class=medium-image')
 
 You can attach countries and states to tax that will be applied. Available with [RainLab.Location](https://octobercms.com/plugin/rainlab-location) plugin.
 
-![](./../../assets/images/backend-tax-3.png)
+![](./../../assets/images/backend-tax-3.png ':class=medium-image')
 
 ## Settings
 
 You can flexibly configure taxes in your project.
 
 Go to **Backend -> Settings -> Basic settings -> "Taxes" tab**
-![](./../../assets/images/backend-settings-8.png)
+
+![](./../../assets/images/backend-settings-8.png ':class=medium-image')
 
 For example: **offer price is 39.99, tax percent is 20**.
 

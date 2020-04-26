@@ -28,5 +28,5 @@ Method return true, if collection has {{ item.link() }} class object with code v
 
 Method sorts elements of collection by "sort_order" field. You can change sorting of property groups by going to **Backend -> Settings -> Property groups -> Reorder records**
 
-![](./../../../assets/images/backend-property-group-2.png)
+![](./../../../assets/images/backend-property-group-2.png ':class=medium-image')
 {% endblock %}

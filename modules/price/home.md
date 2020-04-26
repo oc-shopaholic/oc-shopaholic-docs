@@ -13,13 +13,13 @@ You can create several offers for one product and set them different prices.
 
 !> **Attention!** You can set **price format** in Backend -> Settings -> Application settings -> "Price format" tab
 
-![](./../../assets/images/backend-settings-1.png)
+![](./../../assets/images/backend-settings-1.png ':class=medium-image')
 
 You can create and edit price types by going to **Backend -> Settings -> Price types**
 
-![](./../../assets/images/backend-price-type-1.png)
+![](./../../assets/images/backend-price-type-1.png ':class=medium-image')
 
 After creating price type you can fill prices in offers
 
-![](./../../assets/images/backend-price-type-2.png)
+![](./../../assets/images/backend-price-type-2.png ':class=medium-image')
 {% endblock %}

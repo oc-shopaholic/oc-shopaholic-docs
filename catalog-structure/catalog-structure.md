@@ -118,7 +118,7 @@ end note
 
 Perhaps your catalog has similar products, but you need to display them on separate pages. You need to use ["Related products for Shopaholic"](plugins/home.md#related-products-for-shopaholic) plugin to add relation between products.
 
-![](./../assets/images/related-products-1.png)
+![](./../assets/images/related-products-1.png ':class=medium-image')
 
 ## Step 3: Category and tags
 
@@ -158,4 +158,4 @@ For example: "Hot Summer" and "Spring mood" are tags.
 
 You need to associate properties: with products or offers.
 
-![](./../assets/images/properties-1.png)
+![](./../assets/images/properties-1.png ':class=medium-image')

@@ -10,5 +10,5 @@ For example, user may see different lists of payment methods for different regio
 
 You can create and edit payment restrictions by going to **Backend -> Settings -> Payment methods -> "Restriction" tab**
 
-![](./../../assets/images/backend-payment-restriction-1.png)
+![](./../../assets/images/backend-payment-restriction-1.png ':class=medium-image')
 {% endblock %}

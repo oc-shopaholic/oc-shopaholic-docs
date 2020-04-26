@@ -112,7 +112,7 @@ You can find more information in [section](catalog-structure/catalog-structure.m
 
 You can create and edit products by going to **Backend -> Catalog -> Products**
 
-![](./../../assets/images/backend-product-1.png)
+![](./../../assets/images/backend-product-1.png ':class=medium-image')
 
 ## Active products
 
@@ -121,7 +121,7 @@ You can enable additional check when you get list of active products.
 If this setting is enabled, list of active products will contain only those products that have active offers.
 Go to **Backend -> Settings -> Basic Settings**
 
-![](./../../assets/images/backend-settings-4.png)
+![](./../../assets/images/backend-settings-4.png ':class=medium-image')
 
 ## Import
 
@@ -130,14 +130,14 @@ You can use [events](modules/product/event/event#event-list-product), that allow
  
 > You can learn more about importing from [XML](import/import-from-xml/home.md#import-from-xml) and [CSV](import/import-from-csv/home.md#import-from-csv) files in [section](import/import-from-xml/home.md#import-from-xml).
 
-![](./../../assets/images/backend-product-2.png)
+![](./../../assets/images/backend-product-2.png ':class=medium-image')
 
 #### Import from CSV
 
 You can hide import buttons in "Basic settings".
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-![](./../../assets/images/import-from-csv-settings-3.png)
+![](./../../assets/images/import-from-csv-settings-3.png ':class=medium-image')
 
 #### Import from XML
 
@@ -145,10 +145,10 @@ For big catalog, you can use queues to reduce server load during import.
 You can enable queues in **"Application settings"**.
 Go to **Backend -> Settings -> Application settings -> "Import" tab**
 
-![](./../../assets/images/import-from-xml-settings-8.png)
+![](./../../assets/images/import-from-xml-settings-8.png ':class=medium-image')
 
 You can hide import buttons in "Basic settings".
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
 
-![](./../../assets/images/import-from-xml-settings-9.png)
+![](./../../assets/images/import-from-xml-settings-9.png ':class=medium-image')
 {% endblock %}

@@ -9,5 +9,5 @@
 
 You can create and edit labels by going to **Backend -> Settings -> Unit measure**
 
-![](./../../assets/images/backend-measure-1.png)
+![](./../../assets/images/backend-measure-1.png ':class=medium-image')
 {% endblock %}

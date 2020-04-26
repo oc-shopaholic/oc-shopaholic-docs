@@ -30,6 +30,6 @@ Method returns array with data of properties of products.
 
 Method sorts elements of collection by "sort_order" field. You can change sorting of property sets by going to **Backend -> Settings-> Property sets -> Reorder records**
 
-![](./../../../assets/images/backend-property-set-2.png)
+![](./../../../assets/images/backend-property-set-2.png ':class=medium-image')
 
 {% endblock %}

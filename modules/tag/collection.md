@@ -30,5 +30,5 @@ $obList = TagCollection::make()->search('test search');
 
 Method sorts elements of collection by "sort_order" field. You can change sorting of tags by going to **Backend -> Catalog -> Tags -> Reorder records**
 
-![](./../../../assets/images/backend-tag-2.png)
+![](./../../../assets/images/backend-tag-2.png ':class=medium-image')
 {% endblock %}

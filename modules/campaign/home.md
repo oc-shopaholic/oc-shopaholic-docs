@@ -11,13 +11,15 @@ You can attach products, offers, categories, brands, shipping types, tags to lim
 No additional code changes are required.
 
 For example:
-![](./../../assets/images/example-campaign-1.png)
-![](./../../assets/images/example-campaign-2.png)
+
+![](./../../assets/images/example-campaign-1.png ':class=medium-image')
+![](./../../assets/images/example-campaign-2.png ':class=medium-image')
 
 ## Backend
 
 You can create and edit campaigns by going to **Backend -> Promotions -> Campaigns**
 
-![](./../../assets/images/backend-campaign-1.png)
-![](./../../assets/images/backend-campaign-2.png)
+![](./../../assets/images/backend-campaign-1.png ':class=medium-image')
+
+![](./../../assets/images/backend-campaign-2.png ':class=medium-image')
 {% endblock %}

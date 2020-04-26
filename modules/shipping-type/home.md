@@ -11,10 +11,10 @@ The shipping type may be linked with one of the delivery service.
 
 You can create and edit shipping types by going to **Backend -> Settings -> Shipping types**
 
-![](./../../assets/images/backend-shipping-type-1.png)
+![](./../../assets/images/backend-shipping-type-1.png ':class=medium-image')
 
 You can change sorting of shipping types by going to **Backend -> Settings -> Shipping types -> Reorder records**
 
-![](./../../assets/images/backend-shipping-type-2.png)
+![](./../../assets/images/backend-shipping-type-2.png ':class=medium-image')
 
 {% endblock %}

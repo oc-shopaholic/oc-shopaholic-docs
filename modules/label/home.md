@@ -10,13 +10,13 @@ You decide how the label will be named and what products it will be attached to.
 
 You can create and edit labels by going to **Backend -> Settings -> Labels**
 
-![](./../../assets/images/backend-label-1.png)
+![](./../../assets/images/backend-label-1.png ':class=medium-image')
 
 You can change sorting of labels by going to **Backend -> Settings -> Labels -> Reorder records**
 
-![](./../../assets/images/backend-label-2.png)
+![](./../../assets/images/backend-label-2.png ':class=medium-image')
 
 You can attach products to label by going to **Backend -> Settings -> Labels -> "Product" tab**
 
-![](./../../assets/images/backend-label-3.png)
+![](./../../assets/images/backend-label-3.png ':class=medium-image')
 {% endblock %}

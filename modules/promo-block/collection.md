@@ -35,5 +35,5 @@ $obList = PromoBlockCollection::make()->sort('date_begin|desc');
 
 You can change sorting of promo blocks by going to **Backend -> Promotions -> Promo blocks -> Reorder records**
 
-![](./../../../assets/images/backend-promo-block-2.png)
+![](./../../../assets/images/backend-promo-block-2.png ':class=medium-image')
 {% endblock %}

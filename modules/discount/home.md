@@ -7,7 +7,7 @@
 You can set start and end dates of the discount period.
 You can start catalog price recalculation manually or automatically with using [shopaholic:discount.update_catalog_price](/artisan-commands/home#shopaholicdiscountupdate_catalog_price) artisan command.
 
-![](./../../assets/images/backend-discount-3.png)
+![](./../../assets/images/backend-discount-3.png ':class=medium-image')
 
 If several discounts apply to the same offer, they will not be applied to previously added discounts. The discount applies only if it is greater than the current discount.
 For example:
@@ -25,10 +25,11 @@ For example:
 
 You can create and edit discounts by going to **Backend -> Promotions -> Discounts**
 
-![](./../../assets/images/backend-discount-1.png)
-![](./../../assets/images/backend-discount-4.png)
+![](./../../assets/images/backend-discount-1.png ':class=medium-image')
+
+![](./../../assets/images/backend-discount-4.png ':class=medium-image')
 
 You can change sorting of discounts by going to **Backend -> Promotions -> Discounts -> Reorder records**
 
-![](./../../assets/images/backend-discount-2.png)
+![](./../../assets/images/backend-discount-2.png ':class=medium-image')
 {% endblock %}

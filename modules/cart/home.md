@@ -7,9 +7,9 @@ Using this module you will be able to allow users to add product offers to cart,
 display cart positions (for example: mini-cart),
 change quantity and remove positions from cart.
 
-![](./../../assets/images/fronend-cart-1.png)
+![](./../../assets/images/fronend-cart-1.png ':class=medium-image')
 
-![](./../../assets/images/fronend-cart-2.png)
+![](./../../assets/images/fronend-cart-2.png ':class=medium-image')
 
 ## How it works?
 

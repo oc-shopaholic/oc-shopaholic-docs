@@ -24,7 +24,7 @@ Event::listen(\Lovata\Shopaholic\Models\PromoBlock::EVENT_GET_PRODUCT_LIST, func
 The event allow you to extend list with available types of promo blocks.
 You can set type of promo block in backend and use it in your templates.
 
-![](./../../../assets/images/backend-promo-block-3.png)
+![](./../../../assets/images/backend-promo-block-3.png ':class=medium-image')
 
 For example:
 ```php

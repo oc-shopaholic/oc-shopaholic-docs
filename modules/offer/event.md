@@ -59,7 +59,7 @@ Event::listen(ImportoOfferModelFromXML::EXTEND_IMPORT_DATA, function($arImportDa
 
 Event allows you to extend list of fields that are available for configuring import from XML.
 
-![](./../../../assets/images/backend-offer-3.png) 
+![](./../../../assets/images/backend-offer-3.png ':class=medium-image') 
 
 ```php
 Event::listen(ImportoOfferModelFromXML::EXTEND_FIELD_LIST, function($arFieldList) {
@@ -89,7 +89,7 @@ Event::listen(ImportOfferPriceFromXML::EXTEND_IMPORT_DATA, function($arImportDat
 
 Event allows you to extend list of fields that are available for configuring import from XML.
 
-![](./../../../assets/images/backend-offer-4.png) 
+![](./../../../assets/images/backend-offer-4.png ':class=medium-image') 
 
 ```php
 Event::listen(ImportOfferPriceFromXML::EXTEND_FIELD_LIST, function($arFieldList) {

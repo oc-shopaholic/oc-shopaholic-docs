@@ -5,7 +5,8 @@ Import can be **flexibly configured** in settings.
 You can set paths to field values using **XPath syntax**.
 
 Go to **Backend -> Settings -> Import from XML**
-![](./../../assets/images/import-from-xml-settings-1.png)
+
+![](./../../assets/images/import-from-xml-settings-1.png ':class=medium-image')
 
 ## Configuration
 
@@ -18,7 +19,8 @@ You need to set **relative path from storage folder to files**.
 
 **For example:** your import files are in "storage/temp/import" folder.
 Then your settings will be such:
-![](./../../assets/images/import-from-xml-settings-2.png)
+
+![](./../../assets/images/import-from-xml-settings-2.png ':class=medium-image')
 
 ### Step 2: Set path to folder with images
 
@@ -29,7 +31,8 @@ You need to set **relative path from storage folder to folder with images**.
 Path to image in import file is "5c6/3bb/999/5c63bb99909e9619888796.jpg".
 Full path to image file is "storage/temp/import/images/5c6/3bb/999/5c63bb99909e9619888796.jpg".
 Then your settings will be such:
-![](./../../assets/images/import-from-xml-settings-3.png)
+
+![](./../../assets/images/import-from-xml-settings-3.png ':class=medium-image')
 
 ### Step 3: Set path to nodes with list of elements and fields
 
@@ -80,7 +83,8 @@ Your xml file is:
 
 1. You need to select import file in which items will be searched.
 2. Path to node with list of products is "main/products/product". Path to node with list of categories is "main/categories/category".
-![](./../../assets/images/import-from-xml-settings-4.png)
+
+![](./../../assets/images/import-from-xml-settings-4.png ':class=medium-image')
 
 ### Step 3.1: Set path to nodes with fields
 
@@ -89,17 +93,19 @@ Your xml file is:
 
 !> You must set path to node with field value relative to node with element
 
-![](./../../assets/images/import-from-xml-settings-5.png)
+![](./../../assets/images/import-from-xml-settings-5.png ':class=medium-image')
 
 ## Run import
 
 You can run import from XML files with using 3 ways:
 
 **1. Manual run import using start button.** You can find these buttons on element list page.
-![](./../../assets/images/import-from-xml-settings-6.png)
+
+![](./../../assets/images/import-from-xml-settings-6.png ':class=medium-image')
 
 **2. Manual run import using widget.** You can add widget on your dashboard in backend.
-![](./../../assets/images/import-from-xml-settings-7.png)
+
+![](./../../assets/images/import-from-xml-settings-7.png ':class=medium-image')
 
 **3. Manual or automatic execute [shopaholic:import_from_xml](/artisan-commands/home#shopaholicimport_from_xml-import) artisan command**
 ```bash
@@ -112,11 +118,13 @@ For big catalog, you can use queues to reduce server load during import.
 You can enable queues in **"Application settings"**.
 
 Go to **Backend -> Settings -> Application settings -> "Import" tab**
-![](./../../assets/images/import-from-xml-settings-8.png)
+
+![](./../../assets/images/import-from-xml-settings-8.png ':class=medium-image')
 
 ## Hide import buttons
 
 You can hide import buttons in "Basic settings".
 
 Go to **Backend -> Settings -> Basic settings -> "Import" tab**
-![](./../../assets/images/import-from-xml-settings-9.png)
+
+![](./../../assets/images/import-from-xml-settings-9.png ':class=medium-image')

@@ -22,18 +22,18 @@ For example:
 
 You can create and edit statuses by going to **Backend -> Settings -> Order statuses**
 
-![](./../../assets/images/backend-status-1.png)
+![](./../../assets/images/backend-status-1.png ':class=medium-image')
 
 You can change sorting of statuses by going to **Backend -> Settings -> Order statuses -> Reorder records**
 
-![](./../../assets/images/backend-status-2.png)
+![](./../../assets/images/backend-status-2.png ':class=medium-image')
 
 You can filter the list of orders by status by going to **Backend -> Orders**
 
-![](./../../assets/images/backend-status-3.png)
+![](./../../assets/images/backend-status-3.png ':class=medium-image')
 
 You can change the order status by going to **Backend -> Orders -> Edit order**
 
-![](./../../assets/images/backend-status-4.png)
+![](./../../assets/images/backend-status-4.png ':class=medium-image')
 
 {% endblock %}

@@ -5,6 +5,7 @@
 ## Cart
 
 * [get](#getobshippingtype-null-obpaymentmethoditem-null)
+* [getActivePaymentMethodFromRequest](#getactivepaymentmethodfromrequest)
 * [getActiveShippingTypeFromRequest](#getactiveshippingtypefromrequest)
 * [getAppliedCampaignList](#getappliedcampaignlist)
 * [getAppliedCouponList](#getappliedcouponlist)
@@ -37,6 +38,10 @@ Method returns {{ get_collection('cart-position').link() }} class object.
 You can pass active sipping type object and active payment method object
 to method to get total cost with shipping price and discounts applied.
 You can uses method to render cart positions and blocks with positions total price.
+
+### getActivePaymentMethodFromRequest()
+
+Method gets from request "payment_method_id" field and returns {{ get_item('payment-method').link() }} class object.
 
 ### getActiveShippingTypeFromRequest()
 

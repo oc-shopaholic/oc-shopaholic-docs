@@ -22,5 +22,5 @@ $obList = ShippingTypeCollection::make([1,2,10,15])->available(['state' => 'NY']
 
 Method sorts elements of collection by "sort_order" field. You can change sorting of shipping types by going to **Backend -> Settings -> Shipping types -> Reorder records**
 
-![](./../../../assets/images/backend-shipping-type-2.png)
+![](./../../../assets/images/backend-shipping-type-2.png ':class=medium-image')
 {% endblock %}

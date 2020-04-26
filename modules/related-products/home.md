@@ -10,11 +10,11 @@ Related products block usually looks like list of products on main product page.
 
 > Related products do not depend on product categories.
 
-![](./../../assets/images/related-products-1.png)
+![](./../../assets/images/related-products-1.png ':class=medium-image')
 
 ## Backend
 
 You can attach products as related by going to **Backend -> Catalog -> Products -> Edit product -> "Related products" tab**
 
-![](./../../assets/images/backend-related-products-1.png)
+![](./../../assets/images/backend-related-products-1.png ':class=medium-image')
 {% endblock %}

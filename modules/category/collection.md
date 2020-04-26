@@ -25,5 +25,5 @@ $obCategoryList = CategoryCollection::make()->search('search phrase');
 Method returns category list of top level. Method returns only active categories. 
 You can change tree of categories by going to **Backend -> Catalog -> Categories -> Reorder records**
 
-![](./../../../assets/images/backend-category-5.png)
+![](./../../../assets/images/backend-category-5.png ':class=medium-image')
 {% endblock %}

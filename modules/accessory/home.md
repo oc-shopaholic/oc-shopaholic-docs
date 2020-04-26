@@ -53,6 +53,6 @@ end note
 
 You can attach products as accessories by going to **Backend -> Catalog -> Products -> Edit product -> "Accessories" tab**
 
-![](./../../assets/images/backend-accessory-1.png)
+![](./../../assets/images/backend-accessory-1.png ':class=medium-image')
 
 {% endblock %}

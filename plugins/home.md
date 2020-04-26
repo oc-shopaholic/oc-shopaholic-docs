@@ -13,30 +13,24 @@ Main plugin allows you to create/edit [brands](modules/brand/home.md), [categori
 [promo blocks](modules/promo-block/home.md), [price types](modules/price-type/home.md),
 [currencies](modules/currency/home.md), [taxes](modules/tax/home.md).
 
-![](./../assets/images/backend-brand-1.png)
+![](./../assets/images/backend-brand-1.png  ':class=small-image')
+![](./../assets/images/backend-category-1.png  ':class=small-image')
+![](./../assets/images/backend-product-1.png  ':class=small-image')
+![](./../assets/images/backend-offer-1.png  ':class=small-image')
 
-![](./../assets/images/backend-category-1.png)
+![](./../assets/images/backend-promo-block-1.png  ':class=small-image')
+![](./../assets/images/backend-price-type-1.png  ':class=small-image')
+![](./../assets/images/backend-currency-1.png  ':class=small-image')
+![](./../assets/images/backend-tax-1.png  ':class=small-image')
 
-![](./../assets/images/backend-product-1.png)
-
-![](./../assets/images/backend-offer-1.png)
-
-![](./../assets/images/backend-promo-block-1.png)
-
-![](./../assets/images/backend-price-type-1.png)
-
-![](./../assets/images/backend-currency-1.png)
-
-![](./../assets/images/backend-tax-1.png)
-
-![](./../assets/images/backend-measure-1.png)
+![](./../assets/images/backend-measure-1.png  ':class=small-image')
 
 ## Accessories for Shopaholic
 
 Accessories plugin allows to bind products and assign them as an accessory to another product (for instance a mobile phone and headphones).
 See more information about accessory module in [section](modules/accessory/home).
 
-![](./../assets/images/backend-accessory-1.png)
+![](./../assets/images/backend-accessory-1.png  ':class=medium-image')
 
 Plugin adds:
 * "accessory" relation to [Product](modules/product/model/model) model
@@ -47,8 +41,9 @@ Plugin adds:
 “Campaigns” plugin allows you to automatically apply promo mechanisms to cart and orders according to your schedule.
 
 For example:
-![](./../assets/images/example-campaign-1.png)
-![](./../assets/images/example-campaign-2.png)
+![](./../assets/images/example-campaign-1.png  ':class=medium-image')
+
+![](./../assets/images/example-campaign-2.png  ':class=medium-image')
 
 ## Compare for Shopaholic
 
@@ -89,9 +84,9 @@ Using [cart](modules/cart/home) module you will be able to allow users to add pr
 display cart positions (for example: mini-cart),
 change quantity and remove positions from cart.
 
-![](./../assets/images/fronend-cart-1.png)
+![](./../assets/images/fronend-cart-1.png  ':class=medium-image')
 
-![](./../assets/images/fronend-cart-2.png)
+![](./../assets/images/fronend-cart-2.png  ':class=medium-image')
 
 ## Popularity for Shopaholic
 
@@ -113,20 +108,20 @@ The "Property" plugin allows you to render product and offer properties in diffe
 * The plugin extends [Product](modules/product/model/model)/[Offer](modules/offer/model/model) models and adds **"property"** field. 
 * The plugin extends [ProductItem](modules/product/item/item)/[OfferItem](modules/offer/item/item) classes and adds **"property"** field. 
 
-![](./../assets/images/fronend-property-group-2.png)
+![](./../assets/images/fronend-property-group-2.png  ':class=medium-image')
 
-![](./../assets/images/fronend-property-group-1.png)
+![](./../assets/images/fronend-property-group-1.png  ':class=medium-image')
 
 You can display the offer selection block on the product page using the properties of the offers.
 
-![](./../assets/images/fronend-property-1.png)
+![](./../assets/images/fronend-property-1.png  ':class=medium-image')
 
 ## Related products for Shopaholic
 
 Related products plugin allows to bind products and assign them as an related to another product (for instance a mobile phone iPhone X and iPhone X MAX).
 See more information about related products module in [section](modules/related-products/home). 
 
-![](./../assets/images/backend-related-products-1.png)
+![](./../assets/images/backend-related-products-1.png  ':class=medium-image')
 
 Plugin adds:
 * "related" relation to [Product](modules/product/model/model) model

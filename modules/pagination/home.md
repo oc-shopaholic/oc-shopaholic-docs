@@ -5,5 +5,5 @@
 
 The "Pagination" module allows you to display the pagination buttons and the "show more" button.
 
-![](./../../assets/images/fronend-pagination-1.png)
+![](./../../assets/images/fronend-pagination-1.png ':class=medium-image')
 {% endblock %}

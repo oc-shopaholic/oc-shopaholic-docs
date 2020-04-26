@@ -39,5 +39,5 @@ $obBrandList = BrandCollection::make()->search('search phrase');
 Method sorts elements of collection by "sort_order" field.
 You can change sorting of brands by going to **Backend -> Catalog -> Brands -> Reorder records**
 
-![](./../../../assets/images/backend-brand-5.png)
+![](./../../../assets/images/backend-brand-5.png ':class=medium-image')
 {% endblock %}
