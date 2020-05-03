@@ -14,7 +14,7 @@
                             type="checkbox"
                             name="property[{{ obProperty.id }}][]"
                             id="property-{{ obProperty.id }}"
-                            {% if arAppliedPropertyList[obProperty.id] is not empty obPropertyValue.slug in arAppliedPropertyList[obProperty.id] %}
+                            {% if arAppliedPropertyList[obProperty.id] is not empty and obPropertyValue.slug in arAppliedPropertyList[obProperty.id] %}
                                 checked="checked"
                             {% endif %}
                             value="{{ obPropertyValue.slug }}">
@@ -23,7 +23,7 @@
                     <select name="property[{{ obProperty.id }}][]">
                         {% for obPropertyValue in obProperty.property_value %}
                             <option
-                                {% if arAppliedPropertyList[obProperty.id] is not empty obPropertyValue.slug in arAppliedPropertyList[obProperty.id] %}
+                                {% if arAppliedPropertyList[obProperty.id] is not empty and obPropertyValue.slug in arAppliedPropertyList[obProperty.id] %}
                                     selected="selected"
                                 {% endif %}
                                 value="{{ obPropertyValue.slug }}">
