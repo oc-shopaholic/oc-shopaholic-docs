@@ -19,7 +19,7 @@ extend of [AbstractPaymentGateway](#abstractpaymentgateway-class) abstract class
 or implement of [PaymentGatewayInterface](#paymentgatewayinterface-interface) interface.
 4. Extend PaymentMethod model and add payment gateway class.
 ```php
-    PaymentMethod:extend(function ($obElement) {
+    PaymentMethod::extend(function ($obElement) {
         /** @var PaymentMethod $obElement */
         
         $obElement->addGatewayClass('my_custom_payment', PaymentGateway::class);
