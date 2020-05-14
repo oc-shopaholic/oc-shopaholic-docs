@@ -14,8 +14,8 @@
 Event allows you to process import data, after saving model object
 
 ```php
-$obEvent->listen(ImportoOfferModelFromCSV::EVENT_AFTER_IMPORT, function ($obModel, $arImportData) {
-    if (!$obModel instanceof oOffer::class) {
+$obEvent->listen(ImportOfferModelFromCSV::EVENT_AFTER_IMPORT, function ($obModel, $arImportData) {
+    if (!$obModel instanceof Offer::class) {
         return;
     }
 
@@ -28,8 +28,8 @@ $obEvent->listen(ImportoOfferModelFromCSV::EVENT_AFTER_IMPORT, function ($obMode
 Event allows you to change import data, before saving model object
 
 ```php
-$obEvent->listen(ImportoOfferModelFromCSV::EVENT_BEFORE_IMPORT, function ($sModelClass, $arImportData) {
-    if ($sModelClass != oOffer::class) {
+$obEvent->listen(ImportOfferModelFromCSV::EVENT_BEFORE_IMPORT, function ($sModelClass, $arImportData) {
+    if ($sModelClass != Offer::class) {
         return null;
     }
 
@@ -44,7 +44,7 @@ $obEvent->listen(ImportoOfferModelFromCSV::EVENT_BEFORE_IMPORT, function ($sMode
 Event allows you to extend processing of XML node and change import data
 
 ```php
-Event::listen(ImportoOfferModelFromXML::EXTEND_IMPORT_DATA, function($arImportData, $obParseNode) {
+Event::listen(ImportOfferModelFromXML::EXTEND_IMPORT_DATA, function($arImportData, $obParseNode) {
     //Get custom field from node
     $sValue = $obParseNode->...;
 
@@ -62,7 +62,7 @@ Event allows you to extend list of fields that are available for configuring imp
 ![](./../../../assets/images/backend-offer-3.png ':class=medium-image') 
 
 ```php
-Event::listen(ImportoOfferModelFromXML::EXTEND_FIELD_LIST, function($arFieldList) {
+Event::listen(ImportOfferModelFromXML::EXTEND_FIELD_LIST, function($arFieldList) {
     $arFieldList['my_field'] = 'My field label';
     
     return $arFieldList;
