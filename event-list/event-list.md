@@ -35,7 +35,7 @@ Event::listen('shopaholic.sorting.get.list', function($sSorting) {
 
 **You need to add cache clearing for your custom sorting**
 ```php
-    \Lovata\Shopaholic\Classes\Store\ProductListStore->sorting->clear('my_custom_sorting');
+    \Lovata\Shopaholic\Classes\Store\ProductListStore::instance()->sorting->clear('my_custom_sorting');
 ```
 
 ## Offer
@@ -60,7 +60,7 @@ Event::listen('shopaholic.sorting.offer.get.list', function($sSorting) {
 
 **You need to add cache clearing for your custom sorting**
 ```php
-    \Lovata\Shopaholic\Classes\Store\OfferListStore->sorting->clear('my_custom_sorting');
+    \Lovata\Shopaholic\Classes\Store\OfferListStore::instance()->sorting->clear('my_custom_sorting');
 ```
 
 ## Order
@@ -227,7 +227,7 @@ Event::listen('shopaholic.promo_block.sorting.get.list', function($sSorting) {
 
 **You need to add cache clearing for your custom sorting**
 ```php
-    \Lovata\Shopaholic\Classes\Store\PromoBlockListStore->sorting->clear('my_custom_sorting');
+    \Lovata\Shopaholic\Classes\Store\PromoBlockListStore::instance()->sorting->clear('my_custom_sorting');
 ```
 
 ## Payment gateways

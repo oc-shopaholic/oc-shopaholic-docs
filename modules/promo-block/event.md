@@ -59,6 +59,6 @@ Event::listen('shopaholic.promo_block.sorting.get.list', function($sSorting) {
 !> You need to add cache clearing for your custom sorting
 
 ```php
-\Lovata\Shopaholic\Classes\Store\PromoBlockListStore->sorting->clear('my_custom_sorting');
+\Lovata\Shopaholic\Classes\Store\PromoBlockListStore::instance()->sorting->clear('my_custom_sorting');
 ```
 {% endblock %}

@@ -105,6 +105,6 @@ Event::listen('shopaholic.sorting.get.list', function($sSorting) {
 !> You need to add cache clearing for your custom sorting
 
 ```php
-\Lovata\Shopaholic\Classes\Store\ProductListStore->sorting->clear('my_custom_sorting');
+\Lovata\Shopaholic\Classes\Store\ProductListStore::instance()->sorting->clear('my_custom_sorting');
 ```
 {% endblock %}
