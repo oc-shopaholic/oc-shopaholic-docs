@@ -35,7 +35,7 @@
 
 Method returns {{ get_collection('cart-position').link() }} class object.
 {{ get_collection('cart-position').link() }} object will contain the position of the user's cart.
-You can pass active sipping type object and active payment method object
+You can pass active shipping type object and active payment method object
 to method to get total cost with shipping price and discounts applied.
 You can uses method to render cart positions and blocks with positions total price.
 
