@@ -57,12 +57,12 @@ else (no)
 endif
 :Get cart object;
 :Megre user data from request
-and cart data crom cart object;
+and cart data from cart object;
 :Component gets shipping address
 fields from **"shipping_address"**
 in request;
 :Megre shipping address data from request
-and shipping address data crom cart object;
+and shipping address data from cart object;
 :Creates new shipping address or
 updates user shipping address;
 if (Has validation errors?) then (no)
@@ -74,7 +74,7 @@ endif
 fields from **"billing_address"**
 in request;
 :Megre billing address data from request
-and billing address data crom cart object;
+and billing address data from cart object;
 :Creates new billing address or
 updates user billing address;
 if (Has validation errors?) then (no)
