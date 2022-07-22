@@ -11,10 +11,10 @@
 
 |  Name | Type | Description |
 |-------|------|--------|
-  {% for sName, arFieldData in arFieldList %}
-    {% set sDescription = arFieldData.description ~ ' ' ~ arFieldData.relation|relation_with ~ ' ' ~ arFieldData.available|available_with %}
+{% for sName, arFieldData in arFieldList %}
+{% set sDescription = arFieldData.description ~ ' ' ~ arFieldData.relation|relation_with ~ ' ' ~ arFieldData.available|available_with %}
 |{{ sName }}|{{ arFieldData.type }}|{{ sDescription }}|
-  {% endfor %}
+{% endfor %}
 {% endif %}
 {% endblock %}
 

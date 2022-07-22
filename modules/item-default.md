@@ -14,10 +14,10 @@ All available methods of ElementItem class you can find in [section](architectur
 
 |  Name | Type | Description |
 |-------|------|--------|
-  {% for sName, arFieldData in arFieldList %}
-    {% set sDescription = arFieldData.description ~ ' ' ~ arFieldData.relation|relation_with ~ ' ' ~ arFieldData.available|available_with %}
-    |{{ sName }}|{{ arFieldData.type }}|{{ sDescription }}|
-  {% endfor %}
+{% for sName, arFieldData in arFieldList %}
+{% set sDescription = arFieldData.description ~ ' ' ~ arFieldData.relation|relation_with ~ ' ' ~ arFieldData.available|available_with %}
+|{{ sName }}|{{ arFieldData.type }}|{{ sDescription }}|
+{% endfor %}
 {% endif %}
 {% endblock %}
 
